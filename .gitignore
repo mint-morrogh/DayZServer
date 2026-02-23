@@ -60,5 +60,7 @@ sakhal/
 server_manager/
 
 # --- Ignore profiles/logs/runtime ---
-config/
+config/*
+!config/NotificationsSystem/
+!config/NotificationsSystem/**
 battleye/

@@ -182,6 +182,7 @@ These mods run on the server only — players do **not** need to download them.
 |---|---|---|
 | [GameLabs](https://steamcommunity.com/sharedfiles/filedetails/?id=2464526692) | 2464526692 | CFTools integration framework for server management |
 | [CW GameLabs](https://steamcommunity.com/sharedfiles/filedetails/?id=3548025008) | 3548025008 | Dynamic & static map markers on CFTools web-map (tracks dropped items, POIs) |
+| [NotificationsSystem](https://steamcommunity.com/sharedfiles/filedetails/?id=3624261153) | 3624261153 | In-game notification broadcasts — welcome messages, event warnings, server alerts |
 
 > **Note:** Server-side mods use `-serverMod=` in `start.bat` instead of `-mod=`. They are already configured in the launch script.
 
@@ -203,6 +204,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3571068454` | `@CZOptics` |
 | `2464526692` | `@GameLabs` |
 | `3548025008` | `@CW_GameLabs` |
+| `3624261153` | `@NotificationsSystem` |
 
 ### Zenarchist's Skills — Loot Spawns
 
@@ -218,6 +220,37 @@ Skill-related items spawn across the map (configurable in `server_settings.json`
 | Gathering Book | 6 (min 3) | Everywhere |
 
 Items respawn automatically when the count drops below the minimum.
+
+## Dynamic Events & Notifications
+
+The server features boosted dynamic events and a timed notification system that creates an immersive, living world.
+
+### Dynamic Events (events.xml)
+
+| Event | Vanilla | This Server | Effect |
+|---|---|---|---|
+| Helicopter crashes | 3 | 5 (min 1) | More crash sites with military loot |
+| Military convoys | 5 | 8 (min 2) | More ambushed convoys on roads |
+| Contaminated zones | 2-4 | Unchanged | Dynamic NBC zones |
+
+### Notification Schedule
+
+Timed broadcasts appear in-game to create atmosphere:
+
+| Time | Type | Message |
+|---|---|---|
+| On join | Welcome | Personalized greeting with player name |
+| Every 20 min | Radio Intercept | Military convoy / supply reports |
+| Every 30 min | Emergency Broadcast | Zombie activity warnings for specific cities |
+| Every 45 min | Survivor Radio | Helicopter crash site spotted |
+| Every 60 min | Radio Chatter | Trader stock updates |
+| Every 80 min | Warning | Contaminated zone alerts |
+| Every 100 min | Survivor Tip | Exploration hints |
+| Every 120 min | Emergency Broadcast | Zombie horde sightings |
+| 3 hours | Server | 1-hour restart warning |
+| 3 hr 50 min | Server | 10-minute restart warning |
+
+Edit notifications in `config/NotificationsSystem/NotificationSettings.json`. The mod supports hot-reload — changes apply without a restart.
 
 ## Launching the Server
 
@@ -256,6 +289,7 @@ DayZServer/
 ├── @CZOptics/                   # Additional optics and scopes
 ├── @GameLabs/                   # CFTools integration (server-side)
 ├── @CW_GameLabs/                # CFTools map markers (server-side)
+├── @NotificationsSystem/        # In-game notifications (server-side)
 └── mpmissions/
     └── dayzOffline.chernarusplus/
         ├── cfggameplay.json     # Gameplay settings (patched automatically)
