@@ -157,7 +157,9 @@ Zombie spawns have been customized for a small-group experience:
 
 ## Mods
 
-All mods must be installed on both the **server** and **client**.
+### Client + Server Mods
+
+These mods must be installed on both the **server** and **client**.
 
 | Mod | Workshop ID | Description |
 |---|---|---|
@@ -171,6 +173,17 @@ All mods must be installed on both the **server** and **client**.
 | [No Sprinting Zombies](https://steamcommunity.com/sharedfiles/filedetails/?id=1816010715) | 1816010715 | Zombies walk and jog but don't sprint |
 | [Zenarchist's Skills](https://steamcommunity.com/sharedfiles/filedetails/?id=3601119520) | 3601119520 | Skill perk tree — survival, crafting, hunting, gathering |
 | [CZ Optics](https://steamcommunity.com/sharedfiles/filedetails/?id=3571068454) | 3571068454 | Additional optics and scopes |
+
+### Server-Side Only Mods
+
+These mods run on the server only — players do **not** need to download them.
+
+| Mod | Workshop ID | Description |
+|---|---|---|
+| [GameLabs](https://steamcommunity.com/sharedfiles/filedetails/?id=2464526692) | 2464526692 | CFTools integration framework for server management |
+| [CW GameLabs](https://steamcommunity.com/sharedfiles/filedetails/?id=3548025008) | 3548025008 | Dynamic & static map markers on CFTools web-map (tracks dropped items, POIs) |
+
+> **Note:** Server-side mods use `-serverMod=` in `start.bat` instead of `-mod=`. They are already configured in the launch script.
 
 ### Mod Installation
 
@@ -188,6 +201,8 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `1816010715` | `@No-Sprinting-Zombies` |
 | `3601119520` | `@ZenSkills` |
 | `3571068454` | `@CZOptics` |
+| `2464526692` | `@GameLabs` |
+| `3548025008` | `@CW_GameLabs` |
 
 ### Zenarchist's Skills — Loot Spawns
 
@@ -239,6 +254,8 @@ DayZServer/
 ├── @No-Sprinting-Zombies/       # Zombie behavior mod
 ├── @ZenSkills/                  # Skill perk tree mod
 ├── @CZOptics/                   # Additional optics and scopes
+├── @GameLabs/                   # CFTools integration (server-side)
+├── @CW_GameLabs/                # CFTools map markers (server-side)
 └── mpmissions/
     └── dayzOffline.chernarusplus/
         ├── cfggameplay.json     # Gameplay settings (patched automatically)
