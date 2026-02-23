@@ -1,4 +1,4 @@
-# Mint Mundane DayZ Server
+# DayZ Private Server Setup Guide
 
 A private DayZ co-op server configured for small groups (2-4 players) on Chernarus. Designed for a relaxed survival experience with quality-of-life mods, faster day/night cycles, and customized zombie spawns.
 
