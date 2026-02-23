@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<territory-type>
+    <territory color="1714254016">
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="8173.6" z="11731.59" r="200"/> <!-- Mc Clain Ranch -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="11326.6" z="10908.59" r="80"/> <!-- March Ridge -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="9338.93" z="7516.47" r="150"/> <!-- West of Speedway -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="8919.93" z="4423.47" r="150"/> <!-- Fairfax to Darby -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="8377.93" z="3975.47" r="150"/> <!-- Fairfax Farms -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="8211.93" z="3592.47" r="150"/> <!-- Fairfax Farms2 -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="8409.93" z="2518.47" r="150"/> <!-- Winter Park -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="10965.93" z="2578.47" r="150"/> <!-- North Troy -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="6848.93" z="3457.47" r="250"/> <!-- East of Red Lodge -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="5708.93" z="4389.47" r="80"/> <!-- Quarry -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="3691.93" z="6626.47" r="160"/> <!-- South Jackson road -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="405.93" z="2580.47" r="160"/> <!-- Camp  Congregation -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="878.93" z="7578.47" r="60"/> <!-- Checkpoint West -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="1318.93" z="8959.47" r="25"/> <!-- Jim The Baptis -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="2154.93" z="12047.47" r="25"/> <!-- Dixie -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="2835.93" z="11314.47" r="165"/> <!-- Denton -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="4847.93" z="8594.47" r="165"/> <!-- Ft Hale North -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="6568.93" z="8897.47" r="165"/> <!-- Haven -->
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0"  x="6568.93" z="8897.47" r="165"/> <!-- McClain -->
+    </territory>
+</territory-type>
+

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<territory-type>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4601.22" z="10798.36" r="110" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7954.27" z="10945.67" r="120" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6325.27" z="10525.34" r="150" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4847.97" z="9405.79" r="150" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5514.66" z="9065.80" r="200" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5708.88" z="7960.44" r="200" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4338.50" z="7550.20" r="130" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4799.13" z="8478.11" r="190" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3213.31" z="7143.38" r="180" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4447.63" z="5249.20" r="150" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5785.97" z="5742.12" r="160" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7757.06" z="8995.55" r="150" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="8579.63" z="10282.10" r="170" />
+	</territory>
+	<territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7448.62" z="6483.26" r="200" />
+    </territory>
+    <territory color="2097173760">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3494.88" z="6427.12" r="130" />
+	</territory>
+</territory-type>

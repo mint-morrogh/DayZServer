@@ -4,7 +4,9 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **20 mods** — all preconfigured and ready to go
+- **23 mods** — all preconfigured and ready to go
+- **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
+- **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
 - **20 driveable vehicles** — Supra, Mustang GT500, Skyline, Porsche 911, Dodge Ram, Monster Truck, MotorHome, and more
 - **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (14 planes across the map)
 - **Care package supply drops** — military, medical, survival, and building supplies parachute in every 30 minutes with zombie guards
@@ -203,6 +205,9 @@ These mods must be installed on both the **server** and **client**.
 | [Zen's Sleeping Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3468961047) | 3468961047 | Fatigue/sleep stat — tiredness, sleeping bags, hallucinations, immunity effects |
 | [Sleep Till Morning](https://steamcommunity.com/sharedfiles/filedetails/?id=3578708533) | 3578708533 | Skip to dawn when all players lie down to sleep at night |
 | [4KBOSSKVehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=3369325490) | 3369325490 | 21 driveable vehicles — muscle cars, trucks, SUVs, sports cars, monster truck, motorhome |
+| [DayZ-Dog](https://steamcommunity.com/sharedfiles/filedetails/?id=2471347750) | 2471347750 | Tameable companion dogs — 17 breeds, collars, vests, gas masks, dog houses |
+| [Survivor Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2918418331) | 2918418331 | Animation dependency required by DayZ Horse |
+| [DayZ Horse](https://steamcommunity.com/sharedfiles/filedetails/?id=3295021220) | 3295021220 | Rideable horses — 5 colours, saddles, bridles, saddlebags, stables, walk/trot/gallop/jump/swim |
 
 ### Mod Installation
 
@@ -230,6 +235,9 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3468961047` | `@ZenSleep` |
 | `3578708533` | `@SleepTillMorning` |
 | `3369325490` | `@4KBOSSKVehicles` |
+| `2471347750` | `@DayZDog` |
+| `2918418331` | `@SurvivorAnims` |
+| `3295021220` | `@DayZHorse` |
 
 ### Zenarchist's Skills — Loot Spawns
 
@@ -334,6 +342,37 @@ CookZ Realistic Packaging replaces the default food textures with realistic-look
 
 CookZ config auto-generates in `config/CookZ/` on first server start. Item definitions are in `custom/types_cookz.xml`.
 
+### DayZ-Dog — Companion Dogs
+
+17 breeds of tameable wild dogs roam Chernarus. Tame them by feeding raw meat or bones, then command them to follow, stay, or attack. Once tamed, dogs can be equipped with collars, K9 vests, and even gas masks.
+
+Build a dog house from kits found at farms and villages to give your companion a home. Dog houses persist through restarts.
+
+| Item | Count | Locations |
+|---|---|---|
+| Collars (7 colours) | 3 each (min 1) | Towns, Villages |
+| K9 Vests (6 types) | 3 each (min 1) | Police stations |
+| Gas Mask | 3 (min 1) | Military (Tier 3-4) |
+| Dog House Kit (small) | 3 (min 1) | Villages, Towns, Farms |
+| Dog House Kit (large) | 3 (min 1) | Villages, Towns, Farms |
+
+Dog accessories are configured in `custom/types_dayzdog.xml`. The mod generates a server config at `config/Dayz-Dog/` on first start where you can adjust dog health and behaviour.
+
+### DayZ Horse — Rideable Horses
+
+5 horse colours (Brown, White, Gray, Dark Gray, Palomino) spawn in herds across Chernarus fields and farms. Approach a horse with a bridle to tame it, then equip a saddle to ride. Horses can walk, trot, gallop, jump fences, and swim.
+
+Attach saddlebags for mobile storage. Build a stable from kits found at farms to shelter your horse between sessions.
+
+| Item | Count | Locations |
+|---|---|---|
+| Saddle | 5 (min 3) | Farms, Villages |
+| Bridle | 5 (min 3) | Farms, Villages |
+| Horse Bags (saddlebags) | 4 (min 2) | Farms, Villages |
+| Stable Kit | 3 (min 1) | Farms, Villages |
+
+Horse tack is configured in `custom/types_dayzhorse.xml`. Requires the **Survivor Animations** mod as a dependency (included and loaded automatically).
+
 ### Zen's Sleeping Mod
 
 Adds a fatigue stat (moon icon) that drains over time. Players must use the **Lie Down** emote to sleep. Ignoring fatigue causes yawning (gives away position), hallucinations, reduced immunity, and eventually random unconsciousness.
@@ -383,6 +422,7 @@ DayZServer/
 │   ├── CarePackagesV2/
 │   │   └── config.json          # Care package loot, locations, timing
 │   ├── CookZ/                   # Auto-generated on first start
+│   ├── Dayz-Dog/                # Auto-generated — dog health & behaviour config
 │   ├── Zenarchist/
 │   │   └── ZenSleepConfig.json  # Sleep fatigue rates, effects, recovery
 │   └── *.RPT                    # Server crash/debug logs
@@ -406,6 +446,9 @@ DayZServer/
 ├── @ZenSleep/                   # Sleep & fatigue system
 ├── @SleepTillMorning/           # Skip night when all players sleep
 ├── @4KBOSSKVehicles/            # 21 driveable vehicles
+├── @DayZDog/                    # Companion dogs (17 breeds)
+├── @SurvivorAnims/              # Animation dependency for horse mod
+├── @DayZHorse/                  # Rideable horses (5 colours)
 └── mpmissions/
     └── dayzOffline.chernarusplus/
         ├── cfggameplay.json     # Gameplay settings (patched automatically)
@@ -417,7 +460,12 @@ DayZServer/
         │   ├── types_lmplanes.xml     # LMs Planes vehicle spawns
         │   ├── types_cookz.xml        # CookZ crafted item definitions
         │   ├── types_zensleep.xml     # ZenSleep sleeping bags & items
-        │   └── types_4kbossk.xml      # 4KBOSSKVehicles spawn config
+        │   ├── types_4kbossk.xml      # 4KBOSSKVehicles spawn config
+        │   ├── types_dayzdog.xml     # Dog accessory spawns
+        │   └── types_dayzhorse.xml   # Horse tack spawns
+        ├── env/
+        │   ├── dog_territories.xml   # Wild dog spawn zones
+        │   └── wild_horse_territories.xml  # Horse grazing zones
         └── db/
             ├── events.xml       # Zombie spawns (patched automatically)
             └── globals.xml      # Loot economy (patched automatically)
@@ -438,3 +486,5 @@ mpmissions/dayzOffline.chernarusplus/storage_1/
 - **Zombies not spawning:** Same as above — check `events.xml` for syntax errors.
 - **Settings not applying:** Make sure you ran `apply_settings.bat` after editing `server_settings.json`, then restarted the server.
 - **Adding/removing Zen's Sleep:** Requires a server wipe (`storage_1/`) because the sleep stat is saved to player profiles. Without a wipe, profiles become corrupted.
+- **Dogs/horses not spawning:** Make sure both `dog_territories.xml` and `wild_horse_territories.xml` exist in the `env/` folder, and that `cfgenvironment.xml` references them. Check the events in `db/events.xml` for `AnimalWildDog` and `AnimalWildHorse` entries.
+- **Dog health too low:** After first server start, check `config/Dayz-Dog/` for a generated config file where you can increase dog health values.

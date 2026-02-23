@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<territory-type>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="10317.7" z="10776" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="11825" z="11397.2" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3850" z="10427.8" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6508.33" z="8902.78" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="10533.3" z="2338.89" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="633.333" z="2851.39" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5928.85" z="6719.23" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9015" z="5080" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7715" z="9435" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9739.17" z="13152.7" r="80" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9860.83" z="13100.2" r="140" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="10056.7" z="13442.7" r="127.5" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="10174.2" z="13435.2" r="90" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9965" z="13287.7" r="70" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9804.38" z="12900" r="140" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2991" z="6717" r="120" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3528" z="6747" r="187.5" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3190.5" z="6697.5" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3574.5" z="6445.5" r="90" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3370.5" z="6520.5" r="120" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2265.75" z="10869.4" r="70" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2289.75" z="10647" r="195" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2539.25" z="10454.5" r="90" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2148.25" z="10307" r="120" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1991.25" z="10144.5" r="90" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5821.88" z="8692.5" r="90" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6352.5" z="9157.5" r="90" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5748.75" z="9030" r="180" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6105" z="8675.63" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6105" z="8910" r="97.5" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6556.88" z="9298.13" r="120" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9747.71" z="8930.83" r="90" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9550.83" z="8490" r="142.5" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9703.54" z="9075.63" r="80" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="9760" z="8628.33" r="120" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="8912.5" z="8305" r="75" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="10238.3" z="8826.67" r="120" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1902" z="7593" r="80" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2191.5" z="7364" r="90" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1767" z="7776" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2631" z="7269" r="100" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2071.5" z="7234.5" r="70" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4456.07" z="8207.14" r="90" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4470" z="7560" r="130" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4349.25" z="8506.5" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4622.05" z="8145.68" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4236" z="7254" r="120" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6958.25" z="7712.63" r="120" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6847.08" z="7596.25" r="165" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7365.5" z="7433.13" r="150" />
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7085.96" z="7952.38" r="150" />
+    </territory>
+    <territory color="2130706687">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x

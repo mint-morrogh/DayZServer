@@ -66,6 +66,8 @@ config/*
 !config/CarePackagesV2/**
 !config/Zenarchist/
 !config/Zenarchist/**
+!config/Dayz-Dog/
+!config/Dayz-Dog/**
 # Ignore player-specific runtime data inside Zenarchist
 config/Zenarchist/Skills/Analytics/
 config/Zenarchist/Skills/PlayerDB/

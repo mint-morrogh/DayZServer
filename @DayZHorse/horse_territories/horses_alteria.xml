@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<territory-type>
+    <territory color="4291611852">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1705.51" z="7162.94" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5302.87" z="5474.4" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1581.86" z="4595.44" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5478.50" z="1807.50" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5728.00" z="1834.00" r="100"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1160.58" z="7379.92" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5030.81" z="7188.69" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="7490.45" z="5180.92" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="4513.97" z="4033.73" r="100"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3101.61" z="5835.78" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2407.36" z="6768.32" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="5250.27" z="3064.25" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="2610.07" z="3520.34" r="100"/>
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1677.44" z="1691.9" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="3422.36" z="2639.35" r="100"/>
+    </territory>
+    <territory color="4291611852">        
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="1883.27" z="6292.39" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6265.16" z="6918.94" r="100"/>
+		<zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="6182.96" z="5351.24" r="100"/>
+        <zone name="Zone_horses" smin="0" smax="0" dmin="0" dmax="0" x="744.043" z="2069" r="100"/>
+	</territory>	
+</territory-type>
