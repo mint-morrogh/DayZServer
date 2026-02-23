@@ -4,7 +4,8 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **19 mods** — all preconfigured and ready to go
+- **20 mods** — all preconfigured and ready to go
+- **20 driveable vehicles** — Supra, Mustang GT500, Skyline, Porsche 911, Dodge Ram, Monster Truck, MotorHome, and more
 - **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (14 planes across the map)
 - **Care package supply drops** — military, medical, survival, and building supplies parachute in every 30 minutes with zombie guards
 - **700+ crafting recipes** — weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
@@ -201,6 +202,7 @@ These mods must be installed on both the **server** and **client**.
 | [CookZ Realistic Packaging](https://steamcommunity.com/sharedfiles/filedetails/?id=3566508757) | 3566508757 | Realistic textures for CookZ food packaging |
 | [Zen's Sleeping Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3468961047) | 3468961047 | Fatigue/sleep stat — tiredness, sleeping bags, hallucinations, immunity effects |
 | [Sleep Till Morning](https://steamcommunity.com/sharedfiles/filedetails/?id=3578708533) | 3578708533 | Skip to dawn when all players lie down to sleep at night |
+| [4KBOSSKVehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=3369325490) | 3369325490 | 21 driveable vehicles — muscle cars, trucks, SUVs, sports cars, monster truck, motorhome |
 
 ### Mod Installation
 
@@ -227,6 +229,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3566508757` | `@CookZRealisticPackaging` |
 | `3468961047` | `@ZenSleep` |
 | `3578708533` | `@SleepTillMorning` |
+| `3369325490` | `@4KBOSSKVehicles` |
 
 ### Zenarchist's Skills — Loot Spawns
 
@@ -293,6 +296,35 @@ Flyable planes spawn across the map at towns, industrial areas, and farms. Find 
 | **Total** | **14** | Keep under 15-30 for performance |
 
 Plane spawns are configured in `custom/types_lmplanes.xml`.
+
+### 4KBOSSKVehicles
+
+20 driveable vehicles spawn across the map at towns, farms, industrial areas, and military bases. One of each model in a random color:
+
+| Vehicle | Location |
+|---|---|
+| Audi RS6 ABT | Town, Industrial |
+| BMW M3 | Town, Industrial |
+| Chevrolet Napalm Nova | Town, Farm |
+| Dodge Challenger SRT | Town, Industrial |
+| Dodge Charger Hellcat | Town, Industrial |
+| Dodge Ram 3500 | Farm, Industrial |
+| Dodge Ram (camo) | Farm, Military |
+| Ford Bronco | Farm, Village |
+| Ford Mustang Shelby GT500 | Town, Industrial |
+| Ford Raptor Monster Truck | Farm, Industrial |
+| Honda Civic | Town, Village |
+| Jeep Gladiator F9 | Farm, Industrial |
+| Kamaz Typhoon K | Military |
+| MotorHome | Town, Farm |
+| Nissan Skyline | Town, Industrial |
+| Nissan GTR Nismo | Town, Industrial |
+| Porsche 911 RWB | Town, Industrial |
+| Toyota Supra MK IV | Town, Industrial |
+| Chevy Tahoe | Town, Farm |
+| Toyota 4Runner | Farm, Village |
+
+Vehicle spawns are configured in `custom/types_4kbossk.xml`. The mod includes 163 color variants — change colors by swapping class names in the types file.
 
 ### CookZ
 
@@ -373,6 +405,7 @@ DayZServer/
 ├── @CookZRealisticPackaging/    # Realistic food textures
 ├── @ZenSleep/                   # Sleep & fatigue system
 ├── @SleepTillMorning/           # Skip night when all players sleep
+├── @4KBOSSKVehicles/            # 21 driveable vehicles
 └── mpmissions/
     └── dayzOffline.chernarusplus/
         ├── cfggameplay.json     # Gameplay settings (patched automatically)
@@ -383,7 +416,8 @@ DayZServer/
         │   ├── types_nemsis.xml       # Nemsis Craftingpack item spawns
         │   ├── types_lmplanes.xml     # LMs Planes vehicle spawns
         │   ├── types_cookz.xml        # CookZ crafted item definitions
-        │   └── types_zensleep.xml     # ZenSleep sleeping bags & items
+        │   ├── types_zensleep.xml     # ZenSleep sleeping bags & items
+        │   └── types_4kbossk.xml      # 4KBOSSKVehicles spawn config
         └── db/
             ├── events.xml       # Zombie spawns (patched automatically)
             └── globals.xml      # Loot economy (patched automatically)

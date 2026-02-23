@@ -1,0 +1,224 @@
+{
+    "Version": "2.5",
+    "EnableAutoCalculation": 0,
+    "EnableAutoDestockAtRestart": 0,
+    "EnableDefaultTraderStock": 0,
+    "TraderCategories": [
+        {
+            "CategoryName": "TyphoonK",
+            "Products": [
+                "TyphoonK_CamoGreen,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "MotorHomes",
+            "Products": [
+                "MotorHome_Apo,1,-1,1,14000,8000",
+                "MotorHome_White,1,-1,1,14000,8000",
+                "MotorHome_Rust,1,-1,1,14000,8000",
+                "MotorHome_GreenCamo,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "DodgeRam_BOSS",
+            "Products": [
+                "DodgeRam_BOSS_Yellow,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_Green,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_White,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_Teal,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_Black,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_Red,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_Blue,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_camoblack,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_camoblue,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_camowhite,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_camored,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_camonuke,1,-1,1,14000,8000",
+                "DodgeRam_BOSS_camogreen,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "ToyotaRunner",
+            "Products": [
+                "ToyotaRunner_Black,1,-1,1,14000,8000",
+                "ToyotaRunner_camoblack,1,-1,1,14000,8000",
+                "ToyotaRunner_camowhite,1,-1,1,14000,8000",
+                "ToyotaRunner_camogreen,1,-1,1,14000,8000",
+                "ToyotaRunner_white,1,-1,1,14000,8000",
+                "ToyotaRunner_red,1,-1,1,14000,8000",
+                "ToyotaRunner_blue,1,-1,1,14000,8000",
+                "ToyotaRunner_camored,1,-1,1,14000,8000",
+                "ToyotaRunner_camopink,1,-1,1,14000,8000",
+                "ToyotaRunner_pink,1,-1,1,14000,8000",
+                "ToyotaRunner_yellow,1,-1,1,14000,8000",
+                "ToyotaRunner_camoblue,1,-1,1,14000,8000",
+                "ToyotaRunner_camopurple,1,-1,1,14000,8000",
+                "ToyotaRunner_BOSS,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Jeep_GladiatorF9_BOSS",
+            "Products": [
+                "Jeep_GladiatorF9_BOSS_White,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_Black,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_Gold,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_Brown,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_DarkRed,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_DarkBlue,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_camo_green,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_camo_red,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_camo_blue,1,-1,1,14000,8000",
+                "Jeep_GladiatorF9_BOSS_camo_black,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "dodgechargerhellcat",
+            "Products": [
+                "dodgechargerhellcat_black,1,-1,1,14000,8000",
+                "dodgechargerhellcat_blue,1,-1,1,14000,8000",
+                "dodgechargerhellcat_green,1,-1,1,14000,8000",
+                "dodgechargerhellcat_red,1,-1,1,14000,8000",
+                "dodgechargerhellcat_pink,1,-1,1,14000,8000",
+                "dodgechargerhellcat_lightblue,1,-1,1,14000,8000",
+                "dodgechargerhellcat_white,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "NissanGTRs",
+            "Products": [
+                "NissanGTRNismo_White,1,-1,1,14000,8000",
+                "NissanGTRNismo_Red,1,-1,1,14000,8000",
+                "NissanGTRNismo_Black,1,-1,1,14000,8000",
+                "NissanGTRNismo_DarkPurple,1,-1,1,14000,8000",
+                "NissanGTR_White,1,-1,1,14000,8000",
+                "NissanGTR_Green,1,-1,1,14000,8000",
+                "NissanGTR_Orange,1,-1,1,14000,8000",
+                "NissanGTR_Pink,1,-1,1,14000,8000",
+                "NissanGTR_Red,1,-1,1,14000,8000",
+                "NissanGTR_Blue,1,-1,1,14000,8000",
+                "NissanGTRCustom_Black,1,-1,1,14000,8000",
+                "NissanGTRCustom_Blood,1,-1,1,14000,8000",
+                "NissanGTRCustom_LB,1,-1,1,14000,8000",
+                "NissanGTRCustom_Pink,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "MonsterTruck",
+            "Products": [
+                "Ford_Raptor_MonsterTruck_USA,1,-1,1,14000,8000",
+                "Ford_Raptor_MonsterTruck_Raptor,1,-1,1,14000,8000",
+                "Ford_Raptor_MonsterTruck_Baja,1,-1,1,14000,8000",
+                "Ford_Raptor_MonsterTruck_Roush,1,-1,1,14000,8000",
+                "Ford_Raptor_MonsterTruck_WideOpen,1,-1,1,14000,8000",
+                "Ford_Raptor_MonsterTruck_Halo,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Supras",
+            "Products": [
+                "Supra_Blue,1,-1,1,14000,8000",
+                "Supra_Green,1,-1,1,14000,8000",
+                "Supra_Red,1,-1,1,14000,8000",
+                "Supra_Black,1,-1,1,14000,8000",
+                "Supra_White,1,-1,1,14000,8000",
+                "Supra_FastF,1,-1,1,14000,8000",
+                "Supra_Lighting,1,-1,1,14000,8000",
+                "Supra_Sponge,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Chevrolet_NapalmNova",
+            "Products": [
+                "Chevrolet_NapalmNova_Black,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_White,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Red,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Blue,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Green,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Yellow,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Pink,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Purple,1,-1,1,14000,8000",
+                "Chevrolet_NapalmNova_Orange,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Dodge_ChallengerSRT",
+            "Products": [
+                "Dodge_ChallengerSRT_White,1,-1,1,14000,8000",
+                "Dodge_ChallengerSRT_DarkBlue,1,-1,1,14000,8000",
+                "Dodge_ChallengerSRT_Black,1,-1,1,14000,8000",
+                "Dodge_ChallengerSRT_Blue,1,-1,1,14000,8000",
+                "Dodge_ChallengerSRT_Red,1,-1,1,14000,8000",
+                "Dodge_ChallengerSRT_Green,1,-1,1,14000,8000",
+                "Dodge_ChallengerSRT_Orange,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Porsche_911RWB",
+            "Products": [
+                "Porsche_911RWB_White,1,-1,1,14000,8000",
+                "Porsche_911RWB_Green,1,-1,1,14000,8000",
+                "Porsche_911RWB_Blue,1,-1,1,14000,8000",
+                "Porsche_911RWB_Red,1,-1,1,14000,8000",
+                "Porsche_911RWB_Orange,1,-1,1,14000,8000",
+                "Porsche_911RWB_Black,1,-1,1,14000,8000",
+                "Porsche_911RWB_Pink,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Nissan_Skyline",
+            "Products": [
+                "Nissan_Skyline_White,1,-1,1,14000,8000",
+                "Nissan_Skyline_Blue,1,-1,1,14000,8000",
+                "Nissan_Skyline_Black,1,-1,1,14000,8000",
+                "Nissan_Skyline_Pink,1,-1,1,14000,8000",
+                "Nissan_Skyline_Orange,1,-1,1,14000,8000",
+                "Nissan_Skyline_Red,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Tahoes",
+            "Products": [
+                "Tahoe_White,1,-1,1,14000,8000",
+                "Tahoe_Black,1,-1,1,14000,8000",
+                "Tahoe_Blue,1,-1,1,14000,8000",
+                "Tahoe_Brown,1,-1,1,14000,8000",
+                "Tahoe_DarkBlue,1,-1,1,14000,8000",
+                "Tahoe_Green,1,-1,1,14000,8000",
+                "Tahoe_Pink,1,-1,1,14000,8000",
+                "Tahoe_Red,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Ford_Bronco",
+            "Products": [
+                "Ford_Bronco_White,1,-1,1,14000,8000",
+                "Ford_Bronco_Black,1,-1,1,14000,8000",
+                "Ford_Bronco_Hunter,1,-1,1,14000,8000",
+                "Ford_Bronco_Rust,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "Audi_RS6_ABT",
+            "Products": [
+                "Audi_RS6_ABT_White,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Red,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Blue,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Yellow,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Green,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Pink,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Teal,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_MidNightBlue,1,-1,1,14000,8000",
+                "Audi_RS6_ABT_Black,1,-1,1,14000,8000"
+            ]
+        },
+        {
+            "CategoryName": "GMC_BOSS",
+            "Products": [
+                "GMC_BOSS_Red,1,-1,1,14000,8000",
+                "GMC_BOSS_Black,1,-1,1,14000,8000",
+                "GMC_BOSS_White,1,-1,1,14000,8000",
+                "GMC_BOSS_Blue,1,-1,1,14000,8000"
+            ]
+        }
+    ]
+}

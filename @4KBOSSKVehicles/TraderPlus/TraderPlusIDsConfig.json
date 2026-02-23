@@ -1,0 +1,31 @@
+{
+    "Version": "2.5",
+    "IDs": [
+        {
+            
+            "Id": 8,
+            "Categories": [
+                "TyphoonK",
+                "MotorHomes",
+                "DodgeRam_BOSS",
+                "ToyotaRunner",
+                "Jeep_GladiatorF9_BOSS",
+                "dodgechargerhellcat",
+                "NissanGTRs",
+                "MonsterTruck",
+                "Supras",
+                "Chevrolet_NapalmNova",
+                "Dodge_ChallengerSRT",
+                "Porsche_911RWB",
+                "Nissan_Skyline",
+                "Tahoes",
+                "Ford_Bronco",
+                "Audi_RS6_ABT",
+                "GMC_BOSS",
+                "Vehicle Parts"
+            ],
+            "LicencesRequired": [],
+            "CurrenciesAccepted": []
+        }
+    ]
+}

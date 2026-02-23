@@ -42,5 +42,6 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<file name="types_lmplanes.xml" type="types" />
 		<file name="types_cookz.xml" type="types" />
 		<file name="types_zensleep.xml" type="types" />
+		<file name="types_4kbossk.xml" type="types" />
 	</ce>
 </economycore>

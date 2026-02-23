@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<types>
+	<!--
+	4KBOSSKVehicles - Custom spawn config for Blood & Barter
+	~18 vehicles across the map, 1 per model, mixed colors
+	Parts included with lifetime only (no world spawns, come attached to vehicles)
+	-->
+
+	<!-- Audi RS6 ABT (Black) -->
+	<type name="Audi_RS6_ABT_Black">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- BMW M3 (Blue) -->
+	<type name="BMW_M3_Blue">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Chevrolet Napalm Nova (Red) -->
+	<type name="Chevrolet_NapalmNova_Red">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Farm"/>
+	</type>
+
+	<!-- Dodge Challenger SRT (Orange) -->
+	<type name="Dodge_ChallengerSRT_Orange">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Dodge Charger Hellcat (black) -->
+	<type name="dodgechargerhellcat_black">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Dodge Ram 3500 (Grey) -->
+	<type name="DodgeRam_3500_Grey">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Farm"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Dodge Ram BOSS (camogreen) -->
+	<type name="DodgeRam_BOSS_camogreen">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Farm"/>
+		<usage name="Military"/>
+	</type>
+
+	<!-- Ford Bronco (Rust) -->
+	<type name="Ford_Bronco_Rust">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Farm"/>
+		<usage name="Village"/>
+	</type>
+
+	<!-- Ford Mustang Shelby GT500 (Blue) -->
+	<type name="Ford_Mustang_Shelby_GT500_Blue">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Ford Raptor Monster Truck (Black) - only spawns at farms/industrial, it's huge -->
+	<type name="Ford_Raptor_MonstarTruck_Black">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Farm"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Honda Civic (White) -->
+	<type name="Civic_White">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Village"/>
+	</type>
+
+	<!-- Jeep Gladiator F9 (DarkRed) -->
+	<type name="Jeep_GladiatorF9_BOSS_DarkRed">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Farm"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Kamaz Typhoon K (CamoGreen) - military truck -->
+	<type name="Kamaz_TyphoonK_CamoGreen">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Military"/>
+	</type>
+
+	<!-- MotorHome (Rust) -->
+	<type name="MotorHome_Rust">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Farm"/>
+	</type>
+
+	<!-- Nissan Skyline (Blue) -->
+	<type name="Nissan_Skyline_Blue">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Nissan GTR Nismo (Red) -->
+	<type name="NissanGTRNismo_Red">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Porsche 911 RWB (Green) -->
+	<type name="Porsche_911RWB_Green">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- Toyota Supra MK IV (Red) -->
+	<type name="Supra_Red">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Industrial"/>
+	</type>
+
+	<!-- GMC Suburban / Tahoe (Brown) -->
+	<type name="Tahoe_Brown">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Town"/>
+		<usage name="Farm"/>
+	</type>
+
+	<!-- Toyota 4Runner (white) -->
+	<type name="ToyotaRunner_white">
+		<nominal>1</nominal>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<min>1</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="vehicles"/>
+		<usage name="Farm"/>
+		<usage name="Village"/>
+	</type>
+</types>
