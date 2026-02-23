@@ -279,7 +279,7 @@
         "ZmbF_DoctorSkinny"
     ],
     "LootSpawnType": 0,
-    "MinutesBetweenPackages": 30,
+    "MinutesBetweenPackages": 60,
     "DropHeight": 200,
     "DropTime": 5,
     "MinimumPlayers": -1,

@@ -1,0 +1,5 @@
+3
+
+How much water a player loses per minute of sleeping (morning thirst). Players have max 5000 water. Will not go below the critical 300. Uses the environment date and time, not server real system time. 
+
+Сколько воды теряет игрок в минуту сна. Не опустится ниже критического значения 300. У игроков максимум 5000 воды. Учитывается игровое время на карте, а не реальное системное сервера.

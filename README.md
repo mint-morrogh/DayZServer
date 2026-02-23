@@ -4,19 +4,19 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **28 mods** — all preconfigured and ready to go
+- **29 mods** — all preconfigured and ready to go
 - **GPS minimap** — on-screen minimap with player position via DayZ Expansion
 - **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
 - **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
 - **20 driveable vehicles** — Supra, Mustang GT500, Skyline, Porsche 911, Dodge Ram, Monster Truck, MotorHome, and more
 - **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (14 planes across the map)
-- **Care package supply drops** — military, medical, survival, and building supplies parachute in every 30 minutes with zombie guards
+- **Care package supply drops** — military, medical, survival, and building supplies parachute in every 60 minutes with zombie guards
 - **700+ crafting recipes** — weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
 - **Advanced cooking** — 30+ recipes for dishes, soups, sausages, and cheese via CookZ
 - **Skill tree** — earn XP and unlock perks in survival, crafting, hunting, and gathering
 - **Treasure hunting** — find photos, travel to the location, dig up randomized loot stashes
 - **NPC traders** — buy and sell items at safe zones
-- **Customisable zombies** — walk/jog by day, rare sprinters at night, shorter vision, hit harder but die easier
+- **Day/night zombie system** — daytime walkers are easier to kill and have shorter vision; nighttime zombies are full-strength with rare sprinters
 - **Sleep & fatigue system** — realistic tiredness mechanic with sleeping bags, hallucinations, and immunity effects
 - **Sleep till morning** — if all players lie down to sleep at night, time skips to dawn
 - **Unlimited stamina** — no stamina drain while sprinting
@@ -67,6 +67,12 @@ That's it. The patcher reads your settings and writes them to the correct config
 | `network` | Voice chat, 3rd person, crosshair | `serverDZ.cfg` |
 | `gameplay` | Stamina, base damage, map features, base building rules | `cfggameplay.json` |
 | `zombies` | Spawn rates per category (city, coastal, military, wilderness, etc.) | `db/events.xml` |
+| `zombieBehavior` | Zombie speed, health, damage, and vision — separate day/night values | PvZmoD config XMLs |
+| `animals` | Wild dog and horse herd spawn counts | `db/events.xml` |
+| `horseGear` | Saddle, bridle, saddlebag, and stable kit spawn rates | `custom/types_dayzhorse.xml` |
+| `dogGear` | Collar, vest, gas mask, and dog house kit spawn rates | `custom/types_dayzdog.xml` |
+| `planes` | Per-model plane spawn counts (DC-3, Spitfire, Cessna, etc.) | `custom/types_lmplanes.xml` |
+| `sleep` | Fatigue drain speed (how fast you get tired) | `config/Zenarchist/ZenSleepConfig.json` |
 | `lootEconomy` | Global zombie/animal caps, loot damage, food decay, respawn timers | `db/globals.xml` |
 | `zenSkills` | Skill book and EXP booster spawn rates | `custom/types_zenskills.xml` |
 
@@ -125,6 +131,60 @@ Higher `nightAcceleration` = shorter nights. Set `acceleration` to 1 for real-ti
     "staminaMax": 200.0,
     "staminaWeightThreshold": 12000.0,
     "sprintStaminaModifier": 0.5
+}
+```
+
+**Make zombies sprint during the day too:**
+```json
+"zombieBehavior": {
+    "speedClampMaxDay": 3.0,
+    "speedRatioDay": 1.0
+}
+```
+
+**Make zombies vanilla strength at all times:**
+```json
+"zombieBehavior": {
+    "healthRatioDay": 1.0,
+    "strengthRatioDay": 1.0,
+    "visionRatioDay": 1.0
+}
+```
+
+**More wild dogs and horses:**
+```json
+"animals": {
+    "wildDogs":   { "nominal": 12, "min": 3, "max": 10 },
+    "wildHorses": { "nominal": 15, "min": 5, "max": 8 }
+}
+```
+
+**More saddles and bridles (easier to find horses):**
+```json
+"horseGear": {
+    "saddle": { "nominal": 10, "min": 5 },
+    "bridle": { "nominal": 10, "min": 5 }
+}
+```
+
+**Remove all planes:**
+```json
+"planes": {
+    "dc3":        { "nominal": 0, "min": 0 },
+    "stuntplane": { "nominal": 0, "min": 0 },
+    "catalina":   { "nominal": 0, "min": 0 },
+    "tigermoth":  { "nominal": 0, "min": 0 },
+    "tigermothMk2": { "nominal": 0, "min": 0 },
+    "tigermothMk3": { "nominal": 0, "min": 0 },
+    "spitfire":   { "nominal": 0, "min": 0 },
+    "cessna":     { "nominal": 0, "min": 0 }
+}
+```
+
+**Disable sleep fatigue entirely:**
+```json
+"sleep": {
+    "globalDrainMultiplier": 0.0
 }
 ```
 
@@ -190,6 +250,7 @@ These mods must be installed on both the **server** and **client**.
 | [DayZ-Expansion-Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2291785308) | 2291785308 | Core framework for DayZ Expansion |
 | [Dabs Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2545327648) | 2545327648 | Script/GUI framework dependency for Expansion |
 | [DayZ-Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2116151222) | 2116151222 | Expansion content — items, UI, and world enhancements |
+| [DayZ-Expansion-Navigation](https://steamcommunity.com/sharedfiles/filedetails/?id=2792984722) | 2792984722 | Navigation scripts required by GPS minimap |
 | [Expansion Minimap Override](https://steamcommunity.com/sharedfiles/filedetails/?id=3626138230) | 3626138230 | GPS minimap overlay with player position |
 | [Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) | 1590841260 | NPC traders, safe zones, buy/sell items |
 | [Mass's Many Item Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=1566911166) | 1566911166 | Adds weapons, clothing, crafting recipes |
@@ -224,6 +285,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `2291785308` | `@DayZ-Expansion-Core` |
 | `2545327648` | `@DabsFramework` |
 | `2116151222` | `@DayZ-Expansion` |
+| `2792984722` | `@DayZ-Expansion-Navigation` |
 | `3626138230` | `@ExpansionMinimap` |
 | `1590841260` | `@Trader` |
 | `1566911166` | `@Mass'sManyItemOverhaul` |
@@ -275,7 +337,7 @@ Items respawn automatically when the count drops below the minimum.
 
 ### Care Packages
 
-Randomized supply drops land across the map every 30 minutes. Players are notified in-game with the drop location and distance. Packages are **locked** on drop — press F to open.
+Randomized supply drops land across the map every 60 minutes. Players are notified in-game with the drop location and distance. Packages are **locked** on drop — press F to open.
 
 | Package Type | Container | Loot |
 |---|---|---|
@@ -384,16 +446,19 @@ Horse tack is configured in `custom/types_dayzhorse.xml`. Requires the **Survivo
 
 ### PvZmoD — Customisable Zombies
 
-Replaces the broken No Sprinting Zombies mod with a fully configurable zombie behaviour system. All settings can be changed in XML files and applied in-game without restart (press numpad4).
+Fully configurable zombie behaviour system with independent day and night settings. **Daytime is forgiving** — zombies are slow walkers, easier to kill, and have poor eyesight, letting players explore and loot in relative safety. **Nighttime is dangerous** — zombies return to full strength with rare sprinters, making darkness a real threat.
 
-| Setting | Day | Night |
-|---|---|---|
-| Speed | Walk/jog only (1-2) | Walk to rare sprint (1-3) |
-| Health | Slightly lower than vanilla | Same as day |
-| Damage dealt | Higher than vanilla | Same as day |
-| Vision range | Shorter than vanilla | Same as day |
+| Setting | Day | Night | Effect |
+|---|---|---|---|
+| Speed | Walk/jog only | Walk/jog + rare sprinters | Day capped at run (2.5), night allows sprint (3.0) |
+| Speed ratio | 0.75x | 0.95x | Further scales down — most zombies walk by day |
+| Health | 0.7x (30% easier kills) | 1.0x (vanilla) | Daytime zombies go down fast |
+| Damage | 1.3x (30% harder hits) | 1.0x (vanilla) | Daytime zombies hit harder to compensate |
+| Vision | 0.65x (35% shorter) | 0.8x (vanilla night) | Easier sneaking during the day |
 
-Config files are auto-generated at `config/` on first server start. Edit `PvZmoD_CustomisableZombies_Characteristics.xml` to tweak values — the `ZombieBase` section at the bottom applies to all zombie types.
+All zombie settings are configurable in `server_settings.json` under `zombieBehavior` and applied automatically by the settings patcher. Changes can also be applied in-game without a restart by pressing **Numpad 4**.
+
+Config files are auto-generated at `config/PvZmoD_CustomisableZombies_Profile/` on first server start.
 
 ### Zen's Sleeping Mod
 
@@ -424,9 +489,10 @@ Adds a GPS minimap to the HUD showing your position and surroundings. Requires t
 | DayZ-Expansion-Core | Core framework (load first) |
 | Dabs Framework | Script/GUI support library |
 | DayZ-Expansion | Main content — items, UI, world enhancements |
+| DayZ-Expansion-Navigation | Navigation scripts required by GPS overlay |
 | Expansion Minimap Override | GPS minimap overlay (load last) |
 
-Load order matters — Core and Dabs must load before Expansion, and the Minimap Override must load after Expansion. This is already configured in `start.bat`.
+Load order matters — Core and Dabs must load before Expansion, Navigation must load after Expansion, and the Minimap Override must load last. This is already configured in `start.bat`.
 
 ## Launching the Server
 
@@ -458,13 +524,18 @@ DayZServer/
 │   │   └── config.json          # Care package loot, locations, timing
 │   ├── CookZ/                   # Auto-generated on first start
 │   ├── Dayz-Dog/                # Auto-generated — dog health & behaviour config
+│   ├── PvZmoD_CustomisableZombies_Profile/  # Auto-generated on first start
+│   │   ├── PvZmoD_CustomisableZombies_Globals.xml           # Speed/health/damage ratios (patched)
+│   │   ├── PvZmoD_CustomisableZombies_Characteristics.xml   # Per-zombie-type vision/speed/HP
+│   │   └── PvZmoD_CustomisableZombies_HELP.txt              # Full docs for all settings
 │   ├── Zenarchist/
-│   │   └── ZenSleepConfig.json  # Sleep fatigue rates, effects, recovery
+│   │   └── ZenSleepConfig.json  # Sleep fatigue rates, effects, recovery (patched)
 │   └── *.RPT                    # Server crash/debug logs
 ├── @CF/                         # Community Framework mod
 ├── @DayZ-Expansion-Core/        # Expansion core framework
 ├── @DabsFramework/              # Script/GUI framework
 ├── @DayZ-Expansion/             # Expansion content
+├── @DayZ-Expansion-Navigation/  # Navigation scripts for GPS
 ├── @ExpansionMinimap/           # GPS minimap overlay
 ├── @Trader/                     # Trader mod
 ├── @Mass'sManyItemOverhaul/     # Item overhaul mod

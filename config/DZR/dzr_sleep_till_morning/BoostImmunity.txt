@@ -1,0 +1,5 @@
+1
+
+If you sleep in warm conditions (see HeatSourcesMinSafeTemp.txt) you get immunity boost in the morning. 1 - enable. 0 - disable. 
+
+Если засыпаете в тепле (подробнее в HeatSourcesMinSafeTemp.txt), то получаете повышение иммунитета. 1 - вкл, 0 - выкл.

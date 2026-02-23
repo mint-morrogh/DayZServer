@@ -1,0 +1,4 @@
+1
+Enable InediaStamina mod support. 1 - enable. 0 - disable. 
+
+Включить поддержку InediaStamina. 1 - вкл, 0 - выкл.

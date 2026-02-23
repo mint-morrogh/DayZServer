@@ -1,0 +1,121 @@
+{
+    "ConfigVersion": "1.2",
+    "EnableMod": 1,
+    "AutoReload": {
+        "Enable": 1,
+        "UTC": 0,
+        "UseMissionTime": 0,
+        "CheckIntervalSeconds": 60
+    },
+    "Notifications_Welcome": [
+        {
+            "Enable": 1,
+            "DelayMs": 8000,
+            "Title": "Welcome to Blood & Barter",
+            "Text": "Good luck out there, {PLAYER}. Stay sharp.",
+            "Color": "#FFFFFF"
+        }
+    ],
+    "Notifications_Scheduler": [],
+    "Notifications_Live": [
+        {
+            "Notifications_Minute": 20,
+            "Loop": 1,
+            "Loop_Minute": 20,
+            "Loop_Second": 0,
+            "Title": "Radio Intercept",
+            "Text": "Scouts report a military convoy was ambushed near the northwest airfield. Supplies may still be intact.",
+            "Color": "#FFD700"
+        },
+        {
+            "Notifications_Minute": 30,
+            "Loop": 1,
+            "Loop_Minute": 30,
+            "Loop_Second": 0,
+            "Title": "Emergency Broadcast",
+            "Text": "WARNING: Increased infected activity detected in Elektrozavodsk and Chernogorsk. Avoid city centers or proceed with caution.",
+            "Color": "#FF4444"
+        },
+        {
+            "Notifications_Minute": 45,
+            "Loop": 1,
+            "Loop_Minute": 45,
+            "Loop_Second": 0,
+            "Title": "Survivor Radio",
+            "Text": "A helicopter went down somewhere in the northern hills. Crash site may contain military-grade equipment.",
+            "Color": "#44AAFF"
+        },
+        {
+            "Notifications_Minute": 60,
+            "Loop": 1,
+            "Loop_Minute": 60,
+            "Loop_Second": 0,
+            "Title": "Radio Chatter",
+            "Text": "Traders at Green Mountain and Kumyrna report fresh stock. Medical supplies and ammunition available.",
+            "Color": "#44FF44"
+        },
+        {
+            "Notifications_Minute": 40,
+            "Loop": 1,
+            "Loop_Minute": 40,
+            "Loop_Second": 0,
+            "Title": "Trade Network",
+            "Text": "The Green Mountain and Kumyrna trading posts are open for business. Safe zones enforced — no weapons drawn.",
+            "Color": "#44FF44"
+        },
+        {
+            "Notifications_Minute": 80,
+            "Loop": 1,
+            "Loop_Minute": 80,
+            "Loop_Second": 0,
+            "Title": "Warning",
+            "Text": "Contaminated zone activity has shifted. Check your NBC gear before approaching military installations.",
+            "Color": "#FF8800"
+        },
+        {
+            "Notifications_Minute": 100,
+            "Loop": 1,
+            "Loop_Minute": 100,
+            "Loop_Second": 0,
+            "Title": "Survivor Tip",
+            "Text": "Hunting lodges and deer stands in the forests often have overlooked supplies. Don't forget to check the backroads.",
+            "Color": "#AAAAAA"
+        },
+        {
+            "Notifications_Minute": 120,
+            "Loop": 1,
+            "Loop_Minute": 120,
+            "Loop_Second": 0,
+            "Title": "Emergency Broadcast",
+            "Text": "A large horde has been spotted moving through Stary Sobor. Survivors in the area should relocate immediately.",
+            "Color": "#FF0000"
+        },
+        {
+            "Notifications_Minute": 150,
+            "Loop": 1,
+            "Loop_Minute": 150,
+            "Loop_Second": 0,
+            "Title": "Radio Intercept",
+            "Text": "Unconfirmed reports of an abandoned military cache near Tisy. High risk, high reward.",
+            "Color": "#FFD700"
+        },
+        {
+            "Notifications_Minute": 180,
+            "Loop": 1,
+            "Loop_Minute": 180,
+            "Loop_Second": 0,
+            "Title": "Server",
+            "Text": "Server restart in approximately 1 hour. Your progress is saved automatically.",
+            "Color": "#FFFFFF"
+        },
+        {
+            "Notifications_Minute": 230,
+            "Loop": 1,
+            "Loop_Minute": 230,
+            "Loop_Second": 0,
+            "Title": "Server",
+            "Text": "Server restart in approximately 10 minutes. Find shelter and log out safely.",
+            "Color": "#FF4444"
+        }
+    ]
+}

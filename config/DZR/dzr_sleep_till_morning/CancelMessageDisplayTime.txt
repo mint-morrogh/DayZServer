@@ -1,0 +1,5 @@
+7
+
+How long the night skipping cancelling notification will stay on the screen.
+
+Как долго держать на экране уведомление об отмене перемотки.

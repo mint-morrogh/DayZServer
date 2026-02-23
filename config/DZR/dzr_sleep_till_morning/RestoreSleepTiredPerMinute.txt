@@ -1,0 +1,5 @@
+0.08
+
+How much rest the player restores per minute of sleep (in the corresponding enabled sleep mod). Percent of max value.
+
+Сколько процентов усталости (соответствующего мода) восстанавливать каждую игровую минуту. Процент максимального значения мода.

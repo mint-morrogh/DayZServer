@@ -1,0 +1,5 @@
+1
+
+Enable ZenSleep mod support. 1 - enable. 0 - disable. 
+
+Включить поддержку ZenSleep. 1 - вкл, 0 - выкл.

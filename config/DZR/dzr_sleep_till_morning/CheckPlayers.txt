@@ -1,0 +1,5 @@
+3
+
+Time in seconds between the server check if players are lying down. Decreasing may slow down server.
+
+Время в секундах между проверками игроков на лежачее положение. Сокращение времени может увеличить нагрузку на сервер.

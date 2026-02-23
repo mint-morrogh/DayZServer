@@ -1,0 +1,5 @@
+18
+
+If the verage temperature of all surrounding heat sources is below this value, you get 50% chance to get flu and 90% if you're wet.
+
+Если средняя температура источников тепла вокруг игрока ниже этой цифры, то появляется 50% шанс простудиться, и 90% шанс если игрок мокрый.

@@ -1,0 +1,5 @@
+15
+
+Time in seconds before all sleeping players wake up after night skipping.
+
+Время в секундах до пробуждения игроков после ночи.

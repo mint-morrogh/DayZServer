@@ -1,0 +1,5 @@
+0
+
+The sleeping screen background: from 0 (transparent) to 255 (opaque). 
+
+Фон экрана во время сна: от 0 (прозрачный) до 255 (непрозрачный).

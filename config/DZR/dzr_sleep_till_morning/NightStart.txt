@@ -1,0 +1,5 @@
+Sunset
+
+When the night starts (game time). Set it from 0 to 23 hours. Or leave 'Sunset' for the game to calculate it automatically. 
+
+Когда начинается ночь. Укажите значение от 0 до 23 часов. Или оставьте 'Sunset', чтобы сервер рассчитал закат автоматически.

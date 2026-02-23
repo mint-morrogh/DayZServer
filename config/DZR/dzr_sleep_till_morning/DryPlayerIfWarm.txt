@@ -1,0 +1,5 @@
+1
+
+Dries all player gear and clothes if sleeping in warm conditions. 0 - disable. 
+
+Высушивает одежду и снаряжение если игрок спит в тепле. 1 - вкл, 0 - выкл.

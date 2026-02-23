@@ -1,0 +1,4 @@
+1
+Enable TerjeMedicine mod support. 1 - enable. 0 - disable. 
+
+Включить поддержку TerjeMedicine. 1 - вкл, 0 - выкл.

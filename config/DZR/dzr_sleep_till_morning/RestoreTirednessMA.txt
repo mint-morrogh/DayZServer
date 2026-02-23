@@ -1,0 +1,5 @@
+1
+
+Enable Medical Attention mod Support. 1 - enable. 0 - disable. 
+
+Включить поддержку Medical Attention. 1 - вкл, 0 - выкл.

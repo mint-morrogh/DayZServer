@@ -59,6 +59,59 @@
         "nbc":            { "nominal": 25, "min": 12, "max": 120 }
     },
 
+    "zombieBehavior": {
+        "_help": "PvZmoD zombie behaviour. Clamp caps speed: 1.5=walk, 2.5=run, 3.0=sprint. Ratios multiply vanilla values (0.5=half, 1.0=vanilla, 2.0=double).",
+        "speedClampMaxDay": 2.5,
+        "speedClampMaxNight": 3.0,
+        "speedRatioDay": 0.75,
+        "speedRatioNight": 0.95,
+        "healthRatioDay": 0.7,
+        "healthRatioNight": 1.0,
+        "strengthRatioDay": 1.3,
+        "strengthRatioNight": 1.0,
+        "visionRatioDay": 0.65,
+        "visionRatioNight": 0.8
+    },
+
+    "animals": {
+        "_help": "Wild animal spawn counts in events.xml. nominal=target herds on map, min=respawn trigger, max=max children per herd.",
+        "wildDogs":   { "nominal": 6, "min": 1, "max": 5 },
+        "wildHorses": { "nominal": 8, "min": 1, "max": 4 }
+    },
+
+    "horseGear": {
+        "_help": "Horse tack spawn counts in types_dayzhorse.xml. nominal=max on map, min=respawn trigger.",
+        "saddle":    { "nominal": 5, "min": 3 },
+        "bridle":    { "nominal": 5, "min": 3 },
+        "horseBags": { "nominal": 4, "min": 2 },
+        "stableKit": { "nominal": 3, "min": 1 }
+    },
+
+    "dogGear": {
+        "_help": "Dog accessory spawn counts in types_dayzdog.xml. nominal=max on map per item, min=respawn trigger. Applies to all colour variants.",
+        "collar":      { "nominal": 3, "min": 1 },
+        "vest":        { "nominal": 3, "min": 1 },
+        "gasMask":     { "nominal": 3, "min": 1 },
+        "dogHouseKit": { "nominal": 3, "min": 1 }
+    },
+
+    "planes": {
+        "_help": "Plane spawn counts in types_lmplanes.xml. Set nominal to 0 to remove a plane type. Keep total under 15-30 for performance.",
+        "dc3":          { "nominal": 3, "min": 2 },
+        "stuntplane":   { "nominal": 2, "min": 1 },
+        "catalina":     { "nominal": 3, "min": 2 },
+        "tigermoth":    { "nominal": 2, "min": 1 },
+        "tigermothMk2": { "nominal": 1, "min": 1 },
+        "tigermothMk3": { "nominal": 1, "min": 1 },
+        "spitfire":     { "nominal": 3, "min": 2 },
+        "cessna":       { "nominal": 3, "min": 2 }
+    },
+
+    "sleep": {
+        "_help": "Zen's Sleep fatigue settings. drainMultiplier: lower=slower fatigue drain (0.4=relaxed, 1.0=vanilla, 0.0=no fatigue).",
+        "globalDrainMultiplier": 0.4
+    },
+
     "lootEconomy": {
         "_help": "Global loot economy from globals.xml. ZombieMaxCount caps total zombies server-wide. AnimalMaxCount caps animals.",
         "zombieMaxCount": 500,

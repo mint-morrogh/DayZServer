@@ -1,0 +1,5 @@
+50
+
+If sleeping in cold place, there is a chance to get flu. Value from 0.0 to 1.0 (0% to 100%). If player is wet, this value ignored. Chance is 100%. 
+
+Если спать в холоде, то можно простудиться. Шанс указывается от 0-100. Если игрок мокрый, то этот параметр игнорируется. Шанс 100%.

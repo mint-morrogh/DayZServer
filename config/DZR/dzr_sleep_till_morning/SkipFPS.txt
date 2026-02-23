@@ -1,0 +1,5 @@
+15
+
+Fast night animation FPS. The lower the value, the more smooth the animation, but server calculates stats more often. 
+
+ФПС анимации прокрутки ночи. Ниже значение, тем плавнее анимация и тем чаще сервер обсчитывает статистику игрока.
