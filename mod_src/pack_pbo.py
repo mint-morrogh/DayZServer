@@ -27,8 +27,8 @@ def pack_pbo(source_dir, output_path):
         for fname in filenames:
             if fname == "$PBOPREFIX$":
                 continue
-            # Skip config.cpp source — only config.bin goes into PBO
-            if fname == "config.cpp":
+            # Skip config.bin (broken rapified output) — pack text config.cpp instead
+            if fname == "config.bin":
                 continue
             full_path = os.path.join(root, fname)
             # Archive name: relative path with backslashes (DayZ convention)

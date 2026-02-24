@@ -12,8 +12,8 @@
 modded class ZombieBase
 {
 	// Probability that a zombie despawns during daytime (0.0 to 1.0)
-	// 0.5 = roughly half the zombies during day
-	static const float DAY_DESPAWN_CHANCE = 0.62;
+	// 0.85 = roughly 15% of zombies survive during day
+	static const float DAY_DESPAWN_CHANCE = 0.85;
 
 	// Daytime window (24h format) - outside this range is "night"
 	static const int DAY_START_HOUR = 6;
