@@ -4,7 +4,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **29 mods + 2 custom server-side mods** — all preconfigured and ready to go
+- **30 mods + 2 custom server-side mods** — all preconfigured and ready to go
 - **GPS minimap** — on-screen minimap with player position via DayZ Expansion
 - **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
 - **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
@@ -16,6 +16,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 - **Skill tree** — earn XP and unlock perks in survival, crafting, hunting, and gathering
 - **Treasure hunting** — find photos, travel to the location, dig up randomized loot stashes
 - **NPC traders** — buy and sell items at safe zones
+- **Roaming military trader** — a helicopter trader lands every 60 minutes near players, stays 30 minutes, trades weapons/ammo/medical/attachments for Roubles
 - **Day/night zombie system** — ~85% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
 - **Half-damage zombies** — zombie strength set to 0.5x vanilla day and night, gear lasts much longer
 - **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
@@ -275,6 +276,7 @@ These mods must be installed on both the **server** and **client**.
 | [DayZ-Dog](https://steamcommunity.com/sharedfiles/filedetails/?id=2471347750) | 2471347750 | Tameable companion dogs — 17 breeds, collars, vests, gas masks, dog houses |
 | [Survivor Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2918418331) | 2918418331 | Animation dependency required by DayZ Horse |
 | [DayZ Horse](https://steamcommunity.com/sharedfiles/filedetails/?id=3295021220) | 3295021220 | Rideable horses — 5 colours, saddles, bridles, saddlebags, stables, walk/trot/gallop/jump/swim |
+| [MWGSM Roaming Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=3636799682) | 3636799682 | Helicopter-based roaming trader that lands near players with weapons, ammo, medical, and attachments |
 | [Pack Complete — Backpacks FREE](https://steamcommunity.com/sharedfiles/filedetails/?id=3648464156) | 3648464156 | 13 backpack models with 63 camo/colour variants — tactical, military, medical, and civilian packs |
 
 ### Mod Installation
@@ -310,6 +312,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `2471347750` | `@DayZDog` |
 | `2918418331` | `@SurvivorAnims` |
 | `3295021220` | `@DayZHorse` |
+| `3636799682` | `@MWGSM_Trader` |
 | `3648464156` | `@GelyaBackpacks` |
 
 ### Gelya Backpacks — Pack Complete
@@ -358,6 +361,21 @@ Items respawn automatically when the count drops below the minimum.
 | Helicopter crashes | 3 | 5 (min 1) | More crash sites with military loot |
 | Military convoys | 5 | 8 (min 2) | More ambushed convoys on roads |
 | Contaminated zones | 2-4 | Unchanged | Dynamic NBC zones |
+
+### MWGSM Roaming Trader
+
+A military helicopter trader lands near players every 60 minutes and stays for 30 minutes. The trader sells weapons, ammunition, medical supplies, and attachments for **Roubles** (found as loot around the map). Players are notified with coordinates when the trader arrives and warned 5 minutes before departure.
+
+| Setting | Value |
+|---|---|
+| Spawn interval | Every 60 minutes |
+| Duration | 30 minutes |
+| Currency | Roubles |
+| Stock | 150 items (weapons, ammo, medical, attachments) |
+| Guaranteed stock | FAL, AKM, M4A1 |
+| Spawn distance | 500-2000m from players |
+
+Config at `config/MWGSM_RoamingTrader/MWGSM_RoamingTraderConfig.json`.
 
 ### Care Packages
 
@@ -603,6 +621,7 @@ DayZServer/
 ├── @DayZDog/                    # Companion dogs (17 breeds)
 ├── @SurvivorAnims/              # Animation dependency for horse mod
 ├── @DayZHorse/                  # Rideable horses (5 colours)
+├── @MWGSM_Trader/               # Roaming military helicopter trader
 ├── @GelyaBackpacks/             # 13 backpack models (63 variants)
 ├── @DayZombieManager/           # Custom server-side mod — zombie culling + kill drops
 │   └── addons/

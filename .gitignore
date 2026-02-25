@@ -98,6 +98,8 @@ config/*
 !config/NotificationsSystem/**
 !config/PvZmoD_Information_Panel/
 !config/PvZmoD_Information_Panel/**
+!config/MWGSM_RoamingTrader/
+!config/MWGSM_RoamingTrader/**
 !config/VPPMapConfig.json
 
 # Ignore player-specific runtime data inside Zenarchist

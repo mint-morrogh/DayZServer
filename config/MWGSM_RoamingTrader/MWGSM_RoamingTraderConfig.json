@@ -1,0 +1,98 @@
+{
+    "Enabled": 1,
+    "SpawnIntervalMinutes": 60,
+    "DespawnAfterMinutes": 30,
+    "MaxActiveTraders": 1,
+    "MinPlayersForSpawn": 1,
+    "AnnounceSpawn": 1,
+    "AnnounceRadius": 0,
+    "SpawnAnnouncementMessage": "A military trader has landed at %LOCATION%!",
+    "DespawnWarningMinutes": 5,
+    "DespawnWarningMessage": "The helicopter is preparing to leave in %1 minutes!",
+    "DespawnMessage": "The helicopter has departed the area.",
+    "TraderNPCGear": [
+        "GorkaHelmet",
+        "NVGHeadstrap",
+        "NVGoggles",
+        "USMCJacket_Desert",
+        "USMCPants_Desert",
+        "MilitaryBoots_Black",
+        "TacticalGloves_Black",
+        "PlateCarrierVest",
+        "CombatBag_Black"
+    ],
+    "NotificationStyle": "popup",
+    "LocationDisplay": "coords",
+    "NotificationDuration": 8.0,
+    "MinDistanceFromPlayers": 500.0,
+    "MaxDistanceFromPlayers": 2000.0,
+    "MinDistanceFromTraderZones": 1000.0,
+    "AvoidWater": 1,
+    "AvoidSteepTerrain": 1,
+    "MaxTerrainSlope": 15.0,
+    "PreferRoads": 0,
+    "PreferFields": 1,
+    "CurrencyItem": "Roubles",
+    "AlternateCurrencies": [],
+    "CurrencyExchangeRates": {
+        "Roubles": 1.0
+    },
+    "BasePriceMultiplier": 1.0,
+    "BuyPriceMultiplier": 1.5,
+    "SellPriceMultiplier": 0.5,
+    "RandomPriceVariation": 0.10000000149011612,
+    "RarityMultipliers": {
+        "Epic": 5.0,
+        "Rare": 2.5,
+        "Legendary": 10.0,
+        "Uncommon": 1.5,
+        "Common": 1.0
+    },
+    "AutoDetectItems": 1,
+    "MaxItemsInStock": 150,
+    "RefreshStockOnVisit": 0,
+    "StockRefreshIntervalMinutes": 15,
+    "IncludeVanillaItems": 1,
+    "IncludeModdedItems": 1,
+    "ExcludedItemTypes": [
+        "Clothing_Base",
+        "Inventory_Base",
+        "ItemBase"
+    ],
+    "ExcludedItems": [
+        "Paper",
+        "Roubles"
+    ],
+    "GuaranteedStock": [
+        "FAL",
+        "AKM",
+        "M4A1"
+    ],
+    "EnabledCategories": [
+        "Weapons",
+        "Ammunition",
+        "Medical",
+        "Attachments"
+    ],
+    "CategoryBasePrices": {
+        "Weapons": 40,
+        "Medical": 15,
+        "Attachments": 25,
+        "Ammunition": 7
+    },
+    "ItemOverrides": {},
+    "MenuTitle": "Roaming Trader",
+    "WelcomeMessage": "Hey survivor! I've got supplies for trade. %CURRENCY% are the currency here!",
+    "NoMoneyMessage": "Sorry friend, you don't have enough %CURRENCY%. Come back when you've got more!",
+    "ThankYouMessage": "Pleasure doing business! Stay safe out there.",
+    "OutOfStockMessage": "Fresh out of those. Check back later.",
+    "NoInventorySpaceMessage": "You don't have enough room for that. Free up some space!",
+    "ShowItemCondition": 1,
+    "ShowItemWeight": 1,
+    "SortByCategory": 1,
+    "EnableDebugMode": 0,
+    "LogTransactions": 1,
+    "LogSpawnLocations": 1,
+    "ForceSpawnCommand": 1,
+    "AdminOnly": 1
+}
