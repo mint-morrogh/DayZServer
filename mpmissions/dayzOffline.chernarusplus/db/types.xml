@@ -7040,10 +7040,10 @@
         <value name="Tier4" />
     </type>
     <type name="FNX45">
-        <nominal>25</nominal>
+        <nominal>10</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>21</min>
+        <min>5</min>
         <quantmin>30</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -12400,7 +12400,7 @@
         <usage name="Military" />
     </type>
     <type name="M79">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -12496,10 +12496,10 @@
         <value name="Tier3" />
     </type>
     <type name="MP5_Compensator">
-        <nominal>6</nominal>
+        <nominal>4</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -12658,10 +12658,10 @@
         <value name="Tier4" />
     </type>
     <type name="Mag_AKM_30Rnd">
-        <nominal>4</nominal>
+        <nominal>3</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>40</quantmin>
         <quantmax>90</quantmax>
         <cost>100</cost>
@@ -12788,10 +12788,10 @@
         <value name="Tier4" />
     </type>
     <type name="Mag_CZ61_20Rnd">
-        <nominal>20</nominal>
+        <nominal>8</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>10</min>
+        <min>4</min>
         <quantmin>40</quantmin>
         <quantmax>90</quantmax>
         <cost>100</cost>
@@ -12854,10 +12854,10 @@
         <usage name="Military" />
     </type>
     <type name="Mag_FNX45_15Rnd">
-        <nominal>30</nominal>
+        <nominal>12</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>26</min>
+        <min>6</min>
         <quantmin>40</quantmin>
         <quantmax>90</quantmax>
         <cost>100</cost>
@@ -16136,10 +16136,10 @@
         <value name="Tier4" />
     </type>
     <type name="PrisonUniformJacket">
-        <nominal>5</nominal>
+        <nominal>2</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>3</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>

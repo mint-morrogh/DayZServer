@@ -8,8 +8,8 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 - **GPS minimap** — on-screen minimap with player position via DayZ Expansion
 - **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
 - **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
-- **42 driveable vehicles** — tiered rarity: common trucks/SUVs (3 each), mid-tier sports cars (2 each), rare exotics (1 each)
-- **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (14 planes across the map)
+- **20 driveable vehicles** — 1 of each model spread across the map, from trucks and SUVs to sports cars and exotics
+- **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (8 planes, 1 of each type)
 - **Care package supply drops** — military, medical, survival, and building supplies parachute in every 60 minutes with zombie guards
 - **700+ crafting recipes** — weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
 - **Advanced cooking** — 30+ recipes for dishes, soups, sausages, and cheese via CookZ
@@ -409,44 +409,44 @@ Flyable planes spawn across the map at industrial areas and farms (removed town/
 
 | Plane | Count | Notes |
 |---|---|---|
-| DC-3 | 2 | Large transport plane |
-| Stuntplane | 2 | Aerobatic biplane |
-| Catalina | 2 | Amphibious seaplane — lands on water |
-| Tigermoth | 2 | Classic biplane |
+| DC-3 | 1 | Large transport plane |
+| Stuntplane | 1 | Aerobatic biplane |
+| Catalina | 1 | Amphibious seaplane — lands on water |
+| Tigermoth | 1 | Classic biplane |
 | Tigermoth MK2 | 1 | Variant |
 | Tigermoth MK3 | 1 | Variant |
-| Spitfire | 2 | WWII fighter |
-| Cessna 180 | 2 | Utility plane |
-| **Total** | **14** | Keep under 15-30 for performance |
+| Spitfire | 1 | WWII fighter |
+| Cessna 180 | 1 | Utility plane |
+| **Total** | **8** | 1 of each type for 2 players |
 
 Plane spawns are configured in `custom/types_lmplanes.xml`.
 
 ### 4KBOSSKVehicles
 
-42 driveable vehicles spawn across the map with tiered rarity — common everyday vehicles are easy to find, rare exotics take effort to locate:
+20 driveable vehicles spawn across the map — 1 of each model, spread across towns, farms, industrial areas, and military bases:
 
-| Vehicle | Count | Tier | Location |
-|---|---|---|---|
-| Honda Civic | 3 | Common | Town, Village |
-| Ford Bronco | 3 | Common | Farm, Village |
-| Toyota 4Runner | 3 | Common | Farm, Village |
-| Dodge Ram 3500 | 3 | Common | Farm, Industrial |
-| Chevy Tahoe | 3 | Common | Town, Farm |
-| MotorHome | 3 | Common | Town, Farm |
-| Chevrolet Napalm Nova | 3 | Common | Town, Farm |
-| Audi RS6 ABT | 2 | Medium | Town, Industrial |
-| BMW M3 | 2 | Medium | Town, Industrial |
-| Dodge Challenger SRT | 2 | Medium | Town, Industrial |
-| Dodge Charger Hellcat | 2 | Medium | Town, Industrial |
-| Nissan Skyline | 2 | Medium | Town, Industrial |
-| Jeep Gladiator F9 | 2 | Medium | Farm, Industrial |
-| Ford Mustang Shelby GT500 | 2 | Medium | Town, Industrial |
-| Dodge Ram (camo) | 2 | Medium | Farm, Military |
-| Porsche 911 RWB | 1 | Rare | Town, Industrial |
-| Toyota Supra MK IV | 1 | Rare | Town, Industrial |
-| Nissan GTR Nismo | 1 | Rare | Town, Industrial |
-| Ford Raptor Monster Truck | 1 | Rare | Farm, Industrial |
-| Kamaz Typhoon K | 1 | Rare | Military |
+| Vehicle | Count | Location |
+|---|---|---|
+| Honda Civic | 1 | Town, Village |
+| Ford Bronco | 1 | Farm, Village |
+| Toyota 4Runner | 1 | Farm, Village |
+| Dodge Ram 3500 | 1 | Farm, Industrial |
+| Chevy Tahoe | 1 | Town, Farm |
+| MotorHome | 1 | Town, Farm |
+| Chevrolet Napalm Nova | 1 | Town, Farm |
+| Audi RS6 ABT | 1 | Town, Industrial |
+| BMW M3 | 1 | Town, Industrial |
+| Dodge Challenger SRT | 1 | Town, Industrial |
+| Dodge Charger Hellcat | 1 | Town, Industrial |
+| Nissan Skyline | 1 | Town, Industrial |
+| Jeep Gladiator F9 | 1 | Farm, Industrial |
+| Ford Mustang Shelby GT500 | 1 | Town, Industrial |
+| Dodge Ram (camo) | 1 | Farm, Military |
+| Porsche 911 RWB | 1 | Town, Industrial |
+| Toyota Supra MK IV | 1 | Town, Industrial |
+| Nissan GTR Nismo | 1 | Town, Industrial |
+| Ford Raptor Monster Truck | 1 | Farm, Industrial |
+| Kamaz Typhoon K | 1 | Military |
 
 Vehicle spawns are configured in `custom/types_4kbossk.xml`. The mod includes 163 color variants — change colors by swapping class names in the types file.
 

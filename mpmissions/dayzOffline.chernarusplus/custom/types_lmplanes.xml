@@ -1,13 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <types>
-  <!-- LMs Planes â€” ~14 planes total, conservative for 2 players -->
-  <!-- Performance warning: do not exceed 15-30 planes on a typical server -->
-  <!-- DC-3 Transport â€” large cargo plane -->
+  <!-- LMs Planes — 1 of each type, ~8 planes total for 2 players -->
+  <!-- DC-3 Transport — large cargo plane -->
   <type name="LM_DC_3">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>3</nominal>
-    <min>2</min>
+    <nominal>1</nominal>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -17,10 +16,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_DC_3_Wheel_Front">
-    <nominal>6</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>3</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -30,10 +29,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_DC_3_Wheel_Back">
-    <nominal>6</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>3</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -42,11 +41,11 @@
     <usage name="Industrial" />
     <usage name="Farm" />
   </type>
-  <!-- Stuntplane â€” aerobatic biplane -->
+  <!-- Stuntplane — aerobatic biplane -->
   <type name="LM_Stuntplane">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>2</nominal>
+    <nominal>1</nominal>
     <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
@@ -57,10 +56,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Stuntplane_Wheel_Front">
-    <nominal>4</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>2</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -70,10 +69,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Stuntplane_Wheel_Back">
-    <nominal>4</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>2</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -82,12 +81,12 @@
     <usage name="Industrial" />
     <usage name="Farm" />
   </type>
-  <!-- Catalina â€” amphibious seaplane -->
+  <!-- Catalina — amphibious seaplane -->
   <type name="LM_Catalina">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>3</nominal>
-    <min>2</min>
+    <nominal>1</nominal>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -96,11 +95,11 @@
     <usage name="Industrial" />
     <usage name="Farm" />
   </type>
-  <!-- Tigermoth variants â€” classic biplane -->
+  <!-- Tigermoth variants — classic biplane -->
   <type name="LM_Tigermoth">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>2</nominal>
+    <nominal>1</nominal>
     <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
@@ -137,10 +136,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Tigermoth_Wheel_Front">
-    <nominal>4</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>2</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -150,10 +149,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Tigermoth_Wheel_Back">
-    <nominal>4</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>2</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -162,12 +161,12 @@
     <usage name="Industrial" />
     <usage name="Farm" />
   </type>
-  <!-- Spitfire â€” WWII fighter -->
+  <!-- Spitfire — WWII fighter -->
   <type name="LM_Spitfire">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>3</nominal>
-    <min>2</min>
+    <nominal>1</nominal>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -177,10 +176,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Spitfire_Wheel_Front">
-    <nominal>6</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>3</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -190,10 +189,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Spitfire_Wheel_Back">
-    <nominal>6</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>3</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -202,12 +201,12 @@
     <usage name="Industrial" />
     <usage name="Farm" />
   </type>
-  <!-- Cessna 180 â€” utility plane -->
+  <!-- Cessna 180 — utility plane -->
   <type name="LM_Cessna180">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>3</nominal>
-    <min>2</min>
+    <nominal>1</nominal>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -217,10 +216,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Cessna180_Wheel_Front">
-    <nominal>6</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>3</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -230,10 +229,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Cessna180_Wheel_Back">
-    <nominal>6</nominal>
+    <nominal>2</nominal>
     <lifetime>14400</lifetime>
     <restock>1800</restock>
-    <min>3</min>
+    <min>1</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>

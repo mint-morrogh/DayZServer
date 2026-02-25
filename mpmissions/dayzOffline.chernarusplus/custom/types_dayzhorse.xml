@@ -42,7 +42,7 @@
     <usage name="Village" />
   </type>
   <type name="Stable_dayz_kit">
-    <nominal>3</nominal>
+    <nominal>1</nominal>
     <lifetime>14400</lifetime>
     <restock>0</restock>
     <min>1</min>
