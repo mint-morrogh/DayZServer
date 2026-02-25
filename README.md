@@ -4,7 +4,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **30 mods + 2 custom server-side mods** — all preconfigured and ready to go
+- **29 mods + 2 custom server-side mods** — all preconfigured and ready to go
 - **GPS minimap** — on-screen minimap with player position via DayZ Expansion
 - **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
 - **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
@@ -27,7 +27,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 - **45-day item persistence** — dropped items last 45 real days on the ground, survive server restarts
 - **Indestructible bases** — base structures and storage containers cannot be damaged
 - **Reduced shoe damage** — crawler zombie boot damage reduced from 5.0 to 1.0
-- **Sleep till morning** — if all players lie down to sleep at night, time skips to dawn (fatigue drain disabled)
+- **Sleep till morning** — if all players lie down to sleep at night, time skips to dawn
 - **Unlimited stamina** — no stamina drain while sprinting
 - **One-file configuration** — all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** — server automatically restarts every 4 hours
@@ -82,7 +82,6 @@ That's it. The patcher reads your settings and writes them to the correct config
 | `horseGear` | Saddle, bridle, saddlebag, and stable kit spawn rates | `custom/types_dayzhorse.xml` |
 | `dogGear` | Collar, vest, gas mask, and dog house kit spawn rates | `custom/types_dayzdog.xml` |
 | `planes` | Per-model plane spawn counts (DC-3, Spitfire, Cessna, etc.) | `custom/types_lmplanes.xml` |
-| `sleep` | Fatigue drain speed (how fast you get tired) | `config/Zenarchist/ZenSleepConfig.json` |
 | `lootEconomy` | Global zombie/animal caps, loot damage, food decay, respawn timers | `db/globals.xml` |
 | `zenSkills` | Skill book and EXP booster spawn rates | `custom/types_zenskills.xml` |
 
@@ -191,13 +190,6 @@ Higher `nightAcceleration` = shorter nights. Set `acceleration` to 1 for real-ti
 }
 ```
 
-**Disable sleep fatigue entirely:**
-```json
-"sleep": {
-    "globalDrainMultiplier": 0.0
-}
-```
-
 **More EXP boosters on the map:**
 ```json
 "zenSkills": {
@@ -278,7 +270,6 @@ These mods must be installed on both the **server** and **client**.
 | [LMs Planes](https://steamcommunity.com/sharedfiles/filedetails/?id=3639695989) | 3639695989 | Flyable planes — DC-3, Cessna 180, Spitfire, Catalina seaplane, Tigermoth, Stuntplane |
 | [CookZ](https://steamcommunity.com/sharedfiles/filedetails/?id=3302732231) | 3302732231 | Advanced cooking — 30+ recipes for dishes, soups, sausages, marmalades, cheese |
 | [CookZ Realistic Packaging](https://steamcommunity.com/sharedfiles/filedetails/?id=3566508757) | 3566508757 | Realistic textures for CookZ food packaging |
-| [Zen's Sleeping Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3468961047) | 3468961047 | Fatigue/sleep stat — tiredness, sleeping bags, hallucinations, immunity effects |
 | [Sleep Till Morning](https://steamcommunity.com/sharedfiles/filedetails/?id=3578708533) | 3578708533 | Skip to dawn when all players lie down to sleep at night |
 | [4KBOSSKVehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=3369325490) | 3369325490 | 21 driveable vehicles — muscle cars, trucks, SUVs, sports cars, monster truck, motorhome |
 | [DayZ-Dog](https://steamcommunity.com/sharedfiles/filedetails/?id=2471347750) | 2471347750 | Tameable companion dogs — 17 breeds, collars, vests, gas masks, dog houses |
@@ -314,7 +305,6 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3639695989` | `@LMsPlanes` |
 | `3302732231` | `@CookZ` |
 | `3566508757` | `@CookZRealisticPackaging` |
-| `3468961047` | `@ZenSleep` |
 | `3578708533` | `@SleepTillMorning` |
 | `3369325490` | `@4KBOSSKVehicles` |
 | `2471347750` | `@DayZDog` |
@@ -529,27 +519,13 @@ Custom server-side mod (`@CampfireRegen`). Players within 5 metres of a burning 
 - **+2 Health** per 10 seconds (max 100)
 - **+5 Blood** per 10 seconds (max 5000)
 
-Sitting by a campfire for 5 minutes heals ~60 health and ~150 blood. Not a replacement for medical items, but a quality-of-life reward for the campfire moment. Pairs well with Zen's Sleep (sleeping near fires already recovers fatigue faster).
+Sitting by a campfire for 5 minutes heals ~60 health and ~150 blood. Not a replacement for medical items, but a quality-of-life reward for the campfire moment.
 
 Source code in `mod_src/CampfireRegen/`.
 
-### Zen's Sleeping Mod
-
-Adds a fatigue/sleep system with sleeping bags and bed objects. **Fatigue drain is disabled on this server** (`GlobalDrainMultiplier: 0.0`) — the moon icon won't decrease and you'll never get tired, yawn, or pass out from exhaustion. The mod is kept active because sleeping in beds/sleeping bags still provides immunity and health recovery bonuses, and the Sleep Till Morning feature depends on it.
-
-Edit the config at `config/Zenarchist/ZenSleepConfig.json`. Set `GlobalDrainMultiplier` above 0 to re-enable fatigue.
-
-Custom items that spawn in the world:
-
-| Item | Count | Locations |
-|---|---|---|
-| Sleeping bags (5 colors) | 10 each (min 8) | Hunting, Military, Town, Village |
-| Anesthetic injector | 5 (min 3) | Medical |
-| Amphetamine injector | 5 (min 3) | Medical |
-
 ### Sleep Till Morning
 
-Works with Zen's Sleeping Mod. When **all players** on the server lie down to sleep at night, time fast-forwards to dawn. No more waiting around during nighttime.
+When **all players** on the server lie down to sleep at night, time fast-forwards to dawn. No more waiting around during nighttime. Uses the vanilla "Lie Down" emote — no fatigue system required.
 
 ### DayZ Expansion — GPS Minimap
 
@@ -599,8 +575,6 @@ DayZServer/
 │   │   ├── PvZmoD_CustomisableZombies_Globals.xml           # Speed/health/damage ratios (patched)
 │   │   ├── PvZmoD_CustomisableZombies_Characteristics.xml   # Per-zombie-type vision/speed/HP
 │   │   └── PvZmoD_CustomisableZombies_HELP.txt              # Full docs for all settings
-│   ├── Zenarchist/
-│   │   └── ZenSleepConfig.json  # Sleep fatigue rates, effects, recovery (patched)
 │   └── *.RPT                    # Server crash/debug logs
 ├── @CF/                         # Community Framework mod
 ├── @DayZ-Expansion-Core/        # Expansion core framework
@@ -624,7 +598,6 @@ DayZServer/
 ├── @LMsPlanes/                  # Flyable planes
 ├── @CookZ/                      # Advanced cooking recipes
 ├── @CookZRealisticPackaging/    # Realistic food textures
-├── @ZenSleep/                   # Sleep & fatigue system
 ├── @SleepTillMorning/           # Skip night when all players sleep
 ├── @4KBOSSKVehicles/            # 21 driveable vehicles
 ├── @DayZDog/                    # Companion dogs (17 breeds)
@@ -652,7 +625,6 @@ DayZServer/
         │   ├── types_nemsis.xml       # Nemsis Craftingpack item spawns
         │   ├── types_lmplanes.xml     # LMs Planes vehicle spawns
         │   ├── types_cookz.xml        # CookZ crafted item definitions
-        │   ├── types_zensleep.xml     # ZenSleep sleeping bags & items
         │   ├── types_4kbossk.xml      # 4KBOSSKVehicles spawn config
         │   ├── types_dayzdog.xml     # Dog accessory spawns
         │   ├── types_dayzhorse.xml   # Horse tack spawns
@@ -679,6 +651,5 @@ mpmissions/dayzOffline.chernarusplus/storage_1/
 - **No loot spawning:** Usually an XML syntax error. Validate your XML files at [codebeautify.org/xmlvalidator](https://codebeautify.org/xmlvalidator).
 - **Zombies not spawning:** Same as above — check `events.xml` for syntax errors.
 - **Settings not applying:** Make sure you ran `apply_settings.bat` after editing `server_settings.json`, then restarted the server.
-- **Adding/removing Zen's Sleep:** Requires a server wipe (`storage_1/`) because the sleep stat is saved to player profiles. Without a wipe, profiles become corrupted.
 - **Dogs/horses not spawning:** Make sure both `dog_territories.xml` and `wild_horse_territories.xml` exist in the `env/` folder, and that `cfgenvironment.xml` references them. Check the events in `db/events.xml` for `AnimalWildDog` and `AnimalWildHorse` entries.
 - **Dog health too low:** After first server start, check `config/Dayz-Dog/` for a generated config file where you can increase dog health values.
