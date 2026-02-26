@@ -272,7 +272,42 @@ Config files in `config/PvZmoD_CustomisableZombies_Profile/`:
 - `serverDZ.cfg` — main server configuration.
 - `verifySignatures = 0` — disabled for LAN; custom server mods are unsigned.
   Set to 2 only if all PBOs have matching .bisign/.bikey files.
-- Storage wipe: delete contents of `storage_0/` and `storage_1/` for fresh characters/world.
+- **Full server wipe (when user says "wipe" or "clear"):**
+  Stop the server first (files are locked while running), then wipe ALL of
+  the following. Every location must be cleared for a truly fresh start.
+
+  **1. Mission-folder persistence (player DB + world state):**
+  ```bash
+  rm -rf mpmissions/dayzOffline.chernarusplus/storage_0/*
+  rm -rf mpmissions/dayzOffline.chernarusplus/storage_1/*
+  ```
+  This is where `players.db`, world `.bin` files, and `communityframework/`
+  mod storage live. The top-level `storage_0/` and `storage_1/` dirs are
+  NOT used (`instanceId = 1` in `serverDZ.cfg` points to the mission folder).
+
+  **2. Mod-specific player data in config/ profiles dir:**
+  ```bash
+  rm -rf config/Dayz-Dog/players/*
+  rm -rf config/Zenarchist/Skills/PlayerDB/*
+  rm -rf config/ExpansionMod/Settings/*
+  ```
+  These persist independently of the main storage wipe.
+
+  **3. Script cache:**
+  ```bash
+  rm -f config/DataCache/cache.ch config/DataCache/cache_lock
+  ```
+
+  **4. Client-side character cache:**
+  ```bash
+  rm -f ~/Documents/DayZ/chars.DayZProfile
+  rm -f ~/Documents/DayZ/profile.vars.DayZProfile
+  rm -f ~/Documents/DayZ/*_settings.DayZProfile
+  rm -f "$LOCALAPPDATA/DayZ/DataCache/cache.ch"
+  ```
+  Keybinds (`*.core.xml`) and video settings (`DayZ.cfg`) are safe
+  to keep — they do not contain character data.
+
 - Server auto-restarts every 4 hours (timeout 14390 in start.bat).
 - `config/DataCache/` — compiled script cache. Delete `cache.ch` and
   `cache_lock` after crashes to force clean recompilation.

@@ -13,6 +13,7 @@
 !CLAUDE.md
 !serverDZ.cfg
 !start.bat
+!sync_client_mods.bat
 !apply_settings.bat
 !apply_settings.ps1
 !server_settings.json
@@ -32,6 +33,7 @@
 # Ignore build artifacts in mod_src
 mod_src/*/config.bin
 mod_src/*/*.pyc
+mod_src/*/list
 
 # --- Allow server keys folder ---
 !keys/
@@ -121,3 +123,10 @@ config/CW_Gamelabs/
 config/@GameLabsStorage/
 config/@CREATE_GAMELABS_CFG_HERE/
 config/CarePackageV2/
+
+# --- Allow custom-built mod PBOs (not from Workshop) ---
+# These must come last to override the global *.pbo and addons/ rules
+!@MinimapTweak/addons/
+!@MinimapTweak/addons/MinimapTweak.pbo
+!@SitRest/addons/
+!@SitRest/addons/SitRest.pbo

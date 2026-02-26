@@ -14,9 +14,12 @@ set serverCPU=2
 title %serverName% batch
 ::DayZServer location (DONT edit)
 cd "%serverLocation%"
+del /q "config\DataCache\cache.ch" >nul 2>&1
+del /q "config\DataCache\cache_lock" >nul 2>&1
+start "Sync Client Mods" cmd /c "%~dp0sync_client_mods.bat"
 echo (%time%) %serverName% started.
 ::Launch parameters (edit end: -config=|-port=|-profiles=|-doLogs|-adminLog|-netLog|-freezeCheck|-filePatching|-BEpath=|-cpuCount=)
-start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serverPort% "-profiles=config" "-mod=@CF;@DayZ-Expansion-Core;@DabsFramework;@DayZ-Expansion;@DayZ-Expansion-Navigation;@ExpansionMinimap;@Trader;@Mass'sManyItemOverhaul;@UnlimitedRun;@VanillaPlusPlusMap;@GoreZ;@Inventory-Move-Sounds;@PvZmoD;@ZenSkills;@CZOptics;@PercentageHUD;@ZenTreasure;@CarePackages;@NemsisCraftingpack;@LMsPlanes;@CookZ;@CookZRealisticPackaging;@SleepTillMorning;@4KBOSSKVehicles;@DayZDog;@SurvivorAnims;@DayZHorse;@GelyaBackpacks;@MWGSM_Trader;@SagaShakeTree" "-serverMod=@DayZombieManager;@CampfireRegen" -cpuCount=%serverCPU% -dologs -adminlog -netlog -freezecheck
+start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serverPort% "-profiles=config" "-mod=@CF;@DayZ-Expansion-Core;@DabsFramework;@DayZ-Expansion;@DayZ-Expansion-Navigation;@ExpansionMinimap;@MinimapTweak;@Trader;@Mass'sManyItemOverhaul;@UnlimitedRun;@VanillaPlusPlusMap;@GoreZ;@Inventory-Move-Sounds;@PvZmoD;@ZenSkills;@CZOptics;@PercentageHUD;@ZenTreasure;@CarePackages;@NemsisCraftingpack;@LMsPlanes;@CookZ;@CookZRealisticPackaging;@SleepTillMorning;@4KBOSSKVehicles;@DayZDog;@SurvivorAnims;@DayZHorse;@GelyaBackpacks;@MWGSM_Trader;@SagaShakeTree" "-serverMod=@DayZombieManager;@CampfireRegen;@SitRest" -cpuCount=%serverCPU% -dologs -adminlog -netlog -freezecheck
 ::Time in seconds before kill server process (14400 = 4 hours)
 timeout 14390
 taskkill /im DayZServer_x64.exe /F

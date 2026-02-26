@@ -3,7 +3,7 @@
     "EnableMap": 1,
     "UseMapOnMapItem": 1,
     "ShowPlayerPosition": 1,
-    "ShowMapStats": 1,
+    "ShowMapStats": 0,
     "NeedPenItemForCreateMarker": 0,
     "NeedGPSItemForCreateMarker": 0,
     "CanCreateMarker": 1,

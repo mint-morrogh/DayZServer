@@ -4,8 +4,8 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **31 mods + 2 custom server-side mods** — all preconfigured and ready to go
-- **GPS minimap** — on-screen minimap with player position via DayZ Expansion
+- **31 mods + 3 custom server-side mods + 1 custom client mod** — all preconfigured and ready to go
+- **GPS minimap** — on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
 - **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
 - **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
 - **20 driveable vehicles** — 1 of each model spread across the map, from trucks and SUVs to sports cars and exotics
@@ -20,6 +20,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 - **Day/night zombie system** — ~85% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
 - **Half-damage zombies** — zombie strength set to 0.5x vanilla day and night, gear lasts much longer
 - **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
+- **Sit to rest** — sitting emotes (SitA/SitB) freeze hunger and thirst drain, eating/drinking while sitting still works
 - **Campfire health regen** — players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds
 - **Abundant wildlife** — 80 deer, 100 roe deer, 50 goats, 40 each of cow/pig/sheep, 20 wild boar, plus boosted foxes, hares, and hens
 - **Generous loot** — doubled canned food/drinks, 1.5x snacks and candy, tripled cooking pots, enabled crab cans
@@ -52,10 +53,12 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 4. Launch DayZ once so Steam downloads the mod files
 5. Copy each mod's Workshop folder into the server directory with the correct `@Name` (see [Mod Installation](#mod-installation))
 6. Copy each mod's `.bikey` file from their `keys/` folder into the server's `keys/` folder
-7. Edit `server_settings.json` to customize your server (see [Settings Patcher](#settings-patcher))
-8. Double-click `apply_settings.bat` to apply your settings
-9. Double-click `start.bat` to launch the server
-10. Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`
+7. Double-click `sync_client_mods.bat` to copy custom mods to your DayZ client (must be done once and after any custom mod updates)
+8. Add `@MinimapTweak` to your DayZ client mod list in the launcher
+9. Edit `server_settings.json` to customize your server (see [Settings Patcher](#settings-patcher))
+10. Double-click `apply_settings.bat` to apply your settings
+11. Double-click `start.bat` to launch the server
+12. Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`
 
 ## Settings Patcher
 
@@ -544,6 +547,26 @@ Sitting by a campfire for 5 minutes heals ~60 health and ~150 blood. Not a repla
 
 Source code in `mod_src/CampfireRegen/`.
 
+### SitRest — AFK Hunger/Thirst Freeze
+
+Custom server-side mod (`@SitRest`). Using a sit emote (SitA or SitB) freezes hunger (energy) and thirst (water) drain. Eating and drinking while sitting still works — stats increase and freeze at the new level. Standing up resumes normal drain. Other emotes (wave, lie down, dance) drain normally.
+
+Designed for AFK breaks on a co-op LAN server — sit your character down and step away without starving.
+
+Source code in `mod_src/SitRest/`.
+
+### MinimapTweak — Minimap Customization
+
+Custom client+server mod (`@MinimapTweak`). Adjusts the Expansion GPS minimap:
+
+- **Moves minimap to top-right corner** — standard position for most games
+- **Hides coordinate/stats overlay** — removes the large numbers from the minimap (still visible on the full map)
+- **Fixes player arrow after Tab** — the player position arrow no longer disappears when opening/closing inventory
+
+This mod loads after `@ExpansionMinimap` and requires it as a dependency. Since it's a client+server mod, players must install it — run `sync_client_mods.bat` to copy it to your DayZ client.
+
+Source code in `mod_src/MinimapTweak/`.
+
 ### Sleep Till Morning
 
 When **all players** on the server lie down to sleep at night, time fast-forwards to dawn. No more waiting around during nighttime. Uses the vanilla "Lie Down" emote — no fatigue system required.
@@ -558,9 +581,10 @@ Adds a GPS minimap to the HUD showing your position and surroundings. Requires t
 | Dabs Framework | Script/GUI support library |
 | DayZ-Expansion | Main content — items, UI, world enhancements |
 | DayZ-Expansion-Navigation | Navigation scripts required by GPS overlay |
-| Expansion Minimap Override | GPS minimap overlay (load last) |
+| Expansion Minimap Override | GPS minimap overlay |
+| MinimapTweak | Custom — moves to top-right, hides coords, fixes arrow bug |
 
-Load order matters — Core and Dabs must load before Expansion, Navigation must load after Expansion, and the Minimap Override must load last. This is already configured in `start.bat`.
+Load order matters — Core and Dabs must load before Expansion, Navigation must load after Expansion, Minimap Override after Navigation, and MinimapTweak last. This is already configured in `start.bat`. MinimapTweak is a custom mod — run `sync_client_mods.bat` to install it on your client.
 
 ## Launching the Server
 
@@ -583,6 +607,7 @@ DayZServer/
 ├── server_settings.json         # <-- EDIT THIS: All server settings in one place
 ├── apply_settings.bat           # Double-click to apply settings
 ├── apply_settings.ps1           # PowerShell patcher (called by .bat)
+├── sync_client_mods.bat         # Double-click to copy custom mods to DayZ client
 ├── serverDZ.cfg                 # Main server config (patched automatically)
 ├── start.bat                    # Launch script with mod list
 ├── whitelist.txt                # Player whitelist (disabled by default)
@@ -637,9 +662,17 @@ DayZServer/
 ├── @CampfireRegen/              # Custom server-side mod — campfire healing
 │   └── addons/
 │       └── CampfireRegen.pbo    # Health/blood regen near lit fires
+├── @SitRest/                    # Custom server-side mod — sit to freeze hunger/thirst
+│   └── addons/
+│       └── SitRest.pbo          # AFK hunger/thirst freeze while sitting
+├── @MinimapTweak/               # Custom client+server mod — minimap adjustments
+│   └── addons/
+│       └── MinimapTweak.pbo     # Top-right position, hide coords, fix arrow
 ├── mod_src/                     # Source code for custom mods
 │   ├── DayZombieManager/        # Zombie manager source (culling + kill drops)
 │   ├── CampfireRegen/           # Campfire regen source
+│   ├── SitRest/                 # Sit rest source (hunger/thirst freeze)
+│   ├── MinimapTweak/            # Minimap tweak source (position + UI fixes)
 │   ├── pack_pbo.py              # PBO packer tool
 │   └── rapify.py                # config.cpp to config.bin converter
 └── mpmissions/
@@ -667,10 +700,18 @@ DayZServer/
 
 ## Wiping the Server
 
-To start fresh, delete everything inside:
+Stop the server first (files are locked while running), then delete everything inside these folders:
+
 ```
+mpmissions/dayzOffline.chernarusplus/storage_0/
 mpmissions/dayzOffline.chernarusplus/storage_1/
+config/Dayz-Dog/players/
+config/Zenarchist/Skills/PlayerDB/
+config/DataCache/cache.ch
+config/DataCache/cache_lock
 ```
+
+**Note:** The top-level `storage_0/` and `storage_1/` directories are NOT used — persistence lives inside the mission folder.
 
 ## Troubleshooting
 
