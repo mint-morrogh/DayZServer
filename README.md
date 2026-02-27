@@ -22,7 +22,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 - **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
 - **Sit to rest** — sitting emotes (SitA/SitB) freeze hunger and thirst drain, eating/drinking while sitting still works
 - **Campfire health regen** — players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds
-- **Abundant wildlife** — 80 deer, 100 roe deer, 50 goats, 40 each of cow/pig/sheep, 20 wild boar, plus boosted foxes, hares, and hens
+- **Abundant wildlife** — 56 deer, 70 roe deer, 35 goats, 28 each of cow/pig/sheep, 14 wild boar, plus boosted foxes, hares, and hens (nominals tuned for 2-player LAN performance)
 - **Generous loot** — doubled canned food/drinks, 1.5x snacks and candy, tripled cooking pots, enabled crab cans
 - **Boosted foraging** — doubled mushroom spawns under trees, boosted fruit drops from apple/pear/plum trees
 - **Shake fruit trees** — hold action on fruit trees to shake loose 2-4 apples/pears/plums (75% drop chance, 30-min cooldown per tree)
@@ -224,13 +224,13 @@ Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod
 
 | Category | Nominal / Min / Max | Notes |
 |---|---|---|
-| City (regular) | 33 / 16 / 120 | ~Half vanilla by day, +33% at night |
-| City (coastal/Tier 1) | 8 / 4 / 30 | Light — easier coastal starts |
-| Village | 27 / 13 / 50 | Moderate |
-| Village (coastal/Tier 1) | 8 / 4 / 15 | Light |
-| Wilderness (forest) | 3 / 1 / 8 | Very rare — forests are mostly clear |
-| Military | 33 / 16 / 120 | Dangerous at night |
-| All others (police, medic, etc.) | 27 / 13 / 50 | Reduced |
+| City (regular) | 18 / 9 / 120 | Tuned for 2-player LAN performance |
+| City (coastal/Tier 1) | 5 / 3 / 30 | Light — easier coastal starts |
+| Village | 15 / 7 / 50 | Moderate |
+| Village (coastal/Tier 1) | 5 / 3 / 15 | Light |
+| Wilderness (forest) | 2 / 1 / 8 | Very rare — forests are mostly clear |
+| Military | 18 / 9 / 120 | Dangerous at night |
+| All others (police, medic, etc.) | 15 / 7 / 50 | Reduced |
 
 ### Loot Economy
 
