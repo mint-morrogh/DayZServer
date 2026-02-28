@@ -57,6 +57,18 @@ echo.
 :: ============================================================
 set "QUIET=1"
 call "%~dp0install_mods.bat"
+if errorlevel 2 (
+    echo ============================================
+    echo  CANNOT LAUNCH - Missing Workshop mods!
+    echo ============================================
+    echo.
+    echo Subscribe to the mods listed above, then
+    echo launch DayZ from Steam once so they download,
+    echo then run this script again.
+    echo.
+    pause
+    exit /b 1
+)
 
 :: ============================================================
 :: Step 3: Sync custom client mods to DayZ folder

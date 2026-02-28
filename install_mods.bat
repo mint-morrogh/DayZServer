@@ -86,6 +86,7 @@ echo.
 
 popd
 if not "%QUIET%"=="1" pause
+if %MISSING% GTR 0 exit /b 2
 exit /b 0
 
 :: ============================================================
@@ -99,7 +100,8 @@ set "SRC=%WORKSHOP%\%WS_ID%"
 set "DST=%~dp0@%MOD_NAME%"
 
 if not exist "%SRC%" (
-    echo   [MISS] @%MOD_NAME% - Workshop ID %WS_ID% not subscribed
+    echo   [MISS] @%MOD_NAME% - not subscribed! Go to:
+    echo          https://steamcommunity.com/sharedfiles/filedetails/?id=%WS_ID%
     set /a MISSING+=1
     exit /b 0
 )
