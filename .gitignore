@@ -17,6 +17,7 @@
 !install_mods.bat
 !wipe_server.bat
 !apply_settings.bat
+!update.bat
 !apply_settings.ps1
 !server_settings.json
 !whitelist.txt
