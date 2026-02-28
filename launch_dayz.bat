@@ -2,12 +2,16 @@
 :: ============================================================
 :: Blood ^& Barter - Launch DayZ Client
 :: ============================================================
-:: Launches DayZ with the custom client mods required to play
-:: on the Blood ^& Barter server.
+:: All-in-one launcher: pulls latest config changes, installs
+:: or updates Workshop mods, syncs custom client mods, then
+:: launches DayZ with the correct mod list.
 ::
 :: Usage: double-click this file instead of launching DayZ
-::        through Steam.
+::        through Steam. Run every time you play to stay synced.
 :: ============================================================
+
+setlocal enabledelayedexpansion
+pushd "%~dp0"
 
 :: Custom client mods that aren't on the Workshop.
 :: Add new custom mods here as semicolon-separated entries.
@@ -29,11 +33,52 @@ echo  Blood ^& Barter - Launch DayZ
 echo ============================================
 echo.
 
-:: Sync custom mods to the client folder first
-call "%~dp0sync_client_mods.bat"
-
+:: ============================================================
+:: Step 1: Pull latest config changes from GitHub
+:: ============================================================
+echo --- Pulling latest server updates ---
+where git >nul 2>&1
+if errorlevel 1 (
+    echo   [SKIP] git not found - skipping update check
+    echo          Install git to enable auto-updates
+) else (
+    git pull --ff-only 2>&1
+    if errorlevel 1 (
+        echo   [WARN] git pull failed - you may have local changes
+        echo          Continuing with current files...
+    ) else (
+        echo   [OK]   Up to date
+    )
+)
 echo.
-echo Launching DayZ with custom mods: %CUSTOM_MODS%
+
+:: ============================================================
+:: Step 2: Install / update Workshop mods + bikeys
+:: ============================================================
+set "QUIET=1"
+call "%~dp0install_mods.bat"
+
+:: ============================================================
+:: Step 3: Sync custom client mods to DayZ folder
+:: ============================================================
+echo --- Syncing custom client mods ---
+echo   Server: %~dp0
+echo   Client: %DAYZ_CLIENT%
+echo.
+
+call :sync_mod MinimapTweak
+
+:: Clear client script cache so new PBOs are picked up
+del /q "%LOCALAPPDATA%\DayZ\DataCache\cache.ch" >nul 2>&1
+echo   [OK]   Client script cache cleared
+echo.
+
+:: ============================================================
+:: Step 4: Launch DayZ
+:: ============================================================
+echo ============================================
+echo  Launching DayZ with mods: %CUSTOM_MODS%
+echo ============================================
 echo.
 
 :: Launch DayZ through Steam with custom mod args
@@ -41,5 +86,19 @@ echo.
 start "" "steam://run/221100//-mod=%CUSTOM_MODS%/"
 
 echo DayZ is starting. You can close this window.
+popd
 timeout /t 5
+exit /b 0
+
+:: ============================================================
+:sync_mod
+:: Copies @%1 folder to the DayZ client directory
+:: ============================================================
+set "MOD_NAME=%~1"
+if not exist "@%MOD_NAME%" (
+    echo   [SKIP] @%MOD_NAME% - not found in server folder
+    exit /b 0
+)
+xcopy /E /I /D /Y "@%MOD_NAME%" "%DAYZ_CLIENT%\@%MOD_NAME%" >nul 2>&1
+echo   [SYNC] @%MOD_NAME% -^> %DAYZ_CLIENT%\@%MOD_NAME%
 exit /b 0

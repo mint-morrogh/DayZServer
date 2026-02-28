@@ -126,7 +126,7 @@
     "MapData":  {
                     "ignoreMapOwnership":  false,
                     "ignoreNavItemsOwnership":  false,
-                    "displayPlayerPosition":  false,
+                    "displayPlayerPosition":  true,
                     "displayNavInfo":  true
                 },
     "VehicleData":  {

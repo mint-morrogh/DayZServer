@@ -32,7 +32,7 @@
         "staminaWeightThreshold": 6000.0,
         "sprintStaminaModifier": 1.0,
         "meleeStaminaModifier": 1.0,
-        "showPlayerOnMap": false,
+        "showPlayerOnMap": true,
         "mapWithoutItem": false,
         "compassWithoutItem": false,
         "use3DMap": false,

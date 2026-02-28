@@ -43,9 +43,10 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 If you're starting from nothing, here's every step:
 
-**1. Install Steam and the games**
+**1. Install Steam, DayZ, and DayZ Server**
 
 - Install [Steam](https://store.steampowered.com/about/) if you don't have it
+- Install [Git for Windows](https://git-scm.com/download/win) if you don't have it
 - Buy and install [DayZ](https://store.steampowered.com/app/221100/DayZ/) (the game)
 - Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — Steam Library > dropdown "Games" → "Tools" → search "DayZ Server")
 
@@ -58,10 +59,7 @@ These two folders must be siblings under `steamapps\common\` — the launch scri
 
 **2. Subscribe to all Workshop mods**
 
-Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 31 mods — all must be subscribed. Steam downloads them to:
-```
-C:\Program Files (x86)\Steam\steamapps\workshop\content\221100\<workshop_id>\
-```
+Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 31 mods — all must be subscribed.
 
 **3. Launch DayZ once**
 
@@ -75,43 +73,36 @@ git clone https://github.com/mint-morrogh/DayZServer.git DayZServer
 ```
 If the folder already exists from installing DayZ Server, clone into a temp folder and copy the files over, or delete the folder first and clone fresh.
 
-**5. Copy Workshop mods into the server directory**
-
-Each Workshop mod folder needs to be copied from the Workshop download location into the `DayZServer\` folder and renamed to its `@Name`. See the full rename table in [Mod Installation](#mod-installation).
-
-For example:
-```
-Copy: steamapps\workshop\content\221100\1559212036\
-  To: steamapps\common\DayZServer\@CF\
-```
-
-**6. Copy .bikey files**
-
-Each mod has a `keys\` folder containing `.bikey` signature files. Copy every `.bikey` from every mod into:
-```
-steamapps\common\DayZServer\keys\
-```
-
-**7. Configure and launch**
+**5. Start the server**
 
 ```
-Double-click: apply_settings.bat     ← applies server_settings.json to config files
+Double-click: apply_settings.bat     ← applies settings (first time, or after changes)
 Double-click: start_server.bat       ← starts the server (wait 1-2 min to load)
-Double-click: launch_dayz.bat        ← syncs custom mods and launches DayZ
 ```
+
+**6. Launch DayZ and connect**
+
+```
+Double-click: launch_dayz.bat
+```
+This script automatically:
+- Pulls the latest config changes from GitHub (`git pull`)
+- Installs/updates all 31 Workshop mods into the server directory (copies addons + bikeys)
+- Syncs custom client mods to your DayZ game folder
+- Launches DayZ with the correct mod list
+
 Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`.
 
 ---
 
 ### From-Scratch Install (Player — joining someone else's server)
 
-If you're just connecting to an existing Blood & Barter server (not hosting), setup is simpler:
-
-**1. Install Steam and DayZ**
+**1. Install Steam, DayZ, and DayZ Server**
 
 - Install [Steam](https://store.steampowered.com/about/) if you don't have it
+- Install [Git for Windows](https://git-scm.com/download/win) if you don't have it
 - Buy and install [DayZ](https://store.steampowered.com/app/221100/DayZ/)
-- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — needed for the launch scripts and custom mods, but you won't run the server)
+- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — needed so the launch script has a place to install mods)
 
 **2. Subscribe to all Workshop mods**
 
@@ -128,16 +119,25 @@ cd "C:\Program Files (x86)\Steam\steamapps\common"
 git clone https://github.com/mint-morrogh/DayZServer.git DayZServer
 ```
 
-**5. Copy Workshop mods and .bikey files**
-
-Same as the host steps above — copy each Workshop mod folder into `DayZServer\` with the correct `@Name`, and copy all `.bikey` files into `DayZServer\keys\`. See [Mod Installation](#mod-installation) for the full rename table.
-
-**6. Launch and connect**
+**5. Launch and connect**
 
 ```
-Double-click: launch_dayz.bat        ← syncs custom mods and launches DayZ
+Double-click: launch_dayz.bat
 ```
-Connect via DayZ > Servers > LAN, or Direct Connect to `<host's IP>:2302`. Password: `mintmorrogh` (or whatever the host set).
+That's it. The script handles everything else — installs Workshop mods, syncs custom mods, and launches DayZ. Connect to `<host's IP>:2302`. Password: `mintmorrogh` (or whatever the host set).
+
+---
+
+### Staying Up to Date
+
+You don't need to do anything special. Every time you double-click `launch_dayz.bat`, it automatically:
+1. Pulls the latest config/balance changes from GitHub
+2. Updates any Workshop mods that Steam has refreshed
+3. Syncs custom client mods
+
+If the host pushes changes (new settings, balance tweaks, new mods), players get them automatically on next launch.
+
+You can also run `install_mods.bat` standalone if you just want to install/update Workshop mods without launching the game.
 
 ## Settings Patcher
 
@@ -677,7 +677,7 @@ Load order matters — Core and Dabs must load before Expansion, Navigation must
 
 **Players (including the host):**
 
-1. Double-click `launch_dayz.bat` — syncs custom mods and launches DayZ
+1. Double-click `launch_dayz.bat` — pulls updates, installs/updates mods, syncs custom mods, launches DayZ
 2. Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`
 
 ## Connecting
@@ -693,8 +693,9 @@ DayZServer/
 ├── server_settings.json         # <-- EDIT THIS: All server settings in one place
 ├── apply_settings.bat           # Double-click to apply settings
 ├── apply_settings.ps1           # PowerShell patcher (called by .bat)
-├── launch_dayz.bat              # Double-click to sync mods & launch DayZ client
-├── sync_client_mods.bat         # Copies custom mods to DayZ client (called by launch_dayz)
+├── launch_dayz.bat              # All-in-one: pull updates, install mods, sync, launch DayZ
+├── install_mods.bat             # Copies Workshop mods + bikeys into server dir (called by launch_dayz)
+├── sync_client_mods.bat         # Copies custom mods to DayZ client (legacy, now built into launch_dayz)
 ├── serverDZ.cfg                 # Main server config (patched automatically)
 ├── start_server.bat             # Launch script with mod list
 ├── whitelist.txt                # Player whitelist (disabled by default)

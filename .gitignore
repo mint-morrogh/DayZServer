@@ -15,6 +15,7 @@
 !start_server.bat
 !sync_client_mods.bat
 !launch_dayz.bat
+!install_mods.bat
 !apply_settings.bat
 !apply_settings.ps1
 !server_settings.json
@@ -131,3 +132,7 @@ config/CarePackageV2/
 !@MinimapTweak/addons/MinimapTweak.pbo
 !@SitRest/addons/
 !@SitRest/addons/SitRest.pbo
+!@DayZombieManager/addons/
+!@DayZombieManager/addons/DayZombieManager.pbo
+!@CampfireRegen/addons/
+!@CampfireRegen/addons/CampfireRegen.pbo
