@@ -34,28 +34,40 @@ echo ============================================
 echo.
 
 :: ============================================================
-:: Step 1: Pull latest config changes from GitHub
+:: Step 1: Pull latest updates from GitHub
 :: ============================================================
 echo --- Checking for updates ---
 where git >nul 2>&1
 if errorlevel 1 (
-    :: No git — download updates from GitHub via PowerShell
-    call :update_from_github
-    if !errorlevel! equ 99 (
-        echo.
-        echo   Launcher was updated - restarting...
-        echo.
-        start "" cmd /c "%~f0"
-        exit /b 0
-    )
+    echo.
+    echo   =====================================================
+    echo   Git is not installed!
+    echo   =====================================================
+    echo.
+    echo   Git is needed to keep your game files up to date.
+    echo   Without it, you may get errors or crashes.
+    echo.
+    echo   HOW TO INSTALL:
+    echo     1. Open this link in your browser:
+    echo        https://git-scm.com/download/win
+    echo     2. Click "Click here to download" at the top
+    echo     3. Run the installer - click Next on every screen
+    echo        (all the defaults are fine^)
+    echo     4. When it finishes, CLOSE this window and
+    echo        double-click launch_dayz.bat again
+    echo.
+    echo   =====================================================
+    echo.
+    pause
+    exit /b 1
+)
+
+git pull --ff-only 2>&1
+if errorlevel 1 (
+    echo   [WARN] git pull failed - you may have local changes
+    echo          Continuing with current files...
 ) else (
-    git pull --ff-only 2>&1
-    if errorlevel 1 (
-        echo   [WARN] git pull failed - you may have local changes
-        echo          Continuing with current files...
-    ) else (
-        echo   [OK]   Up to date
-    )
+    echo   [OK]   Up to date
 )
 echo.
 
@@ -140,25 +152,3 @@ if not exist "@%MOD_NAME%" (
 xcopy /E /I /D /Y "@%MOD_NAME%" "%DAYZ_CLIENT%\@%MOD_NAME%" >nul 2>&1
 echo   [SYNC] @%MOD_NAME% -^> %DAYZ_CLIENT%\@%MOD_NAME%
 exit /b 0
-
-:: ============================================================
-:update_from_github
-:: Downloads latest scripts from GitHub when git is not installed.
-:: Uses bb_update.ps1 from the repo. Exit code 99 = restart needed.
-:: ============================================================
-set "RAW=https://raw.githubusercontent.com/mint-morrogh/DayZServer/main"
-set "UPD_PS=%TEMP%\bb_update.ps1"
-
-:: Download the updater script itself first
-powershell -NoProfile -ExecutionPolicy Bypass -Command ^
-    "try { Invoke-WebRequest '%RAW%/bb_update.ps1' -OutFile '%UPD_PS%' -UseBasicParsing } catch { exit 1 }" 2>nul
-if errorlevel 1 (
-    echo   [SKIP] Cannot reach GitHub - continuing offline
-    exit /b 0
-)
-
-:: Run the updater
-powershell -NoProfile -ExecutionPolicy Bypass -File "!UPD_PS!" "%~dp0"
-set "UPD_EXIT=!errorlevel!"
-del "!UPD_PS!" >nul 2>&1
-exit /b !UPD_EXIT!
