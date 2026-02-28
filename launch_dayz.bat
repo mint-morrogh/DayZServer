@@ -62,6 +62,22 @@ if errorlevel 1 (
     exit /b 1
 )
 
+:: If this folder isn't a git repo yet, clone into it.
+:: This happens when someone copies the files instead of cloning.
+git rev-parse --git-dir >nul 2>&1
+if errorlevel 1 (
+    echo   [SETUP] Not a git repo - setting up...
+    git init >nul 2>&1
+    git remote add origin https://github.com/mint-morrogh/DayZServer.git >nul 2>&1
+    git fetch --quiet 2>nul
+    git checkout -f main 2>nul
+    echo   [OK]    Repository initialized
+    echo.
+    echo   Restarting with latest files...
+    start "" cmd /c "%~f0"
+    exit /b 0
+)
+
 :: Check if this launcher would be modified by the update.
 :: If so, pull and restart so the new version runs cleanly.
 git fetch --quiet 2>nul
