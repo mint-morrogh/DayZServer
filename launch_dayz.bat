@@ -62,10 +62,19 @@ if errorlevel 1 (
     exit /b 1
 )
 
+:: Check if this launcher would be modified by the update.
+:: If so, pull and restart so the new version runs cleanly.
+git fetch --quiet 2>nul
+set "SELF_UPDATE=0"
+for /f %%f in ('git diff HEAD..origin/main --name-only -- launch_dayz.bat 2^>nul') do set "SELF_UPDATE=1"
 git pull --ff-only 2>&1
 if errorlevel 1 (
     echo   [WARN] git pull failed - you may have local changes
     echo          Continuing with current files...
+) else if "!SELF_UPDATE!"=="1" (
+    echo   [UPD]  Launcher updated - restarting...
+    start "" cmd /c "%~f0"
+    exit /b 0
 ) else (
     echo   [OK]   Up to date
 )
