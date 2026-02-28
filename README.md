@@ -39,25 +39,105 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ## Quick Start
 
-### Prerequisites
+### From-Scratch Install (Host — runs the server)
 
-- [DayZ](https://store.steampowered.com/app/221100/DayZ/) (game)
-- [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free, under Steam Library > Tools)
-- All mods listed below subscribed in the Steam Workshop
+If you're starting from nothing, here's every step:
 
-### Setup
+**1. Install Steam and the games**
 
-1. Install **DayZ Server** from Steam (Library > Tools)
-2. Clone this repo into your DayZ Server directory, or copy the config files over your installation
-3. Subscribe to all required mods in the Steam Workshop (see [Mods](#mods))
-4. Launch DayZ once so Steam downloads the mod files
-5. Copy each mod's Workshop folder into the server directory with the correct `@Name` (see [Mod Installation](#mod-installation))
-6. Copy each mod's `.bikey` file from their `keys/` folder into the server's `keys/` folder
-7. Edit `server_settings.json` to customize your server (see [Settings Patcher](#settings-patcher))
-8. Double-click `apply_settings.bat` to apply your settings
-9. Double-click `start_server.bat` to launch the server
-10. Double-click `launch_dayz.bat` to sync custom mods and start DayZ with the right mod list
-11. Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`
+- Install [Steam](https://store.steampowered.com/about/) if you don't have it
+- Buy and install [DayZ](https://store.steampowered.com/app/221100/DayZ/) (the game)
+- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — Steam Library > dropdown "Games" → "Tools" → search "DayZ Server")
+
+Default install locations:
+```
+C:\Program Files (x86)\Steam\steamapps\common\DayZ\          ← the game
+C:\Program Files (x86)\Steam\steamapps\common\DayZServer\    ← the server
+```
+These two folders must be siblings under `steamapps\common\` — the launch scripts expect this layout.
+
+**2. Subscribe to all Workshop mods**
+
+Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 31 mods — all must be subscribed. Steam downloads them to:
+```
+C:\Program Files (x86)\Steam\steamapps\workshop\content\221100\<workshop_id>\
+```
+
+**3. Launch DayZ once**
+
+Open DayZ from Steam at least once so it finishes downloading all subscribed mod files. You can close it after reaching the main menu.
+
+**4. Clone this repo into the DayZ Server folder**
+
+```bash
+cd "C:\Program Files (x86)\Steam\steamapps\common"
+git clone https://github.com/mint-morrogh/DayZServer.git DayZServer
+```
+If the folder already exists from installing DayZ Server, clone into a temp folder and copy the files over, or delete the folder first and clone fresh.
+
+**5. Copy Workshop mods into the server directory**
+
+Each Workshop mod folder needs to be copied from the Workshop download location into the `DayZServer\` folder and renamed to its `@Name`. See the full rename table in [Mod Installation](#mod-installation).
+
+For example:
+```
+Copy: steamapps\workshop\content\221100\1559212036\
+  To: steamapps\common\DayZServer\@CF\
+```
+
+**6. Copy .bikey files**
+
+Each mod has a `keys\` folder containing `.bikey` signature files. Copy every `.bikey` from every mod into:
+```
+steamapps\common\DayZServer\keys\
+```
+
+**7. Configure and launch**
+
+```
+Double-click: apply_settings.bat     ← applies server_settings.json to config files
+Double-click: start_server.bat       ← starts the server (wait 1-2 min to load)
+Double-click: launch_dayz.bat        ← syncs custom mods and launches DayZ
+```
+Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`.
+
+---
+
+### From-Scratch Install (Player — joining someone else's server)
+
+If you're just connecting to an existing Blood & Barter server (not hosting), setup is simpler:
+
+**1. Install Steam and DayZ**
+
+- Install [Steam](https://store.steampowered.com/about/) if you don't have it
+- Buy and install [DayZ](https://store.steampowered.com/app/221100/DayZ/)
+- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — needed for the launch scripts and custom mods, but you won't run the server)
+
+**2. Subscribe to all Workshop mods**
+
+Open each link in the [Mods](#mods) section and click **Subscribe**. There are 31 mods.
+
+**3. Launch DayZ once**
+
+Open DayZ from Steam once so it downloads all mod files. Close after reaching the main menu.
+
+**4. Clone this repo into the DayZ Server folder**
+
+```bash
+cd "C:\Program Files (x86)\Steam\steamapps\common"
+git clone https://github.com/mint-morrogh/DayZServer.git DayZServer
+```
+
+**5. Copy Workshop mods and .bikey files**
+
+Same as the host steps above — copy each Workshop mod folder into `DayZServer\` with the correct `@Name`, and copy all `.bikey` files into `DayZServer\keys\`. See [Mod Installation](#mod-installation) for the full rename table.
+
+**6. Launch and connect**
+
+```
+Double-click: launch_dayz.bat        ← syncs custom mods and launches DayZ
+```
+Connect via DayZ > Servers > LAN, or Direct Connect to `<host's IP>:2302`. Password: `mintmorrogh` (or whatever the host set).
 
 ## Settings Patcher
 
