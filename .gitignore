@@ -10,7 +10,6 @@
 # --- Allow top-level config & launch files ---
 !.gitignore
 !README.md
-!CLAUDE.md
 !serverDZ.cfg
 !start_server.bat
 !sync_client_mods.bat
