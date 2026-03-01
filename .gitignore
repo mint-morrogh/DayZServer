@@ -136,3 +136,7 @@ config/CarePackageV2/
 !@DayZombieManager/addons/DayZombieManager.pbo
 !@CampfireRegen/addons/
 !@CampfireRegen/addons/CampfireRegen.pbo
+!@HUDClock/addons/
+!@HUDClock/addons/HUDClock.pbo
+!@StackableItems/addons/
+!@StackableItems/addons/StackableItems.pbo

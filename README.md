@@ -4,8 +4,9 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **31 mods + 3 custom server-side mods + 1 custom client mod** — all preconfigured and ready to go
+- **33 mods + 3 custom server-side mods + 1 custom client mod** — all preconfigured and ready to go
 - **GPS minimap** — on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
+- **Party system** — create a group with your co-op partner to see each other on the map
 - **Companion dogs** — 17 breeds of tameable dogs, equip collars/vests/gas masks, build dog houses
 - **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
 - **20 driveable vehicles** — 1 of each model spread across the map, from trucks and SUVs to sports cars and exotics
@@ -59,7 +60,7 @@ These two folders must be siblings under `steamapps\common\` — the launch scri
 
 **2. Subscribe to all Workshop mods**
 
-Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 31 mods — all must be subscribed.
+Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 33 mods — all must be subscribed.
 
 **3. Launch DayZ once**
 
@@ -337,6 +338,8 @@ These mods must be installed on both the **server** and **client**.
 | [Dabs Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2545327648) | 2545327648 | Script/GUI framework dependency for Expansion |
 | [DayZ-Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2116151222) | 2116151222 | Expansion content — items, UI, and world enhancements |
 | [DayZ-Expansion-Navigation](https://steamcommunity.com/sharedfiles/filedetails/?id=2792984722) | 2792984722 | Navigation scripts required by GPS minimap |
+| [DayZ-Expansion-Book](https://steamcommunity.com/sharedfiles/filedetails/?id=2572324799) | 2572324799 | Virtual book UI framework used by Expansion mods |
+| [DayZ-Expansion-Groups](https://steamcommunity.com/sharedfiles/filedetails/?id=2792983364) | 2792983364 | Party system — create groups to see each other on the map |
 | [Expansion Minimap Override](https://steamcommunity.com/sharedfiles/filedetails/?id=3626138230) | 3626138230 | GPS minimap overlay with player position |
 | [Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) | 1590841260 | NPC traders, safe zones, buy/sell items |
 | [Mass's Many Item Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=1566911166) | 1566911166 | Adds weapons, clothing, crafting recipes |
@@ -374,6 +377,8 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `2545327648` | `@DabsFramework` |
 | `2116151222` | `@DayZ-Expansion` |
 | `2792984722` | `@DayZ-Expansion-Navigation` |
+| `2572324799` | `@DayZ-Expansion-Book` |
+| `2792983364` | `@DayZ-Expansion-Groups` |
 | `3626138230` | `@ExpansionMinimap` |
 | `1590841260` | `@Trader` |
 | `1566911166` | `@Mass'sManyItemOverhaul` |
@@ -660,10 +665,12 @@ Adds a GPS minimap to the HUD showing your position and surroundings. Requires t
 | Dabs Framework | Script/GUI support library |
 | DayZ-Expansion | Main content — items, UI, world enhancements |
 | DayZ-Expansion-Navigation | Navigation scripts required by GPS overlay |
+| DayZ-Expansion-Book | Virtual book UI framework |
+| DayZ-Expansion-Groups | Party system — see group members on the map |
 | Expansion Minimap Override | GPS minimap overlay |
 | MinimapTweak | Custom — moves to top-right, hides coords, fixes arrow bug |
 
-Load order matters — Core and Dabs must load before Expansion, Navigation must load after Expansion, Minimap Override after Navigation, and MinimapTweak last. This is already configured in `start_server.bat`. MinimapTweak is a custom mod loaded automatically by `launch_dayz.bat`.
+Load order matters — Core and Dabs must load before Expansion, Book and Groups after Navigation, Minimap Override after Groups, and MinimapTweak last. This is already configured in `start_server.bat`. MinimapTweak is a custom mod loaded automatically by `launch_dayz.bat`.
 
 ## Launching the Server
 
@@ -719,6 +726,8 @@ DayZServer/
 ├── @DabsFramework/              # Script/GUI framework
 ├── @DayZ-Expansion/             # Expansion content
 ├── @DayZ-Expansion-Navigation/  # Navigation scripts for GPS
+├── @DayZ-Expansion-Book/       # Expansion book UI framework
+├── @DayZ-Expansion-Groups/     # Expansion party/group system
 ├── @ExpansionMinimap/           # GPS minimap overlay
 ├── @Trader/                     # Trader mod
 ├── @Mass'sManyItemOverhaul/     # Item overhaul mod

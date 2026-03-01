@@ -183,10 +183,10 @@
   </type>
   <!-- Dog House Kits â€” craftable shelters found at farms/towns -->
   <type name="dog_shed_small_kit">
-    <nominal>3</nominal>
+    <nominal>8</nominal>
     <lifetime>14400</lifetime>
     <restock>0</restock>
-    <min>1</min>
+    <min>4</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -198,10 +198,10 @@
     <usage name="Farm" />
   </type>
   <type name="dog_shed_big_kit">
-    <nominal>3</nominal>
+    <nominal>8</nominal>
     <lifetime>14400</lifetime>
     <restock>0</restock>
-    <min>1</min>
+    <min>4</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>

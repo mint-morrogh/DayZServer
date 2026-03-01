@@ -15,7 +15,7 @@ pushd "%~dp0"
 
 :: Custom client mods that aren't on the Workshop.
 :: Add new custom mods here as semicolon-separated entries.
-set "CUSTOM_MODS=@MinimapTweak"
+set "CUSTOM_MODS=@MinimapTweak;@HUDClock;@StackableItems"
 
 :: Resolve the DayZ client path (sibling of DayZServer under steamapps\common\)
 pushd "%~dp0..\DayZ" 2>nul
@@ -142,6 +142,8 @@ echo   Client: %DAYZ_CLIENT%
 echo.
 
 call :sync_mod MinimapTweak
+call :sync_mod HUDClock
+call :sync_mod StackableItems
 
 :: Clear client script cache so new PBOs are picked up
 del /q "%LOCALAPPDATA%\DayZ\DataCache\cache.ch" >nul 2>&1

@@ -1,0 +1,245 @@
+================================================================================
+    MWGSM ROAMING TRADER - CONFIGURATION GUIDE
+================================================================================
+
+This file explains all configuration options in MWGSM_RoamingTraderConfig.json
+Edit the .json file, not this .txt file!
+
+================================================================================
+TRADER SETTINGS
+================================================================================
+
+Enabled (0 or 1)
+  - Set to 1 to enable the roaming trader system
+  - Set to 0 to disable it completely
+  Current: 1
+
+SpawnIntervalMinutes (number)
+  - How often a new trader can spawn (in minutes)
+  - Timer starts after previous trader despawns
+  Current: 60 minutes
+
+DespawnAfterMinutes (number)
+  - How long the trader stays before leaving (in minutes)
+  Current: 30 minutes
+
+MaxActiveTraders (number)
+  - Maximum number of traders active at the same time
+  - Recommended: 1 for most servers
+  Current: 1
+
+MinPlayersForSpawn (number)
+  - Minimum players online before trader can spawn
+  - Prevents trader spawning on empty servers
+  Current: 1
+
+AnnounceSpawn (0 or 1)
+  - Set to 1 to announce when trader spawns
+  - Set to 0 for silent spawning (players must find trader)
+  Current: 1
+
+AnnounceRadius (number)
+  - Distance (in meters) players must be within to receive announcements
+  - Set to 0 for server-wide announcements
+  Current: 0 meters
+
+DespawnWarningMinutes (number)
+  - How many minutes before despawn to warn players
+  Current: 5 minutes
+
+================================================================================
+NOTIFICATION SETTINGS (NEW!)
+================================================================================
+
+NotificationStyle (text: "chat", "popup", or "default")
+  - "popup" - DayZ notification with icon (recommended)
+  - "chat" - Appears in chat like a player message
+  - "default" - Simple system message
+  Current: popup
+
+LocationDisplay (text: "coords" or "city")
+  - "coords" - Shows coordinates like [6651, 2475]
+  - "city" - Shows nearest city name like Chernogorsk
+  - City detection works on ALL DayZ maps automatically
+  Current: coords
+
+NotificationDuration (number with decimal)
+  - How long popup notifications stay on screen (in seconds)
+  - Only affects "popup" style notifications
+  - Does not affect "chat" or "default" styles
+  Current: 8 seconds
+
+================================================================================
+MESSAGE SETTINGS
+================================================================================
+
+SpawnAnnouncementMessage
+  - Message shown when trader spawns
+  - Use %LOCATION% or %COORDS% for spawn location
+  Current: A military trader has landed at %LOCATION%!
+
+DespawnWarningMessage
+  - Warning message before trader leaves
+  - Use %1 for minutes remaining
+  Current: The helicopter is preparing to leave in %1 minutes!
+
+DespawnMessage
+  - Message when trader leaves
+  Current: The helicopter has departed the area.
+
+WelcomeMessage
+  - Greeting when opening trader menu
+  - Use %CURRENCY% to auto-insert currency name
+  Current: Hey survivor! I've got supplies for trade. %CURRENCY% are the currency here!
+
+NoMoneyMessage
+  - Message when player can't afford item
+  - Use %CURRENCY% to auto-insert currency name
+  Current: Sorry friend, you don't have enough %CURRENCY%. Come back when you've got more!
+
+ThankYouMessage
+  - Message after successful purchase
+  - Use %CURRENCY% to auto-insert currency name
+  Current: Pleasure doing business! Stay safe out there.
+
+================================================================================
+CURRENCY SETTINGS
+================================================================================
+
+CurrencyItem (text - item class name)
+  - The item used as currency for trading
+  - Common examples: Nail, GoldBar, Money_Ruble
+  - %CURRENCY% in messages will show this item's display name
+  Current: Nail
+
+BasePriceMultiplier (number with decimal)
+  - Multiply all item prices by this amount
+  - 1.0 = normal, 2.0 = double prices, 0.5 = half price
+  Current: 1
+
+BuyPriceMultiplier (number with decimal)
+  - Price multiplier when players BUY from trader
+  Current: 1.5
+
+SellPriceMultiplier (number with decimal)
+  - Price multiplier when players SELL to trader
+  Current: 0.5
+
+================================================================================
+SPAWN LOCATION SETTINGS
+================================================================================
+
+MinDistanceFromPlayers (number)
+  - Minimum distance from any player (in meters)
+  Current: 500 meters
+
+MaxDistanceFromPlayers (number)
+  - Maximum distance from nearest player (in meters)
+  Current: 2000 meters
+
+MinDistanceFromTraderZones (number)
+  - Minimum distance from static trader zones (in meters)
+  Current: 1000 meters
+
+AvoidWater (0 or 1)
+  - Set to 1 to prevent spawning in water
+  Current: 1
+
+AvoidSteepTerrain (0 or 1)
+  - Set to 1 to avoid spawning on steep hills
+  Current: 1
+
+PreferFields (0 or 1)
+  - Set to 1 to prefer open field spawns
+  Current: 1
+
+================================================================================
+INVENTORY SETTINGS
+================================================================================
+
+AutoDetectItems (0 or 1)
+  - Automatically detect all items in the game for stock
+  Current: 1
+
+MaxItemsInStock (number)
+  - Maximum different items the trader can have
+  Current: 150
+
+IncludeVanillaItems (0 or 1)
+  - Include base game items in stock
+  Current: 1
+
+IncludeModdedItems (0 or 1)
+  - Include mod items in stock
+  Current: 1
+
+================================================================================
+DEBUG SETTINGS
+================================================================================
+
+EnableDebugMode (0 or 1)
+  - Enable verbose logging for troubleshooting
+  Current: 0
+
+LogTransactions (0 or 1)
+  - Log all buy/sell transactions
+  Current: 1
+
+LogSpawnLocations (0 or 1)
+  - Log trader spawn coordinates
+  Current: 1
+
+ForceSpawnCommand (0 or 1)
+  - Enable admin command to force trader spawn
+  Current: 1
+
+================================================================================
+PLACEHOLDER GUIDE
+================================================================================
+
+You can use these placeholders in your messages:
+
+%LOCATION% or %COORDS%
+  - Shows trader location based on LocationDisplay setting
+  - If LocationDisplay = "coords": shows [6651, 2475]
+  - If LocationDisplay = "city": shows Chernogorsk
+
+%CURRENCY%
+  - Automatically replaced with your currency item's display name
+  - Example: If CurrencyItem = "Nail", shows "Nails"
+  - Example: If CurrencyItem = "GoldBar", shows "Gold Bars"
+
+%1, %2, %3, etc.
+  - Used in some messages for dynamic values
+  - Example: DespawnWarningMessage uses %1 for minutes
+
+================================================================================
+QUICK START EXAMPLES
+================================================================================
+
+Example 1: Chat notifications with city names
+  "NotificationStyle": "chat",
+  "LocationDisplay": "city",
+  "SpawnAnnouncementMessage": "Trader spotted near %LOCATION%!"
+
+Example 2: Longer popup notifications with coordinates
+  "NotificationStyle": "popup",
+  "LocationDisplay": "coords",
+  "NotificationDuration": 12.0
+
+Example 3: Gold bar economy
+  "CurrencyItem": "GoldBar",
+  "WelcomeMessage": "Trade your %CURRENCY% for gear!"
+  Result: "Trade your Gold Bars for gear!"
+
+================================================================================
+NEED HELP?
+================================================================================
+
+For more information and support:
+  - Visit: https://mwgsm.com
+  - Discord: Check mwgsm.com for invite link
+
+This file is auto-generated when the config is saved.
+
+================================================================================
