@@ -837,7 +837,7 @@
     <limit>parent</limit>
     <active>1</active>
     <children>
-      <child lootmax="0" lootmin="0" max="4" min="2" type="ContaminatedArea_Dynamic" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="ContaminatedArea_Dynamic" />
     </children>
   </event>
   <event name="StaticFridgeTest">
@@ -1243,6 +1243,77 @@
       <child lootmax="0" lootmin="0" max="5" min="3" type="Truck_01_Covered" />
       <child lootmax="0" lootmin="0" max="5" min="3" type="Truck_01_Covered_Blue" />
       <child lootmax="0" lootmin="0" max="5" min="3" type="Truck_01_Covered_Orange" />
+    </children>
+  </event>
+  <!-- ============================================================ -->
+  <!-- 4KBOSSK Modded Vehicles — 1 of each, 20 total                -->
+  <!-- Uses custom spawn positions in cfgeventspawns.xml             -->
+  <!-- 36 possible locations, CE picks 20 randomly = not abusable   -->
+  <!-- ============================================================ -->
+  <event name="Vehicle4KBOSSK">
+    <nominal>20</nominal>
+    <min>20</min>
+    <max>36</max>
+    <lifetime>300</lifetime>
+    <restock>0</restock>
+    <saferadius>500</saferadius>
+    <distanceradius>300</distanceradius>
+    <cleanupradius>200</cleanupradius>
+    <flags deletable="0" init_random="0" remove_damaged="1" />
+    <position>fixed</position>
+    <limit>mixed</limit>
+    <active>1</active>
+    <children>
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Audi_RS6_ABT_Black" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="BMW_M3_Blue" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Chevrolet_NapalmNova_Red" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Dodge_ChallengerSRT_Orange" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="dodgechargerhellcat_black" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="DodgeRam_3500_Grey" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="DodgeRam_BOSS_camogreen" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Ford_Bronco_Rust" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Ford_Mustang_Shelby_GT500_Blue" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Ford_Raptor_MonstarTruck_Black" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Civic_White" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Jeep_GladiatorF9_BOSS_DarkRed" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Kamaz_TyphoonK_CamoGreen" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="MotorHome_Rust" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Nissan_Skyline_Blue" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="NissanGTRNismo_Red" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Porsche_911RWB_Green" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Supra_Red" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Tahoe_Brown" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="ToyotaRunner_white" />
+    </children>
+  </event>
+
+  <!-- ============================================================ -->
+  <!-- LM Planes — 1 of each, 8 total                               -->
+  <!-- Custom airfield/runway positions in cfgeventspawns.xml        -->
+  <!-- 14 possible locations, CE picks 8 randomly                    -->
+  <!-- ============================================================ -->
+  <event name="VehiclePlanes">
+    <nominal>8</nominal>
+    <min>8</min>
+    <max>14</max>
+    <lifetime>300</lifetime>
+    <restock>0</restock>
+    <saferadius>500</saferadius>
+    <distanceradius>500</distanceradius>
+    <cleanupradius>200</cleanupradius>
+    <flags deletable="0" init_random="0" remove_damaged="1" />
+    <position>fixed</position>
+    <limit>mixed</limit>
+    <active>1</active>
+    <children>
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_DC_3" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Stuntplane" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Catalina" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Tigermoth" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Tigermoth_MK2" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Tigermoth_MK3" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Spitfire" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="LM_Cessna180" />
     </children>
   </event>
 </events>

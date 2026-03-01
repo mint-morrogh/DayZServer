@@ -4,7 +4,7 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 
 ### Features
 
-- **33 mods + 3 custom server-side mods + 3 custom client mods** — all preconfigured and ready to go
+- **33 mods + 6 custom server-side mods + 3 custom client mods** — all preconfigured and ready to go
 - **GPS minimap** — on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
 - **HUD clock** — in-game world time displayed top-right, shifts below minimap when it's open
 - **Party system** — create a group with your co-op partner to see each other on the map
@@ -25,6 +25,14 @@ A private DayZ co-op server configured for small groups (2-4 players) on Chernar
 - **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
 - **Sit to rest** — sitting emotes (SitA/SitB) freeze hunger and thirst drain, eating/drinking while sitting still works
 - **Campfire health regen** — players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds
+- **Unbreakable vehicles** — all vehicle damage zones auto-repair to max health every 60 seconds and on server load (fluids/gas still need managing)
+- **Companion health regen** — dogs and horses passively regenerate 5% max health every 30 seconds (~10 min from near-death to full)
+- **Durable gear** — all items self-repair to full health every 2 minutes; tools, weapons, and cooking gear stay pristine
+- **Dog waypoints** — dogs can be commanded to follow waypoints
+- **Event-based vehicle spawns** — 4KBOSSK vehicles and planes spawn at curated map positions via events.xml instead of random loot locations
+- **Road-ready vehicles** — vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
+- **More gasoline** — 75 gas canisters on map (up from 50), spawn 40-80% full
+- **Fewer contaminated zones** — dynamic NBC zones reduced to 1 (down from 2-4)
 - **Abundant wildlife** — 56 deer, 70 roe deer, 35 goats, 28 each of cow/pig/sheep, 14 wild boar, plus boosted foxes, hares, and hens (nominals tuned for 2-player LAN performance)
 - **Generous loot** — doubled canned food/drinks, 1.5x snacks and candy, tripled cooking pots, enabled crab cans
 - **Boosted foraging** — doubled mushroom spawns under trees, boosted fruit drops from apple/pear/plum trees
@@ -452,7 +460,7 @@ Items respawn automatically when the count drops below the minimum.
 |---|---|---|---|
 | Helicopter crashes | 3 | 5 (min 1) | More crash sites with military loot |
 | Military convoys | 5 | 8 (min 2) | More ambushed convoys on roads |
-| Contaminated zones | 2-4 | Unchanged | Dynamic NBC zones |
+| Contaminated zones | 2-4 | 1 (min 1) | Reduced dynamic NBC zones |
 
 ### MWGSM Roaming Trader
 
@@ -642,6 +650,22 @@ Designed for AFK breaks on a co-op LAN server — sit your character down and st
 
 Source code in `mod_src/SitRest/`.
 
+### HealthBoost — Vehicle Durability & Companion Regen
+
+Custom server-side mod (`@HealthBoost`). Two features in one mod:
+
+**Vehicles** — all damage zones (engine, wheels, doors, chassis, etc.) are repaired to max health every 60 seconds and on every server load. Vehicles are effectively unbreakable — fluids and gas still need managing, but parts stay pristine.
+
+**Dogs & Horses** — passive health regen of 5% of max health every 30 seconds. Near-death to full health in ~10 minutes. Only affects entities with "Doggo" or "Horse" in their class name — wolves, deer, and other wildlife are unaffected.
+
+Source code in `mod_src/HealthBoost/`.
+
+### DurableGear — Unbreakable Items
+
+Custom server-side mod (`@DurableGear`). Every item on the server self-repairs to full health every 2 minutes. Tools, weapons, cooking pots, frying pans — everything stays pristine indefinitely. Uses a periodic heal approach since the engine's `DecreaseHealth` is proto native and can't be overridden in script.
+
+Source code in `mod_src/DurableGear/`.
+
 ### MinimapTweak — Minimap Customization
 
 Custom client+server mod (`@MinimapTweak`). Adjusts the Expansion GPS minimap:
@@ -784,6 +808,12 @@ DayZServer/
 ├── @SitRest/                    # Custom server-side mod — sit to freeze hunger/thirst
 │   └── addons/
 │       └── SitRest.pbo          # AFK hunger/thirst freeze while sitting
+├── @HealthBoost/                # Custom server-side mod — vehicle repair + companion regen
+│   └── addons/
+│       └── HealthBoost.pbo      # Auto-repair vehicles, dog/horse health regen
+├── @DurableGear/                # Custom server-side mod — item self-repair
+│   └── addons/
+│       └── DurableGear.pbo      # All items heal to full every 2 minutes
 ├── @MinimapTweak/               # Custom client+server mod — minimap adjustments
 │   └── addons/
 │       └── MinimapTweak.pbo     # Top-right position, hide coords, fix arrow
@@ -797,6 +827,8 @@ DayZServer/
 │   ├── DayZombieManager/        # Zombie manager source (culling + kill drops)
 │   ├── CampfireRegen/           # Campfire regen source
 │   ├── SitRest/                 # Sit rest source (hunger/thirst freeze)
+│   ├── HealthBoost/             # HealthBoost source (vehicle repair + companion regen)
+│   ├── DurableGear/             # DurableGear source (item self-repair)
 │   ├── MinimapTweak/            # Minimap tweak source (position + UI fixes)
 │   ├── HUDClock/                # HUD clock source (time display)
 │   ├── StackableItems/          # Stackable items source (stack overrides)

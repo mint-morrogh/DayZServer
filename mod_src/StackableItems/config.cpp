@@ -12,11 +12,12 @@ class CfgVehicles
 {
     class Paper
     {
+        canBeSplit = 1;
         varStackMax = 100;
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class MoneyRuble1
     {
@@ -24,7 +25,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class MoneyRuble5
     {
@@ -32,7 +33,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class MoneyRuble10
     {
@@ -40,7 +41,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class MoneyRuble25
     {
@@ -48,7 +49,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class MoneyRuble50
     {
@@ -56,7 +57,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class MoneyRuble100
     {
@@ -64,7 +65,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class Nail
     {
@@ -72,15 +73,16 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class SmallStone
     {
+        canBeSplit = 1;
         varStackMax = 100;
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class Bone
     {
@@ -88,7 +90,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class Bark_Oak
     {
@@ -96,7 +98,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class Bark_Birch
     {
@@ -104,23 +106,25 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class Hook
     {
+        canBeSplit = 1;
         varStackMax = 100;
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
     class Worm
     {
+        canBeSplit = 1;
         varStackMax = 100;
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        varQuantityDestroyOnMin = 0;
+        varQuantityDestroyOnMin = 1;
     };
 };
 class CfgMods

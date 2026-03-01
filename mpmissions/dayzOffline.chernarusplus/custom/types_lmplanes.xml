@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <types>
-  <!-- LMs Planes — 1 of each type, ~8 planes total for 2 players -->
+  <!-- LMs Planes — planes spawn via events.xml (VehiclePlanes) at airfield positions.
+       nominal=0 here so types.xml doesn't also spawn them.
+       Wheel spare parts still spawn as loot (nominal=2). -->
   <!-- DC-3 Transport — large cargo plane -->
   <type name="LM_DC_3">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -45,8 +47,8 @@
   <type name="LM_Stuntplane">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -85,8 +87,8 @@
   <type name="LM_Catalina">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -99,8 +101,8 @@
   <type name="LM_Tigermoth">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -112,8 +114,8 @@
   <type name="LM_Tigermoth_MK2">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -125,8 +127,8 @@
   <type name="LM_Tigermoth_MK3">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -165,8 +167,8 @@
   <type name="LM_Spitfire">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -205,8 +207,8 @@
   <type name="LM_Cessna180">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
-    <nominal>1</nominal>
-    <min>1</min>
+    <nominal>0</nominal>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
