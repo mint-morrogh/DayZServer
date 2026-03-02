@@ -219,11 +219,11 @@
       <child lootmax="0" lootmin="0" max="4" min="0" type="Animal_CanisLupus_White" />
     </children>
   </event>
-  <!-- max=1 means each "herd" is a single lone dog of a random breed -->
+  <!-- Use mod author's max=5 (small packs); nominal=35 for more dogs across map -->
   <event name="AnimalWildDog">
     <nominal>35</nominal>
     <min>15</min>
-    <max>1</max>
+    <max>5</max>
     <lifetime>180</lifetime>
     <restock>0</restock>
     <saferadius>350</saferadius>
