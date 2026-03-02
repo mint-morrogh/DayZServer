@@ -47,8 +47,52 @@
 		<territory type="Herd" name="Bear" behavior="BlissBearGroupBeh">
 			<file usable="bear_territories"/>
 		</territory>
-		<territory type="Herd" name="WildDog" behavior="DZWolfGroupBeh">
+		<!-- WILD DOG (DayZ Dog mod) — Ambient type for lone dogs -->
+		<territory type="Ambient" name="AmbientDog" behavior="DZAmbientLifeGroupBeh">
 			<file usable="dog_territories" />
+			<agent type="Male" chance="1">
+				<spawn configName="Doggo_Wild1" chance="1" />
+				<spawn configName="Doggo_Wild2" chance="1" />
+				<spawn configName="Doggo_Wild3" chance="1" />
+				<spawn configName="Doggo_Wild4" chance="1" />
+				<spawn configName="Doggo_Wild5" chance="1" />
+				<spawn configName="Doggo_Wild6" chance="1" />
+				<spawn configName="Doggo_Wild7" chance="1" />
+				<spawn configName="Doggo_Wild8" chance="1" />
+				<spawn configName="Doggo_Wild9" chance="1" />
+				<spawn configName="Doggo_Wild10" chance="1" />
+				<spawn configName="Doggo_Wild11" chance="1" />
+				<spawn configName="Doggo_Wild12" chance="1" />
+				<spawn configName="Doggo_Wild13" chance="1" />
+				<spawn configName="Doggo_Wild14" chance="1" />
+				<spawn configName="Doggo_Wild15" chance="1" />
+				<spawn configName="Doggo_Wild16" chance="1" />
+				<spawn configName="Doggo_Wild17" chance="1" />
+				<spawn configName="Doggo_Wild18" chance="1" />
+				<spawn configName="Doggo_Wild19" chance="1" />
+				<spawn configName="Doggo_Wild20" chance="1" />
+				<spawn configName="Doggo_Wild21" chance="1" />
+				<spawn configName="Doggo_Wild22" chance="1" />
+				<spawn configName="Doggo_Wild23" chance="1" />
+				<spawn configName="Doggo_Wild24" chance="1" />
+				<spawn configName="Doggo_Wild25" chance="1" />
+				<spawn configName="Doggo_Wild26" chance="1" />
+				<spawn configName="Doggo_Wild27" chance="1" />
+				<spawn configName="Doggo_Wild28" chance="1" />
+				<spawn configName="Doggo_Wild29" chance="1" />
+				<spawn configName="Doggo_Wild30" chance="1" />
+				<spawn configName="Doggo_Wild31" chance="1" />
+				<spawn configName="Doggo_Wild32" chance="1" />
+				<spawn configName="Doggo_Wild33" chance="1" />
+				<spawn configName="Doggo_Wild34" chance="1" />
+				<spawn configName="Doggo_Wild35" chance="1" />
+			</agent>
+			<item name="globalCountMax" val="35" />
+			<item name="zoneCountMin" val="1" />
+			<item name="zoneCountMax" val="1" />
+			<item name="playerSpawnRadiusNear" val="50" />
+			<item name="playerSpawnRadiusFar" val="200" />
+			<item name="zoneTouchDisableEditPeriodSec" val="600" />
 		</territory>
 		<territory type="Herd" name="WildHorse" behavior="DZDeerGroupBeh">
 			<file usable="wild_horse_territories" />

@@ -2,7 +2,7 @@
  * SitRest - Blood & Barter
  *
  * Freezes hunger (energy) and thirst (water) drain while the player
- * is using a sit emote (SitA or SitB). Eating/drinking while seated
+ * is using a sit emote (SitA, SitB, or SurvivorAnims SitNew). Eating/drinking while seated
  * still works — the snapshot ratchets upward.
  */
 
@@ -49,7 +49,8 @@ modded class PlayerBase
 			return false;
 
 		int id = em.SitRest_GetGestureID();
-		return (id == EmoteConstants.ID_EMOTE_SITA || id == EmoteConstants.ID_EMOTE_SITB);
+		// Vanilla sits + SurvivorAnims "SitNew" (ID 5501)
+		return (id == EmoteConstants.ID_EMOTE_SITA || id == EmoteConstants.ID_EMOTE_SITB || id == 5501);
 	}
 
 	private void SitRestTick()

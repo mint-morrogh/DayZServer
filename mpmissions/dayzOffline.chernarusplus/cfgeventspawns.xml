@@ -1497,6 +1497,8 @@
     <event name="AnimalRoeDeer" />
     <event name="AnimalWolf" />
     <event name="AnimalWildBoar" />
+    <event name="AnimalWildDog" />
+    <event name="AnimalWildHorse" />
 	<!-- ============================================================ -->
 	<!-- MODDED VEHICLE SPAWNS — 4KBOSSK large vehicles               -->
 	<!-- Flat open terrain near roads, away from buildings/trees/rail  -->
