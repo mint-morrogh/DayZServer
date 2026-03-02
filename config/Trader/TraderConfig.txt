@@ -388,8 +388,15 @@
 		RDG2SmokeGrenade_Black,	1,		300,	100
 		RDG2SmokeGrenade_White,	1,		300,	100
 		FlashGrenade,			1,		300,	100
-		
-		
+		// ---- M79 Grenade Launcher ----
+		M79,					W,		2500,	1200
+		Ammo_40mm_Explosive,	1,		500,	200
+		Ammo_40mm_Chemgas,		1,		400,	150
+		Ammo_40mm_Smoke_Black,	1,		200,	80
+		Ammo_40mm_Smoke_Green,	1,		200,	80
+		Ammo_40mm_Smoke_Red,	1,		200,	80
+		Ammo_40mm_Smoke_White,	1,		200,	80
+
 <Trader> Weapon Supplies
 	<Category> Ammunition
 		Ammo_380,				1,		1,		-1

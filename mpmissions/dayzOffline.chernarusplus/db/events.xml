@@ -55,7 +55,7 @@
     </children>
   </event>
   <event name="AnimalBear">
-    <nominal>0</nominal>
+    <nominal>4</nominal>
     <min>2</min>
     <max>2</max>
     <lifetime>180</lifetime>
@@ -219,11 +219,11 @@
       <child lootmax="0" lootmin="0" max="4" min="0" type="Animal_CanisLupus_White" />
     </children>
   </event>
-  <!-- Dogs now spawn via Ambient territory in cfgenvironment.xml (lone dogs, not packs) -->
+  <!-- max=1 means each "herd" is a single lone dog of a random breed -->
   <event name="AnimalWildDog">
-    <nominal>0</nominal>
-    <min>0</min>
-    <max>0</max>
+    <nominal>35</nominal>
+    <min>15</min>
+    <max>1</max>
     <lifetime>180</lifetime>
     <restock>0</restock>
     <saferadius>350</saferadius>
@@ -232,7 +232,7 @@
     <flags deletable="0" init_random="0" remove_damaged="0" />
     <position>fixed</position>
     <limit>mixed</limit>
-    <active>0</active>
+    <active>1</active>
     <children>
       <child lootmax="0" lootmin="0" max="1" min="0" type="Doggo_Wild1" />
       <child lootmax="0" lootmin="0" max="1" min="0" type="Doggo_Wild2" />
@@ -285,11 +285,11 @@
     <limit>child</limit>
     <active>1</active>
     <children>
-      <child lootmax="0" lootmin="0" max="1" min="0" type="Animal_Horse_Brown" />
-      <child lootmax="0" lootmin="0" max="1" min="0" type="Animal_Horse_White" />
-      <child lootmax="0" lootmin="0" max="1" min="0" type="Animal_Horse_Gray" />
-      <child lootmax="0" lootmin="0" max="1" min="0" type="Animal_Horse_Gray2" />
-      <child lootmax="0" lootmin="0" max="1" min="0" type="Animal_Horse_Palomino" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Animal_Horse_Brown" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Animal_Horse_White" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Animal_Horse_Gray" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Animal_Horse_Gray2" />
+      <child lootmax="0" lootmin="0" max="1" min="1" type="Animal_Horse_Palomino" />
     </children>
   </event>
   <event name="InfectedArmy">
