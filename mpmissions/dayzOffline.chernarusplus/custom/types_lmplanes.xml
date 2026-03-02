@@ -2,7 +2,7 @@
 <types>
   <!-- LMs Planes — planes spawn via events.xml (VehiclePlanes) at airfield positions.
        nominal=0 here so types.xml doesn't also spawn them.
-       Wheel spare parts still spawn as loot (nominal=2). -->
+       Wheel spare parts also nominal=0 (trader-only, no world loot). -->
   <!-- DC-3 Transport — large cargo plane -->
   <type name="LM_DC_3">
     <lifetime>3888000</lifetime>
@@ -18,10 +18,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_DC_3_Wheel_Front">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -31,10 +31,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_DC_3_Wheel_Back">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -58,10 +58,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Stuntplane_Wheel_Front">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -71,10 +71,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Stuntplane_Wheel_Back">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -138,10 +138,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Tigermoth_Wheel_Front">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -151,10 +151,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Tigermoth_Wheel_Back">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -178,10 +178,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Spitfire_Wheel_Front">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -191,10 +191,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Spitfire_Wheel_Back">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -218,10 +218,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Cessna180_Wheel_Front">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>
@@ -231,10 +231,10 @@
     <usage name="Farm" />
   </type>
   <type name="LM_Cessna180_Wheel_Back">
-    <nominal>2</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
-    <restock>1800</restock>
-    <min>1</min>
+    <restock>0</restock>
+    <min>0</min>
     <quantmin>-1</quantmin>
     <quantmax>-1</quantmax>
     <cost>100</cost>

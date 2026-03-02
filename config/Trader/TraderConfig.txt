@@ -334,56 +334,116 @@
 	<Category> Sidearms
 		Flaregun,               W,		80,		40
 		MakarovIJ70,			W,		100,	50
+		P1,						W,		120,	60
 		CZ75,					W,		135,	70
 		FNX45,					W,		175,	90
+		Longhorn,				W,		250,	125
 		Glock19,				W,		300,	130
 		MKII,					W,		320,	160
 		Colt1911,				W,		340,	180
 		Engraved1911,			W,		340,	180
-		
+		Deagle,					W,		500,	250
+		Deagle_Gold,			W,		600,	300
+		Mass357M1911,			W,		350,	175
+		MassG18,				W,		400,	200
+		MassM19,				W,		350,	175
+		MassM19_Wood,			W,		370,	185
+
 	<Category> Rifles
 		Izh18,					W,		350,	175
+		Ruger1022,				W,		350,	175
+		Repeater,				W,		380,	190
+		CZ550,					W,		400,	200
 		Mosin9130,				W,		400,	200
+		Mosin9130_Black,		W,		420,	210
+		Mosin9130_Green,		W,		420,	210
+		Mosin9130_Camo,			W,		440,	220
+		SSG82,					W,		450,	225
 		CZ527,					W,		500,	250
 		Winchester70,			W,		500,	250
+		Scout,					W,		550,	275
+		Scout_Chernarus,		W,		550,	275
+		Scout_Livonia,			W,		550,	275
 		SKS,					W,		600,	300
+		M14,					W,		1200,	600
+		// ---- Sawed-off Rifles ----
+		SawedoffIzh18,			W,		200,	100
+		SawedoffMosin9130,		W,		250,	125
+		SawedoffMosin9130_Black,W,		270,	135
+		SawedoffMosin9130_Green,W,		270,	135
+		SawedoffMosin9130_Camo,	W,		280,	140
+		SawedoffFAMAS,			W,		600,	300
+		// ---- Crossbows ----
+		Crossbow_Wood,			W,		400,	200
+		Crossbow_Black,			W,		420,	210
+		Crossbow_Autumn,		W,		420,	210
+		Crossbow_Summer,		W,		420,	210
 		
 	<Category> Shotguns
+		Izh18Shotgun,			W,		300,	150
 		Mp133Shotgun,			W,		500,	250
 		Izh43Shotgun,			W,		900,	400
 		Saiga,					W,		1500,	600
+		// ---- Sawed-off Shotguns ----
+		SawedoffIzh43Shotgun,	W,		500,	250
+		SawedoffB95,			W,		900,	450
 		
 	<Category> Submachine Guns
 		CZ61,					W,		700,	300
+		PM73Rak,				W,		750,	375
+		PP19,					W,		800,	400
 		UMP45,					W,		800,	350
-		MP5K,					W,		1000,	450	
+		MP5K,					W,		1000,	450
 		AKS74U,					W,		1100,	600
+		AKS74U_Black,			W,		1150,	625
+		AKS74U_Green,			W,		1150,	625
 		
 	<Category> Assault Rifles
+		FAMAS,					W,		1000,	500
 		FAL,					W,		1000,	450
+		Aug,					W,		1200,	600
+		AugShort,				W,		1100,	550
+		Vikhr,					W,		1400,	700
+		ASVAL,					W,		1500,	750
 		AKM,					W,		1500,	750
 		AK101,					W,		1500,	750
+		AK101_Black,			W,		1550,	775
+		AK101_Green,			W,		1550,	775
 		AK74,					W,		1600,	750
+		AK74_Black,				W,		1650,	775
+		AK74_Green,				W,		1650,	775
 		M4A1,					W,		1500,	750
+		M4A1_Black,				W,		1550,	775
+		M4A1_Green,				W,		1550,	775
 		
 	//<Category> Light Machine Guns
 		
 	<Category> Sniper Rifles
 		VSS,					W,		1600,	960
+		SV98,					W,		1700,	1000
 		B95,					W,		1700,	1100
 		SVD,					W,		2000,	1200
+		SVD_Wooden,				W,		2000,	1200
 
 	<Category> Mass's Rifles
 		MassSVT40,				W,		500,	250
 		MassSVT40_Black,		W,		550,	275
 		MassSVT40_Green,		W,		550,	275
 		MassSVT40_Camo,			W,		600,	300
+		MassAR15,				W,		1100,	550
+		MassScout556,			W,		600,	300
+		MassPpskn,				W,		700,	350
+		MassB52,				W,		800,	400
+		Massmini14,				W,		600,	300
+		MassMini14_Black,		W,		650,	325
+		Mass_ASVAL,				W,		1500,	750
 		MassM16,				W,		1200,	600
 		Mass_AN94,				W,		1600,	800
 		Mass_HK416,				W,		1600,	800
 		Mass_SLR106,			W,		1500,	750
 		MassType81,				W,		1400,	700
-		Massmini14,				W,		600,	300
+		Mass_RPK74,				W,		1800,	900
+		Mass_PKM,				W,		2000,	1000
 		MassAR15DMR,			W,		1800,	900
 		MassAR15DMR_Desert,		W,		1800,	900
 		MassM110,				W,		2200,	1100
@@ -394,6 +454,8 @@
 		MassKivaari,			W,		3000,	1500
 		Mass_RugerPrecision,	W,		2200,	1100
 		Mass_SVU,				W,		2400,	1200
+		Mass_M98B,				W,		3500,	1750
+		Mass_M98BShort,			W,		3200,	1600
 
 	<Category> Mass's SMGs
 		MassPPSH41,				W,		800,	400
@@ -407,12 +469,42 @@
 		MassStevens301,			W,		400,	200
 		MassStevens301_green,	W,		420,	210
 		MassStevens301_tan,		W,		420,	210
+		MassStevens301SHORT,			W,		300,	150
+		MassStevens301SHORT_green,		W,		320,	160
+		MassStevens301SHORT_tan,		W,		320,	160
+		MassStevens301SuperShort,		W,		250,	125
+		MassStevens301SuperShort_green,	W,		270,	135
+		MassStevens301SuperShort_tan,	W,		270,	135
+		MassStevens301SuperShortNew,		W,		250,	125
+		MassStevens301SuperShortNew_green,W,	270,	135
+		MassStevens301SuperShortNew_tan,W,		270,	135
+		Massarmsan,				W,		1100,	550
+		MassTMP153,				W,		1100,	550
 		MassMP153,				W,		1200,	600
 		MassMP153Short,			W,		1000,	500
 		Mass_SPAS12,			W,		1800,	900
 
 	<Category> Mass's Sidearms
-		Mass_Coonan,			W,		400,	200
+		// Mass_Coonan is actually Mass357M1911 (listed in main Sidearms)
+
+	<Category> Nemsis Scrap Weapons
+		nm_Scrappistol,			W,		80,		40
+		nm_Scrapcannon_Rust,	W,		200,	100
+		nm_ScrapBat,			W,		20,		10
+		nm_ScrapPipe,			W,		15,		8
+		nm_ScrapShovel,			W,		20,		10
+		nm_ScrapSledge,			W,		25,		12
+		nm_ScrapCrowbar,		W,		18,		9
+		nm_ScrapWrench,			W,		15,		8
+		nm_ScrapHoe,			W,		15,		8
+		nm_ScrapSword,			W,		35,		18
+		nm_ScrapSpear,			W,		30,		15
+		nm_ScrapKnuckles,		W,		12,		6
+		nm_ScrapPetersHockey,	W,		20,		10
+		nm_ScrapNewHockey,		W,		20,		10
+		nm_ScrapHammerMeat,		W,		15,		8
+		nm_ScrapHammerSmall,	W,		12,		6
+		nm_ScrapLugWrench,		W,		15,		8
 
 	<Category> Grenades
 		RGD5Grenade,			1,		300,	100
@@ -440,15 +532,17 @@
 		Ammo_9x19,				1,		1,		-1
 		Ammo_22,				1,		1,		-1
 		Ammo_45ACP,				1,		1,		-1
+		Ammo_357,				1,		3,		1
 		Ammo_12gaPellets,		1,		3,		1
 		Ammo_12gaSlug,			1,		4,		2
+		Ammo_12gaRubberSlug,	1,		3,		1
 		Ammo_9x39,				1,		4,		2
 		Ammo_9x39AP,			1,		5,		3
 		Ammo_308Win,			1,		5,		3
 		Ammo_545x39,			1,		5,		3
 		Ammo_556x45,			1,		5,		3
 		Ammo_762x39,			1,		5,		3
-		Ammo_762x54,			1,		10,		6		
+		Ammo_762x54,			1,		10,		6
 		Ammo_556x45Tracer,		1,		10,		5
 		Ammo_545x39Tracer,		1,		10,		5
 		Ammo_308WinTracer,		1,		10,		5
@@ -457,7 +551,14 @@
 	    Ammo_FlareBlue,			1,		15,		7
 	    Ammo_FlareGreen,		1,		15,		7
 	    Ammo_FlareRed,			1,		15,		7
-		Ammo_762x54Tracer,		1,		20,		12		
+		Ammo_762x54Tracer,		1,		20,		12
+		// ---- Crossbow Ammo ----
+		Ammo_HuntingBolt,		1,		8,		4
+		Ammo_ImprovisedBolt_1,	1,		4,		2
+		Ammo_ImprovisedBolt_2,	1,		4,		2
+		Ammo_CupidsBolt,		1,		8,		4
+		// ---- Nemsis Scrap Ammo ----
+		nm_Ammo_Scrapbolt,		1,		3,		1
 		// When changing Prices here keep in Mind that Players
 		// can just unpack the Ammoboxes and sell the Ammo seperatly!
 		// Originally the Ammoboxes buying Price is 20% less than
@@ -467,15 +568,17 @@
 		AmmoBox_9x19_25rnd,		*,		20,		-1
 		AmmoBox_45ACP_25rnd,	*,		20,		-1
 		AmmoBox_22_50Rnd,		*,		60,		20
+		AmmoBox_357_20Rnd,		*,		48,		20
 		AmmoBox_00buck_10rnd,	*,		24,		10
 		AmmoBox_12gaSlug_10Rnd,	*,		32,		20
+		AmmoBox_12gaRubberSlug_10Rnd,*,	24,		10
 		AmmoBox_9x39_20Rnd,		*,		32,		20
 		AmmoBox_9x39AP_20Rnd,	*,		80,		60
 		AmmoBox_308Win_20Rnd,	*,		80,		60
 		AmmoBox_545x39_20Rnd,	*,		80,		60
 		AmmoBox_556x45_20Rnd,	*,		80,		60
 		AmmoBox_762x39_20Rnd,	*,		80,		60
-		AmmoBox_762x54_20Rnd,	*,		200,	120		
+		AmmoBox_762x54_20Rnd,	*,		200,	120
 		AmmoBox_308WinTracer_20Rnd,		*,		160,	80
 		AmmoBox_545x39Tracer_20Rnd,		*,		160, 	80
 		AmmoBox_556x45Tracer_20Rnd,		*,		160,	80
@@ -484,16 +587,33 @@
 		
 	<Category> Magazines
 		Mag_IJ70_8Rnd,			M,		30,		15
+		Mag_P1_8Rnd,			M,		30,		15
 		Mag_CZ75_15Rnd,			M,		40,		20
 		Mag_Glock_15Rnd,		M,		40,		20
 		Mag_MKII_10Rnd,			M,		40,		20
 		Mag_1911_7Rnd,			M,		40,		20
 		Mag_FNX45_15Rnd,		M,		40,		20
+		Mag_Deagle_9rnd,		M,		60,		30
 		Mag_CZ527_5rnd,			M,		60,		30
+		Mag_CZ550_10Rnd,		M,		80,		40
+		Mag_SSG82_5rnd,			M,		60,		30
+		Mag_Scout_5Rnd,			M,		60,		30
+		Mag_Ruger1022_15Rnd,	M,		80,		40
+		Mag_Ruger1022_30Rnd,	M,		120,	60
+		Mag_PM73_15Rnd,			M,		80,		40
+		Mag_PM73_25Rnd,			M,		120,	60
 		Mag_CZ61_20Rnd,			M,		100,	50
+		Mag_PP19_64Rnd,			M,		300,	150
 		Mag_UMP_25Rnd,			M,		150,	75
+		Mag_MP5_15Rnd,			M,		120,	60
 		Mag_MP5_30Rnd,			M,		200,	100
+		Mag_FAMAS_25Rnd,		M,		200,	100
+		Mag_Aug_30Rnd,			M,		220,	110
 		Mag_FAL_20Rnd,			M,		100,	50
+		Mag_M14_10Rnd,			M,		120,	60
+		Mag_M14_20Rnd,			M,		200,	100
+		Mag_Vikhr_30Rnd,		M,		220,	110
+		Mag_VAL_20Rnd,			M,		200,	100
 		Mag_Saiga_5Rnd,			M,		100,	50
 		Mag_Saiga_8Rnd,			M,		220,	60
 		Mag_Saiga_Drum20Rnd,	M,		480,	110
@@ -502,85 +622,172 @@
 		Mag_AKM_Drum75Rnd,		M,		480,	220
 		Mag_AK101_30Rnd,		M,		220,	110
 		Mag_AK74_30Rnd,			M,		220,	110
+		Mag_AK74_45Rnd,			M,		350,	175
 		Mag_STANAG_30Rnd,		M,		220,	110
+		Mag_STANAG_60Rnd,		M,		480,	220
 		Mag_STANAGCoupled_30Rnd,M,		480,	220
 		Mag_CMAG_10Rnd,			M,		120,	60
+		Mag_CMAG_10Rnd_Black,	M,		120,	60
+		Mag_CMAG_10Rnd_Green,	M,		120,	60
 		Mag_CMAG_20Rnd,			M,		180,	80
+		Mag_CMAG_20Rnd_Black,	M,		180,	80
+		Mag_CMAG_20Rnd_Green,	M,		180,	80
 		Mag_CMAG_30Rnd,			M,		220,	110
+		Mag_CMAG_30Rnd_Black,	M,		220,	110
+		Mag_CMAG_30Rnd_Green,	M,		220,	110
 		Mag_CMAG_40Rnd,			M,		300,	150
+		Mag_CMAG_40Rnd_Black,	M,		300,	150
+		Mag_CMAG_40Rnd_Green,	M,		300,	150
 		Mag_VSS_10Rnd,			M,		220,	110
 		Mag_SVD_10Rnd,			M,		250,	125
+		Mag_SV98_10Rnd,			M,		250,	125
 		Mag_308WinSnaploader_2Rnd,		M,		250,	125
 
 	<Category> Mass's Magazines
+		Mass357M1911Mag,		M,		50,		25
+		Mass_Mag_Coonan_7Rnd,	M,		50,		25
+		Mass_Mag_G18_30Rnd,		M,		100,	50
 		Mass_Mag_SVT_10Rnd,		M,		80,		40
 		Mass_Mag_Mini14_5rnd,	M,		60,		30
 		Mass_Mag_Mini14_10rnd,	M,		100,	50
+		Scout556mag,			M,		60,		30
 		Mass_Mag_PPSh_30Rnd,	M,		120,	60
 		Mass_Mag_PPSh_71RndDrum,M,		300,	150
 		Mass_Mag_MP40_30Rnd,	M,		120,	60
+		Mass308STANAG,			M,		200,	100
+		Mass762Stanag,			M,		200,	100
 		Mass_Mag_M417_20Rnd,	M,		200,	100
 		Mass_Mag_M24_5Rnd,		M,		80,		40
+		Mass338M24Mag,			M,		120,	60
 		Mass_Mag_M300_7Rnd,		M,		150,	75
 		Mass_Mag_Kivaari_10Rnd,	M,		200,	100
 		Mass_Mag_RugerPrecision_10Rnd,M,	200,	100
-		Mass_Mag_Coonan_7Rnd,	M,		50,		25
 		Mass_Mag_9x39Palm_30Rnd,M,		250,	125
+		Mass_Mag_PKM_100Rnd,	M,		400,	200
+		Mass_Mag_M98B_7Rnd,		M,		200,	100
+		// ---- Nemsis Scrap Magazine ----
+		nm_ScrapCanister_Mag,	M,		30,		15
 
 	<Category> Handguards
 		MP5_PlasticHndgrd,		*,		100,	50
 		MP5_RailHndgrd,			*,		150,	75
 		AK74_Hndgrd,			*,		150,	75
 		AK_WoodHndgrd,			*,		200,	100
+		AK_WoodHndgrd_Black,	*,		220,	110
+		AK_WoodHndgrd_Camo,	*,		220,	110
 		AK_RailHndgrd,			*,		200,	100
+		AK_RailHndgrd_Black,	*,		220,	110
+		AK_RailHndgrd_Green,	*,		220,	110
 		AK_PlasticHndgrd,		*,		200,	100
+		Mass_AK_PolymerHandGuard,*,		200,	100
 		M4_PlasticHndgrd,		*,		150,	75
 		M4_RISHndgrd,			*,		200,	100
+		M4_RISHndgrd_Black,		*,		220,	110
+		M4_RISHndgrd_Green,		*,		220,	110
 		M4_MPHndgrd,			*,		200,	100
+		// ---- Nemsis Scrap Handguards ----
+		nm_Scrap_Hndgrd_AK,	*,		50,		25
+		nm_Scrap_Hndgrd_M4,	*,		50,		25
+		nm_Scrap_Hndgrd_MP5,	*,		50,		25
 
 	<Category> Buttstocks
 		MP5k_StockBttstck,		*,		100,	50
+		PP19_Bttstck,			*,		120,	60
 		Fal_OeBttstck,			*,		100,	50
 		Fal_FoldingBttstck,		*,		150,	75
 		Saiga_Bttstck,			*,		150,	75
 		AKS74U_Bttstck,			*,		150,	75
 		AK74_WoodBttstck,		*,		150,	75
 		AK_PlasticBttstck,		*,		100,	50
+		AK_PlasticBttstck_Black,*,		120,	60
+		AK_PlasticBttstck_Green,*,		120,	60
 		AK_WoodBttstck,			*,		150,	75
+		AK_WoodBttstck_Black,	*,		170,	85
+		AK_WoodBttstck_Camo,	*,		170,	85
 		AK_FoldingBttstck,		*,		250,	125
+		AK_FoldingBttstck_Black,*,		270,	135
+		AK_FoldingBttstck_Green,*,		270,	135
+		MassAR15AdjBttstck,		*,		150,	75
+		Mass_HK416Bttstck,		*,		200,	100
+		MassM417Stock,			*,		200,	100
 		M4_OEBttstck,			*,		150,	75
 		M4_CQBBttstck,			*,		150,	75
 		M4_MPBttstck,			*,		150,	75
+		// ---- Nemsis Scrap Buttstocks ----
+		nm_Scrap_Bttstck_AK,	*,		40,		20
+		nm_Scrap_Bttstck_M4,	*,		40,		20
+		nm_Scrap_Bttstck_MP5,	*,		40,		20
+		nm_Scrap_Bttstck_Fal,	*,		40,		20
+		nm_Scrap_Bttstck_Saiga,	*,		40,		20
+		nm_Scrap_Bttstck_PP19,	*,		40,		20
 	
 	<Category> Optics
 		M4_CarryHandleOptic,	*,		150,	60
 		BUISOptic,				*,		150,	60
+		PistolOptic,			*,		200,	80
+		ReflexOptic,			*,		250,	100
 		FNP45_MRDSOptic,		*,		250,	100
 		ACOGOptic,				*,		300,	120
+		ACOGOptic_6x,			*,		400,	160
+		SportingOptic,			*,		400,	200
 		M68Optic,				*,		500,	200
 		M4_T3NRDSOptic,			*,		500,	200
 		KobraOptic,				*,		600,	250
 		KashtanOptic,			*,		700,	300
 		PUScopeOptic,			*,		900,	500
+		PSO6Optic,				*,		1000,	550
 		HuntingOptic,			*,		1000,	550
-		PSO1Optic,				*,		1100,	600	
+		PSO1Optic,				*,		1100,	600
 		PSO11Optic,				*,		1400,	840
+		StarlightOptic,			*,		1800,	1000
 		KazuarOptic,			*,		2200,	1400
 
 	<Category> Mass's Optics
+		MassSVTMount,			*,		300,	150
+		MassPKA,				*,		500,	250
 		MassScope,				*,		800,	400
+		MassScoutLRS,			*,		1200,	600
 		Mass1P69,				*,		1200,	600
+
+	<Category> CZOptics (BC ServerPack)
+		BC_HolosunHS507C_Optic,		*,		350,	175
+		BC_VortexAMG_UH1_Optic,	*,		500,	250
+		BC_ACOG_ACSS_Optic,			*,		600,	300
+		BC_HAMROptic,				*,		800,	400
+		BC_Accupower_Optic,			*,		900,	450
+		BC_EoTechVuduOptic,			*,		1000,	500
+		BC_LeupoldHoloDEvoOptic,	*,		1200,	600
+		BC_Vortex_RazorHD_Optic,	*,		1400,	700
+
+	<Category> Nemsis Scrap Scopes
+		nm_ScrapScope_PU,		*,		80,		40
+		nm_ScrapScope_PUzoom,	*,		100,	50
+		nm_ScrapScope_AK,		*,		80,		40
+		nm_ScrapScope_AKzoom,	*,		100,	50
+		nm_ScrapScope_M4,		*,		80,		40
+		nm_ScrapScope_M4zoom,	*,		100,	50
+		nm_ScrapScope_LRS,		*,		120,	60
+		nm_ScrapScope_LRSzoom,	*,		150,	75
 
 	<Category> Mass's Muzzles
 		MassMuzzle762,			*,		200,	100
 		MassMuzzle556,			*,		200,	100
 		MassMuzzle338,			*,		300,	150
+		Mass338Muzzle,			*,		300,	150
 		MassMuzzlePistol,		*,		150,	75
 
-	<Category> Supressors
+	<Category> Suppressors
+		ImprovisedSuppressor,	*,		80,		40
 		PistolSuppressor,		*,		150,	75
 		AK_Suppressor,			*,		250,	125
 		M4_Suppressor,			*,		250,	125
+		MassScoutSuppressor,	*,		200,	100
+		Mass308Suppressor,		*,		300,	150
+		MassM417Suppressor,		*,		300,	150
+		Shotgun_Suppressor,		*,		250,	125
+		// ---- Nemsis Scrap Suppressors ----
+		nm_Scrapsuppressor,		*,		60,		30
+		nm_Scrap_SuppWrap,		*,		60,		30
 		
 	<Category> Compensators
 		Mosin_Compensator,		*,		150,	75
@@ -593,6 +800,7 @@
 		SKS_Bayonet,			*,		100,	60
 		
 	<Category> Flashlights
+		TLRLight,				*,		100,	50
 		Universallight,			*,		120,	60
 	
 	
