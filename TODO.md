@@ -64,6 +64,7 @@ Do the same for all 20+ models.
 - **Requires server restart** (events.xml is loaded at startup)
 
 
+
 ---
 
 ## Pending (no server stop needed)
@@ -96,6 +97,12 @@ Do the same for all 20+ models.
 
 ### Vanilla animal nominals reduced — DONE
 - Reduced vanilla herd nominals in events.xml to leave more room under AnimalMaxCount=1200 cap. Dog nominal reduced from 35→8 (~100 entities). Vanilla animals rebalanced to lower counts.
+
+### Fires burn 3x longer — DONE
+- `GetFuelBurnRateMP()` override in CampfireRegen returns `super * 0.333`, reducing fuel consumption to 1/3 speed.
+
+### Crops last 3x longer before spoiling — DONE
+- `modded class PlantBase` in HealthBoost sets `m_SpoilAfterFullMaturityTime = 43200` (12 hours, up from default 4 hours).
 
 ### CE overtime fixes — DONE
 - `Stable_dayz_kit` nominal=0 in types_dayzhorse.xml

@@ -2,78 +2,79 @@
   <img src="BAEZ_logo.png" alt="BAE-Z Logo" width="400" />
 </p>
 
-# BAE-Z — DayZ Private Server
+# BAE-Z - DayZ Private Server
 
-What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into thirty-five, one custom script turned into eight, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result — a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-player LAN play on Chernarus.
+What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into thirty-five, one custom script turned into eight, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
 
 Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, install git so the server will auto update on launch, and play.
 
 ### Features
 
 **Companions & Animals**
-- **Companion dogs** — 35 breeds of tameable dogs roaming the map in wild packs, equip collars/K9 vests/gas masks, build dog houses, command follow/stay/attack
-- **Rideable horses** — 5 horse colours in wild herds, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
-- **Tougher companions** — dogs have doubled HP (1600) and doubled bite damage
-- **Companion health regen** — dogs and horses passively regenerate 5% max health every 30 seconds (~10 min from near-death to full)
-- **Rebalanced wildlife** — deer, roe deer, cows, goats, pigs, sheep, wild boar, wolves, bears, foxes, hares, and hens all tuned for a populated but performant world
+- **Companion dogs** - 35 breeds of tameable dogs roaming the map in wild packs, equip collars/K9 vests/gas masks, build dog houses, command follow/stay/attack
+- **Rideable horses** - 5 horse colours in wild herds, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
+- **Tougher companions** - dogs have doubled HP (1600) and doubled bite damage
+- **Companion health regen** - dogs and horses passively regenerate 5% max health every 30 seconds (~10 min from near-death to full)
+- **Rebalanced wildlife** - deer, roe deer, cows, goats, pigs, sheep, wild boar, wolves, bears, foxes, hares, and hens all tuned for a populated but performant world
 
 **Vehicles & Transport**
-- **38+ driveable vehicles** — 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) at curated map positions plus ~18 vanilla vehicles — some spawn road-ready, others may require you to find or trade for parts
-- **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (8 planes, 1 of each type)
-- **Unbreakable vehicles** — global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds — ruined parts still need replacing, but damaged parts heal themselves
-- **Road-ready vehicles** — vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
-- **More gasoline** — 75 gas canisters on map (up from 50), spawn 40-80% full
+- **38+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) at curated map positions plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
+- **Flyable planes** - DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (8 planes, 1 of each type)
+- **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
+- **Road-ready vehicles** - vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
+- **More gasoline** - 75 gas canisters on map (up from 50), spawn 40-80% full
 
 **Combat & Zombies**
-- **Day/night zombie system** — ~65% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
-- **Half-damage zombies** — zombie strength set to 0.5x vanilla day and night, gear lasts much longer
-- **Rebalanced zombie health** — bullet-sponge zombie types (police, military, soldiers) nerfed to reasonable HP so fights are challenging but not tedious
-- **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
+- **Day/night zombie system** - ~65% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
+- **Half-damage zombies** - zombie strength set to 0.5x vanilla day and night, gear lasts much longer
+- **Rebalanced zombie health** - bullet-sponge zombie types (police, military, soldiers) nerfed to reasonable HP so fights are challenging but not tedious
+- **Zombie kill drops** - zombies have a chance to drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
 
 **Crafting, Cooking & Skills**
-- **700+ crafting recipes** — weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
-- **Advanced cooking** — 30+ recipes you can discover via CookZ
-- **Skill tree** — earn XP and unlock perks in survival, crafting, hunting, and gathering
-- **Shake fruit trees** — hold action on fruit trees to shake loose 2-4 apples/pears/plums (75% drop chance, 30-min cooldown per tree)
+- **700+ crafting recipes** - weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
+- **Advanced cooking** - 30+ recipes you can discover via CookZ
+- **Skill tree** - earn XP and unlock perks in survival, crafting, hunting, and gathering
+- **Shake fruit trees** - hold action on fruit trees to shake loose 2-4 apples/pears/plums (75% drop chance, 30-min cooldown per tree)
 
 **Economy & Trading**
-- **NPC traders** — buy and sell items at safe zones using Roubles
-- **Roaming military trader** — a helicopter trader lands every 60 minutes near players, stays 30 minutes, trades weapons/ammo/medical/attachments for Roubles (all denominations accepted)
-- **Treasure hunting** — find photos, travel to the location, dig up randomized loot stashes
-- **Care package supply drops** — military, medical, survival, and building supplies parachute in every 60 minutes, heavily guarded by 12 zombies
-- **Stackable items** — roubles, nails, rags, bandages, stones, bones, bark, hooks, worms, and repair kits stack up to 999
+- **NPC traders** - buy and sell items at safe zones using Roubles
+- **Roaming military trader** - a helicopter trader lands every 60 minutes near players, stays 30 minutes, trades weapons/ammo/medical/attachments for Roubles (all denominations accepted)
+- **Treasure hunting** - find photos, travel to the location, dig up randomized loot stashes
+- **Care package supply drops** - military, medical, survival, and building supplies parachute in every 60 minutes, heavily guarded by 12 zombies
+- **Stackable items** - roubles, nails, rags, bandages, stones, bones, bark, hooks, worms, and repair kits stack up to 100
 
 **Quality of Life**
-- **GPS minimap** — on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
-- **HUD clock** — in-game world time displayed in the top-right corner
-- **Percentage HUD** — health, blood, hunger, thirst, and stamina shown as percentages
-- **Party system** — create a group with your co-op partner to see each other on the map
-- **Sit to rest** — all sit emotes (cross-legged, straight, and SurvivorAnims SitNew) freeze hunger and thirst drain while seated
-- **Campfire health regen** — players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds
-- **Sleep till morning** — if all players lie down to sleep at night, time skips to dawn
-- **Unlimited stamina** — no stamina drain while sprinting
-- **Durable gear** — all items self-repair to full health every 2 minutes; tools, weapons, and cooking gear stay pristine
-- **63 modded backpacks** — 13 backpack models in multiple camo/colour variants across the map
+- **GPS minimap** - on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
+- **HUD clock** - in-game world time displayed in the top-right corner
+- **Percentage HUD** - health, blood, hunger, thirst, and stamina shown as percentages
+- **Party system** - create a group with your co-op partner to see each other on the map
+- **Sit to rest** - all sit emotes freeze hunger and thirst drain for easy AFK
+- **Campfire health regen** - players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds, fires burn 3x longer
+- **Sleep till morning** - if all players lie down to sleep at night, time skips to dawn
+- **Unlimited stamina** - no stamina drain while sprinting, but certain gear can still slow you down
+- **Durable gear** - all items self-repair to full health every 2 minutes, but ruined gear still needs to be replaced
+- **63 modded backpacks** - 13 backpack models in multiple camo/colour variants across the map
 
 **World & Loot**
-- **Generous loot** — doubled canned food/drinks, 1.5x snacks and candy, tripled cooking pots, enabled crab cans
-- **Boosted foraging** — doubled mushroom spawns under trees, boosted fruit drops from apple/pear/plum trees
-- **Pristine loot** — items spawn Pristine to Worn only (no more Damaged/Badly Damaged spawns)
-- **45-day item persistence** — dropped items last 45 real days on the ground, survive server restarts
-- **Indestructible bases** — base structures and storage containers cannot be damaged
-- **Fewer contaminated zones** — dynamic NBC zones reduced to 1 (down from 2-4)
-- **Reduced shoe damage** — crawler zombie boot damage reduced from 5.0 to 1.0
+- **Generous loot** - doubled canned food/drinks, 1.5x snacks and candy, tripled cooking pots, doubled frying pans, enabled crab cans
+- **Long-lasting crops** - planted crops stay alive 3x longer after full maturity before spoiling (12 hours instead of 4)
+- **Boosted foraging** - doubled mushroom spawns under trees, boosted fruit drops from apple/pear/plum trees
+- **Pristine loot** - items spawn Pristine to Worn only (no more Damaged/Badly Damaged spawns)
+- **45-day item persistence** - dropped items last 45 real days on the ground, survive server restarts
+- **Indestructible bases** - base structures and storage containers cannot be damaged
+- **Fewer contaminated zones** - dynamic NBC zones reduced to 1 (down from 2-4)
+- **Reduced shoe damage** - crawler zombie boot damage reduced from 5.0 to 1.0
 
 **Server & Configuration**
-- **35 Workshop mods + 5 custom server-side mods + 3 custom client mods** — all preconfigured and ready to go
-- **One-file configuration** — all server settings in `server_settings.json`, applied with a single click
-- **Auto-restart** — server automatically restarts every 12 hours
-- **Full persistence** — bases, vehicles, and inventory survive restarts
-- **Auto-update** — `launch_dayz.bat` pulls latest changes, syncs mods, and launches in one click
+- **35 Workshop mods + 5 custom server-side mods + 3 custom client mods** - all preconfigured and ready to go
+- **One-file configuration** - all server settings in `server_settings.json`, applied with a single click
+- **Auto-restart** - server automatically restarts every 12 hours
+- **Full persistence** - bases, vehicles, and inventory survive restarts
+- **Auto-update** - `launch_dayz.bat` pulls latest changes, syncs mods, and launches in one click
 
 ## Quick Start
 
-### From-Scratch Install (Host — runs the server)
+### From-Scratch Install (Host - runs the server)
 
 If you're starting from nothing, here's every step:
 
@@ -82,18 +83,18 @@ If you're starting from nothing, here's every step:
 - Install [Steam](https://store.steampowered.com/about/) if you don't have it
 - Install [Git for Windows](https://git-scm.com/download/win) if you don't have it
 - Buy and install [DayZ](https://store.steampowered.com/app/221100/DayZ/) (the game)
-- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — Steam Library > dropdown "Games" → "Tools" → search "DayZ Server")
+- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free - Steam Library > dropdown "Games" → "Tools" → search "DayZ Server")
 
 Default install locations:
 ```
 C:\Program Files (x86)\Steam\steamapps\common\DayZ\          ← the game
 C:\Program Files (x86)\Steam\steamapps\common\DayZServer\    ← the server
 ```
-These two folders must be siblings under `steamapps\common\` — the launch scripts expect this layout.
+These two folders must be siblings under `steamapps\common\` - the launch scripts expect this layout.
 
 **2. Subscribe to all Workshop mods**
 
-Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 33 mods — all must be subscribed.
+Open each link in the [Mods](#mods) section below and click **Subscribe** in the Steam Workshop. There are 33 mods - all must be subscribed.
 
 **3. Launch DayZ once**
 
@@ -129,14 +130,14 @@ Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`.
 
 ---
 
-### From-Scratch Install (Player — joining someone else's server)
+### From-Scratch Install (Player - joining someone else's server)
 
 **1. Install Steam, DayZ, and DayZ Server**
 
 - Install [Steam](https://store.steampowered.com/about/) if you don't have it
 - Install [Git for Windows](https://git-scm.com/download/win) if you don't have it
 - Buy and install [DayZ](https://store.steampowered.com/app/221100/DayZ/)
-- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free — needed so the launch script has a place to install mods)
+- Install [DayZ Server](https://store.steampowered.com/app/223350/DayZ_Server/) (free - needed so the launch script has a place to install mods)
 
 **2. Subscribe to all Workshop mods**
 
@@ -158,7 +159,7 @@ git clone https://github.com/mint-morrogh/BAE-Z-Server.git DayZServer
 ```
 Double-click: launch_dayz.bat
 ```
-That's it. The script handles everything else — installs Workshop mods, syncs custom mods, and launches DayZ. Connect to `<host's IP>:2302`. Password: `mintmorrogh` (or whatever the host set).
+That's it. The script handles everything else - installs Workshop mods, syncs custom mods, and launches DayZ. Connect to `<host's IP>:2302`. Password: `mintmorrogh` (or whatever the host set).
 
 ---
 
@@ -195,7 +196,7 @@ That's it. The patcher reads your settings and writes them to the correct config
 | `network` | Voice chat, 3rd person, crosshair | `serverDZ.cfg` |
 | `gameplay` | Stamina, base damage, map features, base building rules | `cfggameplay.json` |
 | `zombies` | Spawn rates per category (city, coastal, military, wilderness, etc.) | `db/events.xml` |
-| `zombieBehavior` | Zombie speed, health, damage, and vision — separate day/night values | PvZmoD config XMLs |
+| `zombieBehavior` | Zombie speed, health, damage, and vision - separate day/night values | PvZmoD config XMLs |
 | `animals` | Wild dog and horse herd spawn counts | `db/events.xml` |
 | `horseGear` | Saddle, bridle, saddlebag, and stable kit spawn rates | `custom/types_dayzhorse.xml` |
 | `dogGear` | Collar, vest, gas mask, and dog house kit spawn rates | `custom/types_dayzdog.xml` |
@@ -339,10 +340,10 @@ Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod
 | Category | Nominal / Min / Max | Notes |
 |---|---|---|
 | City (regular) | 18 / 9 / 120 | Tuned for 2-player LAN performance |
-| City (coastal/Tier 1) | 5 / 3 / 30 | Light — easier coastal starts |
+| City (coastal/Tier 1) | 5 / 3 / 30 | Light - easier coastal starts |
 | Village | 15 / 7 / 50 | Moderate |
 | Village (coastal/Tier 1) | 5 / 3 / 15 | Light |
-| Wilderness (forest) | 2 / 1 / 8 | Very rare — forests are mostly clear |
+| Wilderness (forest) | 2 / 1 / 8 | Very rare - forests are mostly clear |
 | Military | 18 / 9 / 120 | Dangerous at night |
 | All others (police, medic, etc.) | 15 / 7 / 50 | Reduced |
 
@@ -369,10 +370,10 @@ These mods must be installed on both the **server** and **client**.
 | [CF (Community Framework)](https://steamcommunity.com/sharedfiles/filedetails/?id=1559212036) | 1559212036 | Required dependency for other mods |
 | [DayZ-Expansion-Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2291785308) | 2291785308 | Core framework for DayZ Expansion |
 | [Dabs Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2545327648) | 2545327648 | Script/GUI framework dependency for Expansion |
-| [DayZ-Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2116151222) | 2116151222 | Expansion content — items, UI, and world enhancements |
+| [DayZ-Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2116151222) | 2116151222 | Expansion content - items, UI, and world enhancements |
 | [DayZ-Expansion-Navigation](https://steamcommunity.com/sharedfiles/filedetails/?id=2792984722) | 2792984722 | Navigation scripts required by GPS minimap |
 | [DayZ-Expansion-Book](https://steamcommunity.com/sharedfiles/filedetails/?id=2572324799) | 2572324799 | Virtual book UI framework used by Expansion mods |
-| [DayZ-Expansion-Groups](https://steamcommunity.com/sharedfiles/filedetails/?id=2792983364) | 2792983364 | Party system — create groups to see each other on the map |
+| [DayZ-Expansion-Groups](https://steamcommunity.com/sharedfiles/filedetails/?id=2792983364) | 2792983364 | Party system - create groups to see each other on the map |
 | [Expansion Minimap Override](https://steamcommunity.com/sharedfiles/filedetails/?id=3626138230) | 3626138230 | GPS minimap overlay with player position |
 | [Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) | 1590841260 | NPC traders, safe zones, buy/sell items |
 | [Mass's Many Item Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=1566911166) | 1566911166 | Adds weapons, clothing, crafting recipes |
@@ -380,24 +381,24 @@ These mods must be installed on both the **server** and **client**.
 | [VanillaPlusPlusMap](https://steamcommunity.com/sharedfiles/filedetails/?id=1623711988) | 1623711988 | Enhanced map with markers and details |
 | [GoreZ](https://steamcommunity.com/sharedfiles/filedetails/?id=1648967877) | 1648967877 | Enhanced blood and gore effects |
 | [Inventory Move Sounds](https://steamcommunity.com/sharedfiles/filedetails/?id=2444247391) | 2444247391 | Adds sounds when moving items in inventory |
-| [PvZmoD Customisable Zombies](https://steamcommunity.com/sharedfiles/filedetails/?id=2051775667) | 2051775667 | Configurable zombie speed, health, damage, vision — day/night variants |
-| [Zenarchist's Skills](https://steamcommunity.com/sharedfiles/filedetails/?id=3601119520) | 3601119520 | Skill perk tree — survival, crafting, hunting, gathering |
+| [PvZmoD Customisable Zombies](https://steamcommunity.com/sharedfiles/filedetails/?id=2051775667) | 2051775667 | Configurable zombie speed, health, damage, vision - day/night variants |
+| [Zenarchist's Skills](https://steamcommunity.com/sharedfiles/filedetails/?id=3601119520) | 3601119520 | Skill perk tree - survival, crafting, hunting, gathering |
 | [CZ Optics](https://steamcommunity.com/sharedfiles/filedetails/?id=3571068454) | 3571068454 | Additional optics and scopes |
 | [PercentageHUD](https://steamcommunity.com/sharedfiles/filedetails/?id=3443562573) | 3443562573 | Shows health, blood, hunger, thirst, and stamina as percentages on the HUD |
-| [Zen's Treasure](https://steamcommunity.com/sharedfiles/filedetails/?id=3426979799) | 3426979799 | Photo-based treasure hunting — find photos, travel to the location, dig up randomized loot stashes |
+| [Zen's Treasure](https://steamcommunity.com/sharedfiles/filedetails/?id=3426979799) | 3426979799 | Photo-based treasure hunting - find photos, travel to the location, dig up randomized loot stashes |
 | [Care Packages V2](https://steamcommunity.com/sharedfiles/filedetails/?id=2691041685) | 2691041685 | Randomized care package drops with notifications, locked containers, and custom loot |
-| [Nemsis Craftingpack All-in-One](https://steamcommunity.com/sharedfiles/filedetails/?id=3606014796) | 3606014796 | 500+ items, 700+ crafting recipes — weapons, armor, vehicles, bushcraft, ammo crafting, and more |
-| [LMs Planes](https://steamcommunity.com/sharedfiles/filedetails/?id=3639695989) | 3639695989 | Flyable planes — DC-3, Cessna 180, Spitfire, Catalina seaplane, Tigermoth, Stuntplane |
-| [CookZ](https://steamcommunity.com/sharedfiles/filedetails/?id=3302732231) | 3302732231 | Advanced cooking — 30+ recipes for dishes, soups, sausages, marmalades, cheese |
+| [Nemsis Craftingpack All-in-One](https://steamcommunity.com/sharedfiles/filedetails/?id=3606014796) | 3606014796 | 500+ items, 700+ crafting recipes - weapons, armor, vehicles, bushcraft, ammo crafting, and more |
+| [LMs Planes](https://steamcommunity.com/sharedfiles/filedetails/?id=3639695989) | 3639695989 | Flyable planes - DC-3, Cessna 180, Spitfire, Catalina seaplane, Tigermoth, Stuntplane |
+| [CookZ](https://steamcommunity.com/sharedfiles/filedetails/?id=3302732231) | 3302732231 | Advanced cooking - 30+ recipes for dishes, soups, sausages, marmalades, cheese |
 | [CookZ Realistic Packaging](https://steamcommunity.com/sharedfiles/filedetails/?id=3566508757) | 3566508757 | Realistic textures for CookZ food packaging |
 | [Sleep Till Morning](https://steamcommunity.com/sharedfiles/filedetails/?id=3578708533) | 3578708533 | Skip to dawn when all players lie down to sleep at night |
-| [4KBOSSKVehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=3369325490) | 3369325490 | 21 driveable vehicles — muscle cars, trucks, SUVs, sports cars, monster truck, motorhome |
-| [DayZ-Dog](https://steamcommunity.com/sharedfiles/filedetails/?id=2471347750) | 2471347750 | Tameable companion dogs — 17 breeds, collars, vests, gas masks, dog houses |
+| [4KBOSSKVehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=3369325490) | 3369325490 | 21 driveable vehicles - muscle cars, trucks, SUVs, sports cars, monster truck, motorhome |
+| [DayZ-Dog](https://steamcommunity.com/sharedfiles/filedetails/?id=2471347750) | 2471347750 | Tameable companion dogs - 17 breeds, collars, vests, gas masks, dog houses |
 | [Survivor Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2918418331) | 2918418331 | Animation dependency required by DayZ Horse |
-| [DayZ Horse](https://steamcommunity.com/sharedfiles/filedetails/?id=3295021220) | 3295021220 | Rideable horses — 5 colours, saddles, bridles, saddlebags, stables, walk/trot/gallop/jump/swim |
+| [DayZ Horse](https://steamcommunity.com/sharedfiles/filedetails/?id=3295021220) | 3295021220 | Rideable horses - 5 colours, saddles, bridles, saddlebags, stables, walk/trot/gallop/jump/swim |
 | [MWGSM Roaming Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=3636799682) | 3636799682 | Helicopter-based roaming trader that lands near players with weapons, ammo, medical, and attachments |
-| [Saga Shake Tree](https://steamcommunity.com/sharedfiles/filedetails/?id=3545040196) | 3545040196 | Shake fruit trees to drop apples, pears, and plums — configurable drop rates and cooldowns |
-| [Pack Complete — Backpacks FREE](https://steamcommunity.com/sharedfiles/filedetails/?id=3648464156) | 3648464156 | 13 backpack models with 63 camo/colour variants — tactical, military, medical, and civilian packs |
+| [Saga Shake Tree](https://steamcommunity.com/sharedfiles/filedetails/?id=3545040196) | 3545040196 | Shake fruit trees to drop apples, pears, and plums - configurable drop rates and cooldowns |
+| [Pack Complete - Backpacks FREE](https://steamcommunity.com/sharedfiles/filedetails/?id=3648464156) | 3648464156 | 13 backpack models with 63 camo/colour variants - tactical, military, medical, and civilian packs |
 
 ### Mod Installation
 
@@ -438,7 +439,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3545040196` | `@SagaShakeTree` |
 | `3648464156` | `@GelyaBackpacks` |
 
-### Gelya Backpacks — Pack Complete
+### Gelya Backpacks - Pack Complete
 
 13 backpack models with 63 colour/camo variants spawn across Chernarus alongside vanilla backpacks. Each variant has 2 copies on the map (min 1), except single-variant models and medpacks which spawn slightly more.
 
@@ -460,7 +461,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 
 Backpack spawns are configured in `custom/types_gelyabackpacks.xml`.
 
-### Zenarchist's Skills — Loot Spawns
+### Zenarchist's Skills - Loot Spawns
 
 Skill-related items spawn across the map (configurable in `server_settings.json` under `zenSkills`):
 
@@ -502,26 +503,26 @@ Config at `config/MWGSM_RoamingTrader/MWGSM_RoamingTraderConfig.json`.
 
 ### Care Packages
 
-Randomized supply drops land across the map every 60 minutes. Players are notified in-game with the drop location and distance. Packages are **locked** on drop — press F to open.
+Randomized supply drops land across the map every 60 minutes. Players are notified in-game with the drop location and distance. Packages are **locked** on drop - press F to open.
 
 | Package Type | Container | Loot |
 |---|---|---|
 | Military | Typhon camo | 1-3 guns (FAL, AKM, SVD, M4, Mosin, SKS, VSS, Scout) + ammo, mags, optics, NVGs |
-| Medical | Red | 8-15 medical items — bandages, morphine, antibiotics, iodine, saline, blood bags |
-| Survival | Green | 10-18 food/drink items — canned food, sodas, water, rice + hunting knife or shotgun |
-| Tools & Building | Black | 8-14 items — nails, pliers, hacksaw, rope, duct tape, code lock, planks + axes |
+| Medical | Red | 8-15 medical items - bandages, morphine, antibiotics, iodine, saline, blood bags |
+| Survival | Green | 10-18 food/drink items - canned food, sodas, water, rice + hunting knife or shotgun |
+| Tools & Building | Black | 8-14 items - nails, pliers, hacksaw, rope, duct tape, code lock, planks + axes |
 
 17 drop locations spread across Chernarus. 12 zombies guard each drop. Edit loot, locations, and timing in `config/CarePackagesV2/config.json`.
 
 ### Nemsis Craftingpack
 
-Adds 500+ craftable items and 700+ recipes. Crafting is vanilla-style — no workbenches needed. Players discover recipes by finding **recipe sketches** in the world, which can be collected in a notebook.
+Adds 500+ craftable items and 700+ recipes. Crafting is vanilla-style - no workbenches needed. Players discover recipes by finding **recipe sketches** in the world, which can be collected in a notebook.
 
 Crafting categories: bushcrafting, makeshift weapons, ammo crafting, armor, improvised NBC gear, vehicles, raiding tools, signs, writing, repairing, and more.
 
 Item spawns are configured in `custom/types_nemsis.xml`.
 
-> **Note:** The Airbrushing addon (`nm_Crafting_Part_Airbrushing.pbo`) was removed from `@NemsisCraftingpack/addons/` because it references classes from a newer version of Mass's Many Item Overhaul than this server uses. This only removes item painting/recoloring — all 700+ crafting recipes still work.
+> **Note:** The Airbrushing addon (`nm_Crafting_Part_Airbrushing.pbo`) was removed from `@NemsisCraftingpack/addons/` because it references classes from a newer version of Mass's Many Item Overhaul than this server uses. This only removes item painting/recoloring - all 700+ crafting recipes still work.
 
 ### LMs Planes
 
@@ -531,7 +532,7 @@ Flyable planes spawn across the map at industrial areas and farms (removed town/
 |---|---|---|
 | DC-3 | 1 | Large transport plane |
 | Stuntplane | 1 | Aerobatic biplane |
-| Catalina | 1 | Amphibious seaplane — lands on water |
+| Catalina | 1 | Amphibious seaplane - lands on water |
 | Tigermoth | 1 | Classic biplane |
 | Tigermoth MK2 | 1 | Variant |
 | Tigermoth MK3 | 1 | Variant |
@@ -543,7 +544,7 @@ Plane spawns are configured in `custom/types_lmplanes.xml`.
 
 ### 4KBOSSKVehicles
 
-20 driveable vehicles spawn across the map — 1 of each model, spread across towns, farms, industrial areas, and military bases:
+20 driveable vehicles spawn across the map - 1 of each model, spread across towns, farms, industrial areas, and military bases:
 
 | Vehicle | Count | Location |
 |---|---|---|
@@ -568,19 +569,19 @@ Plane spawns are configured in `custom/types_lmplanes.xml`.
 | Ford Raptor Monster Truck | 1 | Farm, Industrial |
 | Kamaz Typhoon K | 1 | Military |
 
-Vehicle spawns are configured in `custom/types_4kbossk.xml`. The mod includes 163 color variants — change colors by swapping class names in the types file.
+Vehicle spawns are configured in `custom/types_4kbossk.xml`. The mod includes 163 color variants - change colors by swapping class names in the types file.
 
 ### CookZ
 
-Adds 30+ craftable food recipes — dishes, soups, sausages, marmalades, and cheese. All items are **crafted only** (nothing spawns in the world). Recipes use vanilla DayZ ingredients and cooking tools.
+Adds 30+ craftable food recipes - dishes, soups, sausages, marmalades, and cheese. All items are **crafted only** (nothing spawns in the world). Recipes use vanilla DayZ ingredients and cooking tools.
 
-CookZ Realistic Packaging replaces the default food textures with realistic-looking packaging. It's a visual-only addon — no gameplay changes.
+CookZ Realistic Packaging replaces the default food textures with realistic-looking packaging. It's a visual-only addon - no gameplay changes.
 
 CookZ config auto-generates in `config/CookZ/` on first server start. Item definitions are in `custom/types_cookz.xml`.
 
-### DayZ-Dog — Companion Dogs
+### DayZ-Dog - Companion Dogs
 
-35 breeds of tameable wild dogs roam Chernarus — one of every breed is always on the map. Tame them by feeding raw meat or bones, then command them to follow, stay, or attack. Once tamed, dogs can be equipped with collars, K9 vests, and even gas masks.
+35 breeds of tameable wild dogs roam Chernarus - one of every breed is always on the map. Tame them by feeding raw meat or bones, then command them to follow, stay, or attack. Once tamed, dogs can be equipped with collars, K9 vests, and even gas masks.
 
 Build a dog house from kits found at farms and villages to give your companion a home. Dog houses persist through restarts.
 
@@ -595,7 +596,7 @@ Build a dog house from kits found at farms and villages to give your companion a
 
 Dog accessories are configured in `custom/types_dayzdog.xml`. The mod generates a server config at `config/Dayz-Dog/` on first start where you can adjust dog health and behaviour.
 
-### DayZ Horse — Rideable Horses
+### DayZ Horse - Rideable Horses
 
 5 horse colours (Brown, White, Gray, Dark Gray, Palomino) spawn in herds across Chernarus fields and farms. Approach a horse with a bridle to tame it, then equip a saddle to ride. Horses can walk, trot, gallop, jump fences, and swim.
 
@@ -610,19 +611,19 @@ Attach saddlebags for mobile storage. Build a stable from kits found at farms to
 
 Horse tack is configured in `custom/types_dayzhorse.xml`. Requires the **Survivor Animations** mod as a dependency (included and loaded automatically).
 
-### PvZmoD — Customisable Zombies
+### PvZmoD - Customisable Zombies
 
-Fully configurable zombie behaviour system with independent day and night settings. **Daytime is forgiving** — fewer zombies that are slow, easier to kill, and have poor eyesight, letting players explore and loot in relative safety. **Nighttime is dangerous** — 33% more zombies with full vanilla vision, full strength, and rare sprinters, making darkness a real threat.
+Fully configurable zombie behaviour system with independent day and night settings. **Daytime is forgiving** - fewer zombies that are slow, easier to kill, and have poor eyesight, letting players explore and loot in relative safety. **Nighttime is dangerous** - 33% more zombies with full vanilla vision, full strength, and rare sprinters, making darkness a real threat.
 
 | Setting | Day | Night | Effect |
 |---|---|---|---|
 | Spawn count | ~65% culled (~35% survive) | +33% more than baseline | Custom server mod thins the herd by day |
 | Speed | Walk/jog only | Walk/jog + rare sprinters | Day capped at run (2.5), night allows sprint (3.0) |
-| Speed ratio | 0.75x | 0.95x | Further scales down — most zombies walk by day |
+| Speed ratio | 0.75x | 0.95x | Further scales down - most zombies walk by day |
 | Health | 0.7x (30% easier kills) | 1.0x (vanilla) | Daytime zombies go down fast |
 | Damage | 0.5x (half vanilla) | 0.5x (half vanilla) | Gear lasts much longer from zombie fights |
 | Vision | 0.65x (35% shorter) | 1.0x (vanilla) | Easier sneaking during day, full sight at night |
-| Size | Normal (disabled) | Normal (disabled) | No random size scaling — all zombies player-sized |
+| Size | Normal (disabled) | Normal (disabled) | No random size scaling - all zombies player-sized |
 
 All zombie settings are configurable in `server_settings.json` under `zombieBehavior` and applied automatically by the settings patcher. Changes can also be applied in-game without a restart by pressing **Numpad 4**.
 
@@ -660,54 +661,57 @@ Custom server-side mod (`@CampfireRegen`). Players within 5 metres of a burning 
 
 - **+2 Health** per 10 seconds (max 100)
 - **+5 Blood** per 10 seconds (max 5000)
+- **3x longer burn time** - fuel consumption reduced to 1/3 speed, so fires last much longer before burning out
 
 Sitting by a campfire for 5 minutes heals ~60 health and ~150 blood. Not a replacement for medical items, but a quality-of-life reward for the campfire moment.
 
 Source code in `mod_src/CampfireRegen/`.
 
-### SitRest — AFK Hunger/Thirst Freeze
+### SitRest - AFK Hunger/Thirst Freeze
 
-Custom server-side mod (`@SitRest`). Using any sit emote (SitA, SitB, or SurvivorAnims SitNew) freezes hunger (energy) and thirst (water) drain. Eating and drinking while sitting still works — stats increase and freeze at the new level. Standing up resumes normal drain. Other emotes (wave, lie down, dance) drain normally.
+Custom server-side mod (`@SitRest`). Using any sit emote (SitA, SitB, or SurvivorAnims SitNew) freezes hunger (energy) and thirst (water) drain. Eating and drinking while sitting still works - stats increase and freeze at the new level. Standing up resumes normal drain. Other emotes (wave, lie down, dance) drain normally.
 
-Designed for AFK breaks on a co-op LAN server — sit your character down and step away without starving.
+Designed for AFK breaks on a co-op LAN server - sit your character down and step away without starving.
 
 Source code in `mod_src/SitRest/`.
 
-### HealthBoost — Vehicle Durability & Companion Regen
+### HealthBoost - Vehicle Durability, Companion Regen & Crop Longevity
 
-Custom server-side mod (`@HealthBoost`). Two features in one mod:
+Custom server-side mod (`@HealthBoost`). Three features in one mod:
 
-**Vehicles** — global chassis health and all individual damage zones (hood, doors, bumpers, wheels, engine, etc.) are repaired to max health every 60 seconds. Ruined parts (0 HP) are left alone and still need replacing, but anything damaged heals back to pristine. Fluids and gas still need managing.
+**Vehicles** - global chassis health and all individual damage zones (hood, doors, bumpers, wheels, engine, etc.) are repaired to max health every 60 seconds. Ruined parts (0 HP) are left alone and still need replacing, but anything damaged heals back to pristine. Fluids and gas still need managing.
 
-**Dogs & Horses** — passive health regen of 5% of max health every 30 seconds. Near-death to full health in ~10 minutes. Only affects entities with "Doggo" or "Horse" in their class name — wolves, deer, and other wildlife are unaffected.
+**Dogs & Horses** - passive health regen of 5% of max health every 30 seconds. Near-death to full health in ~10 minutes. Only affects entities with "Doggo" or "Horse" in their class name - wolves, deer, and other wildlife are unaffected.
+
+**Crops** - planted crops last 3x longer after reaching full maturity before spoiling (12 hours instead of the default 4 hours). Gives you plenty of time to harvest without babysitting your garden.
 
 Source code in `mod_src/HealthBoost/`.
 
-### DurableGear — Unbreakable Items
+### DurableGear - Unbreakable Items
 
-Custom server-side mod (`@DurableGear`). Every item on the server self-repairs to full health every 2 minutes. Tools, weapons, cooking pots, frying pans — everything stays pristine indefinitely. Uses a periodic heal approach since the engine's `DecreaseHealth` is proto native and can't be overridden in script.
+Custom server-side mod (`@DurableGear`). Every item on the server self-repairs to full health every 2 minutes. Tools, weapons, cooking pots, frying pans - everything stays pristine indefinitely. Uses a periodic heal approach since the engine's `DecreaseHealth` is proto native and can't be overridden in script.
 
 Source code in `mod_src/DurableGear/`.
 
-### MinimapTweak — Minimap Customization
+### MinimapTweak - Minimap Customization
 
 Custom client+server mod (`@MinimapTweak`). Adjusts the Expansion GPS minimap:
 
-- **Moves minimap to top-right corner** — standard position for most games
-- **Hides coordinate/stats overlay** — removes the large numbers from the minimap (still visible on the full map)
-- **Fixes player arrow after Tab** — the player position arrow no longer disappears when opening/closing inventory
+- **Moves minimap to top-right corner** - standard position for most games
+- **Hides coordinate/stats overlay** - removes the large numbers from the minimap (still visible on the full map)
+- **Fixes player arrow after Tab** - the player position arrow no longer disappears when opening/closing inventory
 
-This mod loads after `@ExpansionMinimap` and requires it as a dependency. Since it's a client+server mod, players must use `launch_dayz.bat` to start DayZ — it syncs custom mods and loads them automatically.
+This mod loads after `@ExpansionMinimap` and requires it as a dependency. Since it's a client+server mod, players must use `launch_dayz.bat` to start DayZ - it syncs custom mods and loads them automatically.
 
 Source code in `mod_src/MinimapTweak/`.
 
-### HUDClock — In-Game Time Display
+### HUDClock - In-Game Time Display
 
 Custom client+server mod (`@HUDClock`). Displays the current in-game world time as `HH:MM` in the top-right corner of the HUD. When the Expansion minimap is open, the clock shifts below it so they don't overlap. Hides automatically when menus (inventory, pause) are open.
 
 Depends on `@ExpansionMinimap` for minimap-aware positioning. Source code in `mod_src/HUDClock/`.
 
-### StackableItems — Increased Stack Sizes
+### StackableItems - Increased Stack Sizes
 
 Custom client+server mod (`@StackableItems`). Increases the stack limit to 999 for commonly hoarded items that vanilla caps at low numbers:
 
@@ -721,9 +725,9 @@ Source code in `mod_src/StackableItems/`.
 
 ### Sleep Till Morning
 
-When **all players** on the server lie down to sleep at night, time fast-forwards to dawn. No more waiting around during nighttime. Uses the vanilla "Lie Down" emote — no fatigue system required.
+When **all players** on the server lie down to sleep at night, time fast-forwards to dawn. No more waiting around during nighttime. Uses the vanilla "Lie Down" emote - no fatigue system required.
 
-### DayZ Expansion — GPS Minimap
+### DayZ Expansion - GPS Minimap
 
 Adds a GPS minimap to the HUD showing your position and surroundings. Requires three dependency mods that also add expanded items, UI enhancements, and framework utilities.
 
@@ -731,15 +735,15 @@ Adds a GPS minimap to the HUD showing your position and surroundings. Requires t
 |---|---|
 | DayZ-Expansion-Core | Core framework (load first) |
 | Dabs Framework | Script/GUI support library |
-| DayZ-Expansion | Main content — items, UI, world enhancements |
+| DayZ-Expansion | Main content - items, UI, world enhancements |
 | DayZ-Expansion-Navigation | Navigation scripts required by GPS overlay |
 | DayZ-Expansion-Book | Virtual book UI framework |
-| DayZ-Expansion-Groups | Party system — see group members on the map |
+| DayZ-Expansion-Groups | Party system - see group members on the map |
 | Expansion Minimap Override | GPS minimap overlay |
-| MinimapTweak | Custom — moves to top-right, hides coords, fixes arrow bug |
-| HUDClock | Custom — displays in-game time, positions below minimap |
+| MinimapTweak | Custom - moves to top-right, hides coords, fixes arrow bug |
+| HUDClock | Custom - displays in-game time, positions below minimap |
 
-Load order matters — Core and Dabs must load before Expansion, Book and Groups after Navigation, Minimap Override after Groups, then MinimapTweak and HUDClock. This is already configured in `start_server.bat`. Custom mods are loaded automatically by `launch_dayz.bat`.
+Load order matters - Core and Dabs must load before Expansion, Book and Groups after Navigation, Minimap Override after Groups, then MinimapTweak and HUDClock. This is already configured in `start_server.bat`. Custom mods are loaded automatically by `launch_dayz.bat`.
 
 ## Launching the Server
 
@@ -748,12 +752,12 @@ Load order matters — Core and Dabs must load before Expansion, Book and Groups
 1. Double-click `apply_settings.bat` (if you changed any settings)
 2. Double-click `start_server.bat`
 3. Wait 1-2 minutes for the server to load
-4. **Do not press any keys** in the command prompt — any keypress kills the server
+4. **Do not press any keys** in the command prompt - any keypress kills the server
 5. The server auto-restarts every 12 hours
 
 **Players (including the host):**
 
-1. Double-click `launch_dayz.bat` — pulls updates, installs/updates mods, syncs custom mods, launches DayZ
+1. Double-click `launch_dayz.bat` - pulls updates, installs/updates mods, syncs custom mods, launches DayZ
 2. Connect via DayZ > Servers > LAN, or Direct Connect to `127.0.0.1:2302`
 
 ## Connecting
@@ -780,7 +784,7 @@ DayZServer/
 │   ├── CarePackagesV2/
 │   │   └── config.json          # Care package loot, locations, timing
 │   ├── CookZ/                   # Auto-generated on first start
-│   ├── Dayz-Dog/                # Auto-generated — dog health & behaviour config
+│   ├── Dayz-Dog/                # Auto-generated - dog health & behaviour config
 │   ├── PvZmoD_CustomisableZombies_Profile/  # Auto-generated on first start
 │   │   ├── PvZmoD_CustomisableZombies_Globals.xml           # Speed/health/damage ratios (patched)
 │   │   ├── PvZmoD_CustomisableZombies_Characteristics.xml   # Per-zombie-type vision/speed/HP
@@ -822,35 +826,35 @@ DayZServer/
 ├── @MWGSM_Trader/               # Roaming military helicopter trader
 ├── @SagaShakeTree/              # Shake fruit trees for apples/pears/plums
 ├── @GelyaBackpacks/             # 13 backpack models (63 variants)
-├── @DayZombieManager/           # Custom server-side mod — zombie culling + kill drops
+├── @DayZombieManager/           # Custom server-side mod - zombie culling + kill drops
 │   └── addons/
 │       └── DayZombieManager.pbo # Daytime culling + loot drops on kill
-├── @CampfireRegen/              # Custom server-side mod — campfire healing
+├── @CampfireRegen/              # Custom server-side mod - campfire healing
 │   └── addons/
 │       └── CampfireRegen.pbo    # Health/blood regen near lit fires
-├── @SitRest/                    # Custom server-side mod — sit to freeze hunger/thirst
+├── @SitRest/                    # Custom server-side mod - sit to freeze hunger/thirst
 │   └── addons/
 │       └── SitRest.pbo          # AFK hunger/thirst freeze while sitting
-├── @HealthBoost/                # Custom server-side mod — vehicle repair + companion regen
+├── @HealthBoost/                # Custom server-side mod - vehicle repair + companion regen
 │   └── addons/
-│       └── HealthBoost.pbo      # Auto-repair vehicles, dog/horse health regen
-├── @DurableGear/                # Custom server-side mod — item self-repair
+│       └── HealthBoost.pbo      # Auto-repair vehicles, dog/horse health regen, crop longevity
+├── @DurableGear/                # Custom server-side mod - item self-repair
 │   └── addons/
 │       └── DurableGear.pbo      # All items heal to full every 2 minutes
-├── @MinimapTweak/               # Custom client+server mod — minimap adjustments
+├── @MinimapTweak/               # Custom client+server mod - minimap adjustments
 │   └── addons/
 │       └── MinimapTweak.pbo     # Top-right position, hide coords, fix arrow
-├── @HUDClock/                   # Custom client+server mod — in-game time display
+├── @HUDClock/                   # Custom client+server mod - in-game time display
 │   └── addons/
 │       └── HUDClock.pbo         # HH:MM clock, shifts below minimap when open
-├── @StackableItems/             # Custom client+server mod — increased stack sizes
+├── @StackableItems/             # Custom client+server mod - increased stack sizes
 │   └── addons/
 │       └── StackableItems.pbo   # Roubles, nails, rags, etc. stack to 999
 ├── mod_src/                     # Source code for custom mods
 │   ├── DayZombieManager/        # Zombie manager source (culling + kill drops)
 │   ├── CampfireRegen/           # Campfire regen source
 │   ├── SitRest/                 # Sit rest source (hunger/thirst freeze)
-│   ├── HealthBoost/             # HealthBoost source (vehicle repair + companion regen)
+│   ├── HealthBoost/             # HealthBoost source (vehicle repair + companion regen + crop longevity)
 │   ├── DurableGear/             # DurableGear source (item self-repair)
 │   ├── MinimapTweak/            # Minimap tweak source (position + UI fixes)
 │   ├── HUDClock/                # HUD clock source (time display)
@@ -875,7 +879,7 @@ DayZServer/
         │   ├── dog_territories.xml   # Wild dog spawn zones
         │   └── wild_horse_territories.xml  # Horse grazing zones
         └── db/
-            ├── types.xml        # Item spawn rules (food, gear, tools — heavily customized)
+            ├── types.xml        # Item spawn rules (food, gear, tools - heavily customized)
             ├── events.xml       # Zombie/animal spawns (patched automatically)
             └── globals.xml      # Loot economy (patched automatically)
 ```
@@ -893,14 +897,14 @@ config/DataCache/cache.ch
 config/DataCache/cache_lock
 ```
 
-**Note:** The top-level `storage_0/` and `storage_1/` directories are NOT used — persistence lives inside the mission folder.
+**Note:** The top-level `storage_0/` and `storage_1/` directories are NOT used - persistence lives inside the mission folder.
 
 ## Troubleshooting
 
-- **Server crashes on launch:** Check the latest `.RPT` log in the `config/` folder. Usually a mod incompatibility — remove mods from the `-mod=` line in `start_server.bat` one at a time to isolate.
+- **Server crashes on launch:** Check the latest `.RPT` log in the `config/` folder. Usually a mod incompatibility - remove mods from the `-mod=` line in `start_server.bat` one at a time to isolate.
 - **Can't connect:** Make sure your client has the exact same mods enabled. Mod mismatch = connection refused.
 - **No loot spawning:** Usually an XML syntax error. Validate your XML files at [codebeautify.org/xmlvalidator](https://codebeautify.org/xmlvalidator).
-- **Zombies not spawning:** Same as above — check `events.xml` for syntax errors.
+- **Zombies not spawning:** Same as above - check `events.xml` for syntax errors.
 - **Settings not applying:** Make sure you ran `apply_settings.bat` after editing `server_settings.json`, then restarted the server.
 - **Dogs/horses not spawning:** Make sure both `dog_territories.xml` and `wild_horse_territories.xml` exist in the `env/` folder, and that `cfgenvironment.xml` references them. Check the events in `db/events.xml` for `AnimalWildDog` and `AnimalWildHorse` entries.
 - **Dog health too low:** After first server start, check `config/Dayz-Dog/` for a generated config file where you can increase dog health values.

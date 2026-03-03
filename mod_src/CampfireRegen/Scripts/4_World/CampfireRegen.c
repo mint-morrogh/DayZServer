@@ -3,11 +3,18 @@
  *
  * Players near a lit fire slowly regenerate health and blood.
  * +2 health and +5 blood every 10 seconds within 5m of a burning fire.
+ *
+ * Fires burn 3x longer: fuel consumption reduced to 1/3 speed.
  */
 
 modded class FireplaceBase
 {
 	private bool m_RegenTimerStarted = false;
+
+	override float GetFuelBurnRateMP()
+	{
+		return super.GetFuelBurnRateMP() * 0.333;
+	}
 
 	override protected void SetBurningState(bool is_burning)
 	{

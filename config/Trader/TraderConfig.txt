@@ -348,6 +348,8 @@
 		MassG18,				W,		400,	200
 		MassM19,				W,		350,	175
 		MassM19_Wood,			W,		370,	185
+		Magnum,					W,		200,	100
+		SawedoffMagnum,			W,		150,	75
 
 	<Category> Rifles
 		Izh18,					W,		350,	175
@@ -1354,6 +1356,84 @@
 		AliceBag_Black,			*,		400,	150
 		AliceBag_Green,			*,		400,	150
 		AliceBag_Camo,			*,		500,	220
+
+	<Category> Gelya Backpacks
+		// Backpack 511 (tactical)
+		Gelya_Backpacks_Backpack511_Black,		*,		400,	200
+		Gelya_Backpacks_Backpack511_Tan,		*,		400,	200
+		Gelya_Backpacks_Backpack511_DPM,		*,		420,	210
+		Gelya_Backpacks_Backpack511_Multicam,	*,		420,	210
+		Gelya_Backpacks_Backpack511_Flectarn,	*,		420,	210
+		// BEAR Bag (tactical)
+		Gelya_Backpacks_BEAR_Bag_Black,			*,		400,	200
+		Gelya_Backpacks_BEAR_Bag_Tan,			*,		400,	200
+		Gelya_Backpacks_BEAR_Bag_DPM_UrbanSpetsnaz,	*,	420,	210
+		Gelya_Backpacks_BEAR_Bag_GreenTortilla,	*,		420,	210
+		Gelya_Backpacks_BEAR_Bag_PartizanM,		*,		420,	210
+		Gelya_Backpacks_BEAR_Bag_TokioESP,		*,		420,	210
+		// Beta 2 (tactical)
+		Gelya_Backpacks_Beta2_Black,			*,		350,	175
+		Gelya_Backpacks_Beta2_Green,			*,		350,	175
+		Gelya_Backpacks_Beta2_Tan,				*,		350,	175
+		Gelya_Backpacks_Beta2_DPM_UrbanSpetsnaz,	*,	370,	185
+		Gelya_Backpacks_Beta2_GreenTortilla,	*,		370,	185
+		Gelya_Backpacks_Beta2_HexcamArid,		*,		370,	185
+		Gelya_Backpacks_Beta2_RussianEMR,		*,		370,	185
+		Gelya_Backpacks_Beta2_SnowUrban,		*,		370,	185
+		// Blood Silence (stealth)
+		Gelya_Backpacks_Blood_silence_COD,		*,		450,	225
+		Gelya_Backpacks_Blood_silence_Flectarn,	*,		450,	225
+		Gelya_Backpacks_Blood_silence_GreenTortille,	*,	450,	225
+		Gelya_Backpacks_Blood_silence_HexcamArid,	*,	450,	225
+		Gelya_Backpacks_Blood_silence_Multicam,	*,		450,	225
+		Gelya_Backpacks_Blood_silence_RussianEMR,	*,	450,	225
+		Gelya_Backpacks_Blood_silence_Tan,		*,		450,	225
+		Gelya_Backpacks_Blood_silence_Tigerstripe,	*,	450,	225
+		Gelya_Backpacks_Blood_silence_Vegetato,	*,		450,	225
+		// Camel Backpack (hydration)
+		Gelya_Backpacks_CamelBackpack_Black,	*,		200,	100
+		Gelya_Backpacks_CamelBackpack_BlueCamo,	*,		200,	100
+		Gelya_Backpacks_CamelBackpack_DPM_KuwaitiPolice,	*,	220,	110
+		Gelya_Backpacks_CamelBackpack_DPM_UrbanSpetsnaz,	*,	220,	110
+		Gelya_Backpacks_CamelBackpack_ERDL,		*,		220,	110
+		Gelya_Backpacks_CamelBackpack_HexcamArid,	*,	220,	110
+		Gelya_Backpacks_CamelBackpack_M90_Night,	*,	220,	110
+		// F5 Switchblade (military)
+		Gelya_Backpacks_F5Switchblade_Black,	*,		400,	200
+		Gelya_Backpacks_F5Switchblade_Green,	*,		400,	200
+		Gelya_Backpacks_F5Switchblade_GreenTortilla,	*,	420,	210
+		Gelya_Backpacks_F5Switchblade_M90_Night,	*,	420,	210
+		Gelya_Backpacks_F5Switchblade_MTZ16,	*,		420,	210
+		Gelya_Backpacks_F5Switchblade_Multicam,	*,		420,	210
+		Gelya_Backpacks_F5Switchblade_RussianEMR,	*,	420,	210
+		Gelya_Backpacks_F5Switchblade_Swapol,	*,		420,	210
+		Gelya_Backpacks_F5Switchblade_Tan,		*,		420,	210
+		Gelya_Backpacks_F5Switchblade_Woodland,	*,		420,	210
+		// Gunslinger (tactical/civilian)
+		Gelya_Backpacks_Gunslinger_Black,		*,		300,	150
+		Gelya_Backpacks_Gunslinger_BLR,			*,		300,	150
+		Gelya_Backpacks_Gunslinger_Green,		*,		300,	150
+		Gelya_Backpacks_Gunslinger_GreenTortilla,	*,	320,	160
+		Gelya_Backpacks_Gunslinger_Tan,			*,		300,	150
+		Gelya_Backpacks_Gunslinger_USCM,		*,		320,	160
+		Gelya_Backpacks_Gunslinger_Woodland_90s,	*,	320,	160
+		// Medpack
+		Gelya_Backpacks_Medpack_Black,			*,		250,	125
+		Gelya_Backpacks_Medpack_EMR,			*,		250,	125
+		// Sport Bag (civilian)
+		Gelya_Backpacks_SportBag,				*,		100,	50
+		// Stalker Bag (survival)
+		Gelya_Backpacks_StalkerBag,				*,		150,	75
+		// Wild Bag (outdoor)
+		Gelya_Backpacks_WildBag,				*,		150,	75
+		// Adventure Bag (outdoor)
+		Gelya_Backpacks_AdventureBag_Black,		*,		200,	100
+		Gelya_Backpacks_AdventureBag_DPM,		*,		220,	110
+		Gelya_Backpacks_AdventureBag_GorkaE,	*,		220,	110
+		Gelya_Backpacks_AdventureBag_Jigsaw,	*,		220,	110
+		Gelya_Backpacks_AdventureBag_Zelt,		*,		220,	110
+		// Assault G3 (military)
+		Gelya_Backpacks_AssaultG3,				*,		500,	250
 
 	<Category> Mass's Tactical Gear
 		MassRatnik,				*,		300,	100
