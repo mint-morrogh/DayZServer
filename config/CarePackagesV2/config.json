@@ -286,7 +286,7 @@
     "PackagesBeingRan": 1,
     "PackageCallDelay": 5,
     "MinutesAway": 2,
-    "ZombiesToSpawn": 6,
+    "ZombiesToSpawn": 12,
     "LocationHistoryCheckRange": 3,
     "LockPackages": true,
     "Title": "Care Package",

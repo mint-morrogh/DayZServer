@@ -293,8 +293,8 @@
     </children>
   </event>
   <event name="InfectedArmy">
-    <nominal>18</nominal>
-    <min>9</min>
+    <nominal>30</nominal>
+    <min>15</min>
     <max>120</max>
     <lifetime>3</lifetime>
     <restock>0</restock>

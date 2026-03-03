@@ -4,53 +4,72 @@
 
 # BAE-Z — DayZ Private Server
 
-A private DayZ co-op server configured for small groups (2-4 players) on Chernarus. Designed for a relaxed survival experience with quality-of-life mods, faster day/night cycles, and customized zombie spawns.
+What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into thirty-five, one custom script turned into eight, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result — a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-player LAN play on Chernarus.
+
+Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, install git so the server will auto update on launch, and play.
 
 ### Features
 
-- **33 mods + 6 custom server-side mods + 3 custom client mods** — all preconfigured and ready to go
-- **GPS minimap** — on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
-- **HUD clock** — in-game world time displayed top-right, shifts below minimap when it's open
-- **Party system** — create a group with your co-op partner to see each other on the map
-- **Companion dogs** — 35 breeds of tameable dogs, one of every breed always on the map, equip collars/vests/gas masks, build dog houses
-- **Stackable items** — roubles, nails, rags, bandages, stones, bones, bark, hooks, worms, and repair kits stack up to 999
-- **Rideable horses** — 5 horse colours, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
-- **20 driveable vehicles** — 1 of each model spread across the map, from trucks and SUVs to sports cars and exotics
-- **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (8 planes, 1 of each type)
-- **Care package supply drops** — military, medical, survival, and building supplies parachute in every 60 minutes with zombie guards
-- **700+ crafting recipes** — weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
-- **Advanced cooking** — 30+ recipes for dishes, soups, sausages, and cheese via CookZ
-- **Skill tree** — earn XP and unlock perks in survival, crafting, hunting, and gathering
-- **Treasure hunting** — find photos, travel to the location, dig up randomized loot stashes
-- **NPC traders** — buy and sell items at safe zones
-- **Roaming military trader** — a helicopter trader lands every 60 minutes near players, stays 30 minutes, trades weapons/ammo/medical/attachments for Roubles
-- **Day/night zombie system** — ~85% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
-- **Half-damage zombies** — zombie strength set to 0.5x vanilla day and night, gear lasts much longer
-- **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
-- **Sit to rest** — sitting emotes (SitA/SitB) freeze hunger and thirst drain, eating/drinking while sitting still works
-- **Campfire health regen** — players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds
-- **Unbreakable vehicles** — all vehicle damage zones auto-repair to max health every 60 seconds and on server load (fluids/gas still need managing)
+**Companions & Animals**
+- **Companion dogs** — 35 breeds of tameable dogs roaming the map in wild packs, equip collars/K9 vests/gas masks, build dog houses, command follow/stay/attack
+- **Rideable horses** — 5 horse colours in wild herds, saddles, bridles, saddlebags, buildable stables, walk/trot/gallop/jump/swim
+- **Tougher companions** — dogs have doubled HP (1600) and doubled bite damage
 - **Companion health regen** — dogs and horses passively regenerate 5% max health every 30 seconds (~10 min from near-death to full)
-- **Durable gear** — all items self-repair to full health every 2 minutes; tools, weapons, and cooking gear stay pristine
-- **Dog waypoints** — dogs can be commanded to follow waypoints
-- **Event-based vehicle spawns** — 4KBOSSK vehicles and planes spawn at curated map positions via events.xml instead of random loot locations
+- **Rebalanced wildlife** — deer, roe deer, cows, goats, pigs, sheep, wild boar, wolves, bears, foxes, hares, and hens all tuned for a populated but performant world
+
+**Vehicles & Transport**
+- **38+ driveable vehicles** — 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) at curated map positions plus ~18 vanilla vehicles — some spawn road-ready, others may require you to find or trade for parts
+- **Flyable planes** — DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (8 planes, 1 of each type)
+- **Unbreakable vehicles** — global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds — ruined parts still need replacing, but damaged parts heal themselves
 - **Road-ready vehicles** — vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
 - **More gasoline** — 75 gas canisters on map (up from 50), spawn 40-80% full
-- **Fewer contaminated zones** — dynamic NBC zones reduced to 1 (down from 2-4)
-- **Abundant wildlife** — 56 deer, 70 roe deer, 35 goats, 28 each of cow/pig/sheep, 14 wild boar, plus boosted foxes, hares, and hens (nominals tuned for 2-player LAN performance)
+
+**Combat & Zombies**
+- **Day/night zombie system** — ~65% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
+- **Half-damage zombies** — zombie strength set to 0.5x vanilla day and night, gear lasts much longer
+- **Rebalanced zombie health** — bullet-sponge zombie types (police, military, soldiers) nerfed to reasonable HP so fights are challenging but not tedious
+- **Zombie kill drops** — zombies drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
+
+**Crafting, Cooking & Skills**
+- **700+ crafting recipes** — weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
+- **Advanced cooking** — 30+ recipes you can discover via CookZ
+- **Skill tree** — earn XP and unlock perks in survival, crafting, hunting, and gathering
+- **Shake fruit trees** — hold action on fruit trees to shake loose 2-4 apples/pears/plums (75% drop chance, 30-min cooldown per tree)
+
+**Economy & Trading**
+- **NPC traders** — buy and sell items at safe zones using Roubles
+- **Roaming military trader** — a helicopter trader lands every 60 minutes near players, stays 30 minutes, trades weapons/ammo/medical/attachments for Roubles (all denominations accepted)
+- **Treasure hunting** — find photos, travel to the location, dig up randomized loot stashes
+- **Care package supply drops** — military, medical, survival, and building supplies parachute in every 60 minutes, heavily guarded by 12 zombies
+- **Stackable items** — roubles, nails, rags, bandages, stones, bones, bark, hooks, worms, and repair kits stack up to 999
+
+**Quality of Life**
+- **GPS minimap** — on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
+- **HUD clock** — in-game world time displayed in the top-right corner
+- **Percentage HUD** — health, blood, hunger, thirst, and stamina shown as percentages
+- **Party system** — create a group with your co-op partner to see each other on the map
+- **Sit to rest** — all sit emotes (cross-legged, straight, and SurvivorAnims SitNew) freeze hunger and thirst drain while seated
+- **Campfire health regen** — players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds
+- **Sleep till morning** — if all players lie down to sleep at night, time skips to dawn
+- **Unlimited stamina** — no stamina drain while sprinting
+- **Durable gear** — all items self-repair to full health every 2 minutes; tools, weapons, and cooking gear stay pristine
+- **63 modded backpacks** — 13 backpack models in multiple camo/colour variants across the map
+
+**World & Loot**
 - **Generous loot** — doubled canned food/drinks, 1.5x snacks and candy, tripled cooking pots, enabled crab cans
 - **Boosted foraging** — doubled mushroom spawns under trees, boosted fruit drops from apple/pear/plum trees
-- **Shake fruit trees** — hold action on fruit trees to shake loose 2-4 apples/pears/plums (75% drop chance, 30-min cooldown per tree)
 - **Pristine loot** — items spawn Pristine to Worn only (no more Damaged/Badly Damaged spawns)
 - **45-day item persistence** — dropped items last 45 real days on the ground, survive server restarts
 - **Indestructible bases** — base structures and storage containers cannot be damaged
+- **Fewer contaminated zones** — dynamic NBC zones reduced to 1 (down from 2-4)
 - **Reduced shoe damage** — crawler zombie boot damage reduced from 5.0 to 1.0
-- **Sleep till morning** — if all players lie down to sleep at night, time skips to dawn
-- **Unlimited stamina** — no stamina drain while sprinting
+
+**Server & Configuration**
+- **35 Workshop mods + 5 custom server-side mods + 3 custom client mods** — all preconfigured and ready to go
 - **One-file configuration** — all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** — server automatically restarts every 12 hours
-- **63 modded backpacks** — 13 backpack models in multiple camo/colour variants, found at military, hunting, town, village, and farm locations
 - **Full persistence** — bases, vehicles, and inventory survive restarts
+- **Auto-update** — `launch_dayz.bat` pulls latest changes, syncs mods, and launches in one click
 
 ## Quick Start
 
@@ -315,7 +334,7 @@ To use admin commands in-game, open chat and type `#login <your admin password>`
 
 ### Zombie Spawns
 
-Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod (`@DayZombieManager`) culls ~85% of spawns during daytime (6am-8pm), leaving only ~15% of zombies during the day. Full +33% density at night. The same mod also handles zombie kill drops.
+Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod (`@DayZombieManager`) culls ~65% of spawns during daytime (6am-8pm), leaving ~35% of zombies during the day. Full +33% density at night. The same mod also handles zombie kill drops.
 
 | Category | Nominal / Min / Max | Notes |
 |---|---|---|
@@ -332,7 +351,7 @@ Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod
 | Setting | Default | What it does |
 |---|---|---|
 | `zombieMaxCount` | 500 | Max zombies alive server-wide |
-| `animalMaxCount` | 200 | Max animals alive server-wide |
+| `animalMaxCount` | 1200 | Max animals alive server-wide |
 | `lootDamageMin/Max` | 0.0 / 0.2 | Loot spawns Pristine to Worn only |
 | `foodDecay` | 1 | Food spoilage (1=on, 0=off) |
 | `respawnLimit` | 20 | Max loot respawn cycles per restart |
@@ -492,7 +511,7 @@ Randomized supply drops land across the map every 60 minutes. Players are notifi
 | Survival | Green | 10-18 food/drink items — canned food, sodas, water, rice + hunting knife or shotgun |
 | Tools & Building | Black | 8-14 items — nails, pliers, hacksaw, rope, duct tape, code lock, planks + axes |
 
-17 drop locations spread across Chernarus. 6 zombies guard each drop. Edit loot, locations, and timing in `config/CarePackagesV2/config.json`.
+17 drop locations spread across Chernarus. 12 zombies guard each drop. Edit loot, locations, and timing in `config/CarePackagesV2/config.json`.
 
 ### Nemsis Craftingpack
 
@@ -567,7 +586,7 @@ Build a dog house from kits found at farms and villages to give your companion a
 
 | Item | Count | Locations |
 |---|---|---|
-| Wild dogs | 35 (min 30) | Across the map (1 of each breed) |
+| Wild dogs | 8 herds (min 3) | Across the map in wild packs |
 | Collars (7 colours) | 3 each (min 1) | Towns, Villages |
 | K9 Vests (6 types) | 3 each (min 1) | Police stations |
 | Gas Mask | 3 (min 1) | Military (Tier 3-4) |
@@ -597,7 +616,7 @@ Fully configurable zombie behaviour system with independent day and night settin
 
 | Setting | Day | Night | Effect |
 |---|---|---|---|
-| Spawn count | ~85% culled (~15% survive) | +33% more than baseline | Custom server mod thins the herd by day |
+| Spawn count | ~65% culled (~35% survive) | +33% more than baseline | Custom server mod thins the herd by day |
 | Speed | Walk/jog only | Walk/jog + rare sprinters | Day capped at run (2.5), night allows sprint (3.0) |
 | Speed ratio | 0.75x | 0.95x | Further scales down — most zombies walk by day |
 | Health | 0.7x (30% easier kills) | 1.0x (vanilla) | Daytime zombies go down fast |
@@ -648,7 +667,7 @@ Source code in `mod_src/CampfireRegen/`.
 
 ### SitRest — AFK Hunger/Thirst Freeze
 
-Custom server-side mod (`@SitRest`). Using a sit emote (SitA or SitB) freezes hunger (energy) and thirst (water) drain. Eating and drinking while sitting still works — stats increase and freeze at the new level. Standing up resumes normal drain. Other emotes (wave, lie down, dance) drain normally.
+Custom server-side mod (`@SitRest`). Using any sit emote (SitA, SitB, or SurvivorAnims SitNew) freezes hunger (energy) and thirst (water) drain. Eating and drinking while sitting still works — stats increase and freeze at the new level. Standing up resumes normal drain. Other emotes (wave, lie down, dance) drain normally.
 
 Designed for AFK breaks on a co-op LAN server — sit your character down and step away without starving.
 
@@ -658,7 +677,7 @@ Source code in `mod_src/SitRest/`.
 
 Custom server-side mod (`@HealthBoost`). Two features in one mod:
 
-**Vehicles** — all damage zones (engine, wheels, doors, chassis, etc.) are repaired to max health every 60 seconds and on every server load. Vehicles are effectively unbreakable — fluids and gas still need managing, but parts stay pristine.
+**Vehicles** — global chassis health and all individual damage zones (hood, doors, bumpers, wheels, engine, etc.) are repaired to max health every 60 seconds. Ruined parts (0 HP) are left alone and still need replacing, but anything damaged heals back to pristine. Fluids and gas still need managing.
 
 **Dogs & Horses** — passive health regen of 5% of max health every 30 seconds. Near-death to full health in ~10 minutes. Only affects entities with "Doggo" or "Horse" in their class name — wolves, deer, and other wildlife are unaffected.
 
@@ -730,7 +749,7 @@ Load order matters — Core and Dabs must load before Expansion, Book and Groups
 2. Double-click `start_server.bat`
 3. Wait 1-2 minutes for the server to load
 4. **Do not press any keys** in the command prompt — any keypress kills the server
-5. The server auto-restarts every 4 hours
+5. The server auto-restarts every 12 hours
 
 **Players (including the host):**
 
