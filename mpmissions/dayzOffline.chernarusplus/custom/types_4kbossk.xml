@@ -96,8 +96,8 @@
 		<usage name="Industrial"/>
 	</type>
 
-	<!-- Dodge Ram BOSS (camogreen) -->
-	<type name="DodgeRam_BOSS_camogreen">
+	<!-- Dodge Ram BOSS (CamoGreen) -->
+	<type name="DodgeRam_BOSS_CamoGreen">
 		<nominal>0</nominal>
 		<lifetime>3888000</lifetime>
 		<restock>0</restock>
@@ -141,8 +141,8 @@
 		<usage name="Industrial"/>
 	</type>
 
-	<!-- Ford Raptor Monster Truck (Black) -->
-	<type name="Ford_Raptor_MonstarTruck_Black">
+	<!-- Ford Raptor Monster Truck (base) -->
+	<type name="Ford_Raptor_MonsterTruck">
 		<nominal>0</nominal>
 		<lifetime>3888000</lifetime>
 		<restock>0</restock>
@@ -171,8 +171,8 @@
 		<usage name="Village"/>
 	</type>
 
-	<!-- Jeep Gladiator F9 (DarkRed) -->
-	<type name="Jeep_GladiatorF9_BOSS_DarkRed">
+	<!-- Jeep Gladiator F9 BOSS (Red) -->
+	<type name="Jeep_GladiatorF9_BOSS_Red">
 		<nominal>0</nominal>
 		<lifetime>3888000</lifetime>
 		<restock>0</restock>

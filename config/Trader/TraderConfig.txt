@@ -660,7 +660,7 @@
 		Mass762Stanag,			M,		200,	100
 		Mass_Mag_M417_20Rnd,	M,		200,	100
 		Mass_Mag_M24_5Rnd,		M,		80,		40
-		Mass338M24Mag,			M,		120,	60
+		//Mass338M24Mag,		M,		120,	60		// class doesn't exist in mod
 		Mass_Mag_M300_7Rnd,		M,		150,	75
 		Mass_Mag_Kivaari_10Rnd,	M,		200,	100
 		Mass_Mag_RugerPrecision_10Rnd,M,	200,	100
@@ -1689,7 +1689,7 @@
 		Audi_RS6_ABT_Wheel,				*,		750,	350
 		BMW_M3_Wheel,					*,		750,	350
 		Chevrolet_NapalmNova_Wheel,		*,		750,	350
-		Dodge_Challenger_WheelSRT,		*,		750,	350
+		Dodge_Challenger_Wheel,			*,		750,	350
 		dodgecharger_wheel,				*,		750,	350
 		DodgeRam_3500_Wheel,			*,		750,	350
 		DodgeRam_Wheel,					*,		750,	350
@@ -1705,9 +1705,12 @@
 		Supra_Wheel,					*,		750,	350
 		Tahoe_wheel,					*,		750,	350
 		Runner_Wheel,					*,		750,	350
+		fordraptor_monster_wheel,		*,		750,	350
 		// ---- LM Planes Wheels ----
-		LM_DC_3_Wheel_Front,			*,		1200,	600
-		LM_DC_3_Wheel_Back,			*,		1200,	600
+		//LM_DC_3_Wheel_Front,			*,		1200,	600		// DC-3 is unfinished in mod — no config class
+		//LM_DC_3_Wheel_Back,			*,		1200,	600		// DC-3 is unfinished in mod — no config class
+		LM_Catalina_Wheel_Front,		*,		1200,	600
+		LM_Catalina_Wheel_Back,			*,		1200,	600
 		LM_Stuntplane_Wheel_Front,		*,		1000,	500
 		LM_Stuntplane_Wheel_Back,		*,		1000,	500
 		LM_Tigermoth_Wheel_Front,		*,		1000,	500
@@ -2140,16 +2143,25 @@
 		Bronco_Driverdoor_Hunter,                *,		500,	180
 		Bronco_Driverdoor_Rust,                  *,		500,	180
 		// ---- Ford Raptor Monster Parts ----
+		fordraptormonster_hood,                  *,		400,	140
+		fordraptormonster_hood_Baja,             *,		400,	140
+		fordraptormonster_hood_Halo,             *,		400,	140
+		fordraptormonster_hood_Raptor,           *,		400,	140
+		fordraptormonster_hood_Roush,            *,		400,	140
+		fordraptormonster_hood_WideOpen,         *,		400,	140
+		fordraptormonster_trunk,                 *,		450,	150
 		fordraptormonster_trunk_Baja,            *,		450,	150
 		fordraptormonster_trunk_Halo,            *,		450,	150
 		fordraptormonster_trunk_Raptor,          *,		450,	150
 		fordraptormonster_trunk_Roush,           *,		450,	150
 		fordraptormonster_trunk_WideOpen,        *,		450,	150
+		fordraptormonster_codriver,              *,		500,	180
 		fordraptormonster_codriver_Baja,         *,		500,	180
 		fordraptormonster_codriver_Halo,         *,		500,	180
 		fordraptormonster_codriver_Raptor,       *,		500,	180
 		fordraptormonster_codriver_Roush,        *,		500,	180
 		fordraptormonster_codriver_WideOpen,     *,		500,	180
+		fordraptormonster_driverdoor,            *,		500,	180
 		fordraptormonster_driverdoor_Baja,       *,		500,	180
 		fordraptormonster_driverdoor_Halo,       *,		500,	180
 		fordraptormonster_driverdoor_Raptor,     *,		500,	180
@@ -2312,7 +2324,7 @@
 		Jeep_GladiatorF9_Codriver_Door_camo_blue, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_blue2, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_bluetiger, *,		500,	180
-		Jeep_GladiatorF9_Codriver_Door_camo_dragonmossn, *,		500,	180
+		Jeep_GladiatorF9_Codriver_Door_camo_dragonmoss, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_flecktarn, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_green, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_hunter, *,		500,	180

@@ -4102,8 +4102,8 @@
 		<attachments chance="1.00"><item name="SparkPlug" chance="0.85" /></attachments>
 	</type>
 
-	<!-- Dodge Ram BOSS (camogreen) -->
-	<type name="DodgeRam_BOSS_camogreen">
+	<!-- Dodge Ram BOSS (CamoGreen) -->
+	<type name="DodgeRam_BOSS_CamoGreen">
 		<attachments chance="1.00"><item name="DodgeRam_Wheel" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="DodgeRam_Wheel" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="DodgeRam_Wheel" chance="0.95" /></attachments>
@@ -4135,12 +4135,12 @@
 		<attachments chance="1.00"><item name="SparkPlug" chance="0.85" /></attachments>
 	</type>
 
-	<!-- Ford Raptor Monster Truck (Black) -->
-	<type name="Ford_Raptor_MonstarTruck_Black">
-		<attachments chance="1.00"><item name="Wheel_Main" chance="0.95" /></attachments>
-		<attachments chance="1.00"><item name="Wheel_Main" chance="0.95" /></attachments>
-		<attachments chance="1.00"><item name="Wheel_Main" chance="0.95" /></attachments>
-		<attachments chance="1.00"><item name="Wheel_Main" chance="0.95" /></attachments>
+	<!-- Ford Raptor Monster Truck (base) -->
+	<type name="Ford_Raptor_MonsterTruck">
+		<attachments chance="1.00"><item name="fordraptor_monster_wheel" chance="0.95" /></attachments>
+		<attachments chance="1.00"><item name="fordraptor_monster_wheel" chance="0.95" /></attachments>
+		<attachments chance="1.00"><item name="fordraptor_monster_wheel" chance="0.95" /></attachments>
+		<attachments chance="1.00"><item name="fordraptor_monster_wheel" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="CarRadiator" chance="0.85" /></attachments>
 		<attachments chance="1.00"><item name="CarBattery" chance="0.85" /></attachments>
 		<attachments chance="1.00"><item name="SparkPlug" chance="0.85" /></attachments>
@@ -4157,8 +4157,8 @@
 		<attachments chance="1.00"><item name="SparkPlug" chance="0.85" /></attachments>
 	</type>
 
-	<!-- Jeep Gladiator F9 (DarkRed) -->
-	<type name="Jeep_GladiatorF9_BOSS_DarkRed">
+	<!-- Jeep Gladiator F9 BOSS (Red) -->
+	<type name="Jeep_GladiatorF9_BOSS_Red">
 		<attachments chance="1.00"><item name="JeepGladiator_Wheel" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="JeepGladiator_Wheel" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="JeepGladiator_Wheel" chance="0.95" /></attachments>
@@ -4261,12 +4261,14 @@
 	<!-- LM Planes - wheel attachments for event-spawned planes       -->
 	<!-- ============================================================ -->
 
-	<!-- DC-3 Transport -->
+	<!-- DC-3 Transport — unfinished in mod, no config class -->
+	<!--
 	<type name="LM_DC_3">
 		<attachments chance="1.00"><item name="LM_DC_3_Wheel_Front" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="LM_DC_3_Wheel_Back" chance="0.95" /></attachments>
 		<attachments chance="1.00"><item name="LM_DC_3_Wheel_Back" chance="0.95" /></attachments>
 	</type>
+	-->
 
 	<!-- Stuntplane -->
 	<type name="LM_Stuntplane">

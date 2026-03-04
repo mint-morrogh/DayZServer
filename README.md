@@ -4,7 +4,7 @@
 
 # BAE-Z - DayZ Private Server
 
-What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into thirty-five, one custom script turned into eight, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
+What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into thirty-six, one custom script turned into eight, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
 
 Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, install git so the server will auto update on launch, and play.
 
@@ -19,7 +19,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 
 **Vehicles & Transport**
 - **38+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) at curated map positions plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
-- **Flyable planes** - DC-3, Spitfire, Cessna 180, Catalina seaplane, Tigermoth, Stuntplane (8 planes, 1 of each type)
+- **Flyable planes** - Spitfire, Cessna 180, Catalina seaplane, Tigermoth (3 variants), Stuntplane (7 planes at 14 airfield positions)
 - **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
 - **Road-ready vehicles** - vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
 - **More gasoline** - 75 gas canisters on map (up from 50), spawn 40-80% full
@@ -29,6 +29,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Half-damage zombies** - zombie strength set to 0.5x vanilla day and night, gear lasts much longer
 - **Rebalanced zombie health** - bullet-sponge zombie types (police, military, soldiers) nerfed to reasonable HP so fights are challenging but not tedious
 - **Zombie kill drops** - zombies have a chance to drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
+- **Nightly overnight camps** - once per night a tactical camp spawns at a random location with a tent, campfire, 10 zombies, and a loot crate containing guns, ammo, food, and medical supplies - camp lasts all night and despawns at dawn
 
 **Crafting, Cooking & Skills**
 - **700+ crafting recipes** - weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
@@ -40,7 +41,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **NPC traders** - buy and sell items at safe zones using Roubles
 - **Roaming military trader** - a helicopter trader lands every 60 minutes near players, stays 30 minutes, trades weapons/ammo/medical/attachments for Roubles (all denominations accepted)
 - **Treasure hunting** - find photos, travel to the location, dig up randomized loot stashes
-- **Care package supply drops** - military, medical, survival, and building supplies parachute in every 60 minutes, heavily guarded by 12 zombies
+- **Care package supply drops** - military, medical, survival, and building supplies parachute in every 120 minutes, heavily guarded by 12 zombies
 - **Stackable items** - roubles, nails, rags, bandages, stones, bones, bark, hooks, worms, and repair kits stack up to 100
 
 **Quality of Life**
@@ -66,7 +67,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Reduced shoe damage** - crawler zombie boot damage reduced from 5.0 to 1.0
 
 **Server & Configuration**
-- **35 Workshop mods + 5 custom server-side mods + 3 custom client mods** - all preconfigured and ready to go
+- **36 Workshop mods + 5 custom server-side mods + 3 custom client mods** - all preconfigured and ready to go
 - **One-file configuration** - all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** - server automatically restarts every 12 hours
 - **Full persistence** - bases, vehicles, and inventory survive restarts
@@ -200,7 +201,7 @@ That's it. The patcher reads your settings and writes them to the correct config
 | `animals` | Wild dog and horse herd spawn counts | `db/events.xml` |
 | `horseGear` | Saddle, bridle, saddlebag, and stable kit spawn rates | `custom/types_dayzhorse.xml` |
 | `dogGear` | Collar, vest, gas mask, and dog house kit spawn rates | `custom/types_dayzdog.xml` |
-| `planes` | Per-model plane spawn counts (DC-3, Spitfire, Cessna, etc.) | `custom/types_lmplanes.xml` |
+| `planes` | Per-model plane spawn counts (Spitfire, Cessna, Catalina, etc.) | `custom/types_lmplanes.xml` |
 | `lootEconomy` | Global zombie/animal caps, loot damage, food decay, respawn timers | `db/globals.xml` |
 | `zenSkills` | Skill book and EXP booster spawn rates | `custom/types_zenskills.xml` |
 
@@ -298,7 +299,6 @@ Higher `nightAcceleration` = shorter nights. Set `acceleration` to 1 for real-ti
 **Remove all planes:**
 ```json
 "planes": {
-    "dc3":        { "nominal": 0, "min": 0 },
     "stuntplane": { "nominal": 0, "min": 0 },
     "catalina":   { "nominal": 0, "min": 0 },
     "tigermoth":  { "nominal": 0, "min": 0 },
@@ -388,7 +388,7 @@ These mods must be installed on both the **server** and **client**.
 | [Zen's Treasure](https://steamcommunity.com/sharedfiles/filedetails/?id=3426979799) | 3426979799 | Photo-based treasure hunting - find photos, travel to the location, dig up randomized loot stashes |
 | [Care Packages V2](https://steamcommunity.com/sharedfiles/filedetails/?id=2691041685) | 2691041685 | Randomized care package drops with notifications, locked containers, and custom loot |
 | [Nemsis Craftingpack All-in-One](https://steamcommunity.com/sharedfiles/filedetails/?id=3606014796) | 3606014796 | 500+ items, 700+ crafting recipes - weapons, armor, vehicles, bushcraft, ammo crafting, and more |
-| [LMs Planes](https://steamcommunity.com/sharedfiles/filedetails/?id=3639695989) | 3639695989 | Flyable planes - DC-3, Cessna 180, Spitfire, Catalina seaplane, Tigermoth, Stuntplane |
+| [LMs Planes](https://steamcommunity.com/sharedfiles/filedetails/?id=3639695989) | 3639695989 | Flyable planes - Cessna 180, Spitfire, Catalina seaplane, Tigermoth, Stuntplane |
 | [CookZ](https://steamcommunity.com/sharedfiles/filedetails/?id=3302732231) | 3302732231 | Advanced cooking - 30+ recipes for dishes, soups, sausages, marmalades, cheese |
 | [CookZ Realistic Packaging](https://steamcommunity.com/sharedfiles/filedetails/?id=3566508757) | 3566508757 | Realistic textures for CookZ food packaging |
 | [Sleep Till Morning](https://steamcommunity.com/sharedfiles/filedetails/?id=3578708533) | 3578708533 | Skip to dawn when all players lie down to sleep at night |
@@ -438,6 +438,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3636799682` | `@MWGSM_Trader` |
 | `3545040196` | `@SagaShakeTree` |
 | `3648464156` | `@GelyaBackpacks` |
+| `3659550946` | `@SobrMods_Signal_Overnight_Stay` |
 
 ### Gelya Backpacks - Pack Complete
 
@@ -492,7 +493,7 @@ A military helicopter trader lands near players every 60 minutes and stays for 3
 
 | Setting | Value |
 |---|---|
-| Spawn interval | Every 60 minutes |
+| Spawn interval | Every 120 minutes |
 | Duration | 30 minutes |
 | Currency | Roubles |
 | Stock | 150 items (weapons, ammo, medical, attachments) |
@@ -503,7 +504,7 @@ Config at `config/MWGSM_RoamingTrader/MWGSM_RoamingTraderConfig.json`.
 
 ### Care Packages
 
-Randomized supply drops land across the map every 60 minutes. Players are notified in-game with the drop location and distance. Packages are **locked** on drop - press F to open.
+Randomized supply drops land across the map every 120 minutes. Players are notified in-game with the drop location and distance. Packages are **locked** on drop - press F to open.
 
 | Package Type | Container | Loot |
 |---|---|---|
@@ -513,6 +514,21 @@ Randomized supply drops land across the map every 60 minutes. Players are notifi
 | Tools & Building | Black | 8-14 items - nails, pliers, hacksaw, rope, duct tape, code lock, planks + axes |
 
 17 drop locations spread across Chernarus. 12 zombies guard each drop. Edit loot, locations, and timing in `config/CarePackagesV2/config.json`.
+
+### Signal Overnight Stay
+
+Once per night (19:00-06:00 in-game), a tactical overnight camp spawns at a random location on the map. Players receive a notification with coordinates when the event starts. The camp contains an improvised tent, a campfire, and is guarded by 10 zombies. After a 45-second delay, a loot crate appears with guns, ammo, food, and medical supplies. The camp persists all night and despawns at dawn.
+
+| Setting | Value |
+|---|---|
+| Trigger window | Night only (19:00-06:00 in-game) |
+| Events per night | 1 |
+| Duration | 30 minutes real time (~all night at 24x acceleration) |
+| Zombies | 10 per camp |
+| Loot delay | 45 seconds after camp spawns |
+| Loot | Mosin, SKS, .308 ammo, 7.62x39 ammo, 7.62x54 ammo, first aid kit, cola, tuna, spaghetti, chemlight |
+
+This is a server-only Workshop mod - players do not need to subscribe. Config at `config/SobrMods_Signal_Overnight_Stay/Signal_Overnight_Stay_Settings.json`.
 
 ### Nemsis Craftingpack
 
@@ -530,7 +546,6 @@ Flyable planes spawn across the map at industrial areas and farms (removed town/
 
 | Plane | Count | Notes |
 |---|---|---|
-| DC-3 | 1 | Large transport plane |
 | Stuntplane | 1 | Aerobatic biplane |
 | Catalina | 1 | Amphibious seaplane - lands on water |
 | Tigermoth | 1 | Classic biplane |
@@ -538,7 +553,9 @@ Flyable planes spawn across the map at industrial areas and farms (removed town/
 | Tigermoth MK3 | 1 | Variant |
 | Spitfire | 1 | WWII fighter |
 | Cessna 180 | 1 | Utility plane |
-| **Total** | **8** | 1 of each type for 2 players |
+| **Total** | **7** | 1 of each type for 2 players |
+
+> **Note:** The DC-3 is included in the LMs Planes mod files but is unfinished by the mod author (no config class defined), so it cannot spawn.
 
 Plane spawns are configured in `custom/types_lmplanes.xml`.
 
@@ -797,6 +814,8 @@ DayZServer/
 │   │   └── MWGSM_RoamingTraderConfig.json  # Roaming trader currency, prices, stock, timing
 │   ├── SagaShakeTree/
 │   │   └── settings.json        # Fruit drop chances, shake duration, tree cooldowns
+│   ├── SobrMods_Signal_Overnight_Stay/
+│   │   └── Signal_Overnight_Stay_Settings.json  # Night camp event timing, loot, zombie config
 │   └── *.RPT                    # Server crash/debug logs
 ├── @CF/                         # Community Framework mod
 ├── @DayZ-Expansion-Core/        # Expansion core framework
@@ -845,6 +864,9 @@ DayZServer/
 ├── @DurableGear/                # Custom server-side mod - item self-repair
 │   └── addons/
 │       └── DurableGear.pbo      # All items heal to full every 2 minutes
+├── @SobrMods_Signal_Overnight_Stay/  # Workshop server-only mod - nightly camp events
+│   └── addons/
+│       └── SobrMods_Signal_Overnight_Stay.pbo  # Night camp spawner with zombies + loot
 ├── @MinimapTweak/               # Custom client+server mod - minimap adjustments
 │   └── addons/
 │       └── MinimapTweak.pbo     # Top-right position, hide coords, fix arrow

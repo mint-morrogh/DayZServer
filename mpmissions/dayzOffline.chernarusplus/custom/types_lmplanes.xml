@@ -3,7 +3,8 @@
   <!-- LMs Planes — planes spawn via events.xml (VehiclePlanes) at airfield positions.
        nominal=0 here so types.xml doesn't also spawn them.
        Wheel spare parts also nominal=0 (trader-only, no world loot). -->
-  <!-- DC-3 Transport — large cargo plane -->
+  <!-- DC-3 Transport — unfinished in mod, no CfgVehicles class defined -->
+  <!--
   <type name="LM_DC_3">
     <lifetime>3888000</lifetime>
     <restock>0</restock>
@@ -43,6 +44,7 @@
     <usage name="Industrial" />
     <usage name="Farm" />
   </type>
+  -->
   <!-- Stuntplane — aerobatic biplane -->
   <type name="LM_Stuntplane">
     <lifetime>3888000</lifetime>
