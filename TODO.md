@@ -65,6 +65,12 @@ Do the same for all 20+ models.
 
 
 
+### Vehicle Damage: Tune SFE No Vehicle Damage speed threshold
+- **Issue:** Minor collisions at ~10mph instantly ruin radiators and tires.
+- **Solution:** Installed SFE: No Vehicle Damage (Workshop 3459215297) — server-side only mod that blocks collision damage below a configurable speed threshold.
+- **Status:** Mod added to `-serverMod=` in `start_server.bat`. First server start will generate config at `config/SFE_TransportDamageControl/SFE_TransportDamageConfig.json`.
+- **TODO:** Tune `MinCrashDamageSpeed` after first run (default 80 km/h — consider lowering to ~40-50 for more protection at moderate speeds).
+
 ---
 
 ## Pending (no server stop needed)

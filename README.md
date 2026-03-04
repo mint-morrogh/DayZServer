@@ -21,6 +21,8 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **38+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) at curated map positions plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
 - **Flyable planes** - Spitfire, Cessna 180, Catalina seaplane, Tigermoth (3 variants), Stuntplane (7 planes at 14 airfield positions)
 - **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
+- **Flip overturned vehicles** - flip cars back upright when they roll over
+- **Inventory in vehicles** - access your inventory while seated inside a vehicle
 - **Road-ready vehicles** - vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
 - **More gasoline** - 75 gas canisters on map (up from 50), spawn 40-80% full
 
@@ -43,6 +45,8 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Treasure hunting** - find photos, travel to the location, dig up randomized loot stashes
 - **Care package supply drops** - military, medical, survival, and building supplies parachute in every 120 minutes, heavily guarded by 12 zombies
 - **Stackable items** - roubles, nails, rags, bandages, stones, bones, bark, hooks, worms, and repair kits stack up to 100
+- **Doubled bandage uses** - bandages last twice as many uses before being consumed
+- **Doubled ammo stacks** - all loose ammo types stack to 2x their vanilla max
 
 **Quality of Life**
 - **GPS minimap** - on-screen minimap in top-right corner with player arrow, no GPS item required (toggle with N key)
@@ -68,7 +72,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Reduced shoe damage** - crawler zombie boot damage reduced from 5.0 to 1.0
 
 **Server & Configuration**
-- **37 Workshop mods + 5 custom server-side mods + 3 custom client mods** - all preconfigured and ready to go
+- **39 Workshop mods + 7 custom server-side mods + 3 custom client mods** - all preconfigured and ready to go
 - **One-file configuration** - all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** - server automatically restarts every 12 hours
 - **Full persistence** - bases, vehicles, and inventory survive restarts
@@ -401,6 +405,8 @@ These mods must be installed on both the **server** and **client**.
 | [Saga Shake Tree](https://steamcommunity.com/sharedfiles/filedetails/?id=3545040196) | 3545040196 | Shake fruit trees to drop apples, pears, and plums - configurable drop rates and cooldowns |
 | [Pack Complete - Backpacks FREE](https://steamcommunity.com/sharedfiles/filedetails/?id=3648464156) | 3648464156 | 13 backpack models with 63 camo/colour variants - tactical, military, medical, and civilian packs |
 | [VVN Old Refrigerator](https://steamcommunity.com/sharedfiles/filedetails/?id=3592127439) | 3592127439 | Placeable refrigerator that slows food decay, plus a portable mini fridge |
+| [Enable Inventory In Vehicle](https://steamcommunity.com/sharedfiles/filedetails/?id=3594596641) | 3594596641 | Access inventory while inside a vehicle |
+| [FLIP CAR](https://steamcommunity.com/sharedfiles/filedetails/?id=3623001011) | 3623001011 | Flip overturned vehicles back upright |
 
 ### Mod Installation
 
@@ -442,6 +448,8 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3648464156` | `@GelyaBackpacks` |
 | `3592127439` | `@VVN_Old_refrigerator` |
 | `3659550946` | `@SobrMods_Signal_Overnight_Stay` |
+| `3594596641` | `@EnableInventoryInVehicle` |
+| `3623001011` | `@FlipCar` |
 
 ### Gelya Backpacks - Pack Complete
 
@@ -717,6 +725,18 @@ Custom server-side mod (`@DurableGear`). Every item on the server self-repairs t
 
 Source code in `mod_src/DurableGear/`.
 
+### BandageBoost - Doubled Bandage Uses
+
+Custom server-side mod (`@BandageBoost`). Doubles the max quantity on bandage dressings, so each bandage lasts twice as many uses before being consumed.
+
+Source code in `mod_src/BandageBoost/`.
+
+### AmmoStacks - Doubled Ammo Stack Sizes
+
+Custom server-side mod (`@AmmoStacks`). Doubles the max stack size for all loose ammunition types. For example, rifle ammo that normally stacks to 20 now stacks to 40.
+
+Source code in `mod_src/AmmoStacks/`.
+
 ### MinimapTweak - Minimap Customization
 
 Custom client+server mod (`@MinimapTweak`). Adjusts the Expansion GPS minimap:
@@ -867,6 +887,14 @@ DayZServer/
 ├── @DurableGear/                # Custom server-side mod - item self-repair
 │   └── addons/
 │       └── DurableGear.pbo      # All items heal to full every 2 minutes
+├── @BandageBoost/               # Custom server-side mod - doubled bandage uses
+│   └── addons/
+│       └── BandageBoost.pbo     # Bandages last 2x uses before consumed
+├── @AmmoStacks/                 # Custom server-side mod - doubled ammo stacks
+│   └── addons/
+│       └── AmmoStacks.pbo       # All loose ammo stacks to 2x vanilla max
+├── @EnableInventoryInVehicle/   # Inventory access while in vehicles
+├── @FlipCar/                    # Flip overturned vehicles back upright
 ├── @SobrMods_Signal_Overnight_Stay/  # Workshop server-only mod - nightly camp events
 │   └── addons/
 │       └── SobrMods_Signal_Overnight_Stay.pbo  # Night camp spawner with zombies + loot
@@ -888,6 +916,8 @@ DayZServer/
 │   ├── MinimapTweak/            # Minimap tweak source (position + UI fixes)
 │   ├── HUDClock/                # HUD clock source (time display)
 │   ├── StackableItems/          # Stackable items source (stack overrides)
+│   ├── BandageBoost/            # BandageBoost source (doubled bandage uses)
+│   ├── AmmoStacks/              # AmmoStacks source (doubled ammo stack sizes)
 │   ├── pack_pbo.py              # PBO packer tool
 │   └── rapify.py                # config.cpp to config.bin converter
 └── mpmissions/

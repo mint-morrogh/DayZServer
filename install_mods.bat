@@ -79,6 +79,8 @@ call :install_mod 3459215297 SFE_NoVehicleDamage
 call :install_mod 3664943616 VVN_Greenhouse
 call :install_mod 3592127439 VVN_Old_refrigerator
 call :install_mod 3659550946 SobrMods_Signal_Overnight_Stay
+call :install_mod 3594596641 EnableInventoryInVehicle
+call :install_mod 3623001011 FlipCar
 
 echo.
 if %INSTALLED% GTR 0 echo   %INSTALLED% mods newly installed
