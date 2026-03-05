@@ -71,37 +71,6 @@ Do the same for all 20+ models.
 - **Status:** Mod added to `-serverMod=` in `start_server.bat`. First server start will generate config at `config/SFE_TransportDamageControl/SFE_TransportDamageConfig.json`.
 - **TODO:** Tune `MinCrashDamageSpeed` after first run (default 80 km/h — consider lowering to ~40-50 for more protection at moderate speeds).
 
-### Enable Inventory In Vehicle — rebuild as custom mod
-- **Issue:** Workshop mod "Enable Inventory In Vehicle" (3594596641) conflicts with DayZ-Dog. Pressing F for dog stats/commands opens an invisible menu that captures all input — hotkeys, inventory, and dog commands all stop working. Only fix is relog. Removing the mod fixes dogs completely.
-- **Root cause:** The mod overrides `PlayerBase.OnCommandVehicleStart()` to call `GetInventory().UnlockInventory(LOCK_FROM_SCRIPT)` and `OnCommandVehicleFinish()` to re-lock it. DayZ-Dog's `DogManageMenu` uses `GetInputController().SetDisabled(true)` to capture input on open. The inventory lock state corruption prevents the dog menu from rendering, but input is still captured.
-- **Workshop mod also removed from Steam** for guideline violations — can't rely on it long-term.
-- **Fix:** Build our own custom client+server mod (~15 lines) with a guard check that skips the inventory re-lock if a scripted menu is open:
-```cpp
-modded class PlayerBase
-{
-    override void OnCommandVehicleStart()
-    {
-        super.OnCommandVehicleStart();
-        if (GetInventory()) { GetInventory().UnlockInventory(LOCK_FROM_SCRIPT); }
-    }
-    override void OnCommandVehicleFinish()
-    {
-        if (GetInventory() && !GetGame().GetUIManager().GetMenu())
-        {
-            GetInventory().LockInventory(LOCK_FROM_SCRIPT);
-        }
-        super.OnCommandVehicleFinish();
-    }
-    override bool CanReceiveItemIntoHands(EntityAI item_to_hands)
-    {
-        if (IsInVehicle()) { return true; }
-        return super.CanReceiveItemIntoHands(item_to_hands);
-    }
-}
-```
-- **Mod type:** Client+server (`-mod=`), so no `modded class PlayerBase` conflict with SitRest in `-serverMod=`.
-- **Status:** Workshop mod removed from `-mod=` in start_server.bat. Custom replacement not yet built.
-
 ### SitRest: "Sit B" (straight) emote not freezing hunger/thirst
 - **Issue:** Sit crossed-legs works, sit-straight does not freeze hunger/thirst — even with empty hands and the animation playing.
 - **Note:** Vanilla SitB requires empty hands + crouching to trigger, but user confirms the emote IS playing — SitRest just isn't detecting it.
@@ -124,6 +93,12 @@ modded class PlayerBase
 ---
 
 ## Completed
+
+### Enable Inventory In Vehicle + Sit Emotes — DONE
+- Custom client+server mod (`-mod=`) replaces removed Workshop mod (3594596641).
+- Unlocks inventory in vehicles with dog-menu guard (skips re-lock if scripted menu is open).
+- Also overrides `CanManipulateInventory()` to allow inventory during sit emotes (SitA, SitB, SurvivorAnims SitNew).
+- Added to `-mod=` in `start_server.bat`, `CUSTOM_MODS` + sync in `launch_dayz.bat`.
 
 ### Dogs & Horses not spawning — FIXED
 - `AnimalMaxCount` set to 1200 (was 200). Vanilla herds consumed all entity slots. Dogs, horses, wolves, sheep now all spawning. Confirmed in-game Mar 2.

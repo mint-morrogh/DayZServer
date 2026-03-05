@@ -140,3 +140,5 @@ config/CarePackageV2/
 !@HUDClock/addons/HUDClock.pbo
 !@StackableItems/addons/
 !@StackableItems/addons/StackableItems.pbo
+!@EnableInventoryInVehicle/addons/
+!@EnableInventoryInVehicle/addons/EnableInventoryInVehicle.pbo
