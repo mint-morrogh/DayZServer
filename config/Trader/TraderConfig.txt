@@ -1532,7 +1532,7 @@
         Truck_01_Covered_Blue,	V,		50000,	30000
         Truck_01_Covered_Orange,V,		50000,	30000
 	
-	<Category> Vehicle Parts
+	<Category> Engine & Fluids
 		HeadlightH7_Box,		*,		30,		15
 		SparkPlug,				*,		60,		40
 		EngineOil,				*,		70,		40
@@ -1540,6 +1540,8 @@
 		TruckBattery,			*,		180,	100
 		CarRadiator,			*,		200,	100
 		TireRepairKit,			*,		220,	100
+
+	<Category> Vanilla Vehicle Parts
 		HatchbackHood,						*,		300,	100
 		HatchbackHood_Blue,					*,		300,	100
 		HatchbackHood_White,				*,		300,	100
@@ -1687,6 +1689,8 @@
         Truck_01_Door_2_1_Orange,			*,		500,	180
         Truck_01_Wheel,						*,		600,	120
         Truck_01_WheelDouble,				*,		1000,	200
+
+	<Category> Modded Wheels
 		// ---- 4KBOSSK Modded Vehicle Wheels ----
 		Audi_RS6_ABT_Wheel,				*,		750,	350
 		BMW_M3_Wheel,					*,		750,	350
@@ -1722,7 +1726,7 @@
 		LM_Cessna180_Wheel_Front,		*,		1000,	500
 		LM_Cessna180_Wheel_Back,		*,		1000,	500
 
-		// ==== 4KBOSSK Modded Vehicle Parts (Doors, Hoods, Trunks) ====
+	<Category> 4KBOSSK Parts (Audi - Dodge)
 		// ---- Audi RS6 ABT Parts ----
 		Audi_RS6_ABT_Hood,                       *,		400,	140
 		Audi_RS6_ABT_Hood_Black,                 *,		400,	140
@@ -2123,6 +2127,8 @@
 		DodgeRam_Cargo2_camonuke,                *,		500,	180
 		DodgeRam_Cargo2_camored,                 *,		500,	180
 		DodgeRam_Cargo2_camowhite,               *,		500,	180
+
+	<Category> 4KBOSSK Parts (Ford - Kamaz)
 		// ---- Ford Bronco Parts ----
 		Bronco_Hood,                             *,		400,	140
 		Bronco_Hood_Black,                       *,		400,	140
@@ -2502,6 +2508,8 @@
 		Kamaz_TyphoonK_Cargo8_RedCamo,           *,		500,	180
 		Kamaz_TyphoonK_Cargo8_Rusty,             *,		500,	180
 		Kamaz_TyphoonK_Cargo8_White,             *,		500,	180
+
+	<Category> 4KBOSSK Parts (Mitsubishi - Toyota)
 		// ---- Mitsubishi EVO Parts ----
 		Mitsubishi_LancerEvolutionIX_Hood,       *,		400,	140
 		Mitsubishi_LancerEvolutionIX_Hood_bee,   *,		400,	140

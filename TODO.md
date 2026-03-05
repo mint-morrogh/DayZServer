@@ -102,10 +102,20 @@ modded class PlayerBase
 - **Mod type:** Client+server (`-mod=`), so no `modded class PlayerBase` conflict with SitRest in `-serverMod=`.
 - **Status:** Workshop mod removed from `-mod=` in start_server.bat. Custom replacement not yet built.
 
-### SitRest: "Sit B" (straight) emote not freezing hunger/thirst — NOT A BUG
-- **Issue:** Sit crossed-legs emote correctly freezes hunger and thirst, but sitting straight does not.
-- **Finding:** SitRest code already checks all three sit IDs (SITA=14, SITB=15, SurvivorAnims SitNew=5501). The problem is a **vanilla DayZ restriction** — SitB requires empty hands AND crouching stance to trigger. If you're holding anything, the emote silently fails and SitRest never sees it.
-- **Workaround:** Put away items before using sit-straight, or use sit-crossed (works with items in hands) or SurvivorAnims sit (works from any stance).
+### SitRest: "Sit B" (straight) emote not freezing hunger/thirst
+- **Issue:** Sit crossed-legs works, sit-straight does not freeze hunger/thirst — even with empty hands and the animation playing.
+- **Note:** Vanilla SitB requires empty hands + crouching to trigger, but user confirms the emote IS playing — SitRest just isn't detecting it.
+- **Likely cause:** `m_CurrentGestureID` may not be set (or gets cleared) on the server side for SitB. SitRest reads this field every 1 second to detect sitting.
+- **Debug step:** A Print statement has been added to `SitRest_IsSitEmoteActive()` in `mod_src/SitRest/Scripts/4_World/SitRest.c` that logs the gesture ID. PBO needs rebuilding (server must be stopped first — PBO is locked while running).
+- **To deploy:** Stop server, then run:
+  ```
+  cd mod_src/SitRest
+  pbo -b -H "prefix=SitRest" ../../@SitRest/addons/SitRest.pbo config.cpp Scripts/4_World/SitRest.c
+  ```
+  Start server, do both sit emotes, then check the latest `.RPT` in `config/` for `[SitRest] GestureID=` lines. This will show what ID sit-straight actually reports on the server and whether it matches `EmoteConstants.ID_EMOTE_SITB` (15).
+
+### ~~Trader: Split Vehicle Parts into multiple tabs~~ — DONE
+- Split single 1300-line Vehicle Parts tab into 6 categories: Engine & Fluids, Vanilla Vehicle Parts, Modded Wheels, 4KBOSSK Parts (Audi-Dodge), 4KBOSSK Parts (Ford-Kamaz), 4KBOSSK Parts (Mitsubishi-Toyota).
 
 ---
 
