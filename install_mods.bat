@@ -120,14 +120,26 @@ if not exist "%DST%\addons" set "IS_NEW=1"
 
 :: Copy addons folder (only newer files with /D)
 if exist "%SRC%\addons" (
-    xcopy /E /I /D /Y "%SRC%\addons" "%DST%\addons" >nul 2>&1
     if "!IS_NEW!"=="1" (
+        echo   [COPY] @%MOD_NAME% - installing...
+        xcopy /E /I /D /Y "%SRC%\addons" "%DST%\addons" >nul 2>&1
         echo   [NEW]  @%MOD_NAME%
         set /a INSTALLED+=1
     ) else (
-        :: xcopy /D /L counts files that would be copied
-        set "CHANGES=0"
-        for /f %%c in ('xcopy /E /D /L "%SRC%\addons" "%DST%\addons" 2^>nul ^| find /c /v ""') do set "CHANGES=%%c"
+        <nul set /p "=   [CHECK] @%MOD_NAME%... "
+        xcopy /E /I /D /Y "%SRC%\addons" "%DST%\addons" >nul 2>&1
+        echo OK
+    )
+) else if exist "%SRC%\Addons" (
+    if "!IS_NEW!"=="1" (
+        echo   [COPY] @%MOD_NAME% - installing...
+        xcopy /E /I /D /Y "%SRC%\Addons" "%DST%\addons" >nul 2>&1
+        echo   [NEW]  @%MOD_NAME%
+        set /a INSTALLED+=1
+    ) else (
+        <nul set /p "=   [CHECK] @%MOD_NAME%... "
+        xcopy /E /I /D /Y "%SRC%\Addons" "%DST%\addons" >nul 2>&1
+        echo OK
     )
 )
 

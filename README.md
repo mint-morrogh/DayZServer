@@ -404,9 +404,24 @@ These mods must be installed on both the **server** and **client**.
 | [MWGSM Roaming Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=3636799682) | 3636799682 | Helicopter-based roaming trader that lands near players with weapons, ammo, medical, and attachments |
 | [Saga Shake Tree](https://steamcommunity.com/sharedfiles/filedetails/?id=3545040196) | 3545040196 | Shake fruit trees to drop apples, pears, and plums - configurable drop rates and cooldowns |
 | [Pack Complete - Backpacks FREE](https://steamcommunity.com/sharedfiles/filedetails/?id=3648464156) | 3648464156 | 13 backpack models with 63 camo/colour variants - tactical, military, medical, and civilian packs |
+
+**Added 2026-03-04:**
+
+| Mod | Workshop ID | Description |
+|---|---|---|
 | [VVN Old Refrigerator](https://steamcommunity.com/sharedfiles/filedetails/?id=3592127439) | 3592127439 | Placeable refrigerator that slows food decay, plus a portable mini fridge |
+| [VVN Greenhouse](https://steamcommunity.com/sharedfiles/filedetails/?id=3664943616) | 3664943616 | Placeable greenhouse for growing crops indoors |
 | [Enable Inventory In Vehicle](https://steamcommunity.com/sharedfiles/filedetails/?id=3594596641) | 3594596641 | Access inventory while inside a vehicle |
 | [FLIP CAR](https://steamcommunity.com/sharedfiles/filedetails/?id=3623001011) | 3623001011 | Flip overturned vehicles back upright |
+
+### Server-Only Mods
+
+These mods run on the server only - **players do not need to subscribe**.
+
+| Mod | Workshop ID | Description |
+|---|---|---|
+| [SFE: No Vehicle Damage](https://steamcommunity.com/sharedfiles/filedetails/?id=3459215297) | 3459215297 | Configurable crash protection - blocks collision damage below a speed threshold |
+| [Signal Overnight Stay](https://steamcommunity.com/sharedfiles/filedetails/?id=3659550946) | 3659550946 | Nightly tactical camp event with zombies and loot crate |
 
 ### Mod Installation
 
@@ -446,10 +461,17 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3636799682` | `@MWGSM_Trader` |
 | `3545040196` | `@SagaShakeTree` |
 | `3648464156` | `@GelyaBackpacks` |
+
+**Added 2026-03-04:**
+
+| Workshop Folder | Rename To |
+|---|---|
 | `3592127439` | `@VVN_Old_refrigerator` |
-| `3659550946` | `@SobrMods_Signal_Overnight_Stay` |
+| `3664943616` | `@VVN_Greenhouse` |
 | `3594596641` | `@EnableInventoryInVehicle` |
 | `3623001011` | `@FlipCar` |
+| `3459215297` | `@SFE_NoVehicleDamage` |
+| `3659550946` | `@SobrMods_Signal_Overnight_Stay` |
 
 ### Gelya Backpacks - Pack Complete
 
