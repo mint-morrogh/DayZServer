@@ -1247,13 +1247,13 @@
     </children>
   </event>
   <!-- ============================================================ -->
-  <!-- 4KBOSSK Modded Vehicles — 1 of each, 20 total                -->
+  <!-- 4KBOSSK + Nemsis Modded Vehicles — 23 total                  -->
   <!-- Uses custom spawn positions in cfgeventspawns.xml             -->
-  <!-- 36 possible locations, CE picks 20 randomly = not abusable   -->
+  <!-- 36 possible locations, CE picks 23 randomly = not abusable   -->
   <!-- ============================================================ -->
   <event name="Vehicle4KBOSSK">
-    <nominal>20</nominal>
-    <min>20</min>
+    <nominal>23</nominal>
+    <min>23</min>
     <max>36</max>
     <lifetime>300</lifetime>
     <restock>0</restock>
@@ -1285,6 +1285,8 @@
       <child lootmax="0" lootmin="0" max="1" min="1" type="Supra_Red" />
       <child lootmax="0" lootmin="0" max="1" min="1" type="Tahoe_Brown" />
       <child lootmax="0" lootmin="0" max="1" min="1" type="ToyotaRunner_white" />
+      <!-- Nemsis Scrapbuggy (dune buggy) — 3 on the map -->
+      <child lootmax="0" lootmin="0" max="3" min="3" type="nm_Scrapbuggy" />
     </children>
   </event>
 

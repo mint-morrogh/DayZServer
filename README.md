@@ -4,7 +4,9 @@
 
 # BAE-Z - DayZ Private Server
 
-What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into thirty-six, one custom script turned into eight, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
+> **[Subscribe to the BAE-Z Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3679580119)** — all 42 required mods in one click.
+
+What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into dozens, one custom script turned into a full modding pipeline, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
 
 Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, install git so the server will auto update on launch, and play.
 
@@ -18,7 +20,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Rebalanced wildlife** - deer, roe deer, cows, goats, pigs, sheep, wild boar, wolves, bears, foxes, hares, and hens all tuned for a populated but performant world
 
 **Vehicles & Transport**
-- **38+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) at curated map positions plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
+- **41+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) plus 3 craftable dune buggies at curated map positions, plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
 - **Flyable planes** - Spitfire, Cessna 180, Catalina seaplane, Tigermoth (3 variants), Stuntplane (7 planes at 14 airfield positions)
 - **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
 - **Flip overturned vehicles** - flip cars back upright when they roll over
@@ -33,8 +35,11 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Zombie kill drops** - zombies have a chance to drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
 - **Nightly overnight camps** - once per night a tactical camp spawns at a random location with a tent, campfire, 10 zombies, and a loot crate containing guns, ammo, food, and medical supplies - camp lasts all night and despawns at dawn
 
+**Weapons & Gear**
+- **AJ's Weapons** - 79 firearms (pistols, SMGs, rifles, assault rifles, snipers, LMGs), 209 attachments, 58 magazines, 22 optics, 24 suppressors - all purchasable at the Weapon Trader and rare world spawns
+
 **Crafting, Cooking & Skills**
-- **700+ crafting recipes** - weapons, armor, ammo, vehicles, bushcraft, NBC gear, and more via Nemsis Craftingpack
+- **700+ crafting recipes** - weapons, armor, ammo, vehicles (including a craftable dune buggy), bushcraft, NBC gear, and more via Nemsis Craftingpack
 - **Advanced cooking** - 30+ recipes you can discover via CookZ
 - **Skill tree** - earn XP and unlock perks in survival, crafting, hunting, and gathering
 - **Shake fruit trees** - hold action on fruit trees to shake loose 2-4 apples/pears/plums (75% drop chance, 30-min cooldown per tree)
@@ -72,7 +77,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Reduced shoe damage** - crawler zombie boot damage reduced from 5.0 to 1.0
 
 **Server & Configuration**
-- **37 Workshop mods + 7 custom server-side mods + 6 custom client mods** - all preconfigured and ready to go
+- **38 Workshop mods + 7 custom server-side mods + 6 custom client mods** - all preconfigured and ready to go
 - **One-file configuration** - all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** - server automatically restarts every 12 hours
 - **Full persistence** - bases, vehicles, and inventory survive restarts
@@ -412,6 +417,7 @@ These mods must be installed on both the **server** and **client**.
 | [VVN Old Refrigerator](https://steamcommunity.com/sharedfiles/filedetails/?id=3592127439) | 3592127439 | Placeable refrigerator that slows food decay, plus a portable mini fridge |
 | [VVN Greenhouse](https://steamcommunity.com/sharedfiles/filedetails/?id=3664943616) | 3664943616 | Placeable greenhouse for growing crops indoors |
 | [FLIP CAR](https://steamcommunity.com/sharedfiles/filedetails/?id=3623001011) | 3623001011 | Flip overturned vehicles back upright |
+| [AJ's Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=3571685323) | 3571685323 | 79 firearms, 209 attachments, 58 magazines, 22 optics, 24 suppressors - M4A1, HK416, SCAR, MCX, SVD, AWM, PKM, and more |
 
 ### Server-Only Mods
 
@@ -468,6 +474,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `3592127439` | `@VVN_Old_refrigerator` |
 | `3664943616` | `@VVN_Greenhouse` |
 | `3623001011` | `@FlipCar` |
+| `3571685323` | `@AJsWeapons` |
 | `3459215297` | `@SFE_NoVehicleDamage` |
 | `3659550946` | `@SobrMods_Signal_Overnight_Stay` |
 
@@ -592,7 +599,7 @@ Plane spawns are configured in `custom/types_lmplanes.xml`.
 
 ### 4KBOSSKVehicles
 
-20 driveable vehicles spawn across the map - 1 of each model, spread across towns, farms, industrial areas, and military bases:
+23 driveable vehicles spawn across the map — 20 custom car models plus 3 Nemsis dune buggies, spread across towns, farms, industrial areas, and military bases:
 
 | Vehicle | Count | Location |
 |---|---|---|
@@ -616,8 +623,9 @@ Plane spawns are configured in `custom/types_lmplanes.xml`.
 | Nissan GTR Nismo | 1 | Town, Industrial |
 | Ford Raptor Monster Truck | 1 | Farm, Industrial |
 | Kamaz Typhoon K | 1 | Military |
+| Nemsis Dune Buggy | 3 | Town |
 
-Vehicle spawns are configured in `custom/types_4kbossk.xml`. The mod includes 163 color variants - change colors by swapping class names in the types file.
+Vehicle spawns are configured in `custom/types_4kbossk.xml` and `custom/types_nemsis.xml`. The 4KBOSSK mod includes 163 color variants - change colors by swapping class names in the types file. Dune buggies can also be crafted from scratch using the Nemsis Craftingpack (buggy construction kit + scrap metal + engine).
 
 ### CookZ
 

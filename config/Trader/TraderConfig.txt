@@ -510,6 +510,99 @@
 		nm_ScrapHammerSmall,	W,		12,		6
 		nm_ScrapLugWrench,		W,		15,		8
 
+	<Category> AJ's Pistols
+		AJW_Beretta92FS_Black,			W,		350,	175
+		AJW_Kimber1911,					W,		400,	200
+		AJW_CZP09_OD,					W,		350,	175
+		AJW_DWX,						W,		450,	225
+		AJW_CM_TaranTactical_FDE,		W,		400,	200
+		AJW_CM_TaranTactical_Black,		W,		400,	200
+		AJW_Deagle_Black,				W,		600,	300
+		AJW_Deagle_FDE,					W,		600,	300
+		AJW_Deagle_AOR2,				W,		750,	375
+		AJW_Deagle_MARPAT,				W,		750,	375
+
+	<Category> AJ's SMGs
+		AJW_Vityaz_Black,				W,		500,	250
+		AJW_EVO3_Black,					W,		550,	275
+		AJW_EVO3_Grey,					W,		550,	275
+		AJW_EVO3_FDE,					W,		550,	275
+		AJW_PPSH_Classic,				W,		600,	300
+
+	<Category> AJ's Shotguns
+		AJW_M1897Trench,				W,		400,	200
+		AJW_M1897_Bayonet,				W,		250,	125
+
+	<Category> AJ's Rifles
+		AJW_K98_Standard,				W,		500,	250
+		AJW_K98_BlackTie,				W,		550,	275
+		AJW_K98_Tac_Wood,				W,		550,	275
+		AJW_K98_Tac_Poly,				W,		600,	300
+		AJW_Gewehr43_Wood,				W,		550,	275
+		AJW_MarlinTactical_Black,		W,		500,	250
+		AJW_MK12_Black,					W,		800,	400
+		AJW_MK12_FDE,					W,		800,	400
+		AJW_Car15_BD,					W,		900,	450
+		AJW_AKS74U_Black,				W,		600,	300
+		AJW_AK74M_Black,				W,		700,	350
+		AJW_AK5C_Green,					W,		750,	375
+		AJW_AK5C_Black,					W,		750,	375
+		AJW_AK5C_KHK,					W,		800,	400
+		AJW_AK101_Black,				W,		850,	425
+		AJW_AK102_Black,				W,		850,	425
+		AJW_AK103_Black,				W,		800,	400
+		AJW_AK104_Black,				W,		800,	400
+		AJW_AK105_Black,				W,		850,	425
+		AJW_ACR_Tan,					W,		900,	450
+		AJW_ACR_RG,						W,		900,	450
+		AJW_ACR_Black,					W,		950,	475
+
+	<Category> AJ's Assault Rifles
+		AJW_M4A1,						W,		1200,	600
+		AJW_M4A1_FDE,					W,		1200,	600
+		AJW_M4A1_Rattle,				W,		1300,	650
+		AJW_M4A1_AOR2,					W,		1400,	700
+		AJW_M4A1_10,					W,		1300,	650
+		AJW_M4A1_10_FDE,				W,		1300,	650
+		AJW_M4A1_10_Rattle,				W,		1400,	700
+		AJW_M4A1_10_AOR2,				W,		1400,	700
+		AJW_MCX_Black,					W,		1500,	750
+		AJW_MCX_Grey,					W,		1500,	750
+		AJW_MCX_FDE,					W,		1500,	750
+		AJW_MCX_Rattlecan,				W,		1600,	800
+		AJW_HK416_14_Black,				W,		1800,	900
+		AJW_HK416_14_FDE,				W,		1800,	900
+		AJW_HK416_10_Black,				W,		1800,	900
+		AJW_HK416_10_FDE,				W,		1800,	900
+		AJW_SCARL_TAN,					W,		2000,	1000
+		AJW_SCARL_Black,				W,		2000,	1000
+
+	<Category> AJ's Snipers & DMRs
+		AJW_R700,						W,		800,	400
+		AJW_SV98,						W,		900,	450
+		AJW_SVD,						W,		1200,	600
+		AJW_SVD_Rattle,					W,		1300,	650
+		AJW_M40A3_Green,				W,		1500,	750
+		AJW_M40A3_Camo,					W,		1500,	750
+		AJW_DMK12_Black,				W,		1800,	900
+		AJW_DMK12_FDE,					W,		1800,	900
+		AJW_HKG28_FDE,					W,		2200,	1100
+		AJW_MK14_EBR_SASS_FDE,			W,		2500,	1250
+		AJW_SCARH_Black,				W,		2500,	1250
+		AJW_SCARH_TAN,					W,		2500,	1250
+		AJW_SCARH_MCT,					W,		2600,	1300
+		AJW_SCARH_White,				W,		2600,	1300
+		AJW__AWM_FDE,					W,		3000,	1500
+		AJW__AWM_AOR2,					W,		3200,	1600
+		AJW__AWM_Green,					W,		3200,	1600
+		AJW__AWM_Gold,					W,		3500,	1750
+		AJW_GOL_Magnum_Green,			W,		3000,	1500
+
+	<Category> AJ's LMGs
+		AJW_PKM,						W,		3000,	1500
+		AJW_PKM_Worn,					W,		2800,	1400
+		AJW_PKM_WL_Painted,				W,		3200,	1600
+
 	<Category> Grenades
 		RGD5Grenade,			1,		300,	100
 		M67Grenade,				1,		300,	100
@@ -588,7 +681,13 @@
 		AmmoBox_556x45Tracer_20Rnd,		*,		160,	80
 		AmmoBox_762x39Tracer_20Rnd,		*,		160,	80
 		AmmoBox_762x54Tracer_20Rnd,		*,		400,	200
-		
+		// ---- AJ's Ammo ----
+		AJW_Ammo_300WM,					1,		12,		6
+		AJW_Ammo_762x25,				1,		4,		2
+		AJW_Ammo_8mm,					1,		4,		2
+		AJW__Ammo_338,					1,		15,		8
+		AJW__AmmoBox_338mm_10Rnd,		*,		120,	60
+
 	<Category> Magazines
 		Mag_IJ70_8Rnd,			M,		30,		15
 		Mag_P1_8Rnd,			M,		30,		15
@@ -806,8 +905,307 @@
 	<Category> Flashlights
 		TLRLight,				*,		100,	50
 		Universallight,			*,		120,	60
-	
-	
+
+	<Category> AJ's Magazines
+		AJW_Mag_Beretta92FS_15Rnd,              M,		40,	20
+		AJW_Mag_Kimber1911_9Rnd,                M,		40,	20
+		AJW_Mag_CZP09_20Rnd,                    M,		50,	25
+		AJW_Mag_DWX_20Rnd,                      M,		50,	25
+		AJW_Mag_CM_TaranTactical_9Rnd,          M,		40,	20
+		AJW_Mag_Vityaz_30Rnd_Black,             M,		120,	60
+		AJW_Mag_Vityaz_30Rnd_FDE,               M,		120,	60
+		AJW_Mag_Vityaz_PMAG_30Rnd_Black,        M,		150,	75
+		AJW_Mag_Vityaz_PMAG_30Rnd_FDE,          M,		150,	75
+		AJW_Mag_Vityaz_PMAG_30Rnd_Yellow,       M,		150,	75
+		AJW_Mag_EVO3_35rnd,                     M,		120,	60
+		AJW_Mag_PPSH_35rnd,                     M,		100,	50
+		AJW_Mag_PPSH_71rnd,                     M,		300,	150
+		BAW_Mag_Uzi_35Rnd,                      M,		120,	60
+		AJW_Mag_545_PMAG_30rnd_Black,           M,		220,	110
+		AJW_Mag_545_PMAG_30rnd_FDE,             M,		220,	110
+		AJW_Mag_545_Promag_73rnd_Black,         M,		480,	220
+		AJW_Mag_Troy_30Rnd_Black,               M,		220,	110
+		AJW_Mag_Troy_30Rnd_FDE,                 M,		220,	110
+		AJW_Mag_PMAG_30Rnd_Black,               M,		220,	110
+		AJW_Mag_PMAG_30Rnd_FDE,                 M,		220,	110
+		AJW_Mag_PMAG_30Rnd_CB,                  M,		220,	110
+		AJW_Mag_HKGen2PM_30Rnd_Black,           M,		250,	125
+		AJW_Mag_HKGen2PM_30Rnd_FDE,             M,		250,	125
+		AJW_Mag_D60_60Rnd_Black,                M,		480,	220
+		AJW_Mag_D60_60Rnd_FDE,                  M,		480,	220
+		AJW_Mag_STANAG_100Rnd,                  M,		600,	300
+		AJW_BD_Car15_Mag_STANAG_30Rnd,          M,		220,	110
+		AJW_Mag_762_bklt_30rnd,                 M,		220,	110
+		AJW_Mag_762_PMAG_30rnd_Black,           M,		220,	110
+		AJW_Mag_762_PMAG_30rnd_FDE,             M,		220,	110
+		AJW_Mag_762_PMAG_30rnd_Banana,          M,		250,	125
+		AJW_Mag_AKM_Poly_60rnd,                 M,		480,	220
+		AJW_Mag_AK_6L31_60rnd_Black,            M,		480,	220
+		AJW_Mag_AK_6L31_60rnd_MC,               M,		480,	220
+		AJW_Mag_AK_6L31_60rnd_ATAC,             M,		480,	220
+		AJW_Mag_762_X47_50rnd,                  M,		400,	200
+		AJW_Mag_9x39_60Rnd,                     M,		350,	175
+		AJW_Mag_M14_20rnd,                      M,		200,	100
+		AJW_Mag_M14_30rnd,                      M,		300,	150
+		AJW_Mag_M14_50rnd,                      M,		480,	220
+		AJW_Mag_FALX_50rnd,                     M,		480,	220
+		AJW_Mag_SCARH_20rnd_Black,              M,		250,	125
+		AJW_Mag_SCARH_20rnd_FDE,                M,		250,	125
+		AJW_Mag_HKG28_20rnd,                    M,		280,	140
+		AJW_Mag_DMK12_5rnd,                     M,		80,	40
+		AJW_Mag_DMK12_10rnd,                    M,		120,	60
+		AJW_Mag_DMK12_25rnd,                    M,		250,	125
+		BAW_Mag_DMR_20rnd,                      M,		250,	125
+		AJW_Mag_SVD_10Rnd_Black,                M,		250,	125
+		AJW_Mag_SVD_10Rnd_Rattle,               M,		280,	140
+		AJW_Mag_SV98_10Rnd,                     M,		250,	125
+		AJW_Mag_R700_10Rnd,                     M,		200,	100
+		AJW_Mag_GOL_4rnd,                       M,		300,	150
+		AJW__AWM_Magazine_5rnd,                 M,		350,	175
+		AJW_Mag_PKM_200Rnd,                     M,		500,	250
+		AJW_Mag_PKM_200Rnd_Worn,                M,		450,	225
+		AJW_Mag_PKM_200Rnd_WLPainted,           M,		550,	275
+
+	<Category> AJ's Optics
+		AJW_Optic_OKP7,                         *,		250,	125
+		AJW_Optic_MicroT2_Black,                *,		350,	175
+		AJW_Optic_MicroT2_FDE,                  *,		350,	175
+		AJW_Optic_Vortex,                       *,		400,	200
+		AJW_Optic_StrikeFire_Black,             *,		400,	200
+		AJW_Optic_StrikeFire_FDE,               *,		400,	200
+		AJW_Optic_EOTech_EXPS3_Black,           *,		500,	250
+		AJW_Optic_EOTech_EXPS3_FDE,             *,		550,	275
+		AJW_Optic_EOTech_EXPS3_TwoTone,         *,		600,	300
+		AJW_Optic_EOTech_EXPS3_Black_Wojack,    *,		700,	350
+		AJW_Optic_ACOG_Chevron,                 *,		600,	300
+		AJW_Optic_ACOG_Horseshoe,               *,		600,	300
+		AJW_Optic_ACOG_ACSS,                    *,		600,	300
+		AJW_Optic_Accupower,                    *,		800,	400
+		AJW_Optic_HAMR,                         *,		900,	450
+		AJW_BD_Car15_Optic,                     *,		500,	250
+		AJW_Optic_K98,                          *,		400,	200
+		AJW_Optic_LeupoldHoloDEVO,              *,		1200,	600
+		AJW_Optic_EoTechVudu,                   *,		1200,	600
+		AJW_Optic_LRHS,                         *,		1400,	700
+		AJW_Optic_LRHS_FDE,                     *,		1400,	700
+		AJW_Optic_Leupold_M3A,                  *,		1800,	900
+
+	<Category> AJ's Suppressors
+		AJW_Osprey_Suppressor_Black,            *,		200,	100
+		AJW_Osprey_Suppressor_FDE,              *,		200,	100
+		AJW_Gemtech_Suppressor_Black,           *,		200,	100
+		AJW_Gemtech_Suppressor_FDE,             *,		200,	100
+		AJW_SurefireRC2_Black_Suppressor,       *,		300,	150
+		AJW_SurefireRC2_Tan_Suppressor,         *,		300,	150
+		AJW_QDSSNT4_Suppressor_Black,           *,		300,	150
+		AJW_QDSSNT4_Suppressor_FDE,             *,		300,	150
+		AJW_AACSDN_Suppressor_Black,            *,		280,	140
+		AJW_AACSDN_Suppressor_FDE,              *,		280,	140
+		AJW_SurefireFA762K_Black_Suppressor,    *,		350,	175
+		AJW_SurefireFA762K_Tan_Suppressor,      *,		350,	175
+		AJW_Rotor43_Suppressor_Black,           *,		300,	150
+		AJW_Rotor43_Suppressor_Rattle,          *,		320,	160
+		AJW_Hexagon_Suppressor_Black,           *,		300,	150
+		AJW_PBS1_Suppressor,                    *,		250,	125
+		AJW_PBS4_Suppressor,                    *,		250,	125
+		AJW_DTK4_Suppressor_Black,              *,		280,	140
+		AJW_DTK4_Suppressor_MC,                 *,		300,	150
+		AJW_DTKP_Suppressor_Black,              *,		250,	125
+		AJW_DTKP_Suppressor_FDE,                *,		250,	125
+		AJW_HKG28_BTQD_Suppressor_Black,        *,		400,	200
+		AJW_HKG28_BTQD_Suppressor_Tan,          *,		400,	200
+		AJW_SV98_Suppressor_Black,              *,		350,	175
+
+	<Category> AJ's Handguards
+		AJW_M4_RISHndgrd,                       *,		150,	75
+		AJW_M4_BlockII_Hndgrd_Black,            *,		200,	100
+		AJW_M4_BlockII_Hndgrd_FDE,              *,		200,	100
+		AJW_M4_BlockII_10_Hndgrd_Black,         *,		200,	100
+		AJW_M4_BlockII_10_Hndgrd_FDE,           *,		200,	100
+		AJW_M4_URX4_Hndgrd_Black,               *,		250,	125
+		AJW_M4_URX4_Hndgrd_FDE,                 *,		250,	125
+		AJW_M4_URX4_10_Hndgrd_Black,            *,		250,	125
+		AJW_M4_URX4_10_Hndgrd_FDE,              *,		250,	125
+		AJW_M4_URGI_10_Hndgrd_Black,            *,		250,	125
+		AJW_M4_URGI_10_Hndgrd_FDE,              *,		250,	125
+		AJW_M4_LVOA_Hndgrd_Black,               *,		280,	140
+		AJW_M4_LVOA_Hndgrd_FDE,                 *,		280,	140
+		AJW_MCX_STD_Hndgrd_Black,               *,		250,	125
+		AJW_MCX_STD_Hndgrd_FDE,                 *,		250,	125
+		AJW_MCX_STD_Hndgrd_Grey,                *,		250,	125
+		AJW_MCX_KM_Hndgrd_Black,                *,		280,	140
+		AJW_MCX_KM_Hndgrd_FDE,                  *,		280,	140
+		AJW_MCX_KM_Hndgrd_OD,                   *,		280,	140
+		AJW_MCX_KM_Hndgrd_AnaRed,               *,		300,	150
+		AJW_MCX_LT_Hndgrd_Black,                *,		280,	140
+		AJW_MCX_LT_Hndgrd_FDE,                  *,		280,	140
+		AJW_MCX_LT_Hndgrd_OD,                   *,		280,	140
+		AJW_MCX_LCH_Hndgrd_Black,               *,		300,	150
+		AJW_MCX_LVAW_Hndgrd_Black,              *,		300,	150
+		AJW_MCX_LVAW_Hndgrd_FDE,                *,		300,	150
+		AJW_SCAR_CASV_Hndgrd_Black,             *,		300,	150
+		AJW_SCAR_CASV_Hndgrd_FDE,               *,		300,	150
+		AJW_SCAR_MREX_Hndgrd_Black,             *,		300,	150
+		AJW_SCAR_MREX_Hndgrd_FDE,               *,		300,	150
+		AJW_SCAR_PMM_Hndgrd_Black,              *,		300,	150
+		AJW_SCAR_PMM_Hndgrd_FDE,                *,		300,	150
+		AJW_AKHNG_AK100,                        *,		150,	75
+		AJW_AKHNG_B10_Plastic,                  *,		150,	75
+		AJW_AKHNG_B19_Black,                    *,		200,	100
+		AJW_AKHNG_B19_FDE,                      *,		200,	100
+		AJW_AKHNG_B30_Black,                    *,		200,	100
+		AJW_AKHNG_B30_FDE,                      *,		200,	100
+		AJW_AKHNG_CMRD_Black,                   *,		220,	110
+		AJW_AKHNG_CMRD_FDE,                     *,		220,	110
+		AJW_AKHNG_Hexagon_Black,                *,		250,	125
+		AJW_AKHNG_Hexagon_FDE,                  *,		250,	125
+		AJW_AKHNG_Hexagon_Red,                  *,		280,	140
+		AJW_AKHNG_MagpulL_Black,                *,		200,	100
+		AJW_AKHNG_MagpulL_FDE,                  *,		200,	100
+		AJW_AKHNG_MagpulS_Black,                *,		200,	100
+		AJW_AKHNG_MagpulS_FDE,                  *,		200,	100
+		AJW_AKHNG_SLR_Black,                    *,		250,	125
+		AJW_AKHNG_Shark_Wood,                   *,		180,	90
+		AJW_AKHNG_Sport1_Black,                 *,		220,	110
+		AJW_AKHNG_Sport1_FDE,                   *,		220,	110
+		AJW_AKHNG_Troy_Black,                   *,		250,	125
+		AJW_AKHNG_Troy_FDE,                     *,		250,	125
+		AJW_AK74U_HNG_STD,                      *,		150,	75
+		AJW_AK74U_HNG_B11,                      *,		200,	100
+		AJW_AK74U_HNG_Goliaf_Black,             *,		220,	110
+		AJW_AK74U_HNG_Goliaf_Copper,            *,		250,	125
+		AJW_HK_Geissele_HG10_Black,             *,		300,	150
+		AJW_HK_Geissele_HG10_FDE,               *,		300,	150
+		AJW_HK_Geissele_HG10_Grey,              *,		300,	150
+		AJW_HK_Geissele_HG10_Rose,              *,		350,	175
+		AJW_HK_Geissele_HG14_Black,             *,		300,	150
+		AJW_HK_Geissele_HG14_FDE,               *,		300,	150
+		AJW_HK_Geissele_HG14_Grey,              *,		300,	150
+		AJW_HK_Geissele_HG14_Rose,              *,		350,	175
+		AJW_HK_HG_STD_Quad_Black,               *,		250,	125
+		AJW_HK_HG_STD_Quad_FDE,                 *,		250,	125
+		AJW_HK_HG_STD_Quad_Grey,                *,		250,	125
+
+	<Category> AJ's Buttstocks
+		AJW_B5_Bttstock_Black,                  *,		150,	75
+		AJW_B5_Bttstock_FDE,                    *,		150,	75
+		AJW_BCM_Bttstock_Black,                 *,		150,	75
+		AJW_BCM_Bttstock_FDE,                   *,		150,	75
+		AJW_BD_Car15_Bttstck,                   *,		120,	60
+		AJW_Bttstock_Crane,                     *,		180,	90
+		AJW_Bttstock_Crane_FDE,                 *,		180,	90
+		AJW_CMMG_Bttstock_Black,                *,		150,	75
+		AJW_DD_Bttstock_Black,                  *,		200,	100
+		AJW_DD_Bttstock_FDE,                    *,		200,	100
+		AJW_DS150_Bttstock_Black,               *,		180,	90
+		AJW_DS150_Bttstock_FDE,                 *,		180,	90
+		AJW_FAB_GLC_Bttstock_Black,             *,		200,	100
+		AJW_PRS2_Black,                         *,		250,	125
+		AJW_PRS2_FDE,                           *,		250,	125
+		AJW_Magpul_MOE_Black,                   *,		150,	75
+		AJW_Magpul_MOE_FDE,                     *,		150,	75
+		AJW_Magpul_MOE_OD,                      *,		150,	75
+		AJW_MCX_Stock_STD,                      *,		200,	100
+		AJW_MCX_Stock_Buffer_Black,             *,		180,	90
+		AJW_MCX_Stock_Buffer_AnaRed,            *,		200,	100
+		AJW_MCX_Stock_Collapsible_Open,         *,		220,	110
+		AJW_MCX_Stock_Collapsible_Closed,       *,		220,	110
+		AJW_MCX_Stock_Skele,                    *,		200,	100
+		AJW_MCX_Stock_MiniSkele,                *,		180,	90
+		AJW_MCX_Stock_Visor,                    *,		250,	125
+		AJW_EVO3_Stock_Standard_Black,          *,		150,	75
+		AJW_EVO3_Stock_Standard_FDE,            *,		150,	75
+		AJW_EVO3_Stock_Standard_Grey,           *,		150,	75
+		AJW_EVO3_Stock_Mini,                    *,		120,	60
+		AJW_EVO3_Stock_BufferTube,              *,		150,	75
+		AJW_AK74M_Plastic_Stock,                *,		120,	60
+		AJW_AK74M_PT1_Stock_Black,              *,		200,	100
+		AJW_AK74M_PT3_Stock_Black,              *,		200,	100
+		AJW_AK12_Bttstock_Black,                *,		220,	110
+		AJW_HKG28_Stock_Black,                  *,		280,	140
+		AJW_HKG28_Stock_FDE,                    *,		280,	140
+		AJW_SVD_StockAdapt_Black,               *,		250,	125
+
+	<Category> AJ's Grips & Foregrips
+		AJW_M4_MOE_PGrip_Black,                 *,		100,	50
+		AJW_M4_MOE_PGrip_FDE,                   *,		100,	50
+		AJW_M4_MOEK2_PGrip_Black,               *,		120,	60
+		AJW_M4_MOEK2_PGrip_FDE,                 *,		120,	60
+		AJW_M4_Hogue_PGrip_Black,               *,		120,	60
+		AJW_M4_Hogue_PGrip_FDE,                 *,		120,	60
+		AJW_M4_BCM_PGrip_Black,                 *,		150,	75
+		AJW_M4_BCM_PGrip_FDE,                   *,		150,	75
+		AJW_M4_DD_PGrip_Black,                  *,		150,	75
+		AJW_M4_DD_PGrip_FDE,                    *,		150,	75
+		AJW_M4_TD_PGrip_Black,                  *,		120,	60
+		AJW_M4_TD_PGrip_FDE,                    *,		120,	60
+		AJW_M4_TD_PGrip_Red,                    *,		150,	75
+		AJW_M4_HKERGO_PGrip,                    *,		150,	75
+		AJW_M4_Skele_PGrip,                     *,		130,	65
+		AJW_M4_F1_PGrip_Black,                  *,		150,	75
+		AJW_M4_F1_PGrip_Cyan,                   *,		180,	90
+		AJW_M4_F1_PGrip_OD,                     *,		150,	75
+		AJW_M4_F1_PGrip_Pink,                   *,		180,	90
+		AJW_M4_F1_PGrip_Red,                    *,		180,	90
+		AJW_M4_F1_PGrip_Yellow,                 *,		180,	90
+		AJW_AK_PG_MOE_Black,                    *,		100,	50
+		AJW_AK_PG_MOE_FDE,                      *,		100,	50
+		AJW_AK_PG_MOE_Grey,                     *,		100,	50
+		AJW_AK_PG_MOE_OD,                       *,		100,	50
+		AJW_AK_PG_TD_Black,                     *,		120,	60
+		AJW_AK_PG_TD_FDE,                       *,		120,	60
+		AJW_AK_PG_RK3_Black,                    *,		150,	75
+		AJW_AK_PG_RK3_FDE,                      *,		150,	75
+		AJW_AK_PG_SI_Black,                     *,		150,	75
+		AJW_AK_PG_SI_FDE,                       *,		150,	75
+		AJW_AK_PG_Scorpius_Grey,                *,		180,	90
+		AJW_AK_PG_MG47_Black,                   *,		180,	90
+		AJW_AK_PG_MG47_FDE,                     *,		180,	90
+		AJW_AK_PG_MG47_Brass,                   *,		200,	100
+		AJW_AK_PG_MG47_Red,                     *,		200,	100
+		AJW_AK_PG_MG47_Anared,                  *,		200,	100
+		AJW_AK_PG_AK12_Black,                   *,		150,	75
+		AJW_AK_PG_AK12_FDE,                     *,		150,	75
+		AJW_AK_PG_AK12_Camo,                    *,		180,	90
+		AJW_AFG_FG_Black,                       *,		120,	60
+		AJW_AFG_FG_FDE,                         *,		120,	60
+		AJW_AFG2_FG_Black,                      *,		120,	60
+		AJW_AFG2_FG_FDE,                        *,		120,	60
+		AJW_MOE_FG_Black,                       *,		100,	50
+		AJW_MOE_FG_FDE,                         *,		100,	50
+		AJW_Stark_FG_Black,                     *,		120,	60
+		AJW_CQR_FG_Black,                       *,		150,	75
+		AJW_Cobra_FG_Black,                     *,		120,	60
+		AJW_HK_FG_Black,                        *,		150,	75
+		AJW_HK_FG_FDE,                          *,		150,	75
+
+	<Category> AJ's Misc Attachments
+		AJW_AK_DC_B33_Black,                    *,		150,	75
+		AJW_AK_DC_B33_FDE,                      *,		150,	75
+		AJW_74U_PDC_DC,                         *,		120,	60
+		AJW_Vityaz_DC_SN_Black,                 *,		120,	60
+		AJW_Vityaz_DC_SN_FDE,                   *,		120,	60
+		AJW_M4_CH_Aero_Black,                   *,		100,	50
+		AJW_M4_CH_Aero_ANred,                   *,		120,	60
+		AJW_M4_CH_Aero_Gold,                    *,		150,	75
+		AJW_AK74M_Comp,                         *,		100,	50
+		AJW_M4_MD_Noveske_Black,                *,		150,	75
+		AJW_M4_MD_Noveske_FDE,                  *,		150,	75
+		AJW_CZEVO3_Barrel_Long,                 *,		200,	100
+		AJW_CZEVO3_Barrel_Micro,                *,		200,	100
+		AJW_MAGEXT_TTI_Black,                   *,		100,	50
+		AJW_MAGEXT_TTI_Grey,                    *,		100,	50
+		AJW_MAGEXT_TTI_Red,                     *,		120,	60
+		AJW_R700_MagpulChassis_Black,           *,		400,	200
+		AJW_R700_MagpulChassis_FDE,             *,		400,	200
+		AJW_R700_MagpulChassis_OD,              *,		400,	200
+		AJW_SV98_OV_Chassis_FDE,                *,		400,	200
+		AJW_SVD_SAGChassis_Black,               *,		400,	200
+		AJW_SVD_SAGChassis_Rattle,              *,		450,	225
+		AJW_Bipod_Harris,                       *,		300,	150
+		AJW_Surefire_Gunlight_Black,            *,		150,	75
+		AJW_Surefire_Gunlight_FDE,              *,		150,	75
+
 <Trader> Clothing Trader
 	<Category> Glasses
 		SportGlasses_Orange,	*,		17,		8
@@ -2891,6 +3289,14 @@
 		Tahoe_cargo2_LightBlue,                  *,		500,	180
 		Tahoe_cargo2_Pink,                       *,		500,	180
 		Tahoe_cargo2_Red,                        *,		500,	180
+
+	<Category> Nemsis Dune Buggy Parts
+		nm_Scrapbuggy_Wheel,			*,		200,	80
+		nm_Engine,						*,		500,	200
+		nm_generator_parts,				*,		150,	60
+		nm_Cararmor_Buggy,				*,		800,	300
+		nm_Carcarrier_Buggy,			*,		800,	300
+		nm_Cardeko_Buggy,				*,		800,	300
 
 	<Category> Keys
 		VehicleKeyDuplicate,	K,		2000,	-1 		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1

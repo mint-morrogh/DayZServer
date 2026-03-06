@@ -81,6 +81,7 @@ call :install_mod 3592127439 VVN_Old_refrigerator
 call :install_mod 3659550946 SobrMods_Signal_Overnight_Stay
 call :install_mod 3594596641 EnableInventoryInVehicle
 call :install_mod 3623001011 FlipCar
+call :install_mod 3571685323 AJsWeapons
 
 echo.
 if %INSTALLED% GTR 0 echo   %INSTALLED% mods newly installed
