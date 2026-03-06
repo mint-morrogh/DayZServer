@@ -5,6 +5,9 @@
  * +2 health and +5 blood every 10 seconds within 5m of a burning fire.
  *
  * Fires burn 3x longer: fuel consumption reduced to 1/3 speed.
+ *
+ * Fixes vanilla bug where extinguished fireplaces stay wet forever:
+ * wetness is reset to 0 when the fire stops burning.
  */
 
 modded class FireplaceBase
@@ -38,6 +41,8 @@ modded class FireplaceBase
 				GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).Remove(CampfireRegenTick);
 				m_RegenTimerStarted = false;
 			}
+			// Fix vanilla bug: extinguished fires stay wet forever
+			SetWet(0);
 		}
 	}
 
