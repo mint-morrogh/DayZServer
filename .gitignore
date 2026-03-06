@@ -146,3 +146,11 @@ config/CarePackageV2/
 !@BAEZLoadingScreen/addons/BAEZLoadingScreen.pbo
 !@MWGSM_TraderFix/addons/
 !@MWGSM_TraderFix/addons/MWGSM_TraderFix.pbo
+!@HealthBoost/addons/
+!@HealthBoost/addons/HealthBoost.pbo
+!@DurableGear/addons/
+!@DurableGear/addons/DurableGear.pbo
+!@BandageBoost/addons/
+!@BandageBoost/addons/BandageBoost.pbo
+!@AmmoStacks/addons/
+!@AmmoStacks/addons/AmmoStacks.pbo
