@@ -142,3 +142,7 @@ config/CarePackageV2/
 !@StackableItems/addons/StackableItems.pbo
 !@EnableInventoryInVehicle/addons/
 !@EnableInventoryInVehicle/addons/EnableInventoryInVehicle.pbo
+!@BAEZLoadingScreen/addons/
+!@BAEZLoadingScreen/addons/BAEZLoadingScreen.pbo
+!@MWGSM_TraderFix/addons/
+!@MWGSM_TraderFix/addons/MWGSM_TraderFix.pbo
