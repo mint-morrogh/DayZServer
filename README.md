@@ -22,7 +22,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Flyable planes** - Spitfire, Cessna 180, Catalina seaplane, Tigermoth (3 variants), Stuntplane (7 planes at 14 airfield positions)
 - **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
 - **Flip overturned vehicles** - flip cars back upright when they roll over
-- **Inventory in vehicles & while sitting** - access your inventory while seated inside a vehicle or using a sit emote
+- **Inventory in vehicles** - access your inventory while seated inside a vehicle
 - **Road-ready vehicles** - vanilla vehicles spawn with 95% wheel chance, 85% battery/radiator/sparkplug chance (up from 60-80%)
 - **More gasoline** - 75 gas canisters on map (up from 50), spawn 40-80% full
 
@@ -53,7 +53,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **HUD clock** - in-game world time displayed in the top-right corner
 - **Percentage HUD** - health, blood, hunger, thirst, and stamina shown as percentages
 - **Party system** - create a group with your co-op partner to see each other on the map
-- **Sit to rest** - all sit emotes freeze hunger and thirst drain for easy AFK
+- **Rest to freeze stats** - all sit emotes, campfire sitting, and lying down freeze hunger and thirst drain
 - **Campfire health regen** - players near a lit fire slowly regenerate health (+2) and blood (+5) every 10 seconds, fires burn 3x longer
 - **Sleep till morning** - if all players lie down to sleep at night, time skips to dawn
 - **Unlimited stamina** - no stamina drain while sprinting, but certain gear can still slow you down
@@ -72,7 +72,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Reduced shoe damage** - crawler zombie boot damage reduced from 5.0 to 1.0
 
 **Server & Configuration**
-- **38 Workshop mods + 7 custom server-side mods + 4 custom client mods** - all preconfigured and ready to go
+- **37 Workshop mods + 7 custom server-side mods + 6 custom client mods** - all preconfigured and ready to go
 - **One-file configuration** - all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** - server automatically restarts every 12 hours
 - **Full persistence** - bases, vehicles, and inventory survive restarts
@@ -715,9 +715,11 @@ Sitting by a campfire for 5 minutes heals ~60 health and ~150 blood. Not a repla
 
 Source code in `mod_src/CampfireRegen/`.
 
-### SitRest - AFK Hunger/Thirst Freeze
+### SitRest - Rest Hunger/Thirst Freeze
 
-Custom server-side mod (`@SitRest`). Using any sit emote (SitA, SitB, or SurvivorAnims SitNew) freezes hunger (energy) and thirst (water) drain. Eating and drinking while sitting still works - stats increase and freeze at the new level. Standing up resumes normal drain. Other emotes (wave, lie down, dance) drain normally.
+Custom server-side mod (`@SitRest`). Using any rest emote freezes hunger (energy) and thirst (water) drain. Eating and drinking while resting still works - stats increase and freeze at the new level. Standing up resumes normal drain.
+
+Detected emotes: SitA (cross-legged), SitB (straight), Campfire Sit, Lying Down, and SurvivorAnims SitNew.
 
 Designed for AFK breaks on a co-op LAN server - sit your character down and step away without starving.
 
@@ -787,11 +789,23 @@ Custom client+server mod (`@StackableItems`). Increases the stack limit to 999 f
 
 Source code in `mod_src/StackableItems/`.
 
-### EnableInventoryInVehicle - Vehicle & Sit Emote Inventory
+### EnableInventoryInVehicle - Vehicle Inventory Access
 
-Custom client+server mod (`@EnableInventoryInVehicle`). Replaces the removed Workshop mod with a dog-mod-safe implementation. Unlocks inventory access while seated in vehicles and during sit emotes (SitA, SitB, SurvivorAnims SitNew). Includes a guard that prevents re-locking inventory when a scripted menu (e.g. DayZ-Dog's DogManageMenu) is open, fixing the input-capture bug that the Workshop version caused.
+Custom client+server mod (`@EnableInventoryInVehicle`). Replaces the removed Workshop mod with a dog-mod-safe implementation. Unlocks inventory access while seated in vehicles. Includes a guard that prevents re-locking inventory when a scripted menu (e.g. DayZ-Dog's DogManageMenu) is open, fixing the input-capture bug that the Workshop version caused.
 
 Source code in `mod_src/EnableInventoryInVehicle/`.
+
+### BAEZLoadingScreen - Custom Loading Screen
+
+Custom client+server mod (`@BAEZLoadingScreen`). Replaces the vanilla loading screen, login screen, login queue, and login timeout backgrounds with the BAE-Z logo. The image is packed as an `.edds` texture inside the PBO.
+
+Source code in `mod_src/BAEZLoadingScreen/`.
+
+### MWGSM_TraderFix - Trader Currency Label
+
+Custom client+server mod (`@MWGSM_TraderFix`). Overrides the roaming trader menu to display "Roubles:" instead of the default currency label.
+
+Source code in `mod_src/MWGSM_TraderFix/`.
 
 ### Sleep Till Morning
 
@@ -919,9 +933,15 @@ DayZServer/
 ├── @AmmoStacks/                 # Custom server-side mod - doubled ammo stacks
 │   └── addons/
 │       └── AmmoStacks.pbo       # All loose ammo stacks to 2x vanilla max
-├── @EnableInventoryInVehicle/   # Custom client+server mod - inventory in vehicles & sit emotes
+├── @EnableInventoryInVehicle/   # Custom client+server mod - inventory in vehicles
 │   └── addons/
-│       └── EnableInventoryInVehicle.pbo  # Unlock inventory in vehicles + during sit emotes
+│       └── EnableInventoryInVehicle.pbo  # Unlock inventory in vehicles
+├── @BAEZLoadingScreen/         # Custom client+server mod - custom loading screen
+│   └── addons/
+│       └── BAEZLoadingScreen.pbo  # BAE-Z logo on loading/login screens
+├── @MWGSM_TraderFix/           # Custom client+server mod - trader currency label fix
+│   └── addons/
+│       └── MWGSM_TraderFix.pbo   # Shows "Roubles" in roaming trader menu
 ├── @FlipCar/                    # Flip overturned vehicles back upright
 ├── @SobrMods_Signal_Overnight_Stay/  # Workshop server-only mod - nightly camp events
 │   └── addons/
@@ -946,7 +966,9 @@ DayZServer/
 │   ├── StackableItems/          # Stackable items source (stack overrides)
 │   ├── BandageBoost/            # BandageBoost source (doubled bandage uses)
 │   ├── AmmoStacks/              # AmmoStacks source (doubled ammo stack sizes)
-│   ├── EnableInventoryInVehicle/ # EnableInventoryInVehicle source (vehicle + sit emote inventory)
+│   ├── EnableInventoryInVehicle/ # EnableInventoryInVehicle source (vehicle inventory access)
+│   ├── BAEZLoadingScreen/       # BAEZLoadingScreen source (custom loading screen)
+│   ├── MWGSM_TraderFix/         # MWGSM_TraderFix source (trader currency label fix)
 │   ├── pack_pbo.py              # PBO packer tool
 │   └── rapify.py                # config.cpp to config.bin converter
 └── mpmissions/
