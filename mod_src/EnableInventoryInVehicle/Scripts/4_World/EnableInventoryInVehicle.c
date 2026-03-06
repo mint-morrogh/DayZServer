@@ -1,19 +1,11 @@
 /**
  * EnableInventoryInVehicle - BAE-Z
  *
- * Allows inventory access while in vehicles and during sit emotes.
- * Replaces removed Workshop mod (3594596641) with a dog-mod-safe
- * implementation — checks for open scripted menus before re-locking
- * inventory so DayZ-Dog's DogManageMenu doesn't get stuck.
+ * Allows inventory access while in vehicles. Replaces removed Workshop mod
+ * (3594596641) with a dog-mod-safe implementation — checks for open
+ * scripted menus before re-locking inventory so DayZ-Dog's
+ * DogManageMenu doesn't get stuck.
  */
-
-modded class EmoteManager
-{
-    int EIIV_GetGestureID()
-    {
-        return m_CurrentGestureID;
-    }
-}
 
 modded class PlayerBase
 {
@@ -38,18 +30,5 @@ modded class PlayerBase
         if (IsInVehicle())
             return true;
         return super.CanReceiveItemIntoHands(item_to_hands);
-    }
-
-    override bool CanManipulateInventory()
-    {
-        // Allow inventory during sit emotes (SitA, SitB, SurvivorAnims SitNew)
-        EmoteManager em = GetEmoteManager();
-        if (em)
-        {
-            int id = em.EIIV_GetGestureID();
-            if (id == EmoteConstants.ID_EMOTE_SITA || id == EmoteConstants.ID_EMOTE_SITB || id == 5501)
-                return true;
-        }
-        return super.CanManipulateInventory();
     }
 }

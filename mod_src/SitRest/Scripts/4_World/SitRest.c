@@ -2,8 +2,16 @@
  * SitRest - BAE-Z
  *
  * Freezes hunger (energy) and thirst (water) drain while the player
- * is using a sit emote (SitA, SitB, or SurvivorAnims SitNew). Eating/drinking while seated
- * still works — the snapshot ratchets upward.
+ * is resting: any sit emote, campfire sit, lying down, or SurvivorAnims
+ * SitNew. Eating/drinking while resting still works — the snapshot
+ * ratchets upward.
+ *
+ * Detected emotes:
+ *   ID_EMOTE_SITA (14)      — sit cross-legged
+ *   ID_EMOTE_SITB (15)      — sit straight
+ *   ID_EMOTE_CAMPFIRE (13)  — campfire sit
+ *   ID_EMOTE_LYINGDOWN (5)  — lie down
+ *   5501                    — SurvivorAnims "SitNew"
  */
 
 modded class EmoteManager
@@ -16,7 +24,7 @@ modded class EmoteManager
 
 modded class PlayerBase
 {
-	private bool m_SitRest_IsSitting = false;
+	private bool m_SitRest_IsResting = false;
 	private bool m_SitRest_TimerStarted = false;
 	private float m_SitRest_Energy = -1;
 	private float m_SitRest_Water = -1;
@@ -42,15 +50,18 @@ modded class PlayerBase
 		super.EEDelete(parent);
 	}
 
-	private bool SitRest_IsSitEmoteActive()
+	private bool SitRest_IsRestEmoteActive()
 	{
 		EmoteManager em = GetEmoteManager();
 		if (!em)
 			return false;
 
 		int id = em.SitRest_GetGestureID();
-		// Vanilla sits + SurvivorAnims "SitNew" (ID 5501)
-		return (id == EmoteConstants.ID_EMOTE_SITA || id == EmoteConstants.ID_EMOTE_SITB || id == 5501);
+		if (id != 0)
+			Print("[SitRest] GestureID=" + id);
+
+		// SITA=14, SITB=15, Campfire=13, LyingDown=5, SurvivorAnims SitNew=5501
+		return (id == EmoteConstants.ID_EMOTE_SITA || id == EmoteConstants.ID_EMOTE_SITB || id == 13 || id == 5 || id == 5501);
 	}
 
 	private void SitRestTick()
@@ -61,18 +72,18 @@ modded class PlayerBase
 		if (!IsAlive())
 			return;
 
-		bool sitting = SitRest_IsSitEmoteActive();
+		bool resting = SitRest_IsRestEmoteActive();
 
-		if (sitting && !m_SitRest_IsSitting)
+		if (resting && !m_SitRest_IsResting)
 		{
-			// Just sat down — snapshot current stats
+			// Just started resting — snapshot current stats
 			m_SitRest_Energy = GetStatEnergy().Get();
 			m_SitRest_Water = GetStatWater().Get();
-			m_SitRest_IsSitting = true;
+			m_SitRest_IsResting = true;
 		}
-		else if (sitting && m_SitRest_IsSitting)
+		else if (resting && m_SitRest_IsResting)
 		{
-			// Still sitting — freeze drain, allow eating/drinking
+			// Still resting — freeze drain, allow eating/drinking
 			float curEnergy = GetStatEnergy().Get();
 			float curWater = GetStatWater().Get();
 
@@ -86,10 +97,10 @@ modded class PlayerBase
 			else if (curWater < m_SitRest_Water)
 				GetStatWater().Set(m_SitRest_Water);
 		}
-		else if (!sitting && m_SitRest_IsSitting)
+		else if (!resting && m_SitRest_IsResting)
 		{
 			// Stood up — clear snapshot, resume normal drain
-			m_SitRest_IsSitting = false;
+			m_SitRest_IsResting = false;
 			m_SitRest_Energy = -1;
 			m_SitRest_Water = -1;
 		}

@@ -1712,7 +1712,8 @@
 		Tahoe_wheel,					*,		750,	350
 		Runner_Wheel,					*,		750,	350
 		fordraptor_monster_wheel,		*,		750,	350
-		// ---- LM Planes Wheels ----
+
+	<Category> Plane Parts
 		//LM_DC_3_Wheel_Front,			*,		1200,	600		// DC-3 is unfinished in mod — no config class
 		//LM_DC_3_Wheel_Back,			*,		1200,	600		// DC-3 is unfinished in mod — no config class
 		LM_Catalina_Wheel_Front,		*,		1200,	600
