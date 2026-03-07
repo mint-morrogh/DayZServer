@@ -1,0 +1,29 @@
+{
+    "ConfigVersion": 8,
+    "ID": 6,
+    "ClassName": "ExpansionQuestNPCDenis",
+    "IsAI": 0,
+    "Position": [
+        8372.0,
+        293.277,
+        5990.0
+    ],
+    "Orientation": [
+        -120.0,
+        0.0,
+        0.0
+    ],
+    "NPCName": "Denis the Mercenary",
+    "DefaultNPCText": "No jobs right now. Stay sharp out there.",
+    "Active": 1,
+    "NPCLoadoutFile": "",
+    "NPCType": 0,
+    "NPCFaction": "",
+    "Waypoints": [],
+    "NPCEmoteID": -1,
+    "NPCEmoteIsStatic": 0,
+    "NPCInteractionEmoteID": -1,
+    "NPCQuestStartEmoteID": -1,
+    "NPCQuestCompleteEmoteID": -1,
+    "NPCQuestCancelEmoteID": -1
+}

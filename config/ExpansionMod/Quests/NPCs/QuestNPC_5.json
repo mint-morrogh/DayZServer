@@ -1,0 +1,29 @@
+{
+    "ConfigVersion": 8,
+    "ID": 5,
+    "ClassName": "ExpansionQuestNPCFrida",
+    "IsAI": 0,
+    "Position": [
+        8362.0,
+        292.034,
+        5970.0
+    ],
+    "Orientation": [
+        -90.0,
+        0.0,
+        0.0
+    ],
+    "NPCName": "Frida the Collector",
+    "DefaultNPCText": "I'm not looking for anything right now.",
+    "Active": 1,
+    "NPCLoadoutFile": "",
+    "NPCType": 0,
+    "NPCFaction": "",
+    "Waypoints": [],
+    "NPCEmoteID": -1,
+    "NPCEmoteIsStatic": 0,
+    "NPCInteractionEmoteID": -1,
+    "NPCQuestStartEmoteID": -1,
+    "NPCQuestCompleteEmoteID": -1,
+    "NPCQuestCancelEmoteID": -1
+}

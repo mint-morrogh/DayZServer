@@ -90,6 +90,10 @@ config/*
 !config/ExpansionMod/
 !config/ExpansionMod/Settings/
 !config/ExpansionMod/Settings/**
+!config/ExpansionMod/AI/
+!config/ExpansionMod/AI/**
+!config/ExpansionMod/Quests/
+!config/ExpansionMod/Quests/**
 !config/Trader/
 !config/Trader/**
 !config/MMIO/

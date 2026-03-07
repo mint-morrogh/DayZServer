@@ -1,0 +1,29 @@
+{
+    "ConfigVersion": 8,
+    "ID": 4,
+    "ClassName": "ExpansionQuestNPCHassan",
+    "IsAI": 0,
+    "Position": [
+        8350.0,
+        293.143,
+        6002.0
+    ],
+    "Orientation": [
+        -170.0,
+        0.0,
+        0.0
+    ],
+    "NPCName": "Hassan the Wanderer",
+    "DefaultNPCText": "The road is quiet today. Come back tomorrow.",
+    "Active": 1,
+    "NPCLoadoutFile": "",
+    "NPCType": 0,
+    "NPCFaction": "",
+    "Waypoints": [],
+    "NPCEmoteID": -1,
+    "NPCEmoteIsStatic": 0,
+    "NPCInteractionEmoteID": -1,
+    "NPCQuestStartEmoteID": -1,
+    "NPCQuestCompleteEmoteID": -1,
+    "NPCQuestCancelEmoteID": -1
+}

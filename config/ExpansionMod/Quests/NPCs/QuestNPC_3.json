@@ -1,0 +1,29 @@
+{
+    "ConfigVersion": 8,
+    "ID": 3,
+    "ClassName": "ExpansionQuestNPCSeth",
+    "IsAI": 0,
+    "Position": [
+        3710.0,
+        403.153,
+        5968.0
+    ],
+    "Orientation": [
+        -130.0,
+        0.0,
+        0.0
+    ],
+    "NPCName": "Seth the Supplier",
+    "DefaultNPCText": "Got nothing for you. Try the others.",
+    "Active": 1,
+    "NPCLoadoutFile": "",
+    "NPCType": 0,
+    "NPCFaction": "",
+    "Waypoints": [],
+    "NPCEmoteID": -1,
+    "NPCEmoteIsStatic": 0,
+    "NPCInteractionEmoteID": -1,
+    "NPCQuestStartEmoteID": -1,
+    "NPCQuestCompleteEmoteID": -1,
+    "NPCQuestCancelEmoteID": -1
+}

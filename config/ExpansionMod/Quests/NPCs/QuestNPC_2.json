@@ -1,0 +1,29 @@
+{
+    "ConfigVersion": 8,
+    "ID": 2,
+    "ClassName": "ExpansionQuestNPCLinda",
+    "IsAI": 0,
+    "Position": [
+        3705.0,
+        402.13,
+        5990.0
+    ],
+    "Orientation": [
+        -60.0,
+        0.0,
+        0.0
+    ],
+    "NPCName": "Linda the Hunter",
+    "DefaultNPCText": "Nothing for you at the moment. Come back when you're ready for a challenge.",
+    "Active": 1,
+    "NPCLoadoutFile": "",
+    "NPCType": 0,
+    "NPCFaction": "",
+    "Waypoints": [],
+    "NPCEmoteID": -1,
+    "NPCEmoteIsStatic": 0,
+    "NPCInteractionEmoteID": -1,
+    "NPCQuestStartEmoteID": -1,
+    "NPCQuestCompleteEmoteID": -1,
+    "NPCQuestCancelEmoteID": -1
+}

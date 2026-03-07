@@ -1,0 +1,19 @@
+{
+    "m_Version": 2,
+    "AccuracyMin": 0.15,
+    "AccuracyMax": 0.5,
+    "ThreatDistanceLimit": 300.0,
+    "DamageMultiplier": 1.0,
+    "DamageReceivedMultiplier": 1.0,
+    "NoiseInvestigationDistanceLimit": 200.0,
+    "MaximumDynamicPatrols": -1,
+    "Vaulting": 1,
+    "Manners": 1,
+    "CanRecruitFriendly": 0,
+    "CanRecruitGuards": 0,
+    "Admins": [],
+    "LogAIHitBy": 1,
+    "LogAIKilled": 1,
+    "SniperProneDistanceThreshold": 100.0,
+    "MemeLevel": 0
+}
