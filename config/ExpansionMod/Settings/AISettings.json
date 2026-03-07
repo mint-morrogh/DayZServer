@@ -22,7 +22,7 @@
     "MaxRecruitableAI": 1,
     "PreventClimb": [],
     "FormationScale": 1.0,
-    "PlayerFactions": [],
+    "PlayerFactions": ["West"],
     "LogAIHitBy": 1,
     "LogAIKilled": 1,
     "EnableZombieVehicleAttackHandler": 0,
