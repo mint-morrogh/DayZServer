@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 119,
+    "ObjectiveType": 3,
+    "ObjectiveText": "Travel to Chernogorsk",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        6700.0,
+        0.0,
+        2600.0
+    ],
+    "MaxDistance": 100.0,
+    "MarkerName": "Chernogorsk",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

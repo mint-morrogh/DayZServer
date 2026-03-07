@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 118,
+    "ObjectiveType": 3,
+    "ObjectiveText": "Travel to Kumyrna Traders",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        8356.0,
+        293.0,
+        5985.0
+    ],
+    "MaxDistance": 30.0,
+    "MarkerName": "Kumyrna Traders",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

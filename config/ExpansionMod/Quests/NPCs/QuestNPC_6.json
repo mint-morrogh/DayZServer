@@ -5,7 +5,7 @@
     "IsAI": 0,
     "Position": [
         8372.0,
-        293.277,
+        293.08,
         5990.0
     ],
     "Orientation": [
@@ -15,8 +15,8 @@
     ],
     "NPCName": "Denis the Mercenary",
     "DefaultNPCText": "No jobs right now. Stay sharp out there.",
-    "Active": 1,
-    "NPCLoadoutFile": "",
+    "Active": 0,
+    "NPCLoadoutFile": "GorkaLoadout",
     "NPCType": 0,
     "NPCFaction": "",
     "Waypoints": [],

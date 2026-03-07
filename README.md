@@ -4,9 +4,9 @@
 
 # BAE-Z - DayZ Private Server
 
-> **[Subscribe to the BAE-Z Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3679580119)** — all 43 required mods in one click.
+> **[Subscribe to the BAE-Z Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3679580119)** — all required Workshop mods in one click.
 
-What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into dozens, one custom script turned into a full modding pipeline, and before I knew it we had a fully centralized, heavily customized PVE survival experience with companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
+What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into dozens, one custom script turned into a full modding pipeline, and before I knew it we had a fully centralized, heavily customized PVE survival experience with AI bandits roaming the woods, military patrols guarding bases, civilian survivors wandering towns, companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
 
 Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, install git so the server will auto update on launch, and play.
 
@@ -20,7 +20,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Rebalanced wildlife** - deer, roe deer, cows, goats, pigs, sheep, wild boar, wolves, bears, foxes, hares, and hens all tuned for a populated but performant world
 
 **Vehicles & Transport**
-- **41+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome) plus 3 craftable dune buggies at curated map positions, plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
+- **47+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome), 3 Harley Davidson motorcycles, 3 craftable dune buggies at curated map positions, plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
 - **Flyable planes** - Spitfire, Cessna 180, Catalina seaplane, Tigermoth (3 variants), Stuntplane (7 planes at 14 airfield positions)
 - **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
 - **Flip overturned vehicles** - flip cars back upright when they roll over
@@ -29,7 +29,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **More gasoline** - 75 gas canisters on map (up from 50), spawn 40-80% full
 
 **Combat & Zombies**
-- **Day/night zombie system** - ~65% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters
+- **Day/night zombie system** - ~65% of zombies culled during daytime (6am-8pm), full spawns at night with rare sprinters, zombies auto-despawn in trader safe zones
 - **Half-damage zombies** - zombie strength set to 0.5x vanilla day and night, gear lasts much longer
 - **Rebalanced zombie health** - bullet-sponge zombie types (police, military, soldiers) nerfed to reasonable HP so fights are challenging but not tedious
 - **Zombie kill drops** - zombies have a chance to drop loot when killed: food/bandages from civilians, ammo from military/police, medical supplies from doctors
@@ -40,8 +40,12 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Expansion Weapons** - M9, G36, MP7, MPX, MP5SD, Kedr, Benelli M4, DT11, M1A, Crossbow, RPG-7, LAW, Taser, plus optics (HAMR, EXPS3, PMII 25x), ANPEQ-15 lasers, and new ammo types
 
 **AI & Quests**
-- **AI survivors** - configurable AI patrols, guards, and ambient NPCs powered by DayZ Expansion AI - can be friendly, hostile, or faction-based
-- **Quest system** - MMO-style quests from NPC quest givers with objectives (collect, deliver, kill, travel, treasure hunt) and item/reputation rewards
+- **49 AI patrol groups across the map** - three factions with distinct behaviour, loadouts, and spawn locations powered by DayZ Expansion AI
+- **Military patrols (19 groups)** - squads of 1-4 soldiers guard airfields, bases, and road checkpoints with military gear - tough to kill (full HP), 50% spawn chance, respawn every 30-45 min
+- **Bandit patrols (15 groups)** - groups of 1-3 hostile raiders roam forests, city outskirts, and back roads with civilian weapons (shotguns, rifles, pistols) - randomized clothing for visual variety, 25% spawn chance, respawn every 60 min
+- **Civilian survivors (15 groups)** - groups of 1-3 passive NPCs wander major towns and cities - non-hostile unless provoked, 60% spawn chance, respawn every 15 min
+- **All AI are lootable** - kill them and take their gear, weapons, ammo, and backpacks
+- **Quest system** - MMO-style quests from NPC quest givers at each trader hub with objectives (collect, deliver, kill, travel, treasure hunt) and item/reputation rewards
 
 **Crafting, Cooking & Skills**
 - **700+ crafting recipes** - weapons, armor, ammo, vehicles (including a craftable dune buggy), bushcraft, NBC gear, and more via Nemsis Craftingpack
@@ -83,7 +87,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 - **Reduced shoe damage** - crawler zombie boot damage reduced from 5.0 to 1.0
 
 **Server & Configuration**
-- **43 Workshop mods + 8 custom server-side mods + 6 custom client mods** - all preconfigured and ready to go
+- **49 Workshop mods + 8 custom server-side mods + 6 custom client mods** - all preconfigured and ready to go
 - **One-file configuration** - all server settings in `server_settings.json`, applied with a single click
 - **Auto-restart** - server automatically restarts every 12 hours
 - **Full persistence** - bases, vehicles, and inventory survive restarts
@@ -351,7 +355,7 @@ To use admin commands in-game, open chat and type `#login <your admin password>`
 
 ### Zombie Spawns
 
-Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod (`@DayZombieManager`) culls ~65% of spawns during daytime (6am-8pm), leaving ~35% of zombies during the day. Full +33% density at night. The same mod also handles zombie kill drops.
+Zombie spawns are set ~33% above half-vanilla baseline. A custom server-side mod (`@DayZombieManager`) culls ~65% of spawns during daytime (6am-8pm), leaving ~35% of zombies during the day. Full +33% density at night. The same mod also handles zombie kill drops and auto-despawns zombies within 150m of trader safe zones.
 
 | Category | Nominal / Min / Max | Notes |
 |---|---|---|
@@ -432,7 +436,12 @@ These mods must be installed on both the **server** and **client**.
 | [DayZ-Expansion-Spawn-Selection](https://steamcommunity.com/sharedfiles/filedetails/?id=2804241648) | 2804241648 | Spawn selection screen on death - choose where to respawn on the map |
 | [DayZ-Expansion-AI](https://steamcommunity.com/sharedfiles/filedetails/?id=2792982069) | 2792982069 | AI framework for Expansion quests and events |
 | [DayZ-Expansion-Quests](https://steamcommunity.com/sharedfiles/filedetails/?id=2828486817) | 2828486817 | Quest system with objectives, rewards, and NPC quest givers |
-| [DayZ-Expansion-Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=2792985069) | 2792985069 | M9, G36, MP7, MPX, MP5SD, Kedr, Benelli M4, DT11, M1A, Crossbow, RPG-7, LAW, Taser, plus optics and lasers |
+| [DayZ-Expansion-Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=2792985069) | 2792985069 | M9, G36, MP7, MPX, MP5SD, Kedr, Benelli M4, DT11, M1A, RPG-7, LAW, Taser, plus optics and lasers |
+| [DayZ-Expansion-Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=2291785437) | 2291785437 | Expansion vehicle framework and content |
+| [DayZ-Expansion-Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2793893086) | 2793893086 | Animation framework required by Expansion mods |
+| [DayZ-Expansion-Licensed](https://steamcommunity.com/sharedfiles/filedetails/?id=2116157322) | 2116157322 | Licensed Expansion content |
+| [Josie's LilBuggyZ](https://steamcommunity.com/sharedfiles/filedetails/?id=3671771423) | 3671771423 | Craftable/spawnable dune buggies |
+| [MBM Harley Davidson Fat Boy](https://steamcommunity.com/sharedfiles/filedetails/?id=3665840738) | 3665840738 | 3 rideable Harley Davidson motorcycles (Black, Red, Rust) |
 
 ### Server-Only Mods
 
@@ -501,6 +510,11 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `2792982069` | `@DayZ-Expansion-AI` |
 | `2828486817` | `@DayZ-Expansion-Quests` |
 | `2792985069` | `@DayZ-Expansion-Weapons` |
+| `2291785437` | `@DayZ-Expansion-Vehicles` |
+| `2793893086` | `@DayZ-Expansion-Animations` |
+| `2116157322` | `@DayZ-Expansion-Licensed` |
+| `3671771423` | `@JosiesLilBuggyZ` |
+| `3665840738` | `@MBM_HarleyDavidsonFatBoy` |
 
 ### Gelya Backpacks - Pack Complete
 
@@ -735,6 +749,24 @@ Built into the `@DayZombieManager` server mod. Zombies have a chance to drop loo
 
 Loot spawns on the ground at the zombie's death location. Source code in `mod_src/DayZombieManager/`.
 
+### Expansion AI Patrols
+
+49 AI patrol groups are spread across Chernarus, divided into three factions with distinct behaviour and loadouts. AI spawn dynamically based on player proximity - they won't appear if you're too close (500m) or too far (1200m), and despawn if no player is within 300m.
+
+| Faction | Groups | AI per group | Spawn chance | Respawn time | HP multiplier |
+|---|---|---|---|---|---|
+| Military (West) | 19 | 1-4 | 50% | 30-45 min | 1.0x (full HP) |
+| Bandits (Raiders) | 15 | 1-3 | 25% | 60 min | 2.0x damage received (easier kills) |
+| Civilians (Passive) | 15 | 1-3 | 60% | 15 min | 2.0x damage received (easier kills) |
+
+**Military patrols** guard airfields (NWAF, Balota, Tisy), military bases (Myshkino, Pavlovo, Zeleno, Kamensk, Troitskoe), and road checkpoints across 8 major routes. They carry military-grade weapons and are the toughest AI to fight.
+
+**Bandit patrols** roam forests, city outskirts, and wilderness areas. They carry civilian weapons (shotguns, Mosins, SKS, pistols) with randomized clothing - hiking jackets, hoodies, bomber jackets, balaclavas, bandanas, and baseball caps. Each bandit looks different.
+
+**Civilian survivors** wander 15 major towns (Cherno, Elektro, Berezino, Stary, Novy, Gorka, Svetlo, Vybor, Solnichniy, Polana, Kamyshovo, Novodmitrovsk, Severograd, Novaya Petrovka, Zelenogorsk). They're non-hostile unless provoked.
+
+All AI are lootable - kill them and take their weapons, ammo, clothing, and backpacks. Config at `config/ExpansionMod/AI/Patrols/PatrolSettings.json`.
+
 ### Campfire Health Regen
 
 Custom server-side mod (`@CampfireRegen`). Players within 5 metres of a burning fire slowly regenerate health and blood:
@@ -798,6 +830,7 @@ Custom client+server mod (`@MinimapTweak`). Adjusts the Expansion GPS minimap:
 - **Moves minimap to top-right corner** - standard position for most games
 - **Hides coordinate/stats overlay** - removes the large numbers from the minimap (still visible on the full map)
 - **Fixes player arrow after Tab** - the player position arrow no longer disappears when opening/closing inventory
+- **Auto-hides quest tracker** - the Expansion quest tracker hides when the minimap is active to prevent overlap, reappears when the minimap is closed
 
 This mod loads after `@ExpansionMinimap` and requires it as a dependency. Since it's a client+server mod, players must use `LAUNCH_DAYZ.bat` to start DayZ - it syncs custom mods and loads them automatically.
 

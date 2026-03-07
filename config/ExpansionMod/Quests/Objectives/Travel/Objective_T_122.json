@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 122,
+    "ObjectiveType": 3,
+    "ObjectiveText": "Travel to Tisy Military Base",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        1700.0,
+        0.0,
+        13800.0
+    ],
+    "MaxDistance": 100.0,
+    "MarkerName": "Tisy Military Base",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

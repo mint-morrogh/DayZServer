@@ -1,0 +1,19 @@
+{
+    "ConfigVersion": 28,
+    "ID": 107,
+    "ObjectiveType": 4,
+    "ObjectiveText": "Collect 4 Rabbit Pelts",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Collections": [
+        {
+            "Amount": 4,
+            "ClassName": "RabbitPelt",
+            "QuantityPercent": -1,
+            "MinQuantityPercent": -1
+        }
+    ],
+    "ShowDistance": 1,
+    "AddItemsToNearbyMarketZone": 0,
+    "NeedAnyCollection": 0
+}

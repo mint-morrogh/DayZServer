@@ -15,7 +15,7 @@
     ],
     "NPCName": "Linda the Hunter",
     "DefaultNPCText": "Nothing for you at the moment. Come back when you're ready for a challenge.",
-    "Active": 1,
+    "Active": 0,
     "NPCLoadoutFile": "",
     "NPCType": 0,
     "NPCFaction": "",

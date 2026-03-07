@@ -488,7 +488,6 @@
 		Expansion_G36,                            W,		1200,	600
 		Expansion_Kar98,                          W,		500,	250
 		Expansion_W1873,                          W,		380,	190
-		Expansion_Crossbow,                       W,		400,	200
 
 	<Category> Assault Rifles
 		FAMAS,                                    W,		1000,	500
@@ -1921,6 +1920,31 @@
         Truck_01_Covered_Blue,	V,		50000,	30000
         Truck_01_Covered_Orange,V,		50000,	30000
 	
+	<Category> Motorcycles
+		MBM_HarleyDavidsonFatBoy_Black,           V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_White,           V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Red,             V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Blue,            V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Green,           V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Orange,          V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Yellow,          V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Pink,            V,		25000,	12000
+		MBM_HarleyDavidsonFatBoy_Gold,            V,		35000,	18000
+		MBM_HarleyDavidsonFatBoy_Police,          V,		30000,	15000
+
+	<Category> Buggies
+		LilBuggyZ,                                V,		15000,	8000
+
+	<Category> Motorcycle & Buggy Parts
+		MBM_HarleyDavidsonFatBoy_Wheel_Front,     *,		500,	200
+		MBM_HarleyDavidsonFatBoy_Wheel_Rear,      *,		500,	200
+		MBM_HarleyDavidsonFatBoy_Wheel_Front_Spoked, *,	600,	250
+		MBM_HarleyDavidsonFatBoy_Wheel_Rear_Spoked,  *,	600,	250
+		MBM_HarleyFatBoy_SaddleBags,              *,		400,	200
+		MBM_Harley_Plate_FatBoy,                  *,		200,	100
+		MBM_Harley_Plate_9A7218,                  *,		200,	100
+		LilBuggyZ_Wheel,                          *,		300,	150
+
 	<Category> Engine & Fluids
 		HeadlightH7_Box,		*,		30,		15
 		SparkPlug,				*,		60,		40

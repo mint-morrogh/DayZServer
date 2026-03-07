@@ -1,0 +1,66 @@
+{
+    "ConfigVersion": 22,
+    "ID": 123,
+    "Type": 1,
+    "Title": "Explore: Chernogorsk",
+    "Descriptions": [
+        "I've heard rumors about Chernogorsk but haven't been able to check it out myself. Scout the area and report back. The journey alone is worth paying for.",
+        "Head to Chernogorsk and have a look around.",
+        "So you made it to Chernogorsk and back in one piece. Impressive. Here's your reward."
+    ],
+    "ObjectiveText": "Travel to Chernogorsk",
+    "FollowUpQuest": -1,
+    "Repeatable": 0,
+    "IsDailyQuest": 0,
+    "IsWeeklyQuest": 0,
+    "CancelQuestOnPlayerDeath": 0,
+    "Autocomplete": 0,
+    "IsGroupQuest": 1,
+    "ObjectSetFileName": "",
+    "QuestItems": [],
+    "Rewards": [
+        {
+            "ClassName": "MoneyRuble100",
+            "Amount": 4,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        }
+    ],
+    "NeedToSelectReward": 0,
+    "RandomReward": 0,
+    "RandomRewardAmount": -1,
+    "RewardsForGroupOwnerOnly": 0,
+    "RewardBehavior": 0,
+    "QuestGiverIDs": [
+        1,
+        4
+    ],
+    "QuestTurnInIDs": [
+        1,
+        4
+    ],
+    "IsAchievement": 0,
+    "Objectives": [
+        {
+            "ConfigVersion": 28,
+            "ID": 119,
+            "ObjectiveType": 3
+        }
+    ],
+    "QuestColor": 0,
+    "ReputationReward": 0,
+    "ReputationRequirement": -1,
+    "PreQuestIDs": [],
+    "RequiredFaction": "",
+    "FactionReward": "",
+    "PlayerNeedQuestItems": 1,
+    "DeleteQuestItems": 1,
+    "SequentialObjectives": 1,
+    "FactionReputationRequirements": {},
+    "FactionReputationRewards": {},
+    "SuppressQuestLogOnCompetion": 0,
+    "Active": 1
+}

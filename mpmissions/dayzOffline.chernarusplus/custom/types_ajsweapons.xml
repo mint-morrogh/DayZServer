@@ -4716,10 +4716,10 @@
         <value name="Tier4" />
     </type>
     <type name="AJW_Optic_ACOG_Chevron">
-        <nominal>3</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
-        <min>1</min>
+        <min>0</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -4730,10 +4730,10 @@
         <value name="Tier3" />
     </type>
     <type name="AJW_Optic_ACOG_Horseshoe">
-        <nominal>3</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
-        <min>1</min>
+        <min>0</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>

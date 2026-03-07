@@ -1,0 +1,23 @@
+{
+    "ConfigVersion": 28,
+    "ID": 109,
+    "ObjectiveType": 2,
+    "ObjectiveText": "Kill 10 infected in Chernogorsk",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        6700.0,
+        0.0,
+        2600.0
+    ],
+    "MaxDistance": 200.0,
+    "MinDistance": -1.0,
+    "Amount": 10,
+    "ClassNames": [],
+    "CountSelfKill": 0,
+    "AllowedWeapons": [],
+    "ExcludedClassNames": [],
+    "CountAIPlayers": 0,
+    "AllowedTargetFactions": [],
+    "AllowedDamageZones": []
+}

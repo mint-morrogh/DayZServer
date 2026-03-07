@@ -1,0 +1,23 @@
+{
+    "ConfigVersion": 28,
+    "ID": 114,
+    "ObjectiveType": 2,
+    "ObjectiveText": "Kill 8 infected in Severograd",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        7900.0,
+        0.0,
+        12600.0
+    ],
+    "MaxDistance": 150.0,
+    "MinDistance": -1.0,
+    "Amount": 8,
+    "ClassNames": [],
+    "CountSelfKill": 0,
+    "AllowedWeapons": [],
+    "ExcludedClassNames": [],
+    "CountAIPlayers": 0,
+    "AllowedTargetFactions": [],
+    "AllowedDamageZones": []
+}

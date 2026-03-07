@@ -1,0 +1,23 @@
+{
+    "ConfigVersion": 28,
+    "ID": 112,
+    "ObjectiveType": 2,
+    "ObjectiveText": "Kill 8 infected in Svetlojarsk",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        14400.0,
+        0.0,
+        13200.0
+    ],
+    "MaxDistance": 150.0,
+    "MinDistance": -1.0,
+    "Amount": 8,
+    "ClassNames": [],
+    "CountSelfKill": 0,
+    "AllowedWeapons": [],
+    "ExcludedClassNames": [],
+    "CountAIPlayers": 0,
+    "AllowedTargetFactions": [],
+    "AllowedDamageZones": []
+}

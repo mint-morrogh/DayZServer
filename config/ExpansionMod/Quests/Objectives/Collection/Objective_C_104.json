@@ -1,0 +1,19 @@
+{
+    "ConfigVersion": 28,
+    "ID": 104,
+    "ObjectiveType": 4,
+    "ObjectiveText": "Collect 2 Cow Hides",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Collections": [
+        {
+            "Amount": 2,
+            "ClassName": "CowPelt",
+            "QuantityPercent": -1,
+            "MinQuantityPercent": -1
+        }
+    ],
+    "ShowDistance": 1,
+    "AddItemsToNearbyMarketZone": 0,
+    "NeedAnyCollection": 0
+}

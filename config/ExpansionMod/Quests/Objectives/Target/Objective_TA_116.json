@@ -1,0 +1,23 @@
+{
+    "ConfigVersion": 28,
+    "ID": 116,
+    "ObjectiveType": 2,
+    "ObjectiveText": "Kill 6 infected in Stary Sobor",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        6100.0,
+        0.0,
+        7700.0
+    ],
+    "MaxDistance": 150.0,
+    "MinDistance": -1.0,
+    "Amount": 6,
+    "ClassNames": [],
+    "CountSelfKill": 0,
+    "AllowedWeapons": [],
+    "ExcludedClassNames": [],
+    "CountAIPlayers": 0,
+    "AllowedTargetFactions": [],
+    "AllowedDamageZones": []
+}

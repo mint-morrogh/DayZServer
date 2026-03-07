@@ -4,9 +4,9 @@
     "ClassName": "ExpansionQuestNPCHassan",
     "IsAI": 0,
     "Position": [
-        8350.0,
-        293.143,
-        6002.0
+        8349.5,
+        292.0,
+        5999.0
     ],
     "Orientation": [
         -170.0,
@@ -16,7 +16,7 @@
     "NPCName": "Hassan the Wanderer",
     "DefaultNPCText": "The road is quiet today. Come back tomorrow.",
     "Active": 1,
-    "NPCLoadoutFile": "",
+    "NPCLoadoutFile": "BanditLoadout",
     "NPCType": 0,
     "NPCFaction": "",
     "Waypoints": [],

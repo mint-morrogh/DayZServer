@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 117,
+    "ObjectiveType": 3,
+    "ObjectiveText": "Travel to Green Mountain Traders",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        3700.0,
+        402.0,
+        5980.0
+    ],
+    "MaxDistance": 30.0,
+    "MarkerName": "Green Mountain Traders",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

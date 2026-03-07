@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 121,
+    "ObjectiveType": 3,
+    "ObjectiveText": "Travel to Northwest Airfield",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        4500.0,
+        0.0,
+        10250.0
+    ],
+    "MaxDistance": 100.0,
+    "MarkerName": "Northwest Airfield",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 120,
+    "ObjectiveType": 3,
+    "ObjectiveText": "Travel to Elektrozavodsk",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        10400.0,
+        0.0,
+        2100.0
+    ],
+    "MaxDistance": 100.0,
+    "MarkerName": "Elektrozavodsk",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

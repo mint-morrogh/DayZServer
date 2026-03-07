@@ -16,7 +16,7 @@
     "NPCName": "Boris the Scout",
     "DefaultNPCText": "I don't have anything for you right now. Check back later.",
     "Active": 1,
-    "NPCLoadoutFile": "",
+    "NPCLoadoutFile": "SurvivorLoadout",
     "NPCType": 0,
     "NPCFaction": "",
     "Waypoints": [],

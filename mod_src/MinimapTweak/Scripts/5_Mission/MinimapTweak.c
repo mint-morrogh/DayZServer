@@ -4,12 +4,15 @@
  * - Moves minimap to top-right corner
  * - Hides coordinate/stats overlay on the minimap HUD
  * - Fixes player arrow disappearing after Tab (inventory)
+ * - Hides quest tracker when minimap is active (both use right side)
  *
  * Loads AFTER ExpansionGPS_Override via requiredAddons.
  */
 
 modded class IngameHud
 {
+	private Widget m_QuestHudPanel;
+
 	override void Init(Widget hud_panel_widget)
 	{
 		super.Init(hud_panel_widget);
@@ -48,5 +51,12 @@ modded class IngameHud
 			if (!topMenu)
 				m_PlayerArrowMarker.Show(true);
 		}
+
+		// Hide quest tracker when minimap is active to prevent overlap
+		if (!m_QuestHudPanel)
+			m_QuestHudPanel = GetGame().GetWorkspace().FindAnyWidget("ExpansionQuestHud");
+
+		if (m_QuestHudPanel)
+			m_QuestHudPanel.Show(!m_ExpansionGPSState);
 	}
 }

@@ -15,7 +15,7 @@
     ],
     "NPCName": "Seth the Supplier",
     "DefaultNPCText": "Got nothing for you. Try the others.",
-    "Active": 1,
+    "Active": 0,
     "NPCLoadoutFile": "",
     "NPCType": 0,
     "NPCFaction": "",

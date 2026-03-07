@@ -1,0 +1,19 @@
+{
+    "ConfigVersion": 28,
+    "ID": 100,
+    "ObjectiveType": 4,
+    "ObjectiveText": "Collect 2 Deer Pelts",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Collections": [
+        {
+            "Amount": 2,
+            "ClassName": "DeerPelt",
+            "QuantityPercent": -1,
+            "MinQuantityPercent": -1
+        }
+    ],
+    "ShowDistance": 1,
+    "AddItemsToNearbyMarketZone": 0,
+    "NeedAnyCollection": 0
+}
