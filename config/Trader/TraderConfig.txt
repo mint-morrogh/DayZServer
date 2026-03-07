@@ -17,9 +17,8 @@
 	<Currency> MoneyRuble50, 	50
 	<Currency> MoneyRuble100, 	100
 
-
 <Trader> Consume Trader								// Trader Name (first Trader has ID = 0, second Trader has ID = 1, and so on..)
-	<Category> Vegetables							// Category Name
+	<Category> Vegetables
 		CaninaBerry,			*,		1,		-1	// Item Classname, Quantity, Buyvalue, Sellvalue
 		SambucusBerry,			*,		1,		-1	// Quantity * means max value; Quantity V means Vehicle; Quantity VNK means Vehicle without Key; Quantity M means Magazine; Quantity W means Weapon; Quantity S means Steack Meat; Quantity K means Key Duplication
 		Plum,					*,		1,		-1	// Buyvalue -1 means it can not be bought
@@ -41,7 +40,7 @@
 		AuriculariaMushroom,	*,		2,		1
 		BoletusMushroom,		*,		2,		1
 		PleurotusMushroom,		*,		2,		1
-	
+
 	<Category> Packaged Food
 		PowderedMilk,			*,		1,		-1
 		BoxCerealCrunchin,		*,		2,		1
@@ -53,7 +52,7 @@
 		SpaghettiCan,			*,		5,		2
 		BakedBeansCan,			*,		5,		2
 		TacticalBaconCan,		*,		5,		3		
-		
+
 	<Category> Meat
 		ChickenBreastMeat,		S,		2,		1
 		GoatSteakMeat,			S,		3,		1
@@ -66,13 +65,13 @@
 		Sardines,				S,		7,		4
 		Carp,					S,		10,		5
 		Mackerel,				S,		10,		5
-		
+
 	<Category> Animal Parts
 		Bone,					*,		2,		1
 		Lard,					*,		2,		1
 		Guts,					*,		2,		1
 		SmallGuts,				*,		2,		1
-		
+
 	<Category> Drinks
 		SodaCan_Cola, 			*,		2, 		1
 		SodaCan_Kvass, 			*,		2, 		1
@@ -81,22 +80,22 @@
 		WaterBottle,			*,		5,		2
 		Canteen,				*,		8,		4
 		Vodka,					*,		12,		8
-		
+
 	<Category> Medical Supplies
 		//Rag,					1,		1,		-1
+		//InjectionVial,		*,		5, 		2
+		//Syringe,				*,		8, 		5
+		//Defibrillator,		*,		35, 	20
 		BandageDressing,		2,		3,		1
 		BloodTestKit,			*,		5,		2
-		//InjectionVial,		*,		5, 		2
 		Thermometer,			*,		5,		2
 		DisinfectantSpray,		*,		8,		5
-		//Syringe,				*,		8, 		5
 		Heatpack,				*,		10,		5
 		StartKitIV,				*,		10,		6
 		SalineBag,				*,		15,		8
 		BloodBagEmpty,			*,		18,		10
 		FirstAidKit,			*,		20,		10
-		//Defibrillator,		*,		35, 	20
-		
+
 	<Category> Medications
 		CharcoalTablets,		*,		2,		1
 		DisinfectantAlcohol,	*,		4,		2
@@ -118,7 +117,6 @@
 		MoneyRuble25,			1,		25,		-1
 		MoneyRuble50,			1,		50,		-1
 		MoneyRuble100,			1,		100,	-1
-
 
 <Trader> Misc Trader
 	<Category> Tools (small)
@@ -145,7 +143,7 @@
 		Lockpick,				*,		20,		10
 		Binoculars,				*,		30,		15		
 		FishingRod,				*,		60,		25
-		
+
 	<Category> Tools (big)
 		LugWrench,				*,		4,		1
 		Crowbar,				*,		5,		3
@@ -155,7 +153,7 @@
 		PipeWrench,				W,		15,		7
 		WoodAxe,				*,		20,		8
 		FirefighterAxe,			*,		30,		12
-		
+
 	<Category> Electronics
 		Battery9V,				*,		8,		3
 		PersonalRadio,			*,		10,		5
@@ -166,7 +164,7 @@
 		BaseRadio,				*,		50,		30
 		Rangefinder,			*,		60,		35
 		NVGoggles,				*,		400,	220
-	
+
 	<Category> Fire & Lights
 		Chemlight_Blue,			*,		2,		1
 		Chemlight_Green,		*,		2,		1
@@ -181,13 +179,13 @@
 		Headtorch_Black,		*,		40,		20
 		Headtorch_Grey,			*,		40,		20
 		Spotlight,				*,		600,	200
-	
+
 	<Category> Cooking & Hunting Supplies
 		PurificationTablets,	*,		5,		2
 		Pot,					M,		25,		10
 		Tripod,					*,		35,		15
 		BearTrap,				*,		50,		30
-	
+
 	<Category> Hardware Supplies
 		Paper,					*,		1,		0
 		Pen_Blue,				*,		2,		1
@@ -230,14 +228,14 @@
 		MediumTent,				*,		3000,	500		
 		CarTent,				*,		5000,	700
 		LargeTent,				*,		7000,	1200
-	
+
 	<Category> Seeds & Lime
 		TomatoSeedsPack,		*,		4, 		1
 		PepperSeedsPack,		*,		4, 		1
 		ZucchiniSeedsPack,		*,		6, 		2
 		PumpkinSeedsPack,		*,		10, 	3
 		GardenLime,				*,		20,		7
-		
+
 	<Category> Fluffy Pets <3
 		Bear_Beige,				*,		5,		1
 		Bear_Dark,				*,		5,		1
@@ -287,13 +285,13 @@
 
 	<Category> Building Kits
 		// ---- Modded Building Kits ----
+		// ---- Vanilla Building Kits ----
 		VVN_Old_refrigerator_Kit,		1,		2000,	800
 		Stable_dayz_kit,				1,		2500,	1000
 		dog_shed_small_kit,				1,		1500,	600
 		dog_shed_big_kit,				1,		2000,	800
 		nm_RaftConstruction_Kit,		1,		3000,	1200
 		nm_BuggyConstruction_Kit,		1,		3000,	1200
-		// ---- Vanilla Building Kits ----
 		FenceKit,						1,		2000,	800
 		WatchtowerKit,					1,		3000,	1200
 		ShelterKit,						1,		1500,	600
@@ -306,6 +304,8 @@
 
 	<Category> Dog Gear
 		// ---- Collars (7 colors) ----
+		// ---- Gas Mask ----
+		// ---- Vests (6 types) ----
 		dog_collar,						1,		800,	300
 		dog_collar_blue,				1,		800,	300
 		dog_collar_red,					1,		800,	300
@@ -313,16 +313,13 @@
 		dog_collar_white,				1,		800,	300
 		dog_collar_yellow,				1,		800,	300
 		dog_collar_grey,				1,		800,	300
-		// ---- Gas Mask ----
 		dog_gasmask,					1,		1500,	600
-		// ---- Vests (6 types) ----
 		dog_vest_sheriff,				1,		1200,	500
 		dog_vest_black,					1,		1200,	500
 		dog_vest_black_k9,				1,		1200,	500
 		dog_vest_blackgreen,			1,		1200,	500
 		dog_vest_blackmedic,			1,		1200,	500
 		dog_vest_blackgreenz,			1,		1200,	500
-
 
 <Trader> Weapon Trader
 	<Category> Melee
@@ -690,7 +687,7 @@
 		Expansion_AmmoBox_8mm_15rnd,              *,		60,	30
 		Expansion_Ammo_ArrowBolt,                 1,		8,	4
 
-	<Category> Magazines
+	<Category> Magazines (Part 1)
 		Mag_IJ70_8Rnd,                            M,		30,	15
 		Mag_P1_8Rnd,                              M,		30,	15
 		Mag_CZ75_15Rnd,                           M,		40,	20
@@ -699,12 +696,6 @@
 		Mag_1911_7Rnd,                            M,		40,	20
 		Mag_FNX45_15Rnd,                          M,		40,	20
 		Mag_Deagle_9rnd,                          M,		60,	30
-		Mag_CZ527_5rnd,                           M,		60,	30
-		Mag_CZ550_10Rnd,                          M,		80,	40
-		Mag_SSG82_5rnd,                           M,		60,	30
-		Mag_Scout_5Rnd,                           M,		60,	30
-		Mag_Ruger1022_15Rnd,                      M,		80,	40
-		Mag_Ruger1022_30Rnd,                      M,		120,	60
 		Mag_PM73_15Rnd,                           M,		80,	40
 		Mag_PM73_25Rnd,                           M,		120,	60
 		Mag_CZ61_20Rnd,                           M,		100,	50
@@ -712,6 +703,63 @@
 		Mag_UMP_25Rnd,                            M,		150,	75
 		Mag_MP5_15Rnd,                            M,		120,	60
 		Mag_MP5_30Rnd,                            M,		200,	100
+		Mass_Mag_Coonan_7Rnd,                     M,		50,	25
+		Mass_Mag_G18_30Rnd,                       M,		100,	50
+		Mass_Mag_PPSh_30Rnd,                      M,		120,	60
+		Mass_Mag_MP40_30Rnd,                      M,		120,	60
+		AJW_Mag_Beretta92FS_15Rnd,                M,		40,	20
+		AJW_Mag_Kimber1911_9Rnd,                  M,		40,	20
+		AJW_Mag_CZP09_20Rnd,                      M,		50,	25
+		AJW_Mag_DWX_20Rnd,                        M,		50,	25
+		AJW_Mag_CM_TaranTactical_9Rnd,            M,		40,	20
+		AJW_Mag_Vityaz_30Rnd_Black,               M,		120,	60
+		AJW_Mag_Vityaz_30Rnd_FDE,                 M,		120,	60
+		AJW_Mag_Vityaz_PMAG_30Rnd_Black,          M,		150,	75
+		AJW_Mag_Vityaz_PMAG_30Rnd_FDE,            M,		150,	75
+		AJW_Mag_Vityaz_PMAG_30Rnd_Yellow,         M,		150,	75
+		AJW_Mag_EVO3_35rnd,                       M,		120,	60
+		AJW_Mag_PPSH_35rnd,                       M,		100,	50
+		AJW_Mag_PPSH_71rnd,                       M,		300,	150
+		BAW_Mag_Uzi_35Rnd,                        M,		120,	60
+		Mag_Expansion_M9_15Rnd,                   M,		40,	20
+		Mag_Expansion_MPX_50Rnd,                  M,		350,	175
+		Mag_Expansion_MP7_40Rnd,                  M,		250,	125
+		Mag_Expansion_Kedr_20Rnd,                 M,		100,	50
+		Mag_Expansion_Vityaz_30Rnd,               M,		150,	75
+		Mag_CZ527_5rnd,                           M,		60,	30
+		Mag_CZ550_10Rnd,                          M,		80,	40
+		Mag_SSG82_5rnd,                           M,		60,	30
+		Mag_Scout_5Rnd,                           M,		60,	30
+		Mag_VSS_10Rnd,                            M,		220,	110
+		Mag_SVD_10Rnd,                            M,		250,	125
+		Mag_SV98_10Rnd,                           M,		250,	125
+		Mag_308WinSnaploader_2Rnd,                M,		250,	125
+		Mass_Mag_M24_5Rnd,                        M,		80,	40
+		Mass_Mag_M300_7Rnd,                       M,		150,	75
+		Mass_Mag_Kivaari_10Rnd,                   M,		200,	100
+		Mass_Mag_PKM_100Rnd,                      M,		400,	200
+		Mass_Mag_M98B_7Rnd,                       M,		200,	100
+		AJW_Mag_SCARH_20rnd_Black,                M,		250,	125
+		AJW_Mag_SCARH_20rnd_FDE,                  M,		250,	125
+		AJW_Mag_HKG28_20rnd,                      M,		280,	140
+		AJW_Mag_DMK12_5rnd,                       M,		80,	40
+		AJW_Mag_DMK12_10rnd,                      M,		120,	60
+		AJW_Mag_DMK12_25rnd,                      M,		250,	125
+		BAW_Mag_DMR_20rnd,                        M,		250,	125
+		AJW_Mag_SVD_10Rnd_Black,                  M,		250,	125
+		AJW_Mag_SVD_10Rnd_Rattle,                 M,		280,	140
+		AJW_Mag_SV98_10Rnd,                       M,		250,	125
+		AJW_Mag_R700_10Rnd,                       M,		200,	100
+		AJW_Mag_GOL_4rnd,                         M,		300,	150
+		AJW__AWM_Magazine_5rnd,                   M,		350,	175
+		AJW_Mag_PKM_200Rnd,                       M,		500,	250
+		AJW_Mag_PKM_200Rnd_Worn,                  M,		450,	225
+		AJW_Mag_PKM_200Rnd_WLPainted,             M,		550,	275
+		Mag_Expansion_AWM_5rnd,                   M,		250,	125
+
+	<Category> Magazines (Part 2)
+		Mag_Ruger1022_15Rnd,                      M,		80,	40
+		Mag_Ruger1022_30Rnd,                      M,		120,	60
 		Mag_FAMAS_25Rnd,                          M,		200,	100
 		Mag_Aug_30Rnd,                            M,		220,	110
 		Mag_FAL_20Rnd,                            M,		100,	50
@@ -742,37 +790,10 @@
 		Mag_CMAG_40Rnd,                           M,		300,	150
 		Mag_CMAG_40Rnd_Black,                     M,		300,	150
 		Mag_CMAG_40Rnd_Green,                     M,		300,	150
-		Mag_VSS_10Rnd,                            M,		220,	110
-		Mag_SVD_10Rnd,                            M,		250,	125
-		Mag_SV98_10Rnd,                           M,		250,	125
-		Mag_308WinSnaploader_2Rnd,                M,		250,	125
-		Mass_Mag_Coonan_7Rnd,                     M,		50,	25
-		Mass_Mag_G18_30Rnd,                       M,		100,	50
 		Mass_Mag_SVT_10Rnd,                       M,		80,	40
 		Mass_Mag_Mini14_5rnd,                     M,		60,	30
 		Mass_Mag_Mini14_10rnd,                    M,		100,	50
-		Mass_Mag_PPSh_30Rnd,                      M,		120,	60
-		Mass_Mag_MP40_30Rnd,                      M,		120,	60
 		Mass_Mag_M417_20Rnd,                      M,		200,	100
-		Mass_Mag_M24_5Rnd,                        M,		80,	40
-		Mass_Mag_M300_7Rnd,                       M,		150,	75
-		Mass_Mag_Kivaari_10Rnd,                   M,		200,	100
-		Mass_Mag_PKM_100Rnd,                      M,		400,	200
-		Mass_Mag_M98B_7Rnd,                       M,		200,	100
-		AJW_Mag_Beretta92FS_15Rnd,                M,		40,	20
-		AJW_Mag_Kimber1911_9Rnd,                  M,		40,	20
-		AJW_Mag_CZP09_20Rnd,                      M,		50,	25
-		AJW_Mag_DWX_20Rnd,                        M,		50,	25
-		AJW_Mag_CM_TaranTactical_9Rnd,            M,		40,	20
-		AJW_Mag_Vityaz_30Rnd_Black,               M,		120,	60
-		AJW_Mag_Vityaz_30Rnd_FDE,                 M,		120,	60
-		AJW_Mag_Vityaz_PMAG_30Rnd_Black,          M,		150,	75
-		AJW_Mag_Vityaz_PMAG_30Rnd_FDE,            M,		150,	75
-		AJW_Mag_Vityaz_PMAG_30Rnd_Yellow,         M,		150,	75
-		AJW_Mag_EVO3_35rnd,                       M,		120,	60
-		AJW_Mag_PPSH_35rnd,                       M,		100,	50
-		AJW_Mag_PPSH_71rnd,                       M,		300,	150
-		BAW_Mag_Uzi_35Rnd,                        M,		120,	60
 		AJW_Mag_545_PMAG_30rnd_Black,             M,		220,	110
 		AJW_Mag_545_PMAG_30rnd_FDE,               M,		220,	110
 		AJW_Mag_545_Promag_73rnd_Black,           M,		480,	220
@@ -801,64 +822,20 @@
 		AJW_Mag_M14_30rnd,                        M,		300,	150
 		AJW_Mag_M14_50rnd,                        M,		480,	220
 		AJW_Mag_FALX_50rnd,                       M,		480,	220
-		AJW_Mag_SCARH_20rnd_Black,                M,		250,	125
-		AJW_Mag_SCARH_20rnd_FDE,                  M,		250,	125
-		AJW_Mag_HKG28_20rnd,                      M,		280,	140
-		AJW_Mag_DMK12_5rnd,                       M,		80,	40
-		AJW_Mag_DMK12_10rnd,                      M,		120,	60
-		AJW_Mag_DMK12_25rnd,                      M,		250,	125
-		BAW_Mag_DMR_20rnd,                        M,		250,	125
-		AJW_Mag_SVD_10Rnd_Black,                  M,		250,	125
-		AJW_Mag_SVD_10Rnd_Rattle,                 M,		280,	140
-		AJW_Mag_SV98_10Rnd,                       M,		250,	125
-		AJW_Mag_R700_10Rnd,                       M,		200,	100
-		AJW_Mag_GOL_4rnd,                         M,		300,	150
-		AJW__AWM_Magazine_5rnd,                   M,		350,	175
-		AJW_Mag_PKM_200Rnd,                       M,		500,	250
-		AJW_Mag_PKM_200Rnd_Worn,                  M,		450,	225
-		AJW_Mag_PKM_200Rnd_WLPainted,             M,		550,	275
-		Mag_Expansion_M9_15Rnd,                   M,		40,	20
 		Mag_Expansion_G36_30Rnd,                  M,		220,	110
 		Mag_Expansion_M14_10Rnd,                  M,		120,	60
 		Mag_Expansion_M14_20Rnd,                  M,		200,	100
-		Mag_Expansion_MPX_50Rnd,                  M,		350,	175
-		Mag_Expansion_MP7_40Rnd,                  M,		250,	125
-		Mag_Expansion_Kedr_20Rnd,                 M,		100,	50
-		Mag_Expansion_AWM_5rnd,                   M,		250,	125
-		Mag_Expansion_Vityaz_30Rnd,               M,		150,	75
 
 	<Category> Optics
 		M4_CarryHandleOptic,                      *,		150,	60
 		BUISOptic,                                *,		150,	60
 		PistolOptic,                              *,		200,	80
 		ReflexOptic,                              *,		250,	100
-		FNP45_MRDSOptic,                          *,		250,	100
-		ACOGOptic,                                *,		300,	120
-		ACOGOptic_6x,                             *,		400,	160
-		SportingOptic,                            *,		400,	200
 		M68Optic,                                 *,		500,	200
 		M4_T3NRDSOptic,                           *,		500,	200
 		KobraOptic,                               *,		600,	250
-		KashtanOptic,                             *,		700,	300
-		PUScopeOptic,                             *,		900,	500
-		PSO6Optic,                                *,		1000,	550
-		HuntingOptic,                             *,		1000,	550
-		PSO1Optic,                                *,		1100,	600
-		PSO11Optic,                               *,		1400,	840
-		StarlightOptic,                           *,		1800,	1000
-		KazuarOptic,                              *,		2200,	1400
-		MassSVTMount,                             *,		300,	150
-		MassPKA,                                  *,		500,	250
-		MassScope,                                *,		800,	400
-		MassScoutLRS,                             *,		1200,	600
-		Mass1P69,                                 *,		1200,	600
 		BC_HolosunHS507C_Optic,                   *,		350,	175
 		BC_VortexAMG_UH1_Optic,                   *,		500,	250
-		BC_ACOG_ACSS_Optic,                       *,		600,	300
-		BC_HAMROptic,                             *,		800,	400
-		BC_Accupower_Optic,                       *,		900,	450
-		BC_EoTechVuduOptic,                       *,		1000,	500
-		BC_LeupoldHoloDEvoOptic,                  *,		1200,	600
 		BC_Vortex_RazorHD_Optic,                  *,		1400,	700
 		nm_ScrapScope_PU,                         *,		80,	40
 		nm_ScrapScope_PUzoom,                     *,		100,	50
@@ -878,6 +855,32 @@
 		AJW_Optic_EOTech_EXPS3_FDE,               *,		550,	275
 		AJW_Optic_EOTech_EXPS3_TwoTone,           *,		600,	300
 		AJW_Optic_EOTech_EXPS3_Black_Wojack,      *,		700,	350
+		ExpansionDeltapointOptic,                 *,		300,	150
+		ExpansionEXPS3HoloOptic,                  *,		500,	250
+		ExpansionReflexMRSOptic,                  *,		250,	125
+		ExpansionKar98ScopeOptic,                 *,		400,	200
+		FNP45_MRDSOptic,                          *,		250,	100
+		ACOGOptic,                                *,		300,	120
+		ACOGOptic_6x,                             *,		400,	160
+		SportingOptic,                            *,		400,	200
+		KashtanOptic,                             *,		700,	300
+		PUScopeOptic,                             *,		900,	500
+		PSO6Optic,                                *,		1000,	550
+		HuntingOptic,                             *,		1000,	550
+		PSO1Optic,                                *,		1100,	600
+		PSO11Optic,                               *,		1400,	840
+		StarlightOptic,                           *,		1800,	1000
+		KazuarOptic,                              *,		2200,	1400
+		MassSVTMount,                             *,		300,	150
+		MassPKA,                                  *,		500,	250
+		MassScope,                                *,		800,	400
+		MassScoutLRS,                             *,		1200,	600
+		Mass1P69,                                 *,		1200,	600
+		BC_ACOG_ACSS_Optic,                       *,		600,	300
+		BC_HAMROptic,                             *,		800,	400
+		BC_Accupower_Optic,                       *,		900,	450
+		BC_EoTechVuduOptic,                       *,		1000,	500
+		BC_LeupoldHoloDEvoOptic,                  *,		1200,	600
 		AJW_Optic_ACOG_Chevron,                   *,		600,	300
 		AJW_Optic_ACOG_Horseshoe,                 *,		600,	300
 		AJW_Optic_ACOG_ACSS,                      *,		600,	300
@@ -890,16 +893,17 @@
 		AJW_Optic_LRHS,                           *,		1400,	700
 		AJW_Optic_LRHS_FDE,                       *,		1400,	700
 		AJW_Optic_Leupold_M3A,                    *,		1800,	900
-		ExpansionDeltapointOptic,                 *,		300,	150
-		ExpansionEXPS3HoloOptic,                  *,		500,	250
 		ExpansionHAMROptic,                       *,		600,	300
-		ExpansionReflexMRSOptic,                  *,		250,	125
 		Expansion_PMII25Optic,                    *,		1800,	900
-		ExpansionKar98ScopeOptic,                 *,		400,	200
 
-	<Category> Handguards
+	<Category> Handguards (Part 1)
 		MP5_PlasticHndgrd,                        *,		100,	50
 		MP5_RailHndgrd,                           *,		150,	75
+		M4_PlasticHndgrd,                         *,		150,	75
+		M4_RISHndgrd,                             *,		200,	100
+		M4_RISHndgrd_Black,                       *,		220,	110
+		M4_RISHndgrd_Green,                       *,		220,	110
+		M4_MPHndgrd,                              *,		200,	100
 		AK74_Hndgrd,                              *,		150,	75
 		AK_WoodHndgrd,                            *,		200,	100
 		AK_WoodHndgrd_Black,                      *,		220,	110
@@ -908,14 +912,36 @@
 		AK_RailHndgrd_Black,                      *,		220,	110
 		AK_RailHndgrd_Green,                      *,		220,	110
 		AK_PlasticHndgrd,                         *,		200,	100
-		M4_PlasticHndgrd,                         *,		150,	75
-		M4_RISHndgrd,                             *,		200,	100
-		M4_RISHndgrd_Black,                       *,		220,	110
-		M4_RISHndgrd_Green,                       *,		220,	110
-		M4_MPHndgrd,                              *,		200,	100
 		nm_Scrap_Hndgrd_AK,                       *,		50,	25
+		AJW_AKHNG_AK100,                          *,		150,	75
+		AJW_AKHNG_B10_Plastic,                    *,		150,	75
+		AJW_AKHNG_B19_Black,                      *,		200,	100
+		AJW_AKHNG_B19_FDE,                        *,		200,	100
+		AJW_AKHNG_B30_Black,                      *,		200,	100
+		AJW_AKHNG_B30_FDE,                        *,		200,	100
+		AJW_AKHNG_CMRD_Black,                     *,		220,	110
+		AJW_AKHNG_CMRD_FDE,                       *,		220,	110
+		AJW_AKHNG_Hexagon_Black,                  *,		250,	125
+		AJW_AKHNG_Hexagon_FDE,                    *,		250,	125
+		AJW_AKHNG_Hexagon_Red,                    *,		280,	140
+		AJW_AKHNG_MagpulL_Black,                  *,		200,	100
+		AJW_AKHNG_MagpulL_FDE,                    *,		200,	100
+		AJW_AKHNG_MagpulS_Black,                  *,		200,	100
+		AJW_AKHNG_MagpulS_FDE,                    *,		200,	100
+		AJW_AKHNG_SLR_Black,                      *,		250,	125
+		AJW_AKHNG_Shark_Wood,                     *,		180,	90
+		AJW_AKHNG_Sport1_Black,                   *,		220,	110
+		AJW_AKHNG_Sport1_FDE,                     *,		220,	110
+		AJW_AKHNG_Troy_Black,                     *,		250,	125
+		AJW_AKHNG_Troy_FDE,                       *,		250,	125
+		AJW_AK74U_HNG_STD,                        *,		150,	75
+		AJW_AK74U_HNG_B11,                        *,		200,	100
+		AJW_AK74U_HNG_Goliaf_Black,               *,		220,	110
+		AJW_AK74U_HNG_Goliaf_Copper,              *,		250,	125
 		nm_Scrap_Hndgrd_M4,                       *,		50,	25
 		nm_Scrap_Hndgrd_MP5,                      *,		50,	25
+
+	<Category> Handguards (Part 2)
 		AJW_M4_RISHndgrd,                         *,		150,	75
 		AJW_M4_BlockII_Hndgrd_Black,              *,		200,	100
 		AJW_M4_BlockII_Hndgrd_FDE,                *,		200,	100
@@ -948,31 +974,6 @@
 		AJW_SCAR_MREX_Hndgrd_FDE,                 *,		300,	150
 		AJW_SCAR_PMM_Hndgrd_Black,                *,		300,	150
 		AJW_SCAR_PMM_Hndgrd_FDE,                  *,		300,	150
-		AJW_AKHNG_AK100,                          *,		150,	75
-		AJW_AKHNG_B10_Plastic,                    *,		150,	75
-		AJW_AKHNG_B19_Black,                      *,		200,	100
-		AJW_AKHNG_B19_FDE,                        *,		200,	100
-		AJW_AKHNG_B30_Black,                      *,		200,	100
-		AJW_AKHNG_B30_FDE,                        *,		200,	100
-		AJW_AKHNG_CMRD_Black,                     *,		220,	110
-		AJW_AKHNG_CMRD_FDE,                       *,		220,	110
-		AJW_AKHNG_Hexagon_Black,                  *,		250,	125
-		AJW_AKHNG_Hexagon_FDE,                    *,		250,	125
-		AJW_AKHNG_Hexagon_Red,                    *,		280,	140
-		AJW_AKHNG_MagpulL_Black,                  *,		200,	100
-		AJW_AKHNG_MagpulL_FDE,                    *,		200,	100
-		AJW_AKHNG_MagpulS_Black,                  *,		200,	100
-		AJW_AKHNG_MagpulS_FDE,                    *,		200,	100
-		AJW_AKHNG_SLR_Black,                      *,		250,	125
-		AJW_AKHNG_Shark_Wood,                     *,		180,	90
-		AJW_AKHNG_Sport1_Black,                   *,		220,	110
-		AJW_AKHNG_Sport1_FDE,                     *,		220,	110
-		AJW_AKHNG_Troy_Black,                     *,		250,	125
-		AJW_AKHNG_Troy_FDE,                       *,		250,	125
-		AJW_AK74U_HNG_STD,                        *,		150,	75
-		AJW_AK74U_HNG_B11,                        *,		200,	100
-		AJW_AK74U_HNG_Goliaf_Black,               *,		220,	110
-		AJW_AK74U_HNG_Goliaf_Copper,              *,		250,	125
 		AJW_HK_Geissele_HG10_Black,               *,		300,	150
 		AJW_HK_Geissele_HG10_FDE,                 *,		300,	150
 		AJW_HK_Geissele_HG10_Grey,                *,		300,	150
@@ -1208,7 +1209,7 @@
 		AviatorGlasses,			*,		40,		20
 		TacticalGoggles,		*,		60,		30
 		NVGHeadstrap,			*,		200,	120
-		
+
 	<Category> Armbands
 		Armband_Pink,			*,		15,		5
 		Armband_Yellow,			*,		15,		5
@@ -1218,7 +1219,7 @@
 		Armband_White,			*,		15,		5
 		Armband_Black,			*,		15,		5
 		Armband_Green,			*,		15,		5
-		
+
 	<Category> Gloves
 		SurgicalGloves_LightBlue,*,		5,		1
 		SurgicalGloves_Blue,	*,		5,		1
@@ -1361,6 +1362,9 @@
 		BallisticHelmet_Green,	*,		350,	110
 
 	<Category> Masks
+		//HoxtonMask,			*,		40,		10
+		//WolfMask,				*,		40,		10
+		//DallasMask,			*,		40,		10
 		SurgicalMask,			*,		15,		3
 		BandanaMask_PolkaPattern,*,		25,		6
 		BandanaMask_RedPattern,	*,		25,		6
@@ -1369,9 +1373,6 @@
 		BandanaMask_CamoPattern,*,		35,		10
 		NioshFaceMask,			*,		40,		10
 		HockeyMask,				*,		40,		10
-		//HoxtonMask,			*,		40,		10
-		//WolfMask,				*,		40,		10
-		//DallasMask,			*,		40,		10
 		Balaclava3Holes_Blue,	*,		50,		12
 		Balaclava3Holes_Beige,	*,		50,		12
 		Balaclava3Holes_Black,	*,		55,		13
@@ -1410,19 +1411,19 @@
 		TacticalShirt_Olive,	*,		40,		12	
 
 	<Category> Hoodies & Sweater
+		//Hoodie_DrJ0nes,		*,		30,		6
+		//Hoodie_GraffitiTiles,	*,		30,		6
 		Sweater_Red,			*,		20,		5
 		Sweater_Blue,			*,		20,		5
 		Sweater_Gray,			*,		20,		5
 		Sweater_Green,			*,		25,		6
-		//Hoodie_DrJ0nes,		*,		30,		6
-		//Hoodie_GraffitiTiles,	*,		30,		6
 		Hoodie_Red,				*,		30,		6
 		Hoodie_Blue,			*,		30,		6
 		Hoodie_Grey,			*,		30,		6
 		Hoodie_Brown,			*,		30,		6
 		Hoodie_Black,			*,		30,		6
 		Hoodie_Green,			*,		35,		7
-		
+
 	<Category> Vests
 		ReflexVest,				*,		5,		1
 		PoliceVest,				*,		35,		10
@@ -1438,7 +1439,7 @@
 		HighCapacityVest_Olive,	*,		230,	75
 		PlateCarrierVest,		*,		250,	80
 
-	<Category> Jackets & Coats
+	<Category> Jackets & Coats (Part 1)
 		LabCoat,				*,		10,		2
 		TrackSuitJacket_Red,	*,		15,		3
 		TrackSuitJacket_LightBlue,*,	15,		3
@@ -1484,6 +1485,8 @@
 		BomberJacket_Blue,		*,		26,		6
 		BomberJacket_Grey,		*,		26,		6
 		BomberJacket_Brown,		*,		26,		6
+
+	<Category> Jackets & Coats (Part 2)
 		BomberJacket_Black,		*,		28,		7
 		BomberJacket_Olive,		*,		30,		7
 		QuiltedJacket_Orange,	*,		26,		6
@@ -1626,7 +1629,7 @@
 		GorkaPants_Autumn,		*,		130,	40
 		GorkaPants_Summer,		*,		130,	40
 		NBCPantsGray,			*,		200,	65
-	
+
 	<Category> Shoes & Boots
 		AthleticShoes_Blue,		*,		17,		4
 		AthleticShoes_Grey,		*,		20,		5
@@ -1684,6 +1687,10 @@
 	<Category> Ghillie
 		// Keep in Mind that Players can also 
 		// craft Ghillie Clothing and sell them!
+	//<Category> Seasonal
+		//SantasBeard,			*,		15,		0
+		//SantasHat,			*,		35,		0
+		//PumpkinHelmet,		*,		50,		0
 		GhillieAtt_Mossy,		*,		220,	70
 		GhillieAtt_Tan,			*,		220,	70
 		GhillieAtt_Woodland,	*,		220,	70
@@ -1699,21 +1706,16 @@
 		GhillieSuit_Mossy,		*,		1000,	300
 		GhillieSuit_Tan,		*,		1000,	300
 		GhillieSuit_Woodland,	*,		1000,	300
-		
-	//<Category> Seasonal
-		//SantasBeard,			*,		15,		0
-		//SantasHat,			*,		35,		0
-		//PumpkinHelmet,		*,		50,		0
 
 	<Category> Holster & Pouches
 		ChestHolster,			*,		60,		20
 		PlateCarrierHolster,	*,		60,		20
 		PlateCarrierPouches,	*,		100,		20
-		
+
 	<Category> Belt
 		CivilianBelt,			*,		100,	30
 		MilitaryBelt,			*,		100,	30
-		
+
 	<Category> Bags
 		ChildBag_Red,			*,		20,		5
 		ChildBag_Blue,			*,		20,		5
@@ -1749,19 +1751,29 @@
 
 	<Category> Gelya Backpacks
 		// Backpack 511 (tactical)
+		// BEAR Bag (tactical)
+		// Beta 2 (tactical)
+		// Blood Silence (stealth)
+		// Camel Backpack (hydration)
+		// F5 Switchblade (military)
+		// Gunslinger (tactical/civilian)
+		// Medpack
+		// Sport Bag (civilian)
+		// Stalker Bag (survival)
+		// Wild Bag (outdoor)
+		// Adventure Bag (outdoor)
+		// Assault G3 (military)
 		Gelya_Backpacks_Backpack511_Black,		*,		400,	200
 		Gelya_Backpacks_Backpack511_Tan,		*,		400,	200
 		Gelya_Backpacks_Backpack511_DPM,		*,		420,	210
 		Gelya_Backpacks_Backpack511_Multicam,	*,		420,	210
 		Gelya_Backpacks_Backpack511_Flectarn,	*,		420,	210
-		// BEAR Bag (tactical)
 		Gelya_Backpacks_BEAR_Bag_Black,			*,		400,	200
 		Gelya_Backpacks_BEAR_Bag_Tan,			*,		400,	200
 		Gelya_Backpacks_BEAR_Bag_DPM_UrbanSpetsnaz,	*,	420,	210
 		Gelya_Backpacks_BEAR_Bag_GreenTortilla,	*,		420,	210
 		Gelya_Backpacks_BEAR_Bag_PartizanM,		*,		420,	210
 		Gelya_Backpacks_BEAR_Bag_TokioESP,		*,		420,	210
-		// Beta 2 (tactical)
 		Gelya_Backpacks_Beta2_Black,			*,		350,	175
 		Gelya_Backpacks_Beta2_Green,			*,		350,	175
 		Gelya_Backpacks_Beta2_Tan,				*,		350,	175
@@ -1770,7 +1782,6 @@
 		Gelya_Backpacks_Beta2_HexcamArid,		*,		370,	185
 		Gelya_Backpacks_Beta2_RussianEMR,		*,		370,	185
 		Gelya_Backpacks_Beta2_SnowUrban,		*,		370,	185
-		// Blood Silence (stealth)
 		Gelya_Backpacks_Blood_silence_COD,		*,		450,	225
 		Gelya_Backpacks_Blood_silence_Flectarn,	*,		450,	225
 		Gelya_Backpacks_Blood_silence_GreenTortille,	*,	450,	225
@@ -1780,7 +1791,6 @@
 		Gelya_Backpacks_Blood_silence_Tan,		*,		450,	225
 		Gelya_Backpacks_Blood_silence_Tigerstripe,	*,	450,	225
 		Gelya_Backpacks_Blood_silence_Vegetato,	*,		450,	225
-		// Camel Backpack (hydration)
 		Gelya_Backpacks_CamelBackpack_Black,	*,		200,	100
 		Gelya_Backpacks_CamelBackpack_BlueCamo,	*,		200,	100
 		Gelya_Backpacks_CamelBackpack_DPM_KuwaitiPolice,	*,	220,	110
@@ -1788,7 +1798,6 @@
 		Gelya_Backpacks_CamelBackpack_ERDL,		*,		220,	110
 		Gelya_Backpacks_CamelBackpack_HexcamArid,	*,	220,	110
 		Gelya_Backpacks_CamelBackpack_M90_Night,	*,	220,	110
-		// F5 Switchblade (military)
 		Gelya_Backpacks_F5Switchblade_Black,	*,		400,	200
 		Gelya_Backpacks_F5Switchblade_Green,	*,		400,	200
 		Gelya_Backpacks_F5Switchblade_GreenTortilla,	*,	420,	210
@@ -1799,7 +1808,6 @@
 		Gelya_Backpacks_F5Switchblade_Swapol,	*,		420,	210
 		Gelya_Backpacks_F5Switchblade_Tan,		*,		420,	210
 		Gelya_Backpacks_F5Switchblade_Woodland,	*,		420,	210
-		// Gunslinger (tactical/civilian)
 		Gelya_Backpacks_Gunslinger_Black,		*,		300,	150
 		Gelya_Backpacks_Gunslinger_BLR,			*,		300,	150
 		Gelya_Backpacks_Gunslinger_Green,		*,		300,	150
@@ -1807,25 +1815,52 @@
 		Gelya_Backpacks_Gunslinger_Tan,			*,		300,	150
 		Gelya_Backpacks_Gunslinger_USCM,		*,		320,	160
 		Gelya_Backpacks_Gunslinger_Woodland_90s,	*,	320,	160
-		// Medpack
 		Gelya_Backpacks_Medpack_Black,			*,		250,	125
 		Gelya_Backpacks_Medpack_EMR,			*,		250,	125
-		// Sport Bag (civilian)
 		Gelya_Backpacks_SportBag,				*,		100,	50
-		// Stalker Bag (survival)
 		Gelya_Backpacks_StalkerBag,				*,		150,	75
-		// Wild Bag (outdoor)
 		Gelya_Backpacks_WildBag,				*,		150,	75
-		// Adventure Bag (outdoor)
 		Gelya_Backpacks_AdventureBag_Black,		*,		200,	100
 		Gelya_Backpacks_AdventureBag_DPM,		*,		220,	110
 		Gelya_Backpacks_AdventureBag_GorkaE,	*,		220,	110
 		Gelya_Backpacks_AdventureBag_Jigsaw,	*,		220,	110
 		Gelya_Backpacks_AdventureBag_Zelt,		*,		220,	110
-		// Assault G3 (military)
 		Gelya_Backpacks_AssaultG3,				*,		500,	250
 
 	<Category> Mass's Tactical Gear
+		//LeatherGloves_Beige,	*,		0,		0
+		//LeatherGloves_Black,	*,		0,		0
+		//LeatherGloves_Brown,	*,		0,		0
+		//LeatherGloves_Natural,*,		0,		0
+		//LeatherHat_Beige,		*,		0,		0
+		//LeatherHat_Black,		*,		0,		0
+		//LeatherHat_Brown,		*,		0,		0
+		//LeatherHat_Natural,	*,		0,		0
+		//LeatherShirt_Natural,	*,		0,		0
+		//LeatherStorageVest_Beige,*,	0,		0
+		//LeatherStorageVest_Black,*,	0,		0
+		//LeatherStorageVest_Brown,*,	0,		0
+		//LeatherStorageVest_Natural,*,	0,		0
+		//LeatherJacket_Beige,	*,		0,		0
+		//LeatherJacket_Black,	*,		0,		0
+		//LeatherJacket_Brown,	*,		0,		0
+		//LeatherJacket_Natural,*,		0,		0
+		//LeatherPants_Beige,	*,		0,		0
+		//LeatherPants_Black,	*,		0,		0
+		//LeatherPants_Brown,	*,		0,		0
+		//LeatherPants_Natural,	*,		0,		0
+		//LeatherShoes_Beige,	*,		0,		0
+		//LeatherShoes_Black,	*,		0,		0
+		//LeatherShoes_Brown,	*,		0,		0
+		//LeatherShoes_Natural,	*,		0,		0
+		//CourierBag,			*,		0,		0
+		//FurCourierBag,		*,		0,		0
+		//FurImprovisedBag,		*,		0,		0
+		//ImprovisedBag,		*,		0,		0
+		//LeatherSack_Beige,	*,		0,		0
+		//LeatherSack_Black,	*,		0,		0
+		//LeatherSack_Brown,	*,		0,		0
+		//LeatherSack_Natural,	*,		0,		0
 		MassRatnik,				*,		300,	100
 		MassRatnik_Tan,			*,		300,	100
 		MassRatnik_Black,		*,		320,	110
@@ -1866,42 +1901,6 @@
 		Mass_IFAK_ODG,			*,		60,		20
 		Mass_IFAK_BLACK,		*,		60,		20
 
-	//<Category> Handmade
-		//LeatherGloves_Beige,	*,		0,		0
-		//LeatherGloves_Black,	*,		0,		0
-		//LeatherGloves_Brown,	*,		0,		0
-		//LeatherGloves_Natural,*,		0,		0
-		//LeatherHat_Beige,		*,		0,		0
-		//LeatherHat_Black,		*,		0,		0
-		//LeatherHat_Brown,		*,		0,		0
-		//LeatherHat_Natural,	*,		0,		0
-		//LeatherShirt_Natural,	*,		0,		0
-		//LeatherStorageVest_Beige,*,	0,		0
-		//LeatherStorageVest_Black,*,	0,		0
-		//LeatherStorageVest_Brown,*,	0,		0
-		//LeatherStorageVest_Natural,*,	0,		0
-		//LeatherJacket_Beige,	*,		0,		0
-		//LeatherJacket_Black,	*,		0,		0
-		//LeatherJacket_Brown,	*,		0,		0
-		//LeatherJacket_Natural,*,		0,		0
-		//LeatherPants_Beige,	*,		0,		0
-		//LeatherPants_Black,	*,		0,		0
-		//LeatherPants_Brown,	*,		0,		0
-		//LeatherPants_Natural,	*,		0,		0
-		//LeatherShoes_Beige,	*,		0,		0
-		//LeatherShoes_Black,	*,		0,		0
-		//LeatherShoes_Brown,	*,		0,		0
-		//LeatherShoes_Natural,	*,		0,		0
-		//CourierBag,			*,		0,		0
-		//FurCourierBag,		*,		0,		0
-		//FurImprovisedBag,		*,		0,		0
-		//ImprovisedBag,		*,		0,		0
-		//LeatherSack_Beige,	*,		0,		0
-		//LeatherSack_Black,	*,		0,		0
-		//LeatherSack_Brown,	*,		0,		0
-		//LeatherSack_Natural,	*,		0,		0
-	
-	
 <Trader> Vehicles Trader
 	<Category> Vehicles
 		OffroadHatchback,		V,		14000,	8000	// Use VNK instead of V as Quantity to not give a Vehicle Key when bought.
@@ -1917,6 +1916,7 @@
 		CivilianSedan_Wine,		V,		20000,	11000
 		CivilianSedan_Black,	V,		20000,	11000
 		Truck_01_Covered,		V,		50000,	30000
+
         Truck_01_Covered_Blue,	V,		50000,	30000
         Truck_01_Covered_Orange,V,		50000,	30000
 	
@@ -1934,6 +1934,62 @@
 
 	<Category> Buggies
 		LilBuggyZ,                                V,		15000,	8000
+
+	<Category> Expansion Vehicles
+		ExpansionUAZ,                             V,		18000,	10000
+		ExpansionUAZ_Black,                       V,		18000,	10000
+		ExpansionUAZ_Green,                       V,		18000,	10000
+		ExpansionUAZCargoRoofless,                V,		16000,	9000
+		ExpansionUAZCargoRoofless_Black,          V,		16000,	9000
+		ExpansionUAZCargoRoofless_Green,          V,		16000,	9000
+		Expansion_Landrover,                      V,		22000,	12000
+		Expansion_Landrover_Blue,                 V,		22000,	12000
+		Expansion_Landrover_Green,                V,		22000,	12000
+		Expansion_Landrover_Red,                  V,		22000,	12000
+		Expansion_Landrover_Grey,                 V,		22000,	12000
+		Expansion_Landrover_Orange,               V,		22000,	12000
+		ExpansionOldBike,                         V,		2000,	800
+
+	<Category> Expansion Boats
+		ExpansionZodiacBoat,                      V,		8000,	4000
+		ExpansionZodiacBoat_Black,                V,		8000,	4000
+		ExpansionZodiacBoat_Green,                V,		8000,	4000
+		ExpansionZodiacBoat_Orange,               V,		8000,	4000
+
+	<Category> Expansion Aircraft
+		ExpansionHatchBird,                       V,		80000,	40000
+		ExpansionGyrocopter,                      V,		50000,	25000
+		ExpansionBigGyrocopter,                   V,		60000,	30000
+
+	<Category> LMs Helicopters
+		LM_MH6,                                   V,		90000,	45000
+		Ultralight,                               V,		40000,	20000
+
+	<Category> Expansion Vehicle Parts
+		ExpansionUAZWheel,                        *,		500,	200
+		ExpansionUAZDoorDriver,                   *,		450,	160
+		ExpansionUAZDoorCoDriver,                 *,		450,	160
+		ExpansionUAZDoorCargo1,                   *,		450,	160
+		ExpansionUAZDoorCargo2,                   *,		450,	160
+		ExpansionUAZDoorHood,                     *,		400,	140
+		ExpansionUAZDoorTrunk,                    *,		400,	140
+		Expansion_Landrover_Wheel,                *,		500,	200
+		Expansion_Landrover_Driverdoor,           *,		450,	160
+		Expansion_Landrover_Codriverdoor,         *,		450,	160
+		Expansion_Landrover_Hood,                 *,		400,	140
+		Expansion_Landrover_Trunk,                *,		400,	140
+		Expansion_Landrover_Left,                 *,		400,	140
+		Expansion_Landrover_Right,                *,		400,	140
+		ExpansionOldBikeWheel,                    *,		200,	80
+
+	<Category> Expansion Aircraft Parts
+		ExpansionHelicopterBattery,               *,		800,	400
+		ExpansionHydraulicHoses,                  *,		600,	300
+		ExpansionIgniterPlug,                     *,		500,	250
+		ExpansionHatchBirdDoors_Driver,           *,		600,	250
+		ExpansionHatchBirdDoors_CoDriver,         *,		600,	250
+		ExpansionHatchBirdHood,                   *,		500,	200
+		ExpansionHatchBirdTrunk,                  *,		500,	200
 
 	<Category> Motorcycle & Buggy Parts
 		MBM_HarleyDavidsonFatBoy_Wheel_Front,     *,		500,	200
@@ -1954,7 +2010,7 @@
 		CarRadiator,			*,		200,	100
 		TireRepairKit,			*,		220,	100
 
-	<Category> Vanilla Vehicle Parts
+	<Category> Vanilla Vehicle Parts (Part 1)
 		HatchbackHood,						*,		300,	100
 		HatchbackHood_Blue,					*,		300,	100
 		HatchbackHood_White,				*,		300,	100
@@ -2024,6 +2080,8 @@
 		Sedan_02_Hood_RedRust,			*,		300,	100
 		Sedan_02_Hood_GreyRust,			*,		300,	100
 		Sedan_02_Trunk,					*,		450,	150
+
+	<Category> Vanilla Vehicle Parts (Part 2)
 		Sedan_02_Trunk_Red,				*,		450,	150
 		Sedan_02_Trunk_Grey,			*,		450,	150
 		Sedan_02_Trunk_YellowRust,		*,		450,	150
@@ -2093,6 +2151,7 @@
 		CivSedanWheel,						*,		600,	120
 		Truck_01_Hood,						*,		400,	140
 		Truck_01_Hood_Blue,					*,		400,	140
+
         Truck_01_Hood_Orange,				*,		400,	140
 		Truck_01_Door_1_1,					*,		500,	180
         Truck_01_Door_1_1_Blue,				*,		500,	180
@@ -2358,7 +2417,7 @@
 		dodgecharger_cargo2_red,                 *,		500,	180
 		dodgecharger_cargo2_white,               *,		500,	180
 
-	<Category> Dodge Ram Parts
+	<Category> Dodge Ram Parts (Part 1)
 		DodgeRam_Hood,                           *,		400,	140
 		DodgeRam_Hood_Black,                     *,		400,	140
 		DodgeRam_Hood_Blue,                      *,		400,	140
@@ -2421,6 +2480,8 @@
 		DodgeRam_Trunk_camonuke,                 *,		450,	150
 		DodgeRam_Trunk_camored,                  *,		450,	150
 		DodgeRam_Trunk_camowhite,                *,		450,	150
+
+	<Category> Dodge Ram Parts (Part 2)
 		DodgeRam_CoDriver_Door,                  *,		500,	180
 		DodgeRam_CoDriver_Door_Black,            *,		500,	180
 		DodgeRam_CoDriver_Door_Blue,             *,		500,	180
@@ -2483,6 +2544,8 @@
 		DodgeRam_Driver_Door_camonuke,           *,		500,	180
 		DodgeRam_Driver_Door_camored,            *,		500,	180
 		DodgeRam_Driver_Door_camowhite,          *,		500,	180
+
+	<Category> Dodge Ram Parts (Part 3)
 		DodgeRam_Cargo1,                         *,		500,	180
 		DodgeRam_Cargo1_Black,                   *,		500,	180
 		DodgeRam_Cargo1_Blue,                    *,		500,	180
@@ -2690,7 +2753,7 @@
 		Honda_Civic_DriverDoor_RedCustom,        *,		500,	180
 		Honda_Civic_DriverDoor_Yellow,           *,		500,	180
 
-	<Category> Jeep Gladiator Parts
+	<Category> Jeep Gladiator Parts (Part 1)
 		Jeep_GladiatorF9_Hood,                   *,		400,	140
 		Jeep_GladiatorF9_Hood_Black,             *,		400,	140
 		Jeep_GladiatorF9_Hood_Brown,             *,		400,	140
@@ -2766,6 +2829,8 @@
 		Jeep_GladiatorF9_Codriver_Door_camo_skulls, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_topotrip, *,		500,	180
 		Jeep_GladiatorF9_Codriver_Door_camo_vanished, *,		500,	180
+
+	<Category> Jeep Gladiator Parts (Part 2)
 		Jeep_GladiatorF9_Driver_Door,            *,		500,	180
 		Jeep_GladiatorF9_Driver_Door_Black,      *,		500,	180
 		Jeep_GladiatorF9_Driver_Door_Brown,      *,		500,	180
@@ -2842,7 +2907,7 @@
 		Jeep_GladiatorF9_Cargo_Door2_camo_topotrip, *,		500,	180
 		Jeep_GladiatorF9_Cargo_Door2_camo_vanished, *,		500,	180
 
-	<Category> Kamaz Typhoon Parts
+	<Category> Kamaz Typhoon Parts (Part 1)
 		Kamaz_TyphoonK_Trunk,                    *,		450,	150
 		Kamaz_TyphoonK_Trunk_Black,              *,		450,	150
 		Kamaz_TyphoonK_Trunk_CamoGreen,          *,		450,	150
@@ -2887,6 +2952,8 @@
 		Kamaz_TyphoonK_Cargo3_Black,             *,		500,	180
 		Kamaz_TyphoonK_Cargo3_CamoGreen,         *,		500,	180
 		Kamaz_TyphoonK_Cargo3_CamoGreen2,        *,		500,	180
+
+	<Category> Kamaz Typhoon Parts (Part 2)
 		Kamaz_TyphoonK_Cargo3_CamoGreen3,        *,		500,	180
 		Kamaz_TyphoonK_Cargo3_RedCamo,           *,		500,	180
 		Kamaz_TyphoonK_Cargo3_Rusty,             *,		500,	180
@@ -3130,7 +3197,7 @@
 		Porsche_911RWB_Driver_Door_Pink,         *,		500,	180
 		Porsche_911RWB_Driver_Door_Red,          *,		500,	180
 
-	<Category> Toyota Runner Parts
+	<Category> Toyota Runner Parts (Part 1)
 		Runner_Hood,                             *,		400,	140
 		Runner_Hood_BOSS,                        *,		400,	140
 		Runner_Hood_blue,                        *,		400,	140
@@ -3173,6 +3240,8 @@
 		Runner_CoDriver_Door_white,              *,		500,	180
 		Runner_CoDriver_Door_yellow,             *,		500,	180
 		Runner_DriverDoor,                       *,		500,	180
+
+	<Category> Toyota Runner Parts (Part 2)
 		Runner_DriverDoor_BOSS,                  *,		500,	180
 		Runner_DriverDoor_blue,                  *,		500,	180
 		Runner_DriverDoor_camoblack,             *,		500,	180
@@ -3314,9 +3383,8 @@
 		nm_Cardeko_Buggy,				*,		800,	300
 
 	<Category> Keys
+//<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
 		VehicleKeyDuplicate,	K,		2000,	-1 		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1
 		VehicleKeyLost,    		KL,    	5000,   -1		// The choosen Classname here only gets displayed in the UI (Name/Description); Make Sure SellValue is set to -1
-		
-		
-//<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
+
 <FileEnd>												// This has to be on the End of this File and is very importand!

@@ -71,6 +71,7 @@ call :install_mod 3426979799 ZenTreasure
 call :install_mod 2691041685 CarePackages
 call :install_mod 3606014796 NemsisCraftingpack
 call :install_mod 3639695989 LMsPlanes
+call :install_mod 3624740747 LMsHelicopters
 call :install_mod 3302732231 CookZ
 call :install_mod 3566508757 CookZRealisticPackaging
 call :install_mod 3578708533 SleepTillMorning

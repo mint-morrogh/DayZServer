@@ -6,7 +6,7 @@
 
 > **[Subscribe to the BAE-Z Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3679580119)** — all required Workshop mods in one click.
 
-What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into dozens, one custom script turned into a full modding pipeline, and before I knew it we had a fully centralized, heavily customized PVE survival experience with AI bandits roaming the woods, military patrols guarding bases, civilian survivors wandering towns, companion dogs, rideable horses, flyable planes, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
+What started as a small DayZ server so I could play co-op with my wife quickly got out of hand. One mod turned into dozens, one custom script turned into a full modding pipeline, and before I knew it we had a fully centralized, heavily customized PVE survival experience with AI bandits roaming the woods, military patrols guarding bases, civilian survivors wandering towns, companion dogs, rideable horses, flyable planes and helicopters, roaming traders, and way too many crafting recipes. This is the result - a fleshed-out, relaxed, and genuinely fun co-op DayZ server built from the ground up for 2-4 player LAN play on Chernarus.
 
 Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, install git so the server will auto update on launch, and play.
 
@@ -22,6 +22,7 @@ Everything is preconfigured. Clone the repo, subscribe to the Workshop mods, ins
 **Vehicles & Transport**
 - **47+ driveable vehicles** - 20 custom models (muscle cars, trucks, SUVs, sports cars, monster truck, motorhome), 3 Harley Davidson motorcycles, 3 craftable dune buggies at curated map positions, plus ~18 vanilla vehicles - some spawn road-ready, others may require you to find or trade for parts
 - **Flyable planes** - Spitfire, Cessna 180, Catalina seaplane, Tigermoth (3 variants), Stuntplane (7 planes at 14 airfield positions)
+- **Helicopters & ultralight** - MH6 Little Bird helicopter (2) and Ultralight aircraft (2) with full flight physics via LMs Helicopter Flight Systems
 - **Unbreakable vehicles** - global health and all individual parts (hood, doors, bumpers, wheels, engine) auto-repair every 60 seconds - ruined parts still need replacing, but damaged parts heal themselves
 - **Flip overturned vehicles** - flip cars back upright when they roll over
 - **Inventory in vehicles** - access your inventory while seated inside a vehicle
@@ -222,6 +223,7 @@ That's it. The patcher reads your settings and writes them to the correct config
 | `horseGear` | Saddle, bridle, saddlebag, and stable kit spawn rates | `custom/types_dayzhorse.xml` |
 | `dogGear` | Collar, vest, gas mask, and dog house kit spawn rates | `custom/types_dayzdog.xml` |
 | `planes` | Per-model plane spawn counts (Spitfire, Cessna, Catalina, etc.) | `custom/types_lmplanes.xml` |
+| `helicopters` | MH6 Little Bird and Ultralight spawn counts | `custom/types_lmhelicopters.xml` |
 | `lootEconomy` | Global zombie/animal caps, loot damage, food decay, respawn timers | `db/globals.xml` |
 | `zenSkills` | Skill book and EXP booster spawn rates | `custom/types_zenskills.xml` |
 
@@ -442,6 +444,7 @@ These mods must be installed on both the **server** and **client**.
 | [DayZ-Expansion-Licensed](https://steamcommunity.com/sharedfiles/filedetails/?id=2116157322) | 2116157322 | Licensed Expansion content |
 | [Josie's LilBuggyZ](https://steamcommunity.com/sharedfiles/filedetails/?id=3671771423) | 3671771423 | Craftable/spawnable dune buggies |
 | [MBM Harley Davidson Fat Boy](https://steamcommunity.com/sharedfiles/filedetails/?id=3665840738) | 3665840738 | 3 rideable Harley Davidson motorcycles (Black, Red, Rust) |
+| [LMs Helicopter Flight Systems](https://steamcommunity.com/sharedfiles/filedetails/?id=3624740747) | 3624740747 | MH6 Little Bird helicopter and Ultralight aircraft with full flight physics |
 
 ### Server-Only Mods
 
@@ -515,6 +518,7 @@ Workshop mods download to `Steam\steamapps\workshop\content\221100\`. Copy each 
 | `2116157322` | `@DayZ-Expansion-Licensed` |
 | `3671771423` | `@JosiesLilBuggyZ` |
 | `3665840738` | `@MBM_HarleyDavidsonFatBoy` |
+| `3624740747` | `@LMsHelicopters` |
 
 ### Gelya Backpacks - Pack Complete
 
@@ -634,6 +638,20 @@ Flyable planes spawn across the map at industrial areas and farms (removed town/
 > **Note:** The DC-3 is included in the LMs Planes mod files but is unfinished by the mod author (no config class defined), so it cannot spawn.
 
 Plane spawns are configured in `custom/types_lmplanes.xml`.
+
+### LMs Helicopters
+
+MH6 Little Bird and Ultralight aircraft spawn at industrial areas and farms. These are ready-to-fly — no parts or assembly required.
+
+| Aircraft | Count | Notes |
+|---|---|---|
+| LM_MH6 | 2 | Little Bird helicopter - full flight physics |
+| Ultralight | 2 | Lightweight fixed-wing aircraft |
+| **Total** | **4** | 2 of each for 2 players |
+
+> **Note:** The Harrier jump jet is included in the mod but disabled — it's overkill for a co-op PVE server.
+
+Helicopter spawns are configured in `custom/types_lmhelicopters.xml`.
 
 ### 4KBOSSKVehicles
 
@@ -967,6 +985,7 @@ DayZServer/
 ├── @CarePackages/               # Care package supply drops
 ├── @NemsisCraftingpack/         # 500+ craftable items
 ├── @LMsPlanes/                  # Flyable planes
+├── @LMsHelicopters/             # MH6 Little Bird + Ultralight
 ├── @CookZ/                      # Advanced cooking recipes
 ├── @CookZRealisticPackaging/    # Realistic food textures
 ├── @SleepTillMorning/           # Skip night when all players sleep
@@ -1045,6 +1064,7 @@ DayZServer/
         │   ├── types_zentreasure.xml  # Zen's Treasure item spawns
         │   ├── types_nemsis.xml       # Nemsis Craftingpack item spawns
         │   ├── types_lmplanes.xml     # LMs Planes vehicle spawns
+        │   ├── types_lmhelicopters.xml  # LMs Helicopters vehicle spawns
         │   ├── types_cookz.xml        # CookZ crafted item definitions
         │   ├── types_4kbossk.xml      # 4KBOSSKVehicles spawn config
         │   ├── types_dayzdog.xml     # Dog accessory spawns
