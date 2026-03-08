@@ -1,0 +1,10 @@
+# Binary files — never convert line endings
+*.pbo binary
+*.bisign binary
+*.bikey binary
+*.bin binary
+*.wss binary
+*.ogg binary
+*.paa binary
+*.p3d binary
+*.wrp binary

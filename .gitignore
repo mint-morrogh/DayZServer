@@ -9,6 +9,7 @@
 
 # --- Allow top-level config & launch files ---
 !.gitignore
+!.gitattributes
 !README.md
 !serverDZ.cfg
 !start_server.bat
