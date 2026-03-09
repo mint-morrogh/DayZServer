@@ -76,11 +76,14 @@ modded class PlayerBase
 
 		if (pCurrentCommandID == DayZPlayerConstants.COMMANDID_MOVE)
 		{
-
-			HumanAnimInterface 	hai = GetAnimInterface();
-			TAnimGraphVariable m_VarFacialState = hai.BindVariableInt("FacialState");
-				
-			AnimSetInt(m_VarFacialState, GetFacialState());
+			// BAE-Z patch: null-guard animation interface to prevent crash
+			// if engine state is corrupted by accumulated GetHealth01 errors
+			HumanAnimInterface hai = GetAnimInterface();
+			if (hai)
+			{
+				TAnimGraphVariable m_VarFacialState = hai.BindVariableInt("FacialState");
+				AnimSetInt(m_VarFacialState, GetFacialState());
+			}
 			return true;
 		}
 
