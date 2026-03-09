@@ -108,6 +108,13 @@ if exist "%~dp0mod_src\SurvivorAnimsPatch\SurvivorAnims.pbo.patched" (
     echo   [PATCH] SurvivorAnims PBO patched (compile-order fix + client guard^)
 )
 
+:: Remove Expansion animations_player.pbo (conflicts with SurvivorAnims)
+if exist "%~dp0@DayZ-Expansion-Animations\Addons\animations_player.pbo" (
+    del /q "%~dp0@DayZ-Expansion-Animations\Addons\animations_player.pbo" >nul 2>&1
+    del /q "%~dp0@DayZ-Expansion-Animations\Addons\animations_player.pbo.expansion.bisign" >nul 2>&1
+    echo   [PATCH] Removed Expansion animations_player.pbo (SurvivorAnims conflict^)
+)
+
 echo.
 if %INSTALLED% GTR 0 echo   %INSTALLED% mods newly installed
 if %UPDATED% GTR 0 echo   %UPDATED% mods updated
