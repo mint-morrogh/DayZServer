@@ -13,11 +13,9 @@
 setlocal enabledelayedexpansion
 pushd "%~dp0"
 
-:: Full mod load order — controls EVERYTHING, bypasses DayZ Launcher.
-:: SurvivorAnims must load AFTER Expansion Animations so its emotes win.
-:: To add a new Workshop mod: add a line below in the correct position.
-:: To add a new custom mod: add it to the CUSTOM MODS section at the end.
-call :build_modlist
+:: Custom client mods that aren't on the Workshop.
+:: Add new custom mods here as semicolon-separated entries.
+set "CUSTOM_MODS=@MinimapTweak;@HUDClock;@StackableItems;@MWGSM_TraderFix;@BAEZLoadingScreen;@EnableInventoryInVehicle"
 
 :: Resolve the DayZ client path (sibling of DayZServer under steamapps\common\)
 pushd "%~dp0..\DayZ" 2>nul
@@ -259,94 +257,17 @@ echo.
 :: Step 6: Launch DayZ
 :: ============================================================
 echo ============================================
-echo  Launching DayZ with full mod list
+echo  Launching DayZ with mods: %CUSTOM_MODS%
 echo ============================================
 echo.
 
-:: Launch DayZ through Steam with the complete mod list.
-:: This bypasses the DayZ Launcher's mod order so we control it.
-start "" "steam://run/221100//-mod=!MODLIST!/"
+:: Launch DayZ through Steam with custom mod args
+:: Steam URI launches the game via Steam so overlay and auth work
+start "" "steam://run/221100//-mod=%CUSTOM_MODS%/"
 
 echo DayZ is starting. You can close this window.
 popd
 timeout /t 5
-exit /b 0
-
-:: ============================================================
-:build_modlist
-:: Builds the full mod list with correct load order.
-:: Workshop mods use !Workshop symlinks. Custom mods use @Name.
-:: ORDER MATTERS: last mod wins for animation/script overrides.
-:: ============================================================
-set "W=%DAYZ_CLIENT%\!Workshop"
-set "MODLIST="
-
-:: --- Frameworks (must load first) ---
-set "MODLIST=!MODLIST!%W%\@CF;"
-set "MODLIST=!MODLIST!%W%\@Dabs Framework;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Core;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Licensed;"
-
-:: --- Standalone mods (order flexible) ---
-set "MODLIST=!MODLIST!%W%\@UnlimitedRun;"
-set "MODLIST=!MODLIST!%W%\@GoreZ;"
-set "MODLIST=!MODLIST!%W%\@Inventory Move Sounds;"
-set "MODLIST=!MODLIST!%W%\@Trader;"
-set "MODLIST=!MODLIST!%W%\@CZ Optics;"
-set "MODLIST=!MODLIST!%W%\@CookZ;"
-set "MODLIST=!MODLIST!%W%\@CookZ Realistic Packaging;"
-set "MODLIST=!MODLIST!%W%\@LMs Planes;"
-set "MODLIST=!MODLIST!%W%\@Care Packages V2;"
-set "MODLIST=!MODLIST!%W%\@Zens Treasure;"
-set "MODLIST=!MODLIST!%W%\@PercentageHUD;"
-set "MODLIST=!MODLIST!%W%\@4KBOSSKVehicles;"
-set "MODLIST=!MODLIST!%W%\@dzr_sleep_till_morning EXPERIMENTAL;"
-set "MODLIST=!MODLIST!%W%\@ExpansionMinimap_Override;"
-set "MODLIST=!MODLIST!%W%\@Pack complete - Backpacks FREE;"
-set "MODLIST=!MODLIST!%W%\@MWGSM_Trader;"
-set "MODLIST=!MODLIST!%W%\@Tree Shake;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Book;"
-set "MODLIST=!MODLIST!%W%\@Enable Inventory In Vehicle;"
-set "MODLIST=!MODLIST!%W%\@FLIP CAR;"
-set "MODLIST=!MODLIST!%W%\@SFE- No Vehicle Damage Customizable Crash Protection;"
-set "MODLIST=!MODLIST!%W%\@VVN_Greenhouse;"
-set "MODLIST=!MODLIST!%W%\@VVN_Old_refrigerator;"
-set "MODLIST=!MODLIST!%W%\@AJs Weapons;"
-set "MODLIST=!MODLIST!%W%\@MBM_HarleyDavidsonFatBoy;"
-set "MODLIST=!MODLIST!%W%\@JosiesLilBuggyZ;"
-set "MODLIST=!MODLIST!%W%\@LMs Helicopter Flight Systems;"
-set "MODLIST=!MODLIST!%W%\@Mass'sManyItemOverhaul;"
-set "MODLIST=!MODLIST!%W%\@VanillaPlusPlusMap;"
-set "MODLIST=!MODLIST!%W%\@Zens Skill Perk Tree;"
-set "MODLIST=!MODLIST!%W%\@Nemsis Craftingpack All in One;"
-set "MODLIST=!MODLIST!%W%\@DayZ Horse;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Dog;"
-set "MODLIST=!MODLIST!%W%\@PvZmoD_CustomisableZombies;"
-set "MODLIST=!MODLIST!%W%\@[SobrMods] Signal Overnight Stay;"
-
-:: --- Expansion feature mods ---
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Navigation;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Groups;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Spawn-Selection;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Quests;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-AI;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Weapons;"
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Vehicles;"
-
-:: --- Animation mods (order critical — last wins) ---
-:: Expansion Animations FIRST, then SurvivorAnims overrides it
-set "MODLIST=!MODLIST!%W%\@DayZ-Expansion-Animations;"
-set "MODLIST=!MODLIST!%W%\@Survivor Animations;"
-
-:: --- Custom mods (not on Workshop, synced from server) ---
-set "MODLIST=!MODLIST!@MinimapTweak;"
-set "MODLIST=!MODLIST!@HUDClock;"
-set "MODLIST=!MODLIST!@StackableItems;"
-set "MODLIST=!MODLIST!@MWGSM_TraderFix;"
-set "MODLIST=!MODLIST!@BAEZLoadingScreen;"
-set "MODLIST=!MODLIST!@EnableInventoryInVehicle"
-
 exit /b 0
 
 :: ============================================================
