@@ -155,6 +155,23 @@ if exist "%SA_PATCH%" (
 )
 
 
+:: Fix 3: Expansion Animations player PBO (conflicts with SurvivorAnims)
+:: The full animations_player.pbo includes player sub-graphs (Actions, Combat,
+:: Locomotion, etc.) that override SurvivorAnims, breaking sit/fire animations.
+:: Our stripped PBO keeps only vehicle/guitar/parachute animations.
+set "EA_WORKSHOP=%WORKSHOP%\2793893086\Addons"
+set "EA_PATCH=%~dp0mod_src\ExpansionAnimationsPatch\animations_player.pbo.patched"
+if exist "%EA_PATCH%" (
+    if exist "%EA_WORKSHOP%" (
+        fc /b "%EA_PATCH%" "%EA_WORKSHOP%\animations_player.pbo" >nul 2>&1
+        if errorlevel 1 (
+            copy /Y "%EA_PATCH%" "%EA_WORKSHOP%\animations_player.pbo" >nul
+            echo   [FIX]  Patched Expansion Animations PBO in Workshop (removed conflicting player sub-graphs^)
+            set "FIXES_APPLIED=1"
+        )
+    )
+)
+
 if "!FIXES_APPLIED!"=="0" echo   [OK]   No known issues found
 echo.
 

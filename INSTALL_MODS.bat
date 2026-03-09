@@ -108,6 +108,19 @@ if exist "%~dp0mod_src\SurvivorAnimsPatch\SurvivorAnims.pbo.patched" (
     echo   [PATCH] SurvivorAnims PBO patched (compile-order fix + client guard^)
 )
 
+:: ============================================================
+:: Post-install: Re-apply Expansion Animations PBO patch
+:: The Workshop PBO includes player animation sub-graphs that
+:: conflict with SurvivorAnims (sit, fire-lighting, etc.).
+:: Our stripped PBO keeps only vehicle/guitar/parachute animations.
+:: ============================================================
+if exist "%~dp0mod_src\ExpansionAnimationsPatch\animations_player.pbo.patched" (
+    echo.
+    echo --- Re-applying Expansion Animations PBO patch ---
+    copy /Y "%~dp0mod_src\ExpansionAnimationsPatch\animations_player.pbo.patched" "%~dp0@DayZ-Expansion-Animations\Addons\animations_player.pbo" >nul
+    echo   [PATCH] Expansion Animations PBO patched (removed conflicting player sub-graphs^)
+)
+
 
 echo.
 if %INSTALLED% GTR 0 echo   %INSTALLED% mods newly installed
