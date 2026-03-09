@@ -9,10 +9,9 @@ modded class PlayerBase
 		m_FacialState = -1;
 	}
 	
-	override void SetActions() 
+	override void SetActions()
 	{
 		super.SetActions();
-		AddAction(ActionSearchPlayerAtWall);
 	}
 	int GetSAEmoteID()
 	{
