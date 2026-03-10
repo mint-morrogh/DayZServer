@@ -5,7 +5,7 @@
     "DespawnRadius": 300.0,
     "Group": [
         {
-            "Name": "Mil_NWAF_North",
+            "Name": "NWAF North Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -49,7 +49,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_NWAF_South",
+            "Name": "NWAF South Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -93,7 +93,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_NWAF_Hangars",
+            "Name": "NWAF Hangars Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -137,7 +137,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Tisy_Base",
+            "Name": "Tisy Base Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -181,7 +181,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Tisy_Tents",
+            "Name": "Tisy Tents Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -225,7 +225,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Balota_AF",
+            "Name": "Balota Airfield Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -269,7 +269,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Myshkino",
+            "Name": "Myshkino Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -313,7 +313,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Pavlovo_Mil",
+            "Name": "Pavlovo Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -357,7 +357,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Zeleno_Mil",
+            "Name": "Zelenogorsk Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -401,7 +401,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Kamensk",
+            "Name": "Kamensk Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -445,7 +445,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Troitskoe",
+            "Name": "Troitskoe Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -4,
@@ -489,7 +489,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_South_Coast",
+            "Name": "South Coast Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -533,7 +533,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_East_Coast",
+            "Name": "East Coast Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -577,7 +577,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_Central_NS",
+            "Name": "Central N-S Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -621,7 +621,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_Central_EW",
+            "Name": "Central E-W Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -665,7 +665,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_West",
+            "Name": "West Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -709,7 +709,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_North",
+            "Name": "North Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -753,7 +753,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_NE",
+            "Name": "Northeast Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -797,7 +797,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Mil_Road_Road_Stary_Novy",
+            "Name": "Stary-Novy Road Military",
             "Faction": "West",
             "LoadoutFile": "MilitaryLoadout",
             "NumberOfAI": -3,
@@ -841,7 +841,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_NWAF_woods",
+            "Name": "NWAF Woods Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -885,7 +885,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Tisy_woods",
+            "Name": "Tisy Woods Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -929,7 +929,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Debug_Forest",
+            "Name": "Debug Forest Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -973,7 +973,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Berezino_outskirts",
+            "Name": "Berezino Outskirts Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1017,7 +1017,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Elektro_hills",
+            "Name": "Elektro Hills Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1061,7 +1061,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Cherno_industrial",
+            "Name": "Cherno Industrial Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1105,7 +1105,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Balota_strip",
+            "Name": "Balota Strip Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1149,7 +1149,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Stary_woods",
+            "Name": "Stary Woods Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1193,7 +1193,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Black_Forest",
+            "Name": "Black Forest Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1237,7 +1237,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Kamy_coast",
+            "Name": "Kamyshovo Coast Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1281,7 +1281,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_NE_woods",
+            "Name": "Northeast Woods Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1325,7 +1325,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Central_hills",
+            "Name": "Central Hills Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1369,7 +1369,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Severo_outskirts",
+            "Name": "Severograd Outskirts Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1413,7 +1413,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Pavlovo_road",
+            "Name": "Pavlovo Road Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1457,7 +1457,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Bandit_Bandit_Zeleno_woods",
+            "Name": "Zelenogorsk Woods Raider",
             "Faction": "Raiders",
             "LoadoutFile": "BanditLoadout",
             "NumberOfAI": -3,
@@ -1501,7 +1501,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Cherno",
+            "Name": "Chernogorsk Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1545,7 +1545,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Elektro",
+            "Name": "Elektrozavodsk Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1589,7 +1589,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Berezino",
+            "Name": "Berezino Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1633,7 +1633,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Svetlo",
+            "Name": "Svetlojarsk Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1677,7 +1677,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Stary_Sobor",
+            "Name": "Stary Sobor Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1721,7 +1721,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Novy_Sobor",
+            "Name": "Novy Sobor Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1765,7 +1765,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Gorka",
+            "Name": "Gorka Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1809,7 +1809,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Zelenogorsk",
+            "Name": "Zelenogorsk Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1853,7 +1853,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Vybor",
+            "Name": "Vybor Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1897,7 +1897,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Solnichniy",
+            "Name": "Solnichniy Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1941,7 +1941,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Polana",
+            "Name": "Polana Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -1985,7 +1985,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Kamyshovo",
+            "Name": "Kamyshovo Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -2029,7 +2029,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Novodmitrovsk",
+            "Name": "Novodmitrovsk Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -2073,7 +2073,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Severograd",
+            "Name": "Severograd Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,
@@ -2117,7 +2117,7 @@
             "FormationLooseness": 1.0
         },
         {
-            "Name": "Civ_Novaya_Petrovka",
+            "Name": "Novaya Petrovka Civilian",
             "Faction": "Passive",
             "LoadoutFile": "CivilianLoadout",
             "NumberOfAI": -3,

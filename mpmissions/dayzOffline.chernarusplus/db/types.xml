@@ -7304,7 +7304,7 @@
     </type>
     <type name="Fireplace">
         <nominal>0</nominal>
-        <lifetime>2400</lifetime>
+        <lifetime>432000</lifetime>
         <restock>0</restock>
         <min>0</min>
         <quantmin>-1</quantmin>
@@ -7325,7 +7325,7 @@
     </type>
     <type name="FireplaceIndoor">
         <nominal>0</nominal>
-        <lifetime>2400</lifetime>
+        <lifetime>432000</lifetime>
         <restock>0</restock>
         <min>0</min>
         <quantmin>-1</quantmin>
