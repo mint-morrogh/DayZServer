@@ -19,6 +19,15 @@ $planesFile = Join-Path $missionDir "custom\types_lmplanes.xml"
 $pvzGlobalsFile = Join-Path $root "config\PvZmoD_CustomisableZombies_Profile\PvZmoD_CustomisableZombies_Globals.xml"
 $pvzCharsFile = Join-Path $root "config\PvZmoD_CustomisableZombies_Profile\PvZmoD_CustomisableZombies_Characteristics.xml"
 $zenSleepFile = Join-Path $root "config\Zenarchist\ZenSleepConfig.json"
+$zenSkillsCfgFile = Join-Path $root "config\Zenarchist\Skills\ZenSkillsConfig.json"
+$zenTreasureFile = Join-Path $root "config\Zenarchist\ZenTreasureConfig.json"
+$expansionAIFile = Join-Path $root "config\ExpansionMod\Settings\AISettings.json"
+$expansionVehicleFile = Join-Path $root "config\ExpansionMod\Settings\VehicleSettings.json"
+$expansionPartyFile = Join-Path $root "config\ExpansionMod\Settings\PartySettings.json"
+$expansionGeneralFile = Join-Path $root "config\ExpansionMod\Settings\GeneralSettings.json"
+$expansionGarageFile = Join-Path $root "config\ExpansionMod\Settings\GarageSettings.json"
+$dayzDogFile = Join-Path $root "config\Dayz-Dog\DayzDog.json"
+$dayzHorseFile = Join-Path $root "config\DayZ-Horse\Horse.json"
 
 # --- Load settings ---
 if (-not (Test-Path $settingsFile)) {
@@ -28,6 +37,8 @@ if (-not (Test-Path $settingsFile)) {
 
 $settings = Get-Content $settingsFile -Raw | ConvertFrom-Json
 Write-Host "Loaded settings from server_settings.json" -ForegroundColor Cyan
+
+$patchCount = 0
 
 # =============================================
 # 1. PATCH serverDZ.cfg
@@ -64,6 +75,7 @@ if (Test-Path $serverCfg) {
 
     Set-Content $serverCfg -Value $cfg -NoNewline
     Write-Host "  serverDZ.cfg updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "WARNING: serverDZ.cfg not found, skipping" -ForegroundColor Red
 }
@@ -88,8 +100,19 @@ if (Test-Path $gameplayFile) {
     $gp.PlayerData.StaminaData.sprintStaminaModifierCro = $g.sprintStaminaModifier
     $gp.PlayerData.StaminaData.meleeStaminaModifier = $g.meleeStaminaModifier
 
+    # Shock handling
+    $gp.PlayerData.ShockHandlingData.shockRefillSpeedConscious = $g.shockRefillSpeedConscious
+    $gp.PlayerData.ShockHandlingData.shockRefillSpeedUnconscious = $g.shockRefillSpeedUnconscious
+
+    # Movement
+    $gp.PlayerData.MovementData.timeToSprint = $g.timeToSprint
+    $gp.PlayerData.MovementData.rotationSpeedJog = $g.rotationSpeedJog
+
     # World
     $gp.WorldsData.lightingConfig = $g.lightingConfig
+
+    # Vehicle
+    $gp.VehicleData.boatDecayMultiplier = $g.boatDecayMultiplier
 
     # Base building
     if ($g.relaxedBaseBuilding) {
@@ -122,6 +145,7 @@ if (Test-Path $gameplayFile) {
 
     $gp | ConvertTo-Json -Depth 10 | Set-Content $gameplayFile
     Write-Host "  cfggameplay.json updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "WARNING: cfggameplay.json not found, skipping" -ForegroundColor Red
 }
@@ -153,14 +177,21 @@ if (Test-Path $eventsFile) {
         "InfectedNBCYellow"     = $settings.zombies.nbc
     }
 
-    # Animal spawn mapping
+    # Animal spawn mapping (mod + vanilla)
+    $animalMap = @{}
     if ($settings.animals) {
-        $animalMap = @{
-            "AnimalWildDog"   = $settings.animals.wildDogs
-            "AnimalWildHorse" = $settings.animals.wildHorses
-        }
-    } else {
-        $animalMap = @{}
+        $a = $settings.animals
+        if ($a.wildDogs)   { $animalMap["AnimalWildDog"]   = $a.wildDogs }
+        if ($a.wildHorses) { $animalMap["AnimalWildHorse"] = $a.wildHorses }
+        if ($a.bears)      { $animalMap["AnimalBear"]      = $a.bears }
+        if ($a.cattle)     { $animalMap["AnimalCow"]        = $a.cattle }
+        if ($a.deer)       { $animalMap["AnimalDeer"]       = $a.deer }
+        if ($a.roeDeer)    { $animalMap["AnimalRoeDeer"]    = $a.roeDeer }
+        if ($a.goats)      { $animalMap["AnimalGoat"]       = $a.goats }
+        if ($a.sheep)      { $animalMap["AnimalSheep"]      = $a.sheep }
+        if ($a.pigs)       { $animalMap["AnimalPig"]         = $a.pigs }
+        if ($a.wildBoar)   { $animalMap["AnimalWildBoar"]   = $a.wildBoar }
+        if ($a.wolves)     { $animalMap["AnimalWolf"]       = $a.wolves }
     }
 
     foreach ($event in $events.events.event) {
@@ -180,6 +211,7 @@ if (Test-Path $eventsFile) {
 
     $events.Save($eventsFile)
     Write-Host "  events.xml updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "WARNING: events.xml not found, skipping" -ForegroundColor Red
 }
@@ -212,6 +244,7 @@ if (Test-Path $globalsFile) {
 
     $globals.Save($globalsFile)
     Write-Host "  globals.xml updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "WARNING: globals.xml not found, skipping" -ForegroundColor Red
 }
@@ -242,6 +275,7 @@ if (Test-Path $zenSkillsFile) {
 
     $zen.Save($zenSkillsFile)
     Write-Host "  custom/types_zenskills.xml updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: custom/types_zenskills.xml not found, skipping (ZenSkills mod not installed?)" -ForegroundColor DarkYellow
 }
@@ -266,8 +300,57 @@ if ($settings.zombieBehavior -and (Test-Path $pvzGlobalsFile)) {
     # Strength ratio (Day / Night)
     $pvzContent = $pvzContent -replace '(<Zombies_Strength_Ratio\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($zb.strengthRatioDay)`${2}$($zb.strengthRatioNight)`${3}"
 
+    # --- Zombie feature toggles ---
+    if ($settings.zombieFeatures) {
+        $zf = $settings.zombieFeatures
+
+        # Bleeding chance
+        $pvzContent = $pvzContent -replace '(<Bleeding_Chance_Activated\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($zf.bleedingChanceDay)`${2}$($zf.bleedingChanceNight)`${3}"
+
+        # Door breaking
+        $pvzContent = $pvzContent -replace '(<Zombies_Breaking_Doors_Activated\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($zf.doorBreakingDay)`${2}$($zf.doorBreakingNight)`${3}"
+
+        # Locked door breaking
+        $pvzContent = $pvzContent -replace '(<Zombies_Breaking_LockedDoors_Activated\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($zf.lockedDoorBreakingDay)`${2}$($zf.lockedDoorBreakingNight)`${3}"
+
+        # Hit unconscious players
+        $pvzContent = $pvzContent -replace '(<Zombies_Hit_Unconscious_Players_Activated\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($zf.hitUnconsciousDay)`${2}$($zf.hitUnconsciousNight)`${3}"
+
+        # Stone throwing
+        if ($zf.stoneThrowing) {
+            $st = $zf.stoneThrowing
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Activated\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.enabledDay)`${2}$($st.enabledNight)`${3}"
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Only_If_Player_On_Obstacle\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.onlyOnObstacleDay)`${2}$($st.onlyOnObstacleNight)`${3}"
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Damage_Health\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.damageHealthDay)`${2}$($st.damageHealthNight)`${3}"
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Damage_Shock\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.damageShockDay)`${2}$($st.damageShockNight)`${3}"
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Keep_Minimum_Health\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.keepMinHealthDay)`${2}$($st.keepMinHealthNight)`${3}"
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Rate\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.rateDay)`${2}$($st.rateNight)`${3}"
+            $pvzContent = $pvzContent -replace '(<Zombies_Throw_Stones_Distance_Maxi\s+Day\s*=\s*")[^"]*("\s+Night\s*=\s*")[^"]*(")', "`${1}$($st.distanceMaxDay)`${2}$($st.distanceMaxNight)`${3}"
+        }
+
+        # Vehicle crushing damage
+        if ($zf.vehicleDamage) {
+            $vd = $zf.vehicleDamage
+            $pvzContent = $pvzContent -replace '(<Damages_To_Vehicles\s+Activated\s*=\s*")[^"]*(")', "`${1}$($vd.enabled)`${2}"
+            $pvzContent = $pvzContent -replace '(<Damages_To_Vehicles\s+Damages_Per_Impact\s*=\s*")[^"]*(")', "`${1}$($vd.damagePerImpact)`${2}"
+            $pvzContent = $pvzContent -replace '(<Damages_To_Vehicles\s+Timer_Between_Impacts\s*=\s*")[^"]*(")', "`${1}$($vd.timerBetweenImpacts)`${2}"
+            $pvzContent = $pvzContent -replace '(<Damages_To_Vehicles\s+Speed_Minimum\s*=\s*")[^"]*(")', "`${1}$($vd.speedMinimum)`${2}"
+        }
+
+        # Zombies attacking stopped vehicles
+        if ($zf.vehicleAttack) {
+            $va = $zf.vehicleAttack
+            $pvzContent = $pvzContent -replace '(<Attack_Stopped_Vehicles\s+Activated\s*=\s*")[^"]*(")', "`${1}$($va.enabled)`${2}"
+            $pvzContent = $pvzContent -replace '(<Attack_Stopped_Vehicles\s+Damage_On_Structure\s*=\s*")[^"]*(")', "`${1}$($va.damageOnStructure)`${2}"
+            $pvzContent = $pvzContent -replace '(<Attack_Stopped_Vehicles\s+Damage_On_Attachments\s*=\s*")[^"]*(")', "`${1}$($va.damageOnAttachments)`${2}"
+            $pvzContent = $pvzContent -replace '(<Attack_Stopped_Vehicles\s+Attack_Speed_Factor\s*=\s*")[^"]*(")', "`${1}$($va.attackSpeedFactor)`${2}"
+            $pvzContent = $pvzContent -replace '(<Attack_Stopped_Vehicles\s+Player_Inside_Can_Be_Hit\s*=\s*")[^"]*(")', "`${1}$($va.playerInsideCanBeHit)`${2}"
+        }
+    }
+
     Set-Content $pvzGlobalsFile -Value $pvzContent -NoNewline
-    Write-Host "  PvZmoD Globals updated (speed/health/strength)" -ForegroundColor Green
+    Write-Host "  PvZmoD Globals updated (speed/health/strength + feature toggles)" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: PvZmoD Globals not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
 }
@@ -281,11 +364,11 @@ if ($settings.zombieBehavior -and (Test-Path $pvzCharsFile)) {
     $pvzChars = Get-Content $pvzCharsFile -Raw
 
     # Replace all Vision_Distance_Ratio Day values
-    # Matches Day="<any>" and replaces with the configured value, preserving Night and other attributes
     $pvzChars = $pvzChars -replace '(<Vision_Distance_Ratio\s+Day=")[^"]*(")', "`${1}$($zb.visionRatioDay)`${2}"
 
     Set-Content $pvzCharsFile -Value $pvzChars -NoNewline
     Write-Host "  PvZmoD Characteristics updated (vision Day=$($zb.visionRatioDay))" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: PvZmoD Characteristics not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
 }
@@ -314,6 +397,7 @@ if ($settings.horseGear -and (Test-Path $horseGearFile)) {
 
     $horse.Save($horseGearFile)
     Write-Host "  custom/types_dayzhorse.xml updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: types_dayzhorse.xml not found, skipping" -ForegroundColor DarkYellow
 }
@@ -351,6 +435,7 @@ if ($settings.dogGear -and (Test-Path $dogGearFile)) {
 
     $dog.Save($dogGearFile)
     Write-Host "  custom/types_dayzdog.xml updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: types_dayzdog.xml not found, skipping" -ForegroundColor DarkYellow
 }
@@ -383,6 +468,7 @@ if ($settings.planes -and (Test-Path $planesFile)) {
 
     $planes.Save($planesFile)
     Write-Host "  custom/types_lmplanes.xml updated" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: types_lmplanes.xml not found, skipping" -ForegroundColor DarkYellow
 }
@@ -391,21 +477,243 @@ if ($settings.planes -and (Test-Path $planesFile)) {
 # 11. PATCH Zen's Sleep config
 # =============================================
 if ($settings.sleep -and (Test-Path $zenSleepFile)) {
-    Write-Host "`nPatching config/Zenarchist/ZenSleepConfig.json (sleep fatigue)..." -ForegroundColor Yellow
+    Write-Host "`nPatching config/Zenarchist/ZenSleepConfig.json (sleep)..." -ForegroundColor Yellow
     $sleepCfg = Get-Content $zenSleepFile -Raw | ConvertFrom-Json
+    $sl = $settings.sleep
 
-    $sleepCfg.DrainConfig.GlobalDrainMultiplier = $settings.sleep.globalDrainMultiplier
+    # Drain
+    $sleepCfg.DrainConfig.GlobalDrainMultiplier = $sl.globalDrainMultiplier
+
+    # General
+    $sleepCfg.GeneralConfig.FreshSpawnFatiguePercent = $sl.freshSpawnFatiguePercent
+    $sleepCfg.GeneralConfig.SecondsAsleepUntilFullRestApprox = $sl.secondsAsleepUntilFullRest
+
+    # Gain
+    $sleepCfg.GainConfig.GainNightMultiplier = $sl.gainNightMultiplier
+    $sleepCfg.GainConfig.GainBedObjectUsed = $sl.gainBedObjectUsed
+    $sleepCfg.GainConfig.GainInsideMultiplier = $sl.gainInsideMultiplier
+    $sleepCfg.GainConfig.BedHealthGainPerSec = $sl.bedHealthGainPerSec
+    $sleepCfg.GainConfig.BedHealthMaxGain = $sl.bedHealthMaxGain
 
     $sleepCfg | ConvertTo-Json -Depth 10 | Set-Content $zenSleepFile
-    Write-Host "  ZenSleepConfig.json updated (drain=$($settings.sleep.globalDrainMultiplier))" -ForegroundColor Green
+    Write-Host "  ZenSleepConfig.json updated (drain=$($sl.globalDrainMultiplier), rest=$($sl.secondsAsleepUntilFullRest)s)" -ForegroundColor Green
+    $patchCount++
 } else {
     Write-Host "INFO: ZenSleepConfig.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 12. PATCH Zen's Skills config
+# =============================================
+if ($settings.zenSkillsConfig -and (Test-Path $zenSkillsCfgFile)) {
+    Write-Host "`nPatching config/Zenarchist/Skills/ZenSkillsConfig.json (skill progression)..." -ForegroundColor Yellow
+    $skillsCfg = Get-Content $zenSkillsCfgFile -Raw | ConvertFrom-Json
+    $zsc = $settings.zenSkillsConfig
+
+    # Shared config
+    $skillsCfg.SharedConfig.PercentOfExpLostOnDeath = $zsc.expLostOnDeath
+    $skillsCfg.SharedConfig.EXP_InjectorBoostMulti = $zsc.injectorBoostMultiplier
+    $skillsCfg.SharedConfig.EXP_InjectorBoostTime = $zsc.injectorBoostTimeSecs
+
+    # Per-skill settings (apply to all 4 skill trees)
+    foreach ($skillName in @("survival", "hunting", "gathering", "crafting")) {
+        if ($skillsCfg.SkillDefs.$skillName) {
+            $skillsCfg.SkillDefs.$skillName.EXP_Per_Perk = $zsc.expPerPerk
+            $skillsCfg.SkillDefs.$skillName.MaxAllowedPerks = $zsc.maxAllowedPerks
+        }
+    }
+
+    $skillsCfg | ConvertTo-Json -Depth 10 | Set-Content $zenSkillsCfgFile
+    Write-Host "  ZenSkillsConfig.json updated (expPerPerk=$($zsc.expPerPerk), maxPerks=$($zsc.maxAllowedPerks))" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: ZenSkillsConfig.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 13. PATCH Zen's Treasure config
+# =============================================
+if ($settings.zenTreasure -and (Test-Path $zenTreasureFile)) {
+    Write-Host "`nPatching config/Zenarchist/ZenTreasureConfig.json (treasure)..." -ForegroundColor Yellow
+    $treasureCfg = Get-Content $zenTreasureFile -Raw | ConvertFrom-Json
+    $zt = $settings.zenTreasure
+
+    $treasureCfg.TreasurePersistenceSecs = $zt.treasurePersistenceSecs
+    $treasureCfg.SpawnPhotosOnZombiesChance = $zt.spawnPhotosOnZombiesChance
+
+    $treasureCfg | ConvertTo-Json -Depth 10 | Set-Content $zenTreasureFile
+    Write-Host "  ZenTreasureConfig.json updated (persistence=$($zt.treasurePersistenceSecs)s, photoChance=$($zt.spawnPhotosOnZombiesChance))" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: ZenTreasureConfig.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 14. PATCH Expansion AI settings
+# =============================================
+if ($settings.expansionAI -and (Test-Path $expansionAIFile)) {
+    Write-Host "`nPatching config/ExpansionMod/Settings/AISettings.json (AI)..." -ForegroundColor Yellow
+    $aiCfg = Get-Content $expansionAIFile -Raw | ConvertFrom-Json
+    $ai = $settings.expansionAI
+
+    $aiCfg.AccuracyMin = $ai.accuracyMin
+    $aiCfg.AccuracyMax = $ai.accuracyMax
+    $aiCfg.ThreatDistanceLimit = $ai.threatDistanceLimit
+    $aiCfg.DamageMultiplier = $ai.damageMultiplier
+    $aiCfg.DamageReceivedMultiplier = $ai.damageReceivedMultiplier
+    $aiCfg.MaxRecruitableAI = $ai.maxRecruitableAI
+    $aiCfg.AggressionTimeout = $ai.aggressionTimeout
+    $aiCfg.GuardAggressionTimeout = $ai.guardAggressionTimeout
+    $aiCfg.MaxFlankingDistance = $ai.maxFlankingDistance
+    $aiCfg.SniperProneDistanceThreshold = $ai.sniperProneDistanceThreshold
+
+    $aiCfg | ConvertTo-Json -Depth 10 | Set-Content $expansionAIFile
+    Write-Host "  AISettings.json updated (accuracy=$($ai.accuracyMin)-$($ai.accuracyMax), dmg=$($ai.damageMultiplier)x)" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: AISettings.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 15. PATCH Expansion Vehicle settings
+# =============================================
+if ($settings.expansionVehicles -and (Test-Path $expansionVehicleFile)) {
+    Write-Host "`nPatching config/ExpansionMod/Settings/VehicleSettings.json (vehicles)..." -ForegroundColor Yellow
+    $vehCfg = Get-Content $expansionVehicleFile -Raw | ConvertFrom-Json
+    $ev = $settings.expansionVehicles
+
+    $vehCfg.VehicleRequireKeyToStart = $ev.requireKeyToStart
+    $vehCfg.VehicleRequireAllDoors = $ev.requireAllDoors
+    $vehCfg.CanPickLock = $ev.canPickLock
+    $vehCfg.PickLockChancePercent = $ev.pickLockChancePercent
+    $vehCfg.PickLockTimeSeconds = $ev.pickLockTimeSeconds
+    $vehCfg.Towing = $ev.towing
+    $vehCfg.DisableVehicleDamage = $ev.disableVehicleDamage
+    $vehCfg.FuelConsumptionPercent = $ev.fuelConsumptionPercent
+    $vehCfg.VehicleCrewDamageMultiplier = $ev.crewDamageMultiplier
+    $vehCfg.VehicleSpeedDamageMultiplier = $ev.speedDamageMultiplier
+    $vehCfg.EnableHelicopterExplosions = $ev.enableHelicopterExplosions
+    $vehCfg.EnableTailRotorDamage = $ev.enableTailRotorDamage
+    $vehCfg.CollisionDamageMinSpeedKmh = $ev.collisionDamageMinSpeedKmh
+
+    $vehCfg | ConvertTo-Json -Depth 10 | Set-Content $expansionVehicleFile
+    Write-Host "  VehicleSettings.json updated (fuel=$($ev.fuelConsumptionPercent)%, keys=$($ev.requireKeyToStart))" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: VehicleSettings.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 16. PATCH Expansion Party settings
+# =============================================
+if ($settings.expansionParty -and (Test-Path $expansionPartyFile)) {
+    Write-Host "`nPatching config/ExpansionMod/Settings/PartySettings.json (party)..." -ForegroundColor Yellow
+    $partyCfg = Get-Content $expansionPartyFile -Raw | ConvertFrom-Json
+    $ep = $settings.expansionParty
+
+    $partyCfg.MaxMembersInParty = $ep.maxMembersInParty
+    $partyCfg.ShowPartyMember3DMarkers = $ep.showPartyMember3DMarkers
+    $partyCfg.ShowDistanceUnderPartyMembersMarkers = $ep.showDistanceUnderMarkers
+    $partyCfg.ShowNameOnPartyMembersMarkers = $ep.showNameOnMarkers
+    $partyCfg.ShowPartyMemberHUD = $ep.showPartyMemberHUD
+    $partyCfg.ShowHUDMemberBlood = $ep.showHUDMemberBlood
+    $partyCfg.ShowHUDMemberStates = $ep.showHUDMemberStates
+    $partyCfg.EnableQuickMarker = $ep.enableQuickMarker
+
+    $partyCfg | ConvertTo-Json -Depth 10 | Set-Content $expansionPartyFile
+    Write-Host "  PartySettings.json updated (maxMembers=$($ep.maxMembersInParty))" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: PartySettings.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 17. PATCH Expansion General settings
+# =============================================
+if ($settings.expansionGeneral -and (Test-Path $expansionGeneralFile)) {
+    Write-Host "`nPatching config/ExpansionMod/Settings/GeneralSettings.json (general)..." -ForegroundColor Yellow
+    $genCfg = Get-Content $expansionGeneralFile -Raw | ConvertFrom-Json
+    $eg = $settings.expansionGeneral
+
+    $genCfg.EnableGravecross = $eg.enableGravecross
+    $genCfg.GravecrossDeleteBody = $eg.gravecrossDeleteBody
+    $genCfg.EnableLamps = $eg.enableLamps
+    $genCfg.EnableGenerators = $eg.enableGenerators
+    $genCfg.EnableLighthouses = $eg.enableLighthouses
+    $genCfg.EnableAutoRun = $eg.enableAutoRun
+    $genCfg.EnableHUDNightvisionOverlay = $eg.enableHUDNightvisionOverlay
+    $genCfg.DisableMagicCrosshair = $eg.disableMagicCrosshair
+
+    $genCfg | ConvertTo-Json -Depth 10 | Set-Content $expansionGeneralFile
+    Write-Host "  GeneralSettings.json updated (lamps=$($eg.enableLamps), autorun=$($eg.enableAutoRun))" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: GeneralSettings.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 18. PATCH Expansion Garage settings
+# =============================================
+if ($settings.expansionGarage -and (Test-Path $expansionGarageFile)) {
+    Write-Host "`nPatching config/ExpansionMod/Settings/GarageSettings.json (garage)..." -ForegroundColor Yellow
+    $garageCfg = Get-Content $expansionGarageFile -Raw | ConvertFrom-Json
+    $gg = $settings.expansionGarage
+
+    $garageCfg.MaxStorableVehicles = $gg.maxStorableVehicles
+    $garageCfg.VehicleSearchRadius = $gg.vehicleSearchRadius
+    $garageCfg.MaxDistanceFromStoredPosition = $gg.maxDistanceFromStoredPosition
+    $garageCfg.CanStoreWithCargo = $gg.canStoreWithCargo
+    $garageCfg.NeedKeyToStore = $gg.needKeyToStore
+
+    $garageCfg | ConvertTo-Json -Depth 10 | Set-Content $expansionGarageFile
+    Write-Host "  GarageSettings.json updated (maxVehicles=$($gg.maxStorableVehicles), radius=$($gg.vehicleSearchRadius)m)" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: GarageSettings.json not found, skipping (boot server once to generate)" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 19. PATCH DayZ-Dog settings
+# =============================================
+if ($settings.dayzDog -and (Test-Path $dayzDogFile)) {
+    Write-Host "`nPatching config/Dayz-Dog/DayzDog.json (dog behaviour)..." -ForegroundColor Yellow
+    $dogCfg = Get-Content $dayzDogFile -Raw | ConvertFrom-Json
+    $dd = $settings.dayzDog
+
+    $dogCfg.EnableDogWaypoints = $dd.enableDogWaypoints
+    $dogCfg.PunishDogKillers = $dd.punishDogKillers
+    $dogCfg.DisablePlayerAttack = $dd.disablePlayerAttack
+    $dogCfg.SummonItem = $dd.summonItem
+
+    $dogCfg | ConvertTo-Json -Depth 10 | Set-Content $dayzDogFile
+    Write-Host "  DayzDog.json updated (summon=$($dd.summonItem))" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: DayzDog.json not found, skipping" -ForegroundColor DarkYellow
+}
+
+# =============================================
+# 20. PATCH DayZ-Horse settings
+# =============================================
+if ($settings.dayzHorse -and (Test-Path $dayzHorseFile)) {
+    Write-Host "`nPatching config/DayZ-Horse/Horse.json (horse behaviour)..." -ForegroundColor Yellow
+    $horseCfg = Get-Content $dayzHorseFile -Raw | ConvertFrom-Json
+    $dh = $settings.dayzHorse
+
+    $horseCfg.HorseCallRange = $dh.horseCallRange
+
+    $horseCfg | ConvertTo-Json -Depth 10 | Set-Content $dayzHorseFile
+    Write-Host "  Horse.json updated (callRange=$($dh.horseCallRange)m)" -ForegroundColor Green
+    $patchCount++
+} else {
+    Write-Host "INFO: Horse.json not found, skipping" -ForegroundColor DarkYellow
 }
 
 # =============================================
 # DONE
 # =============================================
 Write-Host "`n============================================" -ForegroundColor Cyan
-Write-Host "All settings applied! Restart your server for changes to take effect." -ForegroundColor Cyan
+Write-Host "All settings applied! ($patchCount config files patched)" -ForegroundColor Cyan
+Write-Host "Restart your server for changes to take effect." -ForegroundColor Cyan
 Write-Host "(PvZmoD zombie changes can also be applied in-game with Numpad4)" -ForegroundColor Cyan
 Write-Host "============================================" -ForegroundColor Cyan

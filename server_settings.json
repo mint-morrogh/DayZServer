@@ -37,7 +37,12 @@
         "compassWithoutItem": false,
         "use3DMap": false,
         "lightingConfig": 0,
-        "relaxedBaseBuilding": false
+        "relaxedBaseBuilding": false,
+        "shockRefillSpeedConscious": 5.0,
+        "shockRefillSpeedUnconscious": 1.0,
+        "timeToSprint": 0.45,
+        "rotationSpeedJog": 0.3,
+        "boatDecayMultiplier": 1.0
     },
 
     "zombies": {
@@ -73,10 +78,63 @@
         "visionRatioNight": 0.8
     },
 
+    "zombieFeatures": {
+        "_help": "PvZmoD feature toggles (0=off, 1=on). Day/Night pairs. Stone throwing, door breaking, bleeding, etc.",
+        "bleedingChanceDay": 0,
+        "bleedingChanceNight": 0,
+        "doorBreakingDay": 1,
+        "doorBreakingNight": 1,
+        "lockedDoorBreakingDay": 0,
+        "lockedDoorBreakingNight": 0,
+        "hitUnconsciousDay": 0,
+        "hitUnconsciousNight": 0,
+        "stoneThrowing": {
+            "_help": "Zombies throw stones at players on obstacles. damage=health per hit, shock=shock per hit, rate=seconds between throws, distanceMax=range.",
+            "enabledDay": 1,
+            "enabledNight": 1,
+            "onlyOnObstacleDay": 1,
+            "onlyOnObstacleNight": 1,
+            "damageHealthDay": 2.5,
+            "damageHealthNight": 2.5,
+            "damageShockDay": 15.0,
+            "damageShockNight": 15.0,
+            "keepMinHealthDay": 30.0,
+            "keepMinHealthNight": 30.0,
+            "rateDay": 5.0,
+            "rateNight": 5.0,
+            "distanceMaxDay": 10.0,
+            "distanceMaxNight": 10.0
+        },
+        "vehicleDamage": {
+            "_help": "Damage to vehicle radiator when running over zombies. 0=off, 1=on.",
+            "enabled": 1,
+            "damagePerImpact": 1.0,
+            "timerBetweenImpacts": 5,
+            "speedMinimum": 5
+        },
+        "vehicleAttack": {
+            "_help": "Zombies attack stopped/slow vehicles. damageStructure/attachments per hit.",
+            "enabled": 1,
+            "damageOnStructure": 2.0,
+            "damageOnAttachments": 5.0,
+            "attackSpeedFactor": 1.0,
+            "playerInsideCanBeHit": 1
+        }
+    },
+
     "animals": {
-        "_help": "Wild animal spawn counts in events.xml. nominal=target herds on map, min=respawn trigger, max=max children per herd.",
-        "wildDogs":   { "nominal": 6, "min": 1, "max": 5 },
-        "wildHorses": { "nominal": 8, "min": 1, "max": 4 }
+        "_help": "Animal spawn counts in events.xml. nominal=target herds on map, min=respawn trigger, max=max children per herd.",
+        "wildDogs":   { "nominal": 6,  "min": 1,  "max": 5 },
+        "wildHorses": { "nominal": 8,  "min": 1,  "max": 4 },
+        "bears":      { "nominal": 5,  "min": 2,  "max": 2 },
+        "cattle":     { "nominal": 18, "min": 7,  "max": 20 },
+        "deer":       { "nominal": 67, "min": 25, "max": 40 },
+        "roeDeer":    { "nominal": 67, "min": 25, "max": 50 },
+        "goats":      { "nominal": 30, "min": 12, "max": 25 },
+        "sheep":      { "nominal": 18, "min": 6,  "max": 20 },
+        "pigs":       { "nominal": 33, "min": 12, "max": 20 },
+        "wildBoar":   { "nominal": 14, "min": 6,  "max": 10 },
+        "wolves":     { "nominal": 8,  "min": 4,  "max": 6 }
     },
 
     "horseGear": {
@@ -107,11 +165,6 @@
         "cessna":       { "nominal": 3, "min": 2 }
     },
 
-    "sleep": {
-        "_help": "Zen's Sleep fatigue settings. drainMultiplier: lower=slower fatigue drain (0.4=relaxed, 1.0=vanilla, 0.0=no fatigue).",
-        "globalDrainMultiplier": 0.4
-    },
-
     "lootEconomy": {
         "_help": "Global loot economy from globals.xml. ZombieMaxCount caps total zombies server-wide. AnimalMaxCount caps animals.",
         "zombieMaxCount": 500,
@@ -134,5 +187,109 @@
         "craftingBook":      { "nominal":  6, "min": 3 },
         "huntingBook":       { "nominal":  6, "min": 3 },
         "gatheringBook":     { "nominal":  6, "min": 3 }
+    },
+
+    "zenSkillsConfig": {
+        "_help": "Zenarchist skill progression settings. expPerPerk=XP needed per perk point, maxPerks=cap per skill tree, expLostOnDeath=fraction (0.05=5%).",
+        "expPerPerk": 1000,
+        "maxAllowedPerks": 20,
+        "expLostOnDeath": 0.05,
+        "injectorBoostMultiplier": 2.0,
+        "injectorBoostTimeSecs": 1800
+    },
+
+    "sleep": {
+        "_help": "Zen's Sleep settings. drainMultiplier: 0.0=no fatigue, 0.4=relaxed, 1.0=vanilla. Gain settings control rest recovery speed.",
+        "globalDrainMultiplier": 0.4,
+        "freshSpawnFatiguePercent": 100.0,
+        "secondsAsleepUntilFullRest": 600.0,
+        "gainNightMultiplier": 1.5,
+        "gainBedObjectUsed": 1.3,
+        "gainInsideMultiplier": 1.1,
+        "bedHealthGainPerSec": 0.25,
+        "bedHealthMaxGain": 100.0
+    },
+
+    "zenTreasure": {
+        "_help": "Zenarchist treasure hunt settings. persistence=how long buried stash stays (seconds), photoChance=chance to find photo on zombie (0.01=1%).",
+        "treasurePersistenceSecs": 3600,
+        "spawnPhotosOnZombiesChance": 0.01
+    },
+
+    "expansionAI": {
+        "_help": "Expansion AI settings. Accuracy 0.0-1.0, damage multipliers affect AI giving/receiving damage.",
+        "accuracyMin": 0.15,
+        "accuracyMax": 0.5,
+        "threatDistanceLimit": 1000.0,
+        "damageMultiplier": 1.0,
+        "damageReceivedMultiplier": 1.0,
+        "maxRecruitableAI": 1,
+        "aggressionTimeout": 120.0,
+        "guardAggressionTimeout": 150.0,
+        "maxFlankingDistance": 200.0,
+        "sniperProneDistanceThreshold": 100.0
+    },
+
+    "expansionVehicles": {
+        "_help": "Expansion vehicle settings. fuelConsumption is a percentage (100=normal, 50=half usage). crewDamageMultiplier affects passenger damage from crashes.",
+        "requireKeyToStart": 1,
+        "requireAllDoors": 1,
+        "canPickLock": 0,
+        "pickLockChancePercent": 40.0,
+        "pickLockTimeSeconds": 120,
+        "towing": 1,
+        "disableVehicleDamage": 0,
+        "fuelConsumptionPercent": 100.0,
+        "crewDamageMultiplier": 1.0,
+        "speedDamageMultiplier": 1.0,
+        "enableHelicopterExplosions": 1,
+        "enableTailRotorDamage": 1,
+        "collisionDamageMinSpeedKmh": 30.0
+    },
+
+    "expansionParty": {
+        "_help": "Expansion party/group settings. Controls HUD markers, member info display, and party limits.",
+        "maxMembersInParty": 10,
+        "showPartyMember3DMarkers": 1,
+        "showDistanceUnderMarkers": 1,
+        "showNameOnMarkers": 1,
+        "showPartyMemberHUD": 1,
+        "showHUDMemberBlood": 1,
+        "showHUDMemberStates": 1,
+        "enableQuickMarker": 1
+    },
+
+    "expansionGeneral": {
+        "_help": "Expansion general settings. enableLamps: 0=off, 1=all, 2=city only, 3=some. enableAutoRun: 0=off, 1=on.",
+        "enableGravecross": 0,
+        "gravecrossDeleteBody": 1,
+        "enableLamps": 3,
+        "enableGenerators": 0,
+        "enableLighthouses": 1,
+        "enableAutoRun": 1,
+        "enableHUDNightvisionOverlay": 1,
+        "disableMagicCrosshair": 0
+    },
+
+    "expansionGarage": {
+        "_help": "Expansion garage/parking settings. maxStorableVehicles=per-player limit, searchRadius=how close vehicle must be to parking meter.",
+        "maxStorableVehicles": 2,
+        "vehicleSearchRadius": 20.0,
+        "maxDistanceFromStoredPosition": 150.0,
+        "canStoreWithCargo": 1,
+        "needKeyToStore": 1
+    },
+
+    "dayzDog": {
+        "_help": "DayZ-Dog mod settings. summonItem=item classname to call your dog. punishDogKillers damages players who kill dogs.",
+        "enableDogWaypoints": 0,
+        "punishDogKillers": 0,
+        "disablePlayerAttack": 0,
+        "summonItem": "Bone"
+    },
+
+    "dayzHorse": {
+        "_help": "DayZ-Horse mod settings. callRange=distance (meters) at which whistle calls your horse.",
+        "horseCallRange": 200.0
     }
 }

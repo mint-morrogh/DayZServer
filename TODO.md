@@ -1,5 +1,15 @@
 # BAE-Z - TODO
 
+## Deploy on next server stop
+
+### DayZombieManager PBO — rebuild waiting (server has file locked)
+- Changed `DAY_DESPAWN_CHANCE` from 0.65 → 0.55 (45% daytime survival, up from 35%)
+- New PBO built at `mod_src/DayZombieManager/DayZombieManager.pbo.new`
+- **Deploy:** `copy /Y "mod_src\DayZombieManager\DayZombieManager.pbo.new" "@DayZombieManager\addons\DayZombieManager.pbo"`
+- Then delete the temp: `del "mod_src\DayZombieManager\DayZombieManager.pbo.new"`
+
+---
+
 ## Critical — Must test before playing (Mar 9, 2026)
 
 ### Expansion Animations: Stripped PBO caused all startup crashes — REVERTED TO FULL
@@ -201,7 +211,7 @@ Do the same for all 20+ models.
 - HealthBoost config.cpp: dog HP 4x (800→3200), blood 4x (5000→20000), shock doubled (200→400). Bite damage doubled (80→160 Health, 200→400 Blood, 22→44 Shock). Dog regen 10% every 15s (~2.5 min full heal), horses stay at 5% every 30s.
 
 ### Zombie daytime spawn rate increase — DONE
-- DayZombieManager `DAY_DESPAWN_CHANCE` reduced from 0.85 to 0.65 (35% survive during day, up from 15%). Compensates for zombies being less tanky after PvZmoD nerf.
+- DayZombieManager `DAY_DESPAWN_CHANCE` reduced from 0.85 to 0.55 (45% survive during day, up from 15%). Compensates for zombies being less tanky after PvZmoD nerf. (0.85→0.65 initial, then 0.65→0.55 bump on Mar 9)
 
 ### Vanilla animal nominals reduced — DONE
 - Reduced vanilla herd nominals in events.xml to leave more room under AnimalMaxCount=1200 cap. Dog nominal reduced from 35→8 (~100 entities). Vanilla animals rebalanced to lower counts.
