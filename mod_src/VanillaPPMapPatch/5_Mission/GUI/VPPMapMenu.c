@@ -213,6 +213,61 @@ class VPPMapMenu extends UIScriptedMenu {
         if (!g_Game.OwnPositionMarkerDisabled()) {
             m_MapWidget.AddUserMark(GetGame().GetPlayer().GetPosition(), "Me", ARGB(255,255,255,0), "VanillaPPMap\\GUI\\Textures\\CustomMapIcons\\waypointeditor_CA.paa");
         }
+
+        // Draw Expansion Groups party members on the VPP map
+        DisplayPartyMembers(m_MapWidget);
+    }
+
+    // Draws party member markers on any MapWidget (VPP map or minimap)
+    static void DisplayPartyMembers(MapWidget mapWidget)
+    {
+        if (!mapWidget)
+            return;
+
+        if (!ExpansionPartyModule.s_Instance)
+            return;
+
+        ExpansionPartyData party = ExpansionPartyModule.s_Instance.GetParty();
+        if (!party)
+            return;
+
+        string myUID = "";
+        Man myPlayer = GetGame().GetPlayer();
+        if (myPlayer)
+        {
+            PlayerIdentity myIdentity = myPlayer.GetIdentity();
+            if (myIdentity)
+                myUID = myIdentity.GetId();
+        }
+
+        array<ref ExpansionPartyPlayerData> members = party.GetPlayers();
+        if (!members)
+            return;
+
+        for (int i = 0; i < members.Count(); i++)
+        {
+            ExpansionPartyPlayerData member = members.Get(i);
+            if (!member)
+                continue;
+
+            // Skip ourselves
+            if (myUID != "" && member.UID == myUID)
+                continue;
+
+            // Only draw if member has a synced marker (means they are online)
+            if (member.Marker)
+            {
+                vector memberPos = member.Marker.GetPosition();
+                // Skip if position is origin (not yet synced)
+                if (memberPos[0] != 0 || memberPos[2] != 0)
+                {
+                    int memberColor = member.GetColor();
+                    if (memberColor == 0)
+                        memberColor = ARGB(255, 0, 191, 255);
+                    mapWidget.AddUserMark(memberPos, member.Name, memberColor, "VanillaPPMap\\GUI\\Textures\\CustomMapIcons\\waypointeditor_CA.paa");
+                }
+            }
+        }
     }
 
     //Returns world coords of where player clicks on map
