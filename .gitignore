@@ -17,6 +17,8 @@
 !launch_dayz.bat
 !install_mods.bat
 !wipe_server.bat
+!clear_character.bat
+!reset_players.bat
 !apply_settings.bat
 !apply_settings.ps1
 !server_settings.json
