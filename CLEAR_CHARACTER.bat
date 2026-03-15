@@ -8,6 +8,11 @@
 ::
 :: Run this if your character is bugged (stuck bleeding,
 :: can't use items, corrupted inventory, etc).
+::
+:: NOTE: The server admin must ALSO run RESET_PLAYERS.bat on
+:: the server to delete players.db — otherwise the server
+:: still has your old character saved. This script only
+:: clears your LOCAL client cache.
 :: ============================================================
 
 setlocal

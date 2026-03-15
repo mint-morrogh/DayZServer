@@ -7,6 +7,10 @@
 :: vehicles, bases, and mod configs are all preserved.
 ::
 :: IMPORTANT: Stop the server before running this!
+::
+:: This script also clears YOUR local client cache, so you
+:: only need to run this one. Other players on different PCs
+:: should run CLEAR_CHARACTER.bat on their machine.
 :: ============================================================
 
 setlocal
