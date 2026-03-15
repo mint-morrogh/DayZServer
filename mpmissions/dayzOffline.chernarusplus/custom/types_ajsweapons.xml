@@ -2039,7 +2039,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_AK74M_PT1_Stock_Black">
+    <type name="AJW_BS_AK74M_PT1_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -2052,7 +2052,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_AK74M_PT3_Stock_Black">
+    <type name="AJW_BS_AK74M_PT3_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -2936,7 +2936,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_Bttstock_Crane_FDE">
+    <type name="AJW_BS_SOPMOD_FDE">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3053,7 +3053,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_AK12_Bttstock_Black">
+    <type name="AJW_BS_AK12_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3066,7 +3066,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_B5_Bttstock_Black">
+    <type name="AJW_BS_B5_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3079,7 +3079,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_B5_Bttstock_FDE">
+    <type name="AJW_BS_B5_FDE">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3092,7 +3092,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_BCM_Bttstock_Black">
+    <type name="AJW_BS_BCM_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3105,7 +3105,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_BCM_Bttstock_FDE">
+    <type name="AJW_BS_BCM_FDE">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3118,7 +3118,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_CMMG_Bttstock_Black">
+    <type name="AJW_BS_CMMG_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3131,7 +3131,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_DD_Bttstock_Black">
+    <type name="AJW_BS_DD_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3144,7 +3144,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_DD_Bttstock_FDE">
+    <type name="AJW_BS_DD_FDE">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3157,7 +3157,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_DS150_Bttstock_Black">
+    <type name="AJW_BS_DS150_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3170,7 +3170,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_DS150_Bttstock_FDE">
+    <type name="AJW_BS_DS150_FDE">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3183,7 +3183,7 @@
         <usage name="Military" />
         <value name="Tier4" />
     </type>
-    <type name="AJW_FAB_GLC_Bttstock_Black">
+    <type name="AJW_BS_FAB_GLC_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -3430,7 +3430,7 @@
         <category name="weapons" />
         <usage name="Military" />
     </type>
-    <type name="AJW_Bttstock_Crane">
+    <type name="AJW_BS_SOPMOD_Black">
         <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>

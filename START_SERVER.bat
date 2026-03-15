@@ -9,7 +9,7 @@ set serverPort=2302
 ::Server config
 set serverConfig=serverDZ.cfg
 ::Logical CPU cores to use (Equal or less than available)
-set serverCPU=2
+set serverCPU=4
 ::Sets title for terminal (DONT edit)
 title %serverName% batch
 ::DayZServer location (DONT edit)

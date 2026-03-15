@@ -15,7 +15,7 @@
         </attachments>
         <attachments chance="1.00">
             <item name="AJW_Magpul_MOE_Black" chance="0.50" />
-            <item name="AJW_Bttstock_Crane" chance="0.50" />
+            <item name="AJW_BS_SOPMOD_Black" chance="0.50" />
         </attachments>
         <attachments chance="0.10">
             <item name="AJW_HKG28_BTQD_Suppressor_Black" chance="1.00" />
@@ -34,7 +34,7 @@
         </attachments>
         <attachments chance="1.00">
             <item name="AJW_Magpul_MOE_FDE" chance="0.50" />
-            <item name="AJW_Bttstock_Crane_FDE" chance="0.50" />
+            <item name="AJW_BS_SOPMOD_FDE" chance="0.50" />
         </attachments>
         <attachments chance="0.10">
             <item name="AJW_HKG28_BTQD_Suppressor_Tan" chance="1.00" />
@@ -53,7 +53,7 @@
         </attachments>
         <attachments chance="1.00">
             <item name="AJW_Magpul_MOE_Black" chance="0.50" />
-            <item name="AJW_Bttstock_Crane" chance="0.50" />
+            <item name="AJW_BS_SOPMOD_Black" chance="0.50" />
         </attachments>
         <attachments chance="0.10">
             <item name="AJW_HKG28_BTQD_Suppressor_Black" chance="1.00" />
@@ -72,7 +72,7 @@
         </attachments>
         <attachments chance="1.00">
             <item name="AJW_Magpul_MOE_FDE" chance="0.50" />
-            <item name="AJW_Bttstock_Crane_FDE" chance="0.50" />
+            <item name="AJW_BS_SOPMOD_FDE" chance="0.50" />
         </attachments>
         <attachments chance="0.10">
             <item name="AJW_HKG28_BTQD_Suppressor_Tan" chance="1.00" />
@@ -258,8 +258,8 @@
             <item name="AJW_Mag_DMK12_10rnd" chance="0.50" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_BCM_Bttstock_Black" chance="0.50" />
-            <item name="AJW_FAB_GLC_Bttstock_Black" chance="0.50" />
+            <item name="AJW_BS_BCM_Black" chance="0.50" />
+            <item name="AJW_BS_FAB_GLC_Black" chance="0.50" />
         </attachments>
     </type>
     <type name="AJW_DMK12_FDE">
@@ -273,8 +273,8 @@
             <item name="AJW_Mag_DMK12_10rnd" chance="0.50" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_B5_Bttstock_FDE" chance="0.50" />
-            <item name="AJW_DD_Bttstock_FDE" chance="0.50" />
+            <item name="AJW_BS_B5_FDE" chance="0.50" />
+            <item name="AJW_BS_DD_FDE" chance="0.50" />
         </attachments>
     </type>
     <type name="AJW_Car15_BD">
@@ -411,7 +411,7 @@
             <item name="AJW_M4_URGI_10_Hndgrd_FDE" chance="0.25" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="AJW_Mag_HKGen2PM_30Rnd_Black" chance="1.00" />
@@ -430,7 +430,7 @@
             <item name="AJW_M4_URGI_10_Hndgrd_FDE" chance="0.25" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="AJW_Mag_HKGen2PM_30Rnd_Black" chance="1.00" />
@@ -449,7 +449,7 @@
             <item name="AJW_M4_URGI_10_Hndgrd_FDE" chance="0.25" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="AJW_Mag_HKGen2PM_30Rnd_Black" chance="1.00" />
@@ -465,7 +465,7 @@
             <item name="AJW_M4_RISHndgrd" chance="1.00" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="Mag_STANAG_30Rnd" chance="0.80" />
@@ -482,7 +482,7 @@
             <item name="AJW_M4_RISHndgrd" chance="1.00" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="Mag_STANAG_30Rnd" chance="0.80" />
@@ -499,7 +499,7 @@
             <item name="AJW_M4_RISHndgrd" chance="1.00" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="Mag_STANAG_30Rnd" chance="0.80" />
@@ -516,7 +516,7 @@
             <item name="AJW_M4_RISHndgrd" chance="1.00" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_Bttstock_Crane" chance="1.00" />
+            <item name="AJW_BS_SOPMOD_Black" chance="1.00" />
         </attachments>
         <attachments chance="0.50">
             <item name="Mag_STANAG_30Rnd" chance="0.80" />
@@ -656,7 +656,7 @@
             <item name="AJW_AKHNG_Shark_Wood" chance="0.20" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_AK12_Bttstock_Black" chance="0.20" />
+            <item name="AJW_BS_AK12_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.80" />
         </attachments>
         <attachments chance="0.20">
@@ -685,8 +685,8 @@
             <item name="AJW_AKHNG_MagpulS_Black" chance="0.20" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_AK12_Bttstock_Black" chance="0.20" />
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.20" />
+            <item name="AJW_BS_AK12_Black" chance="0.20" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
@@ -713,7 +713,7 @@
             <item name="AJW_AK74U_HNG_B11" chance="0.20" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.40" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.40" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
@@ -742,8 +742,8 @@
             <item name="AJW_AKHNG_MagpulS_Black" chance="0.20" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_AK12_Bttstock_Black" chance="0.20" />
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.20" />
+            <item name="AJW_BS_AK12_Black" chance="0.20" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
@@ -772,8 +772,8 @@
             <item name="AJW_AKHNG_MagpulS_Black" chance="0.20" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_AK12_Bttstock_Black" chance="0.20" />
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.20" />
+            <item name="AJW_BS_AK12_Black" chance="0.20" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
@@ -803,8 +803,8 @@
             <item name="AJW_AKHNG_MagpulS_Black" chance="0.20" />
         </attachments>
         <attachments chance="1.00">
-            <item name="AJW_AK12_Bttstock_Black" chance="0.20" />
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.20" />
+            <item name="AJW_BS_AK12_Black" chance="0.20" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
@@ -835,7 +835,7 @@
         </attachments>
         <attachments chance="1.00">
             <item name="AJW_Magpul_MOE_Black" chance="0.20" />
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.20" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
@@ -863,7 +863,7 @@
         </attachments>
         <attachments chance="1.00">
             <item name="AJW_Magpul_MOE_Black" chance="0.20" />
-            <item name="AJW_AK74M_PT1_Stock_Black" chance="0.20" />
+            <item name="AJW_BS_AK74M_PT1_Black" chance="0.20" />
             <item name="AJW_AK74M_Plastic_Stock" chance="0.60" />
         </attachments>
         <attachments chance="0.20">
