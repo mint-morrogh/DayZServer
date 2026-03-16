@@ -132,8 +132,8 @@
     </children>
   </event>
   <event name="AnimalPig">
-    <nominal>33</nominal>
-    <min>12</min>
+    <nominal>30</nominal>
+    <min>11</min>
     <max>20</max>
     <lifetime>180</lifetime>
     <restock>0</restock>
@@ -185,8 +185,8 @@
     </children>
   </event>
   <event name="AnimalWildBoar">
-    <nominal>14</nominal>
-    <min>6</min>
+    <nominal>13</nominal>
+    <min>5</min>
     <max>10</max>
     <lifetime>180</lifetime>
     <restock>0</restock>
